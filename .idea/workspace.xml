@@ -5,12 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce0733a5-fb52-4321-9963-06a6c3b591a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/.vuepress/clientAppEnhance.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.vuepress/styles/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.server/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.server/assets/style.7d71c25f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/404.ca2a7161.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/Layout.336df276.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/Test.4866b1ce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/app.67ec6ebc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/index.html.64406475.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/index.html.ba08dd1a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/index.html.e972e63e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/introduction.html.e4c06959.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/style.2adc57c8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/introduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/introduction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/.vuepress/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +98,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1646350959459</updated>
-      <workItem from="1646350961723" duration="7249000" />
+      <workItem from="1646350961723" duration="7531000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1646367617118</created>
@@ -96,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646367617118</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added bootstrap">
+      <created>1646369420002</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1646369420002</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +137,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Vuepress test" />
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="added bootstrap" />
+    <option name="LAST_COMMIT_MESSAGE" value="added bootstrap" />
   </component>
 </project>

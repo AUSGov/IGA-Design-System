@@ -6941,7 +6941,7 @@ const ClientOnly = defineComponent({
 });
 const scriptRel = "modulepreload";
 const seen = {};
-const base = "/";
+const base = "/DOI-Styleguide/";
 const __vitePreload = function preload(baseModule, deps) {
   if (!deps || deps.length === 0) {
     return baseModule();
@@ -6975,16 +6975,16 @@ const __vitePreload = function preload(baseModule, deps) {
 const pagesComponents = {
   "v-8daa1a0e": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-8daa1a0e" */
-    "./index.html.e972e63e.js"
-  ), true ? ["assets/index.html.e972e63e.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+    "./index.html.a7eacc91.js"
+  ), true ? ["assets/index.html.a7eacc91.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
   "v-52062726": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-52062726" */
-    "./introduction.html.e4c06959.js"
-  ), true ? ["assets/introduction.html.e4c06959.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+    "./introduction.html.ef891030.js"
+  ), true ? ["assets/introduction.html.ef891030.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
   "v-15554e84": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-15554e84" */
-    "./index.html.64406475.js"
-  ), true ? ["assets/index.html.64406475.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+    "./index.html.1d364348.js"
+  ), true ? ["assets/index.html.1d364348.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
   "v-3706649a": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-3706649a" */
     "./404.html.229bc4e7.js"
@@ -6993,7 +6993,7 @@ const pagesComponents = {
 const pagesData$1 = {
   "v-8daa1a0e": () => __vitePreload(() => import(
     /* webpackChunkName: "v-8daa1a0e" */
-    "./index.html.ba08dd1a.js"
+    "./index.html.2cf371bc.js"
   ), true ? [] : void 0).then(({ data }) => data),
   "v-52062726": () => __vitePreload(() => import(
     /* webpackChunkName: "v-52062726" */
@@ -7062,7 +7062,7 @@ const useRouteLocale = () => {
   return routeLocale;
 };
 const siteData$1 = {
-  "base": "/",
+  "base": "/DOI-Styleguide/",
   "lang": "en-US",
   "title": "Department of Industry",
   "description": "Department of Industry style guide.",
@@ -7109,12 +7109,12 @@ Content.props = {
 const layoutComponents = {
   "404": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "layout-404" */
-    "./404.ca2a7161.js"
+    "./404.eba23de1.js"
   ), true ? [] : void 0)),
   "Layout": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "layout-Layout" */
-    "./Layout.336df276.js"
-  ), true ? ["assets/Layout.336df276.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0))
+    "./Layout.80e3a84d.js"
+  ), true ? ["assets/Layout.80e3a84d.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0))
 };
 const resolveHeadIdentifier = ([tag, attrs, content]) => {
   if (tag === "meta" && attrs.name) {
@@ -8394,7 +8394,7 @@ var clientAppEnhance3 = defineClientAppEnhance(({ app, router }) => {
   };
 });
 var clientAppEnhance4 = ({ app }) => {
-  app.component("Test", defineAsyncComponent(() => __vitePreload(() => import("./Test.4866b1ce.js"), true ? ["assets/Test.4866b1ce.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)));
+  app.component("Test", defineAsyncComponent(() => __vitePreload(() => import("./Test.cddd4735.js"), true ? ["assets/Test.cddd4735.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)));
 };
 var styles = "";
 var clientAppEnhance5 = defineClientAppEnhance(({ app, router, siteData: siteData2 }) => {

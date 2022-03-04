@@ -5,7 +5,7 @@ module.exports = {
   lang: 'en-US',
   title: 'Department of Industry',
   description: 'Department of Industry style guide.',
-  bae: '/DOI-Styleguide/',
+  base: process.env.NODE_ENV === 'production' ? '/DOI-Styleguide/' : '/',
 
   // theme and its config
   theme: '@vuepress/theme-default',

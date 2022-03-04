@@ -140,7 +140,7 @@ const useRouteLocale = () => {
   return routeLocale;
 };
 const siteData$1 = {
-  "base": "/",
+  "base": "/DOI-Styleguide/",
   "lang": "en-US",
   "title": "Department of Industry",
   "description": "Department of Industry style guide.",
@@ -1387,7 +1387,7 @@ const data$3 = {
     }
   ],
   "git": {
-    "updatedTime": 1646367617e3
+    "updatedTime": 1646369419e3
   },
   "filePathRelative": "README.md"
 };
