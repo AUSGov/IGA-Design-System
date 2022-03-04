@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ce0733a5-fb52-4321-9963-06a6c3b591a2" name="Changes" comment="Vuepress test">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/.server/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/.server/assets/style.4dd1b869.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/404.c3c64d96.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/404.html.229bc4e7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/404.html.e275e9a9.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/Layout.8e414e36.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/Test.5c26dd31.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/app.7ac4aeef.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/back-to-top.8efcbe56.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/index.html.04ed548b.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/index.html.63a3fcd8.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/index.html.72173e95.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/index.html.8dd4791b.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/introduction.html.4d890834.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/introduction.html.feeee0a0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/plugin-vue_export-helper.21dcd24c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/style.e940c8fe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/introduction.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.vuepress/components/Test.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.vuepress/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.vuepress/dist/.server/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.vuepress/dist/.server/assets/style.4dd1b869.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.vuepress/dist/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.vuepress/dist/assets/404.16a84f84.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.vuepress/dist/assets/404.html.bee13de6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.vuepress/dist/assets/404.html.f166316b.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.vuepress/dist/assets/Layout.31047209.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.vuepress/dist/assets/Test.eb31d0d3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.vuepress/dist/assets/app.24f55df8.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.vuepress/dist/assets/back-to-top.8efcbe56.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.vuepress/dist/assets/index.html.0f5fa8bd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.vuepress/dist/assets/index.html.5b30b4c4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.vuepress/dist/assets/index.html.967923e4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.vuepress/dist/assets/index.html.eae5cf7d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.vuepress/dist/assets/introduction.html.27c3a5cf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.vuepress/dist/assets/introduction.html.4f7470f4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.vuepress/dist/assets/plugin-vue_export-helper.21dcd24c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.vuepress/dist/assets/style.e940c8fe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.vuepress/dist/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.vuepress/dist/introduction.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.vuepress/dist/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/introduction.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="25telC2nMge9awmuzLYGLWvj1WX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs/test" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/test" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ce0733a5-fb52-4321-9963-06a6c3b591a2" name="Changes" comment="" />
+      <created>1646350959459</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646350959459</updated>
+      <workItem from="1646350961723" duration="5516000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Vuepress test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vuepress test" />
+  </component>
+</project>

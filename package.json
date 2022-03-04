@@ -1,0 +1,21 @@
+{
+  "name": "doi-styleguide",
+  "version": "1.0.0",
+  "description": "A styleguide for the DOI using VuePress",
+  "main": "index.html",
+  "repository": "https://github.com/We-Are-Tank/DOI-Styleguide",
+  "author": "Morgan Paki <morgan@psdesignstudio.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src --dest docs --debug"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-register-components": "^2.0.0-beta.36",
+    "vuepress": "^2.0.0-beta.36"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
