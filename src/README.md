@@ -60,8 +60,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ### This is a bootstrap table
 
 <div>
-  <table class="table">
-    <thead class="thead-dark">
+  <table class="table table-light table-striped">
+    <thead>
       <tr>
         <th scope="col">#</th>
         <th scope="col">First</th>

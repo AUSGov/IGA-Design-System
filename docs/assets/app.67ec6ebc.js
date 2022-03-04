@@ -5199,8 +5199,8 @@ function whenTransitionEnds(el, expectedType, explicitTimeout, resolve2) {
   el.addEventListener(endEvent, onEnd);
 }
 function getTransitionInfo(el, expectedType) {
-  const styles = window.getComputedStyle(el);
-  const getStyleProperties = (key) => (styles[key] || "").split(", ");
+  const styles2 = window.getComputedStyle(el);
+  const getStyleProperties = (key) => (styles2[key] || "").split(", ");
   const transitionDelays = getStyleProperties(TRANSITION + "Delay");
   const transitionDurations = getStyleProperties(TRANSITION + "Duration");
   const transitionTimeout = getTimeout(transitionDelays, transitionDurations);
@@ -5227,7 +5227,7 @@ function getTransitionInfo(el, expectedType) {
     type = timeout > 0 ? transitionTimeout > animationTimeout ? TRANSITION : ANIMATION : null;
     propCount = type ? type === TRANSITION ? transitionDurations.length : animationDurations.length : 0;
   }
-  const hasTransform = type === TRANSITION && /\b(transform|all)(,|$)/.test(styles[TRANSITION + "Property"]);
+  const hasTransform = type === TRANSITION && /\b(transform|all)(,|$)/.test(styles2[TRANSITION + "Property"]);
   return {
     type,
     timeout,
@@ -6975,16 +6975,16 @@ const __vitePreload = function preload(baseModule, deps) {
 const pagesComponents = {
   "v-8daa1a0e": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-8daa1a0e" */
-    "./index.html.04ed548b.js"
-  ), true ? ["assets/index.html.04ed548b.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+    "./index.html.e972e63e.js"
+  ), true ? ["assets/index.html.e972e63e.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
   "v-52062726": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-52062726" */
-    "./introduction.html.4d890834.js"
-  ), true ? ["assets/introduction.html.4d890834.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+    "./introduction.html.e4c06959.js"
+  ), true ? ["assets/introduction.html.e4c06959.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
   "v-15554e84": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-15554e84" */
-    "./index.html.63a3fcd8.js"
-  ), true ? ["assets/index.html.63a3fcd8.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+    "./index.html.64406475.js"
+  ), true ? ["assets/index.html.64406475.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
   "v-3706649a": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-3706649a" */
     "./404.html.229bc4e7.js"
@@ -6993,15 +6993,15 @@ const pagesComponents = {
 const pagesData$1 = {
   "v-8daa1a0e": () => __vitePreload(() => import(
     /* webpackChunkName: "v-8daa1a0e" */
-    "./index.html.72173e95.js"
+    "./index.html.ba08dd1a.js"
   ), true ? [] : void 0).then(({ data }) => data),
   "v-52062726": () => __vitePreload(() => import(
     /* webpackChunkName: "v-52062726" */
-    "./introduction.html.feeee0a0.js"
+    "./introduction.html.6ad68b14.js"
   ), true ? [] : void 0).then(({ data }) => data),
   "v-15554e84": () => __vitePreload(() => import(
     /* webpackChunkName: "v-15554e84" */
-    "./index.html.8dd4791b.js"
+    "./index.html.ed74c536.js"
   ), true ? [] : void 0).then(({ data }) => data),
   "v-3706649a": () => __vitePreload(() => import(
     /* webpackChunkName: "v-3706649a" */
@@ -7109,12 +7109,12 @@ Content.props = {
 const layoutComponents = {
   "404": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "layout-404" */
-    "./404.c3c64d96.js"
+    "./404.ca2a7161.js"
   ), true ? [] : void 0)),
   "Layout": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "layout-Layout" */
-    "./Layout.8e414e36.js"
-  ), true ? ["assets/Layout.8e414e36.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0))
+    "./Layout.336df276.js"
+  ), true ? ["assets/Layout.336df276.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0))
 };
 const resolveHeadIdentifier = ([tag, attrs, content]) => {
   if (tag === "meta" && attrs.name) {
@@ -7739,7 +7739,8 @@ var clientAppEnhance1 = defineClientAppEnhance(({ app, router }) => {
 const themeData$1 = {
   "logo": null,
   "logoDark": null,
-  "darkMode": false,
+  "darkMode": true,
+  "contributors": false,
   "navbar": [
     {
       "text": "Home",
@@ -7773,7 +7774,6 @@ const themeData$1 = {
   "editLinkText": "Edit this page",
   "lastUpdated": true,
   "lastUpdatedText": "Last Updated",
-  "contributors": true,
   "contributorsText": "Contributors",
   "notFound": [
     "There's nothing here.",
@@ -8394,14 +8394,18 @@ var clientAppEnhance3 = defineClientAppEnhance(({ app, router }) => {
   };
 });
 var clientAppEnhance4 = ({ app }) => {
-  app.component("Test", defineAsyncComponent(() => __vitePreload(() => import("./Test.5c26dd31.js"), true ? ["assets/Test.5c26dd31.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)));
+  app.component("Test", defineAsyncComponent(() => __vitePreload(() => import("./Test.4866b1ce.js"), true ? ["assets/Test.4866b1ce.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)));
 };
+var styles = "";
+var clientAppEnhance5 = defineClientAppEnhance(({ app, router, siteData: siteData2 }) => {
+});
 const clientAppEnhances = [
   clientAppEnhance0,
   clientAppEnhance1,
   clientAppEnhance2,
   clientAppEnhance3,
-  clientAppEnhance4
+  clientAppEnhance4,
+  clientAppEnhance5
 ];
 function r(r2, e, n) {
   var i, t, o;

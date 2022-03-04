@@ -351,7 +351,8 @@ var clientAppEnhance1 = defineClientAppEnhance(({ app, router }) => {
 const themeData$1 = {
   "logo": null,
   "logoDark": null,
-  "darkMode": false,
+  "darkMode": true,
+  "contributors": false,
   "navbar": [
     {
       "text": "Home",
@@ -385,7 +386,6 @@ const themeData$1 = {
   "editLinkText": "Edit this page",
   "lastUpdated": true,
   "lastUpdatedText": "Last Updated",
-  "contributors": true,
   "contributorsText": "Contributors",
   "notFound": [
     "There's nothing here.",
@@ -770,12 +770,16 @@ var clientAppEnhance4 = ({ app }) => {
     return Test$1;
   })));
 };
+var styles = "";
+var clientAppEnhance5 = defineClientAppEnhance(({ app, router, siteData: siteData2 }) => {
+});
 const clientAppEnhances = [
   clientAppEnhance0,
   clientAppEnhance1,
   clientAppEnhance2,
   clientAppEnhance3,
-  clientAppEnhance4
+  clientAppEnhance4,
+  clientAppEnhance5
 ];
 function r(r2, e, n) {
   var i, t, o;
@@ -1281,7 +1285,7 @@ function _sfc_ssrRender$5(_ctx, _push, _parent, _attrs) {
   }, _parent));
   _push(`<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><h2 id="test-heading" tabindex="-1"><a class="header-anchor" href="#test-heading" aria-hidden="true">#</a> Test heading</h2>`);
   _push(serverRenderer.ssrRenderComponent(_component_Test, null, null, _parent));
-  _push(`<h3 id="this-is-a-bootstrap-table" tabindex="-1"><a class="header-anchor" href="#this-is-a-bootstrap-table" aria-hidden="true">#</a> This is a bootstrap table</h3><div><table class="table"><thead class="thead-dark"><tr><th scope="col">#</th><th scope="col">First</th><th scope="col">Last</th><th scope="col">Handle</th></tr></thead><tbody><tr><th scope="row">1</th><td>Mark</td><td>Otto</td><td>@mdo</td></tr><tr><th scope="row">2</th><td>Jacob</td><td>Thornton</td><td>@fat</td></tr></tbody></table></div><!--]-->`);
+  _push(`<h3 id="this-is-a-bootstrap-table" tabindex="-1"><a class="header-anchor" href="#this-is-a-bootstrap-table" aria-hidden="true">#</a> This is a bootstrap table</h3><div><table class="table table-light table-striped"><thead><tr><th scope="col">#</th><th scope="col">First</th><th scope="col">Last</th><th scope="col">Handle</th></tr></thead><tbody><tr><th scope="row">1</th><td>Mark</td><td>Otto</td><td>@mdo</td></tr><tr><th scope="row">2</th><td>Jacob</td><td>Thornton</td><td>@fat</td></tr></tbody></table></div><!--]-->`);
 }
 const _sfc_setup$p = _sfc_main$p.setup;
 _sfc_main$p.setup = (props, ctx) => {
@@ -1382,7 +1386,9 @@ const data$3 = {
       ]
     }
   ],
-  "git": {},
+  "git": {
+    "updatedTime": 1646367617e3
+  },
   "filePathRelative": "README.md"
 };
 var index_html$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
@@ -1397,7 +1403,9 @@ const data$2 = {
   "frontmatter": {},
   "excerpt": "",
   "headers": [],
-  "git": {},
+  "git": {
+    "updatedTime": 1646367617e3
+  },
   "filePathRelative": "introduction.md"
 };
 var introduction_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
@@ -1416,7 +1424,9 @@ const data$1 = {
   },
   "excerpt": "",
   "headers": [],
-  "git": {},
+  "git": {
+    "updatedTime": 1646367617e3
+  },
   "filePathRelative": "test/README.md"
 };
 var index_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({

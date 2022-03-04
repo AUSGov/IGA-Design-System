@@ -5,6 +5,7 @@ module.exports = {
   lang: 'en-US',
   title: 'Department of Industry',
   description: 'Department of Industry style guide.',
+  bae: '/DOI-Styleguide/',
 
   // theme and its config
   theme: '@vuepress/theme-default',
@@ -12,17 +13,18 @@ module.exports = {
     [
       '@vuepress/register-components',
       {
-        // componentsDir: path.resolve(__dirname, './components'),
-        components: {
-          Test: path.resolve(__dirname, './components/Test.vue'),
-        },
+        componentsDir: path.resolve(__dirname, './components'),
+        // components: {
+        //   Test: path.resolve(__dirname, './components/Test.vue'),
+        // },
       },
     ],
   ],
   themeConfig: {
     logo: null,
     logoDark: null,
-    darkMode: false,
+    darkMode: true,
+    contributors: false,
     themePlugins: {
       activeHeaderLinks: true,
       backToTop: true,

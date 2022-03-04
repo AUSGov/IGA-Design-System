@@ -6,7 +6,9 @@ const data = {
   "frontmatter": {},
   "excerpt": "",
   "headers": [],
-  "git": {},
+  "git": {
+    "updatedTime": 1646367617e3
+  },
   "filePathRelative": "introduction.md"
 };
 export { data };

@@ -36,7 +36,9 @@ const data = {
       ]
     }
   ],
-  "git": {},
+  "git": {
+    "updatedTime": 1646367617e3
+  },
   "filePathRelative": "README.md"
 };
 export { data };

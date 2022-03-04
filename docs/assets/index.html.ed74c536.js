@@ -10,7 +10,9 @@ const data = {
   },
   "excerpt": "",
   "headers": [],
-  "git": {},
+  "git": {
+    "updatedTime": 1646367617e3
+  },
   "filePathRelative": "test/README.md"
 };
 export { data };
