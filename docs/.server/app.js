@@ -351,7 +351,6 @@ var clientAppEnhance1 = defineClientAppEnhance(({ app, router }) => {
 const themeData$1 = {
   "logo": null,
   "logoDark": null,
-  "darkMode": true,
   "contributors": false,
   "navbar": [
     {
@@ -377,6 +376,7 @@ const themeData$1 = {
       "selectLanguageName": "English"
     }
   },
+  "darkMode": true,
   "repo": null,
   "selectLanguageText": "Languages",
   "selectLanguageAriaLabel": "Select language",

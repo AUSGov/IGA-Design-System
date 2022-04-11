@@ -3,7 +3,16 @@ $link-color: $primary !default;
 $link-hover-color: lighten($link-color, 15%) !default;
 $link-decoration: none;
 
-@import 'node_modules/bootstrap/scss/bootstrap';
+$font-family-sans-serif: proxima-nova, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace: "Hack", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+$font-weight-bolder: 700;
+
+@import url("https://use.typekit.net/rnj7aix.css");
+@import "hack-subset.css";
+@import "node_modules/bootstrap/scss/bootstrap";
 
 html {
   &.dark {

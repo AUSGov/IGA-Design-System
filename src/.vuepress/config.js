@@ -23,7 +23,7 @@ module.exports = {
   themeConfig: {
     logo: null,
     logoDark: null,
-    darkMode: true,
+    // darkMode: false,
     contributors: false,
     themePlugins: {
       activeHeaderLinks: true,
