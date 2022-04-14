@@ -1,4 +1,4 @@
 import { defineClientAppEnhance } from '@vuepress/client'
-import './styles/styles.scss'
+import './styles/styleguide/styles.scss'
 
 export default defineClientAppEnhance(({ app, router, siteData }) => {})

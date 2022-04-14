@@ -8,21 +8,19 @@ module.exports = {
   base: process.env.NODE_ENV === 'production' ? '/DOI-Styleguide/' : '/',
 
   // theme and its config
-  theme: '@vuepress/theme-default',
+  theme: path.resolve(__dirname, './theme'),
   plugins: [
     [
       '@vuepress/register-components',
       {
         componentsDir: path.resolve(__dirname, './components'),
-        // components: {
-        //   Test: path.resolve(__dirname, './components/Test.vue'),
-        // },
       },
     ],
+    // '@vuepress/plugin-search'
   ],
   themeConfig: {
-    logo: null,
-    logoDark: null,
+    logo: '/images/diser-logo.svg',
+    logoDark: '/images/diser-logo.svg',
     // darkMode: false,
     contributors: false,
     themePlugins: {
@@ -33,6 +31,7 @@ module.exports = {
       git: true,
       nprogress: true
     },
+    search: true,
     navbar: [
       // nested group - max depth is 2
       {
@@ -40,15 +39,36 @@ module.exports = {
         link: '/',
       },
       {
-        text: 'Introduction',
-        link: '/introduction',
+        text: 'Instructions',
+        link: '/instructions',
+      },
+      {
+        text: 'Typography',
+        link: '/typography',
+      },
+      {
+        text: 'Colour Palette',
+        link: '/colour-palette',
+      },
+      {
+        text: 'Icons',
+        link: '/icons',
+      },
+      {
+        text: 'Atoms',
+        link: '/atoms',
+      },
+      {
+        text: 'Components',
+        link: '/components',
       },
       {
         text: 'Test',
+        link: '/test/',
         children: [
           {
-            text: 'Test home',
-            link: '/test',
+            text: 'Test Hello',
+            link: '/test/hello',
           },
           // {
           //   text: 'SubGroup',
