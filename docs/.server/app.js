@@ -417,16 +417,6 @@ const themeData$1 = {
     {
       "text": "Components",
       "link": "/components"
-    },
-    {
-      "text": "Test",
-      "link": "/test/",
-      "children": [
-        {
-          "text": "Test Hello",
-          "link": "/test/hello"
-        }
-      ]
     }
   ],
   "locales": {
@@ -828,16 +818,12 @@ var clientAppEnhance4 = ({ app }) => {
     return Test$1;
   })));
 };
-var styles = "";
-var clientAppEnhance5 = defineClientAppEnhance(({ app, router, siteData: siteData2 }) => {
-});
 const clientAppEnhances = [
   clientAppEnhance0,
   clientAppEnhance1,
   clientAppEnhance2,
   clientAppEnhance3,
-  clientAppEnhance4,
-  clientAppEnhance5
+  clientAppEnhance4
 ];
 function r(r2, e, n) {
   var i, t, o;
@@ -1560,7 +1546,7 @@ const data$9 = {
     }
   ],
   "git": {
-    "updatedTime": 1646369419e3
+    "updatedTime": 1649918072e3
   },
   "filePathRelative": "README.md"
 };
@@ -1589,7 +1575,7 @@ const data$8 = {
     }
   ],
   "git": {
-    "updatedTime": null
+    "updatedTime": 1649918072e3
   },
   "filePathRelative": "atoms.md"
 };
@@ -1618,7 +1604,7 @@ const data$7 = {
     }
   ],
   "git": {
-    "updatedTime": null
+    "updatedTime": 1649918072e3
   },
   "filePathRelative": "colour-palette.md"
 };
@@ -1647,7 +1633,7 @@ const data$6 = {
     }
   ],
   "git": {
-    "updatedTime": null
+    "updatedTime": 1649918072e3
   },
   "filePathRelative": "components.md"
 };
@@ -1676,7 +1662,7 @@ const data$5 = {
     }
   ],
   "git": {
-    "updatedTime": null
+    "updatedTime": 1649918072e3
   },
   "filePathRelative": "icons.md"
 };
@@ -1705,7 +1691,7 @@ const data$4 = {
     }
   ],
   "git": {
-    "updatedTime": null
+    "updatedTime": 1649918072e3
   },
   "filePathRelative": "instructions.md"
 };
@@ -1734,7 +1720,7 @@ const data$3 = {
     }
   ],
   "git": {
-    "updatedTime": null
+    "updatedTime": 1649918072e3
   },
   "filePathRelative": "typography.md"
 };
@@ -1756,7 +1742,7 @@ const data$2 = {
   "excerpt": "",
   "headers": [],
   "git": {
-    "updatedTime": 1646367617e3
+    "updatedTime": 1649918072e3
   },
   "filePathRelative": "test/README.md"
 };
@@ -1773,7 +1759,7 @@ const data$1 = {
   "excerpt": "",
   "headers": [],
   "git": {
-    "updatedTime": null
+    "updatedTime": 1649918072e3
   },
   "filePathRelative": "test/hello.md"
 };

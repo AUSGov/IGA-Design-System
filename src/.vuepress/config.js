@@ -62,20 +62,6 @@ module.exports = {
         text: 'Components',
         link: '/components',
       },
-      {
-        text: 'Test',
-        link: '/test/',
-        children: [
-          {
-            text: 'Test Hello',
-            link: '/test/hello',
-          },
-          // {
-          //   text: 'SubGroup',
-          //   children: ['/group/sub/foo.md', '/group/sub/bar.md'],
-          // },
-        ],
-      },
       // control when should the item be active
       // {
       //   text: 'Group 2',

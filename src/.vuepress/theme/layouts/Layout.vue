@@ -89,7 +89,6 @@
       </Navbar>
       <PageHeader v-if="$frontmatter.pageHeader"/>
     </slot>
-
     <slot name="sidebar">
       <div id="sidebar-left">
         <SidebarSubMenu/>
@@ -98,15 +97,9 @@
         <SidebarPageSections/>
       </div>
     </slot>
-
     <slot name="page">
       <Home v-if="frontmatter.home" />
-
-      <Transition
-          v-else
-          name="fade-slide-y"
-          mode="out-in"
-      >
+      <Transition v-else name="fade-slide-y" mode="out-in">
         <Page :key="page.path">
           <template #top>
             <slot name="page-top" />
@@ -116,7 +109,6 @@
         </Page>
       </Transition>
     </slot>
-
     <PageFooter/>
   </div>
 </template>
