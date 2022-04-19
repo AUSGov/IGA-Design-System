@@ -2,8 +2,8 @@
 @import '_variables';
 
 .page {
-  padding-top: var(--navbar-height);
-  padding-left: var(--sidebar-width);
+  min-height: calc(100vh - var(--navbar-height));
+  padding-top: 7rem;
 }
 
 .navbar {
@@ -92,7 +92,7 @@
     h4,
     h5,
     h6 {
-      margin-top: 1.5rem;
+      margin-top: 0;
       padding-top: 0;
     }
 
@@ -104,6 +104,10 @@
       top: 0;
     }
   }
+}
+
+.content-container {
+  padding-top: var(--navbar-height);
 }
 
 @media (min-width: ($MQMobile + 1px)) {
@@ -125,9 +129,9 @@ h4,
 h5,
 h6 {
   .theme-default-content:not(.custom) > & {
-    margin-top: calc(0.5rem - var(--navbar-height));
-    padding-top: calc(1rem + var(--navbar-height));
+    margin-top: 0;
     margin-bottom: 0;
+    padding: 0;
 
     &:first-child {
       margin-bottom: 1rem;
@@ -144,7 +148,7 @@ h6 {
 .theme-default-content:not(.custom) {
   @include content_wrapper;
 
-  padding-top: 0;
+  padding: 0;
 
   a:hover {
     text-decoration: underline;
@@ -180,7 +184,6 @@ h6 {
 @media (max-width: $MQMobile) {
   .sidebar {
     top: 0;
-    padding-top: var(--navbar-height);
     transform: translateX(-100%);
   }
 

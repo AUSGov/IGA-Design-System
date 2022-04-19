@@ -184,13 +184,11 @@
       if (!item.children) {
         continue
       }
+      // active child page
       for (const child of item.children) {
         if (isActive(child)) {
           return item
         }
-        continue
-
-
         if (!isRouterLink(child)) {
           continue
         }
@@ -204,13 +202,16 @@
           return item
         }
       }
+      // active parent page
+      if (item.children && isActive(item)) {
+        return item
+      }
     }
     return null
   })
 </script>
 
 <template>
-  {{ activeItem }}
   <aside class="sidebar">
     <ul v-if="activeItem" class="sidebar-items">
       <li

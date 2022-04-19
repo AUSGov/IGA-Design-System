@@ -1,5 +1,9 @@
-$primary: #3eaf7c !default;
-$link-color: $primary !default;
+$primary: #285576 !default;
+$secondary: #3e837c !default;
+$doi-promo: #7ac4c3;
+$doi-action: #a44d8e;
+
+$link-color: $doi-action !default;
 $link-hover-color: lighten($link-color, 15%) !default;
 $link-decoration: none;
 
@@ -11,7 +15,7 @@ $font-weight-bold: 600;
 $font-weight-bolder: 700;
 
 @import url("https://use.typekit.net/rnj7aix.css");
-@import "hack-subset.css";
+@import "hack-subset";
 @import "node_modules/bootstrap/scss/bootstrap";
 
 html {

@@ -87,28 +87,38 @@
           <slot name="navbar-after" />
         </template>
       </Navbar>
+    </slot>
+
+    <div class="content-container">
       <PageHeader v-if="$frontmatter.pageHeader"/>
-    </slot>
-    <slot name="sidebar">
-      <div id="sidebar-left">
-        <SidebarSubMenu/>
-      </div>
-      <div id="sidebar-right">
-        <SidebarPageSections/>
-      </div>
-    </slot>
-    <slot name="page">
-      <Home v-if="frontmatter.home" />
-      <Transition v-else name="fade-slide-y" mode="out-in">
-        <Page :key="page.path">
-          <template #top>
-            <slot name="page-top" />
-          </template>
-          <template #bottom>
-          </template>
-        </Page>
-      </Transition>
-    </slot>
+      <slot name="sidebar">
+        <div id="sidebar-left">
+          <SidebarSubMenu/>
+        </div>
+        <div id="sidebar-right">
+          <SidebarPageSections/>
+        </div>
+      </slot>
+
+      <slot name="page">
+        <Home v-if="frontmatter.home" />
+
+        <Transition
+            v-else
+            name="fade-slide-y"
+            mode="out-in"
+        >
+          <Page :key="page.path">
+            <template #top>
+              <slot name="page-top" />
+            </template>
+            <template #bottom>
+            </template>
+          </Page>
+        </Transition>
+      </slot>
+    </div>
+
     <PageFooter/>
   </div>
 </template>

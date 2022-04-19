@@ -23,6 +23,11 @@
 
   a {
     display: inline-block;
+    color: #000;
+
+    &:hover {
+      color: var(--c-text-accent);
+    }
   }
 
   .navbar-items {

@@ -60,7 +60,65 @@ module.exports = {
       },
       {
         text: 'Components',
-        link: '/components',
+        link: '/components/',
+        children: [
+          {
+            text: 'Navigation',
+            link: '/components/navigation',
+          },
+          {
+            text: 'Banners',
+            link: '/components/banners',
+          },
+          {
+            text: 'Entity Bar',
+            link: '/components/entity-bar',
+          },
+          {
+            text: 'In Section',
+            link: '/components/in-section',
+          },
+          {
+            text: 'On this page',
+            link: '/components/on-this-page',
+          },
+          {
+            text: 'Navigate (pubs)',
+            link: '/components/navigate-pubs',
+          },
+          {
+            text: 'Secondary Footer',
+            link: '/components/secondary-footer',
+          },
+          {
+            text: 'Global Footer',
+            link: '/components/global-footer',
+          },
+          {
+            text: 'Publications',
+            link: '/components/publications',
+          },
+          {
+            text: 'Standard + News',
+            link: '/components/standard-news',
+          },
+          {
+            text: 'Filtered Landing Pages',
+            link: '/components/filtered-landing-pages',
+          },
+          {
+            text: 'Outlier Components and Page Patterns',
+            link: '/components/outlier-components-page-patterns',
+          },
+          {
+            text: 'Homepage',
+            link: '/components/homepage',
+          },
+          {
+            text: 'Tables',
+            link: '/components/tables',
+          },
+        ],
       },
       // control when should the item be active
       // {
