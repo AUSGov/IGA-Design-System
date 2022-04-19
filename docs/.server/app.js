@@ -83,8 +83,44 @@ const pagesComponents = {
   "v-c4dcb49c": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
     return banners_html$2;
   })),
+  "v-285a8fe0": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return entityBar_html$2;
+  })),
+  "v-90a2bd7e": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return filteredLandingPages_html$2;
+  })),
+  "v-438a7798": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return globalFooter_html$2;
+  })),
+  "v-44c8766b": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return homepage_html$2;
+  })),
+  "v-d3ea9508": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return inSection_html$2;
+  })),
+  "v-64129767": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return navigatePubs_html$2;
+  })),
   "v-529917f6": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
     return navigation_html$2;
+  })),
+  "v-33c149a9": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return onThisPage_html$2;
+  })),
+  "v-9b4793cc": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return outlierComponentsPagePatterns_html$2;
+  })),
+  "v-6e2ac232": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return publications_html$2;
+  })),
+  "v-55c84a05": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return secondaryFooter_html$2;
+  })),
+  "v-43819bd4": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return standardNews_html$2;
+  })),
+  "v-2c7cab58": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return tables_html$2;
   })),
   "v-3706649a": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
     return _404_html$2;
@@ -115,8 +151,44 @@ const pagesData$1 = {
   "v-c4dcb49c": () => Promise.resolve().then(function() {
     return banners_html;
   }).then(({ data: data2 }) => data2),
+  "v-285a8fe0": () => Promise.resolve().then(function() {
+    return entityBar_html;
+  }).then(({ data: data2 }) => data2),
+  "v-90a2bd7e": () => Promise.resolve().then(function() {
+    return filteredLandingPages_html;
+  }).then(({ data: data2 }) => data2),
+  "v-438a7798": () => Promise.resolve().then(function() {
+    return globalFooter_html;
+  }).then(({ data: data2 }) => data2),
+  "v-44c8766b": () => Promise.resolve().then(function() {
+    return homepage_html;
+  }).then(({ data: data2 }) => data2),
+  "v-d3ea9508": () => Promise.resolve().then(function() {
+    return inSection_html;
+  }).then(({ data: data2 }) => data2),
+  "v-64129767": () => Promise.resolve().then(function() {
+    return navigatePubs_html;
+  }).then(({ data: data2 }) => data2),
   "v-529917f6": () => Promise.resolve().then(function() {
     return navigation_html;
+  }).then(({ data: data2 }) => data2),
+  "v-33c149a9": () => Promise.resolve().then(function() {
+    return onThisPage_html;
+  }).then(({ data: data2 }) => data2),
+  "v-9b4793cc": () => Promise.resolve().then(function() {
+    return outlierComponentsPagePatterns_html;
+  }).then(({ data: data2 }) => data2),
+  "v-6e2ac232": () => Promise.resolve().then(function() {
+    return publications_html;
+  }).then(({ data: data2 }) => data2),
+  "v-55c84a05": () => Promise.resolve().then(function() {
+    return secondaryFooter_html;
+  }).then(({ data: data2 }) => data2),
+  "v-43819bd4": () => Promise.resolve().then(function() {
+    return standardNews_html;
+  }).then(({ data: data2 }) => data2),
+  "v-2c7cab58": () => Promise.resolve().then(function() {
+    return tables_html;
   }).then(({ data: data2 }) => data2),
   "v-3706649a": () => Promise.resolve().then(function() {
     return _404_html;
@@ -541,7 +613,7 @@ var clientAppEnhance2 = defineClientAppEnhance(({ app }) => {
     }
   });
 });
-const _sfc_main$A = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$M = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   props: {
     type: {
@@ -575,11 +647,11 @@ const _sfc_main$A = /* @__PURE__ */ vue.defineComponent({
     };
   }
 });
-const _sfc_setup$A = _sfc_main$A.setup;
-_sfc_main$A.setup = (props, ctx) => {
+const _sfc_setup$M = _sfc_main$M.setup;
+_sfc_main$M.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/global/Badge.vue");
-  return _sfc_setup$A ? _sfc_setup$A(props, ctx) : void 0;
+  return _sfc_setup$M ? _sfc_setup$M(props, ctx) : void 0;
 };
 var CodeGroup = vue.defineComponent({
   name: "CodeGroup",
@@ -662,7 +734,7 @@ var CodeGroup = vue.defineComponent({
 const __default__$1 = vue.defineComponent({
   name: "CodeGroupItem"
 });
-const _sfc_main$z = /* @__PURE__ */ vue.defineComponent(__spreadProps(__spreadValues({}, __default__$1), {
+const _sfc_main$L = /* @__PURE__ */ vue.defineComponent(__spreadProps(__spreadValues({}, __default__$1), {
   __ssrInlineRender: true,
   props: {
     title: {
@@ -686,11 +758,11 @@ const _sfc_main$z = /* @__PURE__ */ vue.defineComponent(__spreadProps(__spreadVa
     };
   }
 }));
-const _sfc_setup$z = _sfc_main$z.setup;
-_sfc_main$z.setup = (props, ctx) => {
+const _sfc_setup$L = _sfc_main$L.setup;
+_sfc_main$L.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/global/CodeGroupItem.vue");
-  return _sfc_setup$z ? _sfc_setup$z(props, ctx) : void 0;
+  return _sfc_setup$L ? _sfc_setup$L(props, ctx) : void 0;
 };
 const darkModeSymbol = Symbol("");
 const useDarkMode = () => {
@@ -855,9 +927,9 @@ const resolveMultiSidebarItems = (sidebarConfig, sidebarDepth) => {
 const useThemeLocaleData = () => useThemeLocaleData$1();
 var index = "";
 var clientAppEnhance3 = defineClientAppEnhance(({ app, router }) => {
-  app.component("Badge", _sfc_main$A);
+  app.component("Badge", _sfc_main$M);
   app.component("CodeGroup", CodeGroup);
-  app.component("CodeGroupItem", _sfc_main$z);
+  app.component("CodeGroupItem", _sfc_main$L);
   app.component("NavbarSearch", () => {
     const SearchComponent = app.component("Docsearch") || app.component("SearchBox");
     if (SearchComponent) {
@@ -987,7 +1059,19 @@ const routeItems = [
   ["v-be99661e", "/typography.html", { "title": "Typography" }, ["/typography", "/typography.md"]],
   ["v-1020f180", "/components/", { "title": "Components" }, ["/components/index.html", "/components/README.md"]],
   ["v-c4dcb49c", "/components/banners.html", { "title": "" }, ["/components/banners", "/components/banners.md"]],
+  ["v-285a8fe0", "/components/entity-bar.html", { "title": "" }, ["/components/entity-bar", "/components/entity-bar.md"]],
+  ["v-90a2bd7e", "/components/filtered-landing-pages.html", { "title": "" }, ["/components/filtered-landing-pages", "/components/filtered-landing-pages.md"]],
+  ["v-438a7798", "/components/global-footer.html", { "title": "" }, ["/components/global-footer", "/components/global-footer.md"]],
+  ["v-44c8766b", "/components/homepage.html", { "title": "" }, ["/components/homepage", "/components/homepage.md"]],
+  ["v-d3ea9508", "/components/in-section.html", { "title": "" }, ["/components/in-section", "/components/in-section.md"]],
+  ["v-64129767", "/components/navigate-pubs.html", { "title": "" }, ["/components/navigate-pubs", "/components/navigate-pubs.md"]],
   ["v-529917f6", "/components/navigation.html", { "title": "" }, ["/components/navigation", "/components/navigation.md"]],
+  ["v-33c149a9", "/components/on-this-page.html", { "title": "" }, ["/components/on-this-page", "/components/on-this-page.md"]],
+  ["v-9b4793cc", "/components/outlier-components-page-patterns.html", { "title": "" }, ["/components/outlier-components-page-patterns", "/components/outlier-components-page-patterns.md"]],
+  ["v-6e2ac232", "/components/publications.html", { "title": "" }, ["/components/publications", "/components/publications.md"]],
+  ["v-55c84a05", "/components/secondary-footer.html", { "title": "" }, ["/components/secondary-footer", "/components/secondary-footer.md"]],
+  ["v-43819bd4", "/components/standard-news.html", { "title": "" }, ["/components/standard-news", "/components/standard-news.md"]],
+  ["v-2c7cab58", "/components/tables.html", { "title": "" }, ["/components/tables", "/components/tables.md"]],
   ["v-3706649a", "/404.html", { "title": "" }, ["/404"]]
 ];
 const pagesRoutes = routeItems.reduce((result, [name, path, meta, redirects]) => {
@@ -1118,8 +1202,8 @@ var _export_sfc = (sfc, props) => {
   }
   return target;
 };
-const _sfc_main$y = {};
-function _sfc_ssrRender$d(_ctx, _push, _parent, _attrs) {
+const _sfc_main$K = {};
+function _sfc_ssrRender$p(_ctx, _push, _parent, _attrs) {
   const _component_CodeGroup = vue.resolveComponent("CodeGroup");
   const _component_CodeGroupItem = vue.resolveComponent("CodeGroupItem");
   const _component_Test = vue.resolveComponent("Test");
@@ -1395,160 +1479,376 @@ function _sfc_ssrRender$d(_ctx, _push, _parent, _attrs) {
   _push(serverRenderer.ssrRenderComponent(_component_Test, null, null, _parent));
   _push(`<h3 id="this-is-a-bootstrap-table" tabindex="-1"><a class="header-anchor" href="#this-is-a-bootstrap-table" aria-hidden="true">#</a> This is a bootstrap table</h3><div><table class="table table-light table-striped"><thead><tr><th scope="col">#</th><th scope="col">First</th><th scope="col">Last</th><th scope="col">Handle</th></tr></thead><tbody><tr><th scope="row">1</th><td>Mark</td><td>Otto</td><td>@mdo</td></tr><tr><th scope="row">2</th><td>Jacob</td><td>Thornton</td><td>@fat</td></tr></tbody></table></div><!--]-->`);
 }
-const _sfc_setup$y = _sfc_main$y.setup;
-_sfc_main$y.setup = (props, ctx) => {
+const _sfc_setup$K = _sfc_main$K.setup;
+_sfc_main$K.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/index.html.vue");
-  return _sfc_setup$y ? _sfc_setup$y(props, ctx) : void 0;
+  return _sfc_setup$K ? _sfc_setup$K(props, ctx) : void 0;
 };
-var index_html$4 = /* @__PURE__ */ _export_sfc(_sfc_main$y, [["ssrRender", _sfc_ssrRender$d]]);
+var index_html$4 = /* @__PURE__ */ _export_sfc(_sfc_main$K, [["ssrRender", _sfc_ssrRender$p]]);
 var index_html$5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": index_html$4
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$x = {};
-function _sfc_ssrRender$c(_ctx, _push, _parent, _attrs) {
+const _sfc_main$J = {};
+function _sfc_ssrRender$o(_ctx, _push, _parent, _attrs) {
   _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
     id: "atoms",
     tabindex: "-1"
   }, _attrs))}><a class="header-anchor" href="#atoms" aria-hidden="true">#</a> Atoms</h2>`);
 }
-const _sfc_setup$x = _sfc_main$x.setup;
-_sfc_main$x.setup = (props, ctx) => {
+const _sfc_setup$J = _sfc_main$J.setup;
+_sfc_main$J.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/atoms.html.vue");
-  return _sfc_setup$x ? _sfc_setup$x(props, ctx) : void 0;
+  return _sfc_setup$J ? _sfc_setup$J(props, ctx) : void 0;
 };
-var atoms_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$x, [["ssrRender", _sfc_ssrRender$c]]);
+var atoms_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$J, [["ssrRender", _sfc_ssrRender$o]]);
 var atoms_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": atoms_html$1
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$w = {};
-function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs) {
+const _sfc_main$I = {};
+function _sfc_ssrRender$n(_ctx, _push, _parent, _attrs) {
   _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
     id: "colour-palette",
     tabindex: "-1"
   }, _attrs))}><a class="header-anchor" href="#colour-palette" aria-hidden="true">#</a> Colour Palette</h2>`);
 }
-const _sfc_setup$w = _sfc_main$w.setup;
-_sfc_main$w.setup = (props, ctx) => {
+const _sfc_setup$I = _sfc_main$I.setup;
+_sfc_main$I.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/colour-palette.html.vue");
-  return _sfc_setup$w ? _sfc_setup$w(props, ctx) : void 0;
+  return _sfc_setup$I ? _sfc_setup$I(props, ctx) : void 0;
 };
-var colourPalette_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["ssrRender", _sfc_ssrRender$b]]);
+var colourPalette_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$I, [["ssrRender", _sfc_ssrRender$n]]);
 var colourPalette_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": colourPalette_html$1
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$v = {};
-function _sfc_ssrRender$a(_ctx, _push, _parent, _attrs) {
+const _sfc_main$H = {};
+function _sfc_ssrRender$m(_ctx, _push, _parent, _attrs) {
   _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
     id: "icons",
     tabindex: "-1"
   }, _attrs))}><a class="header-anchor" href="#icons" aria-hidden="true">#</a> Icons</h2>`);
 }
-const _sfc_setup$v = _sfc_main$v.setup;
-_sfc_main$v.setup = (props, ctx) => {
+const _sfc_setup$H = _sfc_main$H.setup;
+_sfc_main$H.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/icons.html.vue");
-  return _sfc_setup$v ? _sfc_setup$v(props, ctx) : void 0;
+  return _sfc_setup$H ? _sfc_setup$H(props, ctx) : void 0;
 };
-var icons_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["ssrRender", _sfc_ssrRender$a]]);
+var icons_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$H, [["ssrRender", _sfc_ssrRender$m]]);
 var icons_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": icons_html$1
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$u = {};
-function _sfc_ssrRender$9(_ctx, _push, _parent, _attrs) {
+const _sfc_main$G = {};
+function _sfc_ssrRender$l(_ctx, _push, _parent, _attrs) {
   _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
     id: "instructions",
     tabindex: "-1"
   }, _attrs))}><a class="header-anchor" href="#instructions" aria-hidden="true">#</a> Instructions</h2>`);
 }
-const _sfc_setup$u = _sfc_main$u.setup;
-_sfc_main$u.setup = (props, ctx) => {
+const _sfc_setup$G = _sfc_main$G.setup;
+_sfc_main$G.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/instructions.html.vue");
-  return _sfc_setup$u ? _sfc_setup$u(props, ctx) : void 0;
+  return _sfc_setup$G ? _sfc_setup$G(props, ctx) : void 0;
 };
-var instructions_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["ssrRender", _sfc_ssrRender$9]]);
+var instructions_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$G, [["ssrRender", _sfc_ssrRender$l]]);
 var instructions_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": instructions_html$1
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$t = {};
-function _sfc_ssrRender$8(_ctx, _push, _parent, _attrs) {
+const _sfc_main$F = {};
+function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs) {
   _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
     id: "typography",
     tabindex: "-1"
   }, _attrs))}><a class="header-anchor" href="#typography" aria-hidden="true">#</a> Typography</h2>`);
 }
-const _sfc_setup$t = _sfc_main$t.setup;
-_sfc_main$t.setup = (props, ctx) => {
+const _sfc_setup$F = _sfc_main$F.setup;
+_sfc_main$F.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/typography.html.vue");
-  return _sfc_setup$t ? _sfc_setup$t(props, ctx) : void 0;
+  return _sfc_setup$F ? _sfc_setup$F(props, ctx) : void 0;
 };
-var typography_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$t, [["ssrRender", _sfc_ssrRender$8]]);
+var typography_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$F, [["ssrRender", _sfc_ssrRender$k]]);
 var typography_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": typography_html$1
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$s = {};
-function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs) {
+const _sfc_main$E = {};
+function _sfc_ssrRender$j(_ctx, _push, _parent, _attrs) {
   _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
     id: "components",
     tabindex: "-1"
   }, _attrs))}><a class="header-anchor" href="#components" aria-hidden="true">#</a> Components</h2>`);
 }
-const _sfc_setup$s = _sfc_main$s.setup;
-_sfc_main$s.setup = (props, ctx) => {
+const _sfc_setup$E = _sfc_main$E.setup;
+_sfc_main$E.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/components/index.html.vue");
-  return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
+  return _sfc_setup$E ? _sfc_setup$E(props, ctx) : void 0;
 };
-var index_html$2 = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["ssrRender", _sfc_ssrRender$7]]);
+var index_html$2 = /* @__PURE__ */ _export_sfc(_sfc_main$E, [["ssrRender", _sfc_ssrRender$j]]);
 var index_html$3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": index_html$2
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$r = {};
-function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs) {
+const _sfc_main$D = {};
+function _sfc_ssrRender$i(_ctx, _push, _parent, _attrs) {
   _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
     id: "banners",
     tabindex: "-1"
   }, _attrs))}><a class="header-anchor" href="#banners" aria-hidden="true">#</a> Banners</h2>`);
 }
-const _sfc_setup$r = _sfc_main$r.setup;
-_sfc_main$r.setup = (props, ctx) => {
+const _sfc_setup$D = _sfc_main$D.setup;
+_sfc_main$D.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/components/banners.html.vue");
-  return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
+  return _sfc_setup$D ? _sfc_setup$D(props, ctx) : void 0;
 };
-var banners_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["ssrRender", _sfc_ssrRender$6]]);
+var banners_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$D, [["ssrRender", _sfc_ssrRender$i]]);
 var banners_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": banners_html$1
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$q = {};
-function _sfc_ssrRender$5(_ctx, _push, _parent, _attrs) {
+const _sfc_main$C = {};
+function _sfc_ssrRender$h(_ctx, _push, _parent, _attrs) {
+  _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
+    id: "entity-bar",
+    tabindex: "-1"
+  }, _attrs))}><a class="header-anchor" href="#entity-bar" aria-hidden="true">#</a> Entity Bar</h2>`);
+}
+const _sfc_setup$C = _sfc_main$C.setup;
+_sfc_main$C.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/components/entity-bar.html.vue");
+  return _sfc_setup$C ? _sfc_setup$C(props, ctx) : void 0;
+};
+var entityBar_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["ssrRender", _sfc_ssrRender$h]]);
+var entityBar_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": entityBar_html$1
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$B = {};
+function _sfc_ssrRender$g(_ctx, _push, _parent, _attrs) {
+  _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
+    id: "filtered-landing-pages",
+    tabindex: "-1"
+  }, _attrs))}><a class="header-anchor" href="#filtered-landing-pages" aria-hidden="true">#</a> Filtered Landing Pages</h2>`);
+}
+const _sfc_setup$B = _sfc_main$B.setup;
+_sfc_main$B.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/components/filtered-landing-pages.html.vue");
+  return _sfc_setup$B ? _sfc_setup$B(props, ctx) : void 0;
+};
+var filteredLandingPages_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$B, [["ssrRender", _sfc_ssrRender$g]]);
+var filteredLandingPages_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": filteredLandingPages_html$1
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$A = {};
+function _sfc_ssrRender$f(_ctx, _push, _parent, _attrs) {
+  _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
+    id: "global-footer",
+    tabindex: "-1"
+  }, _attrs))}><a class="header-anchor" href="#global-footer" aria-hidden="true">#</a> Global Footer</h2>`);
+}
+const _sfc_setup$A = _sfc_main$A.setup;
+_sfc_main$A.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/components/global-footer.html.vue");
+  return _sfc_setup$A ? _sfc_setup$A(props, ctx) : void 0;
+};
+var globalFooter_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$A, [["ssrRender", _sfc_ssrRender$f]]);
+var globalFooter_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": globalFooter_html$1
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$z = {};
+function _sfc_ssrRender$e(_ctx, _push, _parent, _attrs) {
+  _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
+    id: "homepage",
+    tabindex: "-1"
+  }, _attrs))}><a class="header-anchor" href="#homepage" aria-hidden="true">#</a> Homepage</h2>`);
+}
+const _sfc_setup$z = _sfc_main$z.setup;
+_sfc_main$z.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/components/homepage.html.vue");
+  return _sfc_setup$z ? _sfc_setup$z(props, ctx) : void 0;
+};
+var homepage_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$z, [["ssrRender", _sfc_ssrRender$e]]);
+var homepage_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": homepage_html$1
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$y = {};
+function _sfc_ssrRender$d(_ctx, _push, _parent, _attrs) {
+  _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
+    id: "in-section",
+    tabindex: "-1"
+  }, _attrs))}><a class="header-anchor" href="#in-section" aria-hidden="true">#</a> In Section</h2>`);
+}
+const _sfc_setup$y = _sfc_main$y.setup;
+_sfc_main$y.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/components/in-section.html.vue");
+  return _sfc_setup$y ? _sfc_setup$y(props, ctx) : void 0;
+};
+var inSection_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$y, [["ssrRender", _sfc_ssrRender$d]]);
+var inSection_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": inSection_html$1
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$x = {};
+function _sfc_ssrRender$c(_ctx, _push, _parent, _attrs) {
+  _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
+    id: "navigate-pubs",
+    tabindex: "-1"
+  }, _attrs))}><a class="header-anchor" href="#navigate-pubs" aria-hidden="true">#</a> Navigate (pubs)</h2>`);
+}
+const _sfc_setup$x = _sfc_main$x.setup;
+_sfc_main$x.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/components/navigate-pubs.html.vue");
+  return _sfc_setup$x ? _sfc_setup$x(props, ctx) : void 0;
+};
+var navigatePubs_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$x, [["ssrRender", _sfc_ssrRender$c]]);
+var navigatePubs_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": navigatePubs_html$1
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$w = {};
+function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs) {
   _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
     id: "navigation",
     tabindex: "-1"
   }, _attrs))}><a class="header-anchor" href="#navigation" aria-hidden="true">#</a> Navigation</h2>`);
 }
-const _sfc_setup$q = _sfc_main$q.setup;
-_sfc_main$q.setup = (props, ctx) => {
+const _sfc_setup$w = _sfc_main$w.setup;
+_sfc_main$w.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/components/navigation.html.vue");
-  return _sfc_setup$q ? _sfc_setup$q(props, ctx) : void 0;
+  return _sfc_setup$w ? _sfc_setup$w(props, ctx) : void 0;
 };
-var navigation_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["ssrRender", _sfc_ssrRender$5]]);
+var navigation_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["ssrRender", _sfc_ssrRender$b]]);
 var navigation_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": navigation_html$1
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$v = {};
+function _sfc_ssrRender$a(_ctx, _push, _parent, _attrs) {
+  _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
+    id: "on-this-page",
+    tabindex: "-1"
+  }, _attrs))}><a class="header-anchor" href="#on-this-page" aria-hidden="true">#</a> On this page</h2>`);
+}
+const _sfc_setup$v = _sfc_main$v.setup;
+_sfc_main$v.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/components/on-this-page.html.vue");
+  return _sfc_setup$v ? _sfc_setup$v(props, ctx) : void 0;
+};
+var onThisPage_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["ssrRender", _sfc_ssrRender$a]]);
+var onThisPage_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": onThisPage_html$1
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$u = {};
+function _sfc_ssrRender$9(_ctx, _push, _parent, _attrs) {
+  _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
+    id: "outlier-components-and-page-patterns",
+    tabindex: "-1"
+  }, _attrs))}><a class="header-anchor" href="#outlier-components-and-page-patterns" aria-hidden="true">#</a> Outlier Components and Page Patterns</h2>`);
+}
+const _sfc_setup$u = _sfc_main$u.setup;
+_sfc_main$u.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/components/outlier-components-page-patterns.html.vue");
+  return _sfc_setup$u ? _sfc_setup$u(props, ctx) : void 0;
+};
+var outlierComponentsPagePatterns_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["ssrRender", _sfc_ssrRender$9]]);
+var outlierComponentsPagePatterns_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": outlierComponentsPagePatterns_html$1
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$t = {};
+function _sfc_ssrRender$8(_ctx, _push, _parent, _attrs) {
+  _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
+    id: "publications",
+    tabindex: "-1"
+  }, _attrs))}><a class="header-anchor" href="#publications" aria-hidden="true">#</a> Publications</h2>`);
+}
+const _sfc_setup$t = _sfc_main$t.setup;
+_sfc_main$t.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/components/publications.html.vue");
+  return _sfc_setup$t ? _sfc_setup$t(props, ctx) : void 0;
+};
+var publications_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$t, [["ssrRender", _sfc_ssrRender$8]]);
+var publications_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": publications_html$1
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$s = {};
+function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs) {
+  _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
+    id: "secondary-footer",
+    tabindex: "-1"
+  }, _attrs))}><a class="header-anchor" href="#secondary-footer" aria-hidden="true">#</a> Secondary Footer</h2>`);
+}
+const _sfc_setup$s = _sfc_main$s.setup;
+_sfc_main$s.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/components/secondary-footer.html.vue");
+  return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
+};
+var secondaryFooter_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["ssrRender", _sfc_ssrRender$7]]);
+var secondaryFooter_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": secondaryFooter_html$1
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$r = {};
+function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs) {
+  _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
+    id: "standard-news",
+    tabindex: "-1"
+  }, _attrs))}><a class="header-anchor" href="#standard-news" aria-hidden="true">#</a> Standard News</h2>`);
+}
+const _sfc_setup$r = _sfc_main$r.setup;
+_sfc_main$r.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/components/standard-news.html.vue");
+  return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
+};
+var standardNews_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["ssrRender", _sfc_ssrRender$6]]);
+var standardNews_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": standardNews_html$1
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$q = {};
+function _sfc_ssrRender$5(_ctx, _push, _parent, _attrs) {
+  _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
+    id: "tables",
+    tabindex: "-1"
+  }, _attrs))}><a class="header-anchor" href="#tables" aria-hidden="true">#</a> Tables</h2>`);
+}
+const _sfc_setup$q = _sfc_main$q.setup;
+_sfc_main$q.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/components/tables.html.vue");
+  return _sfc_setup$q ? _sfc_setup$q(props, ctx) : void 0;
+};
+var tables_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["ssrRender", _sfc_ssrRender$5]]);
+var tables_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": tables_html$1
 }, Symbol.toStringTag, { value: "Module" }));
 const _sfc_main$p = {};
 function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs) {
@@ -1564,7 +1864,7 @@ var _404_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePro
   __proto__: null,
   "default": _404_html$1
 }, Symbol.toStringTag, { value: "Module" }));
-const data$9 = {
+const data$l = {
   "key": "v-8daa1a0e",
   "path": "/",
   "title": "Home",
@@ -1610,9 +1910,9 @@ const data$9 = {
 };
 var index_html$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  data: data$9
+  data: data$l
 }, Symbol.toStringTag, { value: "Module" }));
-const data$8 = {
+const data$k = {
   "key": "v-32e68ee0",
   "path": "/atoms.html",
   "title": "Atoms",
@@ -1639,9 +1939,9 @@ const data$8 = {
 };
 var atoms_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  data: data$8
+  data: data$k
 }, Symbol.toStringTag, { value: "Module" }));
-const data$7 = {
+const data$j = {
   "key": "v-58900206",
   "path": "/colour-palette.html",
   "title": "Colour Palette",
@@ -1668,9 +1968,9 @@ const data$7 = {
 };
 var colourPalette_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  data: data$7
+  data: data$j
 }, Symbol.toStringTag, { value: "Module" }));
-const data$6 = {
+const data$i = {
   "key": "v-3599c490",
   "path": "/icons.html",
   "title": "Icons",
@@ -1697,9 +1997,9 @@ const data$6 = {
 };
 var icons_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  data: data$6
+  data: data$i
 }, Symbol.toStringTag, { value: "Module" }));
-const data$5 = {
+const data$h = {
   "key": "v-a200cf0a",
   "path": "/instructions.html",
   "title": "Instructions",
@@ -1726,9 +2026,9 @@ const data$5 = {
 };
 var instructions_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  data: data$5
+  data: data$h
 }, Symbol.toStringTag, { value: "Module" }));
-const data$4 = {
+const data$g = {
   "key": "v-be99661e",
   "path": "/typography.html",
   "title": "Typography",
@@ -1755,9 +2055,9 @@ const data$4 = {
 };
 var typography_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  data: data$4
+  data: data$g
 }, Symbol.toStringTag, { value: "Module" }));
-const data$3 = {
+const data$f = {
   "key": "v-1020f180",
   "path": "/components/",
   "title": "Components",
@@ -1778,15 +2078,15 @@ const data$3 = {
     }
   ],
   "git": {
-    "updatedTime": null
+    "updatedTime": 1650337885e3
   },
   "filePathRelative": "components/README.md"
 };
 var index_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  data: data$3
+  data: data$f
 }, Symbol.toStringTag, { value: "Module" }));
-const data$2 = {
+const data$e = {
   "key": "v-c4dcb49c",
   "path": "/components/banners.html",
   "title": "",
@@ -1802,15 +2102,159 @@ const data$2 = {
     }
   ],
   "git": {
-    "updatedTime": null
+    "updatedTime": 1650337885e3
   },
   "filePathRelative": "components/banners.md"
 };
 var banners_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  data: data$2
+  data: data$e
 }, Symbol.toStringTag, { value: "Module" }));
-const data$1 = {
+const data$d = {
+  "key": "v-285a8fe0",
+  "path": "/components/entity-bar.html",
+  "title": "",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "Entity Bar",
+      "slug": "entity-bar",
+      "children": []
+    }
+  ],
+  "git": {
+    "updatedTime": 165033935e4
+  },
+  "filePathRelative": "components/entity-bar.md"
+};
+var entityBar_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  data: data$d
+}, Symbol.toStringTag, { value: "Module" }));
+const data$c = {
+  "key": "v-90a2bd7e",
+  "path": "/components/filtered-landing-pages.html",
+  "title": "",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "Filtered Landing Pages",
+      "slug": "filtered-landing-pages",
+      "children": []
+    }
+  ],
+  "git": {
+    "updatedTime": 165033935e4
+  },
+  "filePathRelative": "components/filtered-landing-pages.md"
+};
+var filteredLandingPages_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  data: data$c
+}, Symbol.toStringTag, { value: "Module" }));
+const data$b = {
+  "key": "v-438a7798",
+  "path": "/components/global-footer.html",
+  "title": "",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "Global Footer",
+      "slug": "global-footer",
+      "children": []
+    }
+  ],
+  "git": {
+    "updatedTime": 165033935e4
+  },
+  "filePathRelative": "components/global-footer.md"
+};
+var globalFooter_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  data: data$b
+}, Symbol.toStringTag, { value: "Module" }));
+const data$a = {
+  "key": "v-44c8766b",
+  "path": "/components/homepage.html",
+  "title": "",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "Homepage",
+      "slug": "homepage",
+      "children": []
+    }
+  ],
+  "git": {
+    "updatedTime": 165033935e4
+  },
+  "filePathRelative": "components/homepage.md"
+};
+var homepage_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  data: data$a
+}, Symbol.toStringTag, { value: "Module" }));
+const data$9 = {
+  "key": "v-d3ea9508",
+  "path": "/components/in-section.html",
+  "title": "",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "In Section",
+      "slug": "in-section",
+      "children": []
+    }
+  ],
+  "git": {
+    "updatedTime": 165033935e4
+  },
+  "filePathRelative": "components/in-section.md"
+};
+var inSection_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  data: data$9
+}, Symbol.toStringTag, { value: "Module" }));
+const data$8 = {
+  "key": "v-64129767",
+  "path": "/components/navigate-pubs.html",
+  "title": "",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "Navigate (pubs)",
+      "slug": "navigate-pubs",
+      "children": []
+    }
+  ],
+  "git": {
+    "updatedTime": 165033935e4
+  },
+  "filePathRelative": "components/navigate-pubs.md"
+};
+var navigatePubs_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  data: data$8
+}, Symbol.toStringTag, { value: "Module" }));
+const data$7 = {
   "key": "v-529917f6",
   "path": "/components/navigation.html",
   "title": "",
@@ -1826,11 +2270,155 @@ const data$1 = {
     }
   ],
   "git": {
-    "updatedTime": null
+    "updatedTime": 1650337885e3
   },
   "filePathRelative": "components/navigation.md"
 };
 var navigation_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  data: data$7
+}, Symbol.toStringTag, { value: "Module" }));
+const data$6 = {
+  "key": "v-33c149a9",
+  "path": "/components/on-this-page.html",
+  "title": "",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "On this page",
+      "slug": "on-this-page",
+      "children": []
+    }
+  ],
+  "git": {
+    "updatedTime": 165033935e4
+  },
+  "filePathRelative": "components/on-this-page.md"
+};
+var onThisPage_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  data: data$6
+}, Symbol.toStringTag, { value: "Module" }));
+const data$5 = {
+  "key": "v-9b4793cc",
+  "path": "/components/outlier-components-page-patterns.html",
+  "title": "",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "Outlier Components and Page Patterns",
+      "slug": "outlier-components-and-page-patterns",
+      "children": []
+    }
+  ],
+  "git": {
+    "updatedTime": 165033935e4
+  },
+  "filePathRelative": "components/outlier-components-page-patterns.md"
+};
+var outlierComponentsPagePatterns_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  data: data$5
+}, Symbol.toStringTag, { value: "Module" }));
+const data$4 = {
+  "key": "v-6e2ac232",
+  "path": "/components/publications.html",
+  "title": "",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "Publications",
+      "slug": "publications",
+      "children": []
+    }
+  ],
+  "git": {
+    "updatedTime": 165033935e4
+  },
+  "filePathRelative": "components/publications.md"
+};
+var publications_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  data: data$4
+}, Symbol.toStringTag, { value: "Module" }));
+const data$3 = {
+  "key": "v-55c84a05",
+  "path": "/components/secondary-footer.html",
+  "title": "",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "Secondary Footer",
+      "slug": "secondary-footer",
+      "children": []
+    }
+  ],
+  "git": {
+    "updatedTime": 165033935e4
+  },
+  "filePathRelative": "components/secondary-footer.md"
+};
+var secondaryFooter_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  data: data$3
+}, Symbol.toStringTag, { value: "Module" }));
+const data$2 = {
+  "key": "v-43819bd4",
+  "path": "/components/standard-news.html",
+  "title": "",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "Standard News",
+      "slug": "standard-news",
+      "children": []
+    }
+  ],
+  "git": {
+    "updatedTime": 165033935e4
+  },
+  "filePathRelative": "components/standard-news.md"
+};
+var standardNews_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  data: data$2
+}, Symbol.toStringTag, { value: "Module" }));
+const data$1 = {
+  "key": "v-2c7cab58",
+  "path": "/components/tables.html",
+  "title": "",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "Tables",
+      "slug": "tables",
+      "children": []
+    }
+  ],
+  "git": {
+    "updatedTime": 165033935e4
+  },
+  "filePathRelative": "components/tables.md"
+};
+var tables_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   data: data$1
 }, Symbol.toStringTag, { value: "Module" }));

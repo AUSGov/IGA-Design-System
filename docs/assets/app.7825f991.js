@@ -6955,40 +6955,88 @@ const __vitePreload = function preload(baseModule, deps) {
 const pagesComponents = {
   "v-8daa1a0e": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-8daa1a0e" */
-    "./index.html.90a99edc.js"
-  ), true ? ["assets/index.html.90a99edc.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+    "./index.html.176173a9.js"
+  ), true ? ["assets/index.html.176173a9.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
   "v-32e68ee0": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-32e68ee0" */
-    "./atoms.html.19b6cada.js"
-  ), true ? ["assets/atoms.html.19b6cada.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+    "./atoms.html.0a1a8b5b.js"
+  ), true ? ["assets/atoms.html.0a1a8b5b.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
   "v-58900206": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-58900206" */
-    "./colour-palette.html.83b971ad.js"
-  ), true ? ["assets/colour-palette.html.83b971ad.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+    "./colour-palette.html.fd83d7c7.js"
+  ), true ? ["assets/colour-palette.html.fd83d7c7.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
   "v-3599c490": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-3599c490" */
-    "./icons.html.24d40d1b.js"
-  ), true ? ["assets/icons.html.24d40d1b.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+    "./icons.html.b193abd2.js"
+  ), true ? ["assets/icons.html.b193abd2.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
   "v-a200cf0a": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-a200cf0a" */
-    "./instructions.html.06197b86.js"
-  ), true ? ["assets/instructions.html.06197b86.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+    "./instructions.html.7046759a.js"
+  ), true ? ["assets/instructions.html.7046759a.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
   "v-be99661e": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-be99661e" */
-    "./typography.html.3935aa7a.js"
-  ), true ? ["assets/typography.html.3935aa7a.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+    "./typography.html.68bc7842.js"
+  ), true ? ["assets/typography.html.68bc7842.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
   "v-1020f180": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-1020f180" */
-    "./index.html.f4bc515f.js"
-  ), true ? ["assets/index.html.f4bc515f.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+    "./index.html.1b8d3964.js"
+  ), true ? ["assets/index.html.1b8d3964.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
   "v-c4dcb49c": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-c4dcb49c" */
-    "./banners.html.ff61db3e.js"
-  ), true ? ["assets/banners.html.ff61db3e.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+    "./banners.html.e3675388.js"
+  ), true ? ["assets/banners.html.e3675388.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+  "v-285a8fe0": defineAsyncComponent(() => __vitePreload(() => import(
+    /* webpackChunkName: "v-285a8fe0" */
+    "./entity-bar.html.57c78bb4.js"
+  ), true ? ["assets/entity-bar.html.57c78bb4.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+  "v-90a2bd7e": defineAsyncComponent(() => __vitePreload(() => import(
+    /* webpackChunkName: "v-90a2bd7e" */
+    "./filtered-landing-pages.html.d02b794f.js"
+  ), true ? ["assets/filtered-landing-pages.html.d02b794f.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+  "v-438a7798": defineAsyncComponent(() => __vitePreload(() => import(
+    /* webpackChunkName: "v-438a7798" */
+    "./global-footer.html.ac3d4542.js"
+  ), true ? ["assets/global-footer.html.ac3d4542.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+  "v-44c8766b": defineAsyncComponent(() => __vitePreload(() => import(
+    /* webpackChunkName: "v-44c8766b" */
+    "./homepage.html.e752975c.js"
+  ), true ? ["assets/homepage.html.e752975c.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+  "v-d3ea9508": defineAsyncComponent(() => __vitePreload(() => import(
+    /* webpackChunkName: "v-d3ea9508" */
+    "./in-section.html.91896d4b.js"
+  ), true ? ["assets/in-section.html.91896d4b.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+  "v-64129767": defineAsyncComponent(() => __vitePreload(() => import(
+    /* webpackChunkName: "v-64129767" */
+    "./navigate-pubs.html.f9b8ff6b.js"
+  ), true ? ["assets/navigate-pubs.html.f9b8ff6b.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
   "v-529917f6": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-529917f6" */
-    "./navigation.html.3a9867d1.js"
-  ), true ? ["assets/navigation.html.3a9867d1.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+    "./navigation.html.4e4b3416.js"
+  ), true ? ["assets/navigation.html.4e4b3416.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+  "v-33c149a9": defineAsyncComponent(() => __vitePreload(() => import(
+    /* webpackChunkName: "v-33c149a9" */
+    "./on-this-page.html.3faea17b.js"
+  ), true ? ["assets/on-this-page.html.3faea17b.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+  "v-9b4793cc": defineAsyncComponent(() => __vitePreload(() => import(
+    /* webpackChunkName: "v-9b4793cc" */
+    "./outlier-components-page-patterns.html.86f205be.js"
+  ), true ? ["assets/outlier-components-page-patterns.html.86f205be.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+  "v-6e2ac232": defineAsyncComponent(() => __vitePreload(() => import(
+    /* webpackChunkName: "v-6e2ac232" */
+    "./publications.html.3e4e0bd7.js"
+  ), true ? ["assets/publications.html.3e4e0bd7.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+  "v-55c84a05": defineAsyncComponent(() => __vitePreload(() => import(
+    /* webpackChunkName: "v-55c84a05" */
+    "./secondary-footer.html.026a065f.js"
+  ), true ? ["assets/secondary-footer.html.026a065f.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+  "v-43819bd4": defineAsyncComponent(() => __vitePreload(() => import(
+    /* webpackChunkName: "v-43819bd4" */
+    "./standard-news.html.f9967db4.js"
+  ), true ? ["assets/standard-news.html.f9967db4.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+  "v-2c7cab58": defineAsyncComponent(() => __vitePreload(() => import(
+    /* webpackChunkName: "v-2c7cab58" */
+    "./tables.html.0c4c1986.js"
+  ), true ? ["assets/tables.html.0c4c1986.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
   "v-3706649a": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-3706649a" */
     "./404.html.229bc4e7.js"
@@ -7021,15 +7069,63 @@ const pagesData$1 = {
   ), true ? [] : void 0).then(({ data }) => data),
   "v-1020f180": () => __vitePreload(() => import(
     /* webpackChunkName: "v-1020f180" */
-    "./index.html.22ae84bb.js"
+    "./index.html.351b5712.js"
   ), true ? [] : void 0).then(({ data }) => data),
   "v-c4dcb49c": () => __vitePreload(() => import(
     /* webpackChunkName: "v-c4dcb49c" */
-    "./banners.html.3b4f8f47.js"
+    "./banners.html.3671fb1e.js"
+  ), true ? [] : void 0).then(({ data }) => data),
+  "v-285a8fe0": () => __vitePreload(() => import(
+    /* webpackChunkName: "v-285a8fe0" */
+    "./entity-bar.html.ae791cdf.js"
+  ), true ? [] : void 0).then(({ data }) => data),
+  "v-90a2bd7e": () => __vitePreload(() => import(
+    /* webpackChunkName: "v-90a2bd7e" */
+    "./filtered-landing-pages.html.09e38be1.js"
+  ), true ? [] : void 0).then(({ data }) => data),
+  "v-438a7798": () => __vitePreload(() => import(
+    /* webpackChunkName: "v-438a7798" */
+    "./global-footer.html.40d7d75f.js"
+  ), true ? [] : void 0).then(({ data }) => data),
+  "v-44c8766b": () => __vitePreload(() => import(
+    /* webpackChunkName: "v-44c8766b" */
+    "./homepage.html.f02a5c7e.js"
+  ), true ? [] : void 0).then(({ data }) => data),
+  "v-d3ea9508": () => __vitePreload(() => import(
+    /* webpackChunkName: "v-d3ea9508" */
+    "./in-section.html.6b06802f.js"
+  ), true ? [] : void 0).then(({ data }) => data),
+  "v-64129767": () => __vitePreload(() => import(
+    /* webpackChunkName: "v-64129767" */
+    "./navigate-pubs.html.04e1d8c3.js"
   ), true ? [] : void 0).then(({ data }) => data),
   "v-529917f6": () => __vitePreload(() => import(
     /* webpackChunkName: "v-529917f6" */
-    "./navigation.html.f558d371.js"
+    "./navigation.html.2329025e.js"
+  ), true ? [] : void 0).then(({ data }) => data),
+  "v-33c149a9": () => __vitePreload(() => import(
+    /* webpackChunkName: "v-33c149a9" */
+    "./on-this-page.html.832e3d6f.js"
+  ), true ? [] : void 0).then(({ data }) => data),
+  "v-9b4793cc": () => __vitePreload(() => import(
+    /* webpackChunkName: "v-9b4793cc" */
+    "./outlier-components-page-patterns.html.48960240.js"
+  ), true ? [] : void 0).then(({ data }) => data),
+  "v-6e2ac232": () => __vitePreload(() => import(
+    /* webpackChunkName: "v-6e2ac232" */
+    "./publications.html.469b1ff4.js"
+  ), true ? [] : void 0).then(({ data }) => data),
+  "v-55c84a05": () => __vitePreload(() => import(
+    /* webpackChunkName: "v-55c84a05" */
+    "./secondary-footer.html.5333b33a.js"
+  ), true ? [] : void 0).then(({ data }) => data),
+  "v-43819bd4": () => __vitePreload(() => import(
+    /* webpackChunkName: "v-43819bd4" */
+    "./standard-news.html.39d53fcf.js"
+  ), true ? [] : void 0).then(({ data }) => data),
+  "v-2c7cab58": () => __vitePreload(() => import(
+    /* webpackChunkName: "v-2c7cab58" */
+    "./tables.html.53b9f4de.js"
   ), true ? [] : void 0).then(({ data }) => data),
   "v-3706649a": () => __vitePreload(() => import(
     /* webpackChunkName: "v-3706649a" */
@@ -7137,12 +7233,12 @@ Content.props = {
 const layoutComponents = {
   "404": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "layout-404" */
-    "./404.5bd72d30.js"
+    "./404.4b04fd0a.js"
   ), true ? [] : void 0)),
   "Layout": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "layout-Layout" */
-    "./Layout.9edf0143.js"
-  ), true ? ["assets/Layout.9edf0143.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0))
+    "./Layout.d385e7b0.js"
+  ), true ? ["assets/Layout.d385e7b0.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0))
 };
 const resolveHeadIdentifier = ([tag, attrs, content]) => {
   if (tag === "meta" && attrs.name) {
@@ -8492,7 +8588,7 @@ var clientAppEnhance3 = defineClientAppEnhance(({ app, router }) => {
   };
 });
 var clientAppEnhance4 = ({ app }) => {
-  app.component("Test", defineAsyncComponent(() => __vitePreload(() => import("./Test.e81cbced.js"), true ? ["assets/Test.e81cbced.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)));
+  app.component("Test", defineAsyncComponent(() => __vitePreload(() => import("./Test.6d3c2108.js"), true ? ["assets/Test.6d3c2108.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)));
 };
 const clientAppEnhances = [
   clientAppEnhance0,
@@ -8941,7 +9037,19 @@ const routeItems = [
   ["v-be99661e", "/typography.html", { "title": "Typography" }, ["/typography", "/typography.md"]],
   ["v-1020f180", "/components/", { "title": "Components" }, ["/components/index.html", "/components/README.md"]],
   ["v-c4dcb49c", "/components/banners.html", { "title": "" }, ["/components/banners", "/components/banners.md"]],
+  ["v-285a8fe0", "/components/entity-bar.html", { "title": "" }, ["/components/entity-bar", "/components/entity-bar.md"]],
+  ["v-90a2bd7e", "/components/filtered-landing-pages.html", { "title": "" }, ["/components/filtered-landing-pages", "/components/filtered-landing-pages.md"]],
+  ["v-438a7798", "/components/global-footer.html", { "title": "" }, ["/components/global-footer", "/components/global-footer.md"]],
+  ["v-44c8766b", "/components/homepage.html", { "title": "" }, ["/components/homepage", "/components/homepage.md"]],
+  ["v-d3ea9508", "/components/in-section.html", { "title": "" }, ["/components/in-section", "/components/in-section.md"]],
+  ["v-64129767", "/components/navigate-pubs.html", { "title": "" }, ["/components/navigate-pubs", "/components/navigate-pubs.md"]],
   ["v-529917f6", "/components/navigation.html", { "title": "" }, ["/components/navigation", "/components/navigation.md"]],
+  ["v-33c149a9", "/components/on-this-page.html", { "title": "" }, ["/components/on-this-page", "/components/on-this-page.md"]],
+  ["v-9b4793cc", "/components/outlier-components-page-patterns.html", { "title": "" }, ["/components/outlier-components-page-patterns", "/components/outlier-components-page-patterns.md"]],
+  ["v-6e2ac232", "/components/publications.html", { "title": "" }, ["/components/publications", "/components/publications.md"]],
+  ["v-55c84a05", "/components/secondary-footer.html", { "title": "" }, ["/components/secondary-footer", "/components/secondary-footer.md"]],
+  ["v-43819bd4", "/components/standard-news.html", { "title": "" }, ["/components/standard-news", "/components/standard-news.md"]],
+  ["v-2c7cab58", "/components/tables.html", { "title": "" }, ["/components/tables", "/components/tables.md"]],
   ["v-3706649a", "/404.html", { "title": "" }, ["/404"]]
 ];
 const pagesRoutes = routeItems.reduce((result, [name, path, meta, redirects]) => {

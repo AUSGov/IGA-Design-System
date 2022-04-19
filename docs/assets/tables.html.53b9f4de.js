@@ -1,6 +1,6 @@
 const data = {
-  "key": "v-c4dcb49c",
-  "path": "/components/banners.html",
+  "key": "v-2c7cab58",
+  "path": "/components/tables.html",
   "title": "",
   "lang": "en-US",
   "frontmatter": {},
@@ -8,14 +8,14 @@ const data = {
   "headers": [
     {
       "level": 2,
-      "title": "Banners",
-      "slug": "banners",
+      "title": "Tables",
+      "slug": "tables",
       "children": []
     }
   ],
   "git": {
-    "updatedTime": null
+    "updatedTime": 165033935e4
   },
-  "filePathRelative": "components/banners.md"
+  "filePathRelative": "components/tables.md"
 };
 export { data };
