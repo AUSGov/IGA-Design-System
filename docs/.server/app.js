@@ -62,11 +62,29 @@ const pagesComponents = {
   "v-8daa1a0e": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
     return index_html$5;
   })),
-  "v-52062726": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return introduction_html$2;
+  "v-32e68ee0": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return atoms_html$2;
+  })),
+  "v-58900206": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return colourPalette_html$2;
+  })),
+  "v-4b06512c": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return components_html$2;
+  })),
+  "v-3599c490": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return icons_html$2;
+  })),
+  "v-a200cf0a": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return instructions_html$2;
+  })),
+  "v-be99661e": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return typography_html$2;
   })),
   "v-15554e84": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
     return index_html$3;
+  })),
+  "v-4490d4cb": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return hello_html$2;
   })),
   "v-3706649a": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
     return _404_html$2;
@@ -76,11 +94,29 @@ const pagesData$1 = {
   "v-8daa1a0e": () => Promise.resolve().then(function() {
     return index_html$1;
   }).then(({ data: data2 }) => data2),
-  "v-52062726": () => Promise.resolve().then(function() {
-    return introduction_html;
+  "v-32e68ee0": () => Promise.resolve().then(function() {
+    return atoms_html;
+  }).then(({ data: data2 }) => data2),
+  "v-58900206": () => Promise.resolve().then(function() {
+    return colourPalette_html;
+  }).then(({ data: data2 }) => data2),
+  "v-4b06512c": () => Promise.resolve().then(function() {
+    return components_html;
+  }).then(({ data: data2 }) => data2),
+  "v-3599c490": () => Promise.resolve().then(function() {
+    return icons_html;
+  }).then(({ data: data2 }) => data2),
+  "v-a200cf0a": () => Promise.resolve().then(function() {
+    return instructions_html;
+  }).then(({ data: data2 }) => data2),
+  "v-be99661e": () => Promise.resolve().then(function() {
+    return typography_html;
   }).then(({ data: data2 }) => data2),
   "v-15554e84": () => Promise.resolve().then(function() {
     return index_html;
+  }).then(({ data: data2 }) => data2),
+  "v-4490d4cb": () => Promise.resolve().then(function() {
+    return hello_html;
   }).then(({ data: data2 }) => data2),
   "v-3706649a": () => Promise.resolve().then(function() {
     return _404_html;
@@ -349,24 +385,46 @@ var clientAppEnhance1 = defineClientAppEnhance(({ app, router }) => {
   return;
 });
 const themeData$1 = {
-  "logo": null,
-  "logoDark": null,
+  "logo": "/images/diser-logo.svg",
+  "logoDark": "/images/diser-logo.svg",
   "contributors": false,
+  "search": true,
   "navbar": [
     {
       "text": "Home",
       "link": "/"
     },
     {
-      "text": "Introduction",
-      "link": "/introduction"
+      "text": "Instructions",
+      "link": "/instructions"
+    },
+    {
+      "text": "Typography",
+      "link": "/typography"
+    },
+    {
+      "text": "Colour Palette",
+      "link": "/colour-palette"
+    },
+    {
+      "text": "Icons",
+      "link": "/icons"
+    },
+    {
+      "text": "Atoms",
+      "link": "/atoms"
+    },
+    {
+      "text": "Components",
+      "link": "/components"
     },
     {
       "text": "Test",
+      "link": "/test/",
       "children": [
         {
-          "text": "Test home",
-          "link": "/test"
+          "text": "Test Hello",
+          "link": "/test/hello"
         }
       ]
     }
@@ -435,7 +493,7 @@ var clientAppEnhance2 = defineClientAppEnhance(({ app }) => {
     }
   });
 });
-const _sfc_main$r = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$A = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   props: {
     type: {
@@ -469,11 +527,11 @@ const _sfc_main$r = /* @__PURE__ */ vue.defineComponent({
     };
   }
 });
-const _sfc_setup$r = _sfc_main$r.setup;
-_sfc_main$r.setup = (props, ctx) => {
+const _sfc_setup$A = _sfc_main$A.setup;
+_sfc_main$A.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/global/Badge.vue");
-  return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
+  return _sfc_setup$A ? _sfc_setup$A(props, ctx) : void 0;
 };
 var CodeGroup = vue.defineComponent({
   name: "CodeGroup",
@@ -556,7 +614,7 @@ var CodeGroup = vue.defineComponent({
 const __default__$1 = vue.defineComponent({
   name: "CodeGroupItem"
 });
-const _sfc_main$q = /* @__PURE__ */ vue.defineComponent(__spreadProps(__spreadValues({}, __default__$1), {
+const _sfc_main$z = /* @__PURE__ */ vue.defineComponent(__spreadProps(__spreadValues({}, __default__$1), {
   __ssrInlineRender: true,
   props: {
     title: {
@@ -580,11 +638,11 @@ const _sfc_main$q = /* @__PURE__ */ vue.defineComponent(__spreadProps(__spreadVa
     };
   }
 }));
-const _sfc_setup$q = _sfc_main$q.setup;
-_sfc_main$q.setup = (props, ctx) => {
+const _sfc_setup$z = _sfc_main$z.setup;
+_sfc_main$z.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/global/CodeGroupItem.vue");
-  return _sfc_setup$q ? _sfc_setup$q(props, ctx) : void 0;
+  return _sfc_setup$z ? _sfc_setup$z(props, ctx) : void 0;
 };
 const darkModeSymbol = Symbol("");
 const useDarkMode = () => {
@@ -749,9 +807,9 @@ const resolveMultiSidebarItems = (sidebarConfig, sidebarDepth) => {
 const useThemeLocaleData = () => useThemeLocaleData$1();
 var index = "";
 var clientAppEnhance3 = defineClientAppEnhance(({ app, router }) => {
-  app.component("Badge", _sfc_main$r);
+  app.component("Badge", _sfc_main$A);
   app.component("CodeGroup", CodeGroup);
-  app.component("CodeGroupItem", _sfc_main$q);
+  app.component("CodeGroupItem", _sfc_main$z);
   app.component("NavbarSearch", () => {
     const SearchComponent = app.component("Docsearch") || app.component("SearchBox");
     if (SearchComponent) {
@@ -877,9 +935,15 @@ const clientAppSetups = [
   clientAppSetup2
 ];
 const routeItems = [
-  ["v-8daa1a0e", "/", { "title": "Home page" }, ["/index.html", "/README.md"]],
-  ["v-52062726", "/introduction.html", { "title": "Introduction Hi!" }, ["/introduction", "/introduction.md"]],
+  ["v-8daa1a0e", "/", { "title": "Home" }, ["/index.html", "/README.md"]],
+  ["v-32e68ee0", "/atoms.html", { "title": "Atoms" }, ["/atoms", "/atoms.md"]],
+  ["v-58900206", "/colour-palette.html", { "title": "Colour Palette" }, ["/colour-palette", "/colour-palette.md"]],
+  ["v-4b06512c", "/components.html", { "title": "Components" }, ["/components", "/components.md"]],
+  ["v-3599c490", "/icons.html", { "title": "Icons" }, ["/icons", "/icons.md"]],
+  ["v-a200cf0a", "/instructions.html", { "title": "Instructions" }, ["/instructions", "/instructions.md"]],
+  ["v-be99661e", "/typography.html", { "title": "Typography" }, ["/typography", "/typography.md"]],
   ["v-15554e84", "/test/", { "title": "Test" }, ["/test/index.html", "/test/README.md"]],
+  ["v-4490d4cb", "/test/hello.html", { "title": "Hello!" }, ["/test/hello", "/test/hello.md"]],
   ["v-3706649a", "/404.html", { "title": "" }, ["/404"]]
 ];
 const pagesRoutes = routeItems.reduce((result, [name, path, meta, redirects]) => {
@@ -1010,8 +1074,8 @@ var _export_sfc = (sfc, props) => {
   }
   return target;
 };
-const _sfc_main$p = {};
-function _sfc_ssrRender$5(_ctx, _push, _parent, _attrs) {
+const _sfc_main$y = {};
+function _sfc_ssrRender$d(_ctx, _push, _parent, _attrs) {
   const _component_CodeGroup = vue.resolveComponent("CodeGroup");
   const _component_CodeGroupItem = vue.resolveComponent("CodeGroupItem");
   const _component_Test = vue.resolveComponent("Test");
@@ -1287,76 +1351,185 @@ function _sfc_ssrRender$5(_ctx, _push, _parent, _attrs) {
   _push(serverRenderer.ssrRenderComponent(_component_Test, null, null, _parent));
   _push(`<h3 id="this-is-a-bootstrap-table" tabindex="-1"><a class="header-anchor" href="#this-is-a-bootstrap-table" aria-hidden="true">#</a> This is a bootstrap table</h3><div><table class="table table-light table-striped"><thead><tr><th scope="col">#</th><th scope="col">First</th><th scope="col">Last</th><th scope="col">Handle</th></tr></thead><tbody><tr><th scope="row">1</th><td>Mark</td><td>Otto</td><td>@mdo</td></tr><tr><th scope="row">2</th><td>Jacob</td><td>Thornton</td><td>@fat</td></tr></tbody></table></div><!--]-->`);
 }
-const _sfc_setup$p = _sfc_main$p.setup;
-_sfc_main$p.setup = (props, ctx) => {
+const _sfc_setup$y = _sfc_main$y.setup;
+_sfc_main$y.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/index.html.vue");
-  return _sfc_setup$p ? _sfc_setup$p(props, ctx) : void 0;
+  return _sfc_setup$y ? _sfc_setup$y(props, ctx) : void 0;
 };
-var index_html$4 = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["ssrRender", _sfc_ssrRender$5]]);
+var index_html$4 = /* @__PURE__ */ _export_sfc(_sfc_main$y, [["ssrRender", _sfc_ssrRender$d]]);
 var index_html$5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": index_html$4
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$o = {};
-function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs) {
-  _push(`<h1${serverRenderer.ssrRenderAttrs(vue.mergeProps({
-    id: "introduction-hi",
+const _sfc_main$x = {};
+function _sfc_ssrRender$c(_ctx, _push, _parent, _attrs) {
+  _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
+    id: "atoms",
     tabindex: "-1"
-  }, _attrs))}><a class="header-anchor" href="#introduction-hi" aria-hidden="true">#</a> Introduction Hi!</h1>`);
+  }, _attrs))}><a class="header-anchor" href="#atoms" aria-hidden="true">#</a> Atoms</h2>`);
 }
-const _sfc_setup$o = _sfc_main$o.setup;
-_sfc_main$o.setup = (props, ctx) => {
+const _sfc_setup$x = _sfc_main$x.setup;
+_sfc_main$x.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/introduction.html.vue");
-  return _sfc_setup$o ? _sfc_setup$o(props, ctx) : void 0;
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/atoms.html.vue");
+  return _sfc_setup$x ? _sfc_setup$x(props, ctx) : void 0;
 };
-var introduction_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["ssrRender", _sfc_ssrRender$4]]);
-var introduction_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var atoms_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$x, [["ssrRender", _sfc_ssrRender$c]]);
+var atoms_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  "default": introduction_html$1
+  "default": atoms_html$1
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$n = {};
-function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs) {
+const _sfc_main$w = {};
+function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs) {
+  _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
+    id: "colour-palette",
+    tabindex: "-1"
+  }, _attrs))}><a class="header-anchor" href="#colour-palette" aria-hidden="true">#</a> Colour Palette</h2>`);
+}
+const _sfc_setup$w = _sfc_main$w.setup;
+_sfc_main$w.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/colour-palette.html.vue");
+  return _sfc_setup$w ? _sfc_setup$w(props, ctx) : void 0;
+};
+var colourPalette_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["ssrRender", _sfc_ssrRender$b]]);
+var colourPalette_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": colourPalette_html$1
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$v = {};
+function _sfc_ssrRender$a(_ctx, _push, _parent, _attrs) {
+  _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
+    id: "components",
+    tabindex: "-1"
+  }, _attrs))}><a class="header-anchor" href="#components" aria-hidden="true">#</a> Components</h2>`);
+}
+const _sfc_setup$v = _sfc_main$v.setup;
+_sfc_main$v.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/components.html.vue");
+  return _sfc_setup$v ? _sfc_setup$v(props, ctx) : void 0;
+};
+var components_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["ssrRender", _sfc_ssrRender$a]]);
+var components_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": components_html$1
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$u = {};
+function _sfc_ssrRender$9(_ctx, _push, _parent, _attrs) {
+  _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
+    id: "icons",
+    tabindex: "-1"
+  }, _attrs))}><a class="header-anchor" href="#icons" aria-hidden="true">#</a> Icons</h2>`);
+}
+const _sfc_setup$u = _sfc_main$u.setup;
+_sfc_main$u.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/icons.html.vue");
+  return _sfc_setup$u ? _sfc_setup$u(props, ctx) : void 0;
+};
+var icons_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["ssrRender", _sfc_ssrRender$9]]);
+var icons_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": icons_html$1
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$t = {};
+function _sfc_ssrRender$8(_ctx, _push, _parent, _attrs) {
+  _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
+    id: "instructions",
+    tabindex: "-1"
+  }, _attrs))}><a class="header-anchor" href="#instructions" aria-hidden="true">#</a> Instructions</h2>`);
+}
+const _sfc_setup$t = _sfc_main$t.setup;
+_sfc_main$t.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/instructions.html.vue");
+  return _sfc_setup$t ? _sfc_setup$t(props, ctx) : void 0;
+};
+var instructions_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$t, [["ssrRender", _sfc_ssrRender$8]]);
+var instructions_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": instructions_html$1
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$s = {};
+function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs) {
+  _push(`<h2${serverRenderer.ssrRenderAttrs(vue.mergeProps({
+    id: "typography",
+    tabindex: "-1"
+  }, _attrs))}><a class="header-anchor" href="#typography" aria-hidden="true">#</a> Typography</h2>`);
+}
+const _sfc_setup$s = _sfc_main$s.setup;
+_sfc_main$s.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/typography.html.vue");
+  return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
+};
+var typography_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["ssrRender", _sfc_ssrRender$7]]);
+var typography_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": typography_html$1
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$r = {};
+function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs) {
   _push(`<h1${serverRenderer.ssrRenderAttrs(vue.mergeProps({
     id: "hello-world-test",
     tabindex: "-1"
   }, _attrs))}><a class="header-anchor" href="#hello-world-test" aria-hidden="true">#</a> Hello World Test</h1>`);
 }
-const _sfc_setup$n = _sfc_main$n.setup;
-_sfc_main$n.setup = (props, ctx) => {
+const _sfc_setup$r = _sfc_main$r.setup;
+_sfc_main$r.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/test/index.html.vue");
-  return _sfc_setup$n ? _sfc_setup$n(props, ctx) : void 0;
+  return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
 };
-var index_html$2 = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["ssrRender", _sfc_ssrRender$3]]);
+var index_html$2 = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["ssrRender", _sfc_ssrRender$6]]);
 var index_html$3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": index_html$2
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$m = {};
-function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
+const _sfc_main$q = {};
+function _sfc_ssrRender$5(_ctx, _push, _parent, _attrs) {
+  _push(`<h1${serverRenderer.ssrRenderAttrs(vue.mergeProps({
+    id: "hello",
+    tabindex: "-1"
+  }, _attrs))}><a class="header-anchor" href="#hello" aria-hidden="true">#</a> Hello!</h1>`);
 }
-const _sfc_setup$m = _sfc_main$m.setup;
-_sfc_main$m.setup = (props, ctx) => {
+const _sfc_setup$q = _sfc_main$q.setup;
+_sfc_main$q.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/test/hello.html.vue");
+  return _sfc_setup$q ? _sfc_setup$q(props, ctx) : void 0;
+};
+var hello_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["ssrRender", _sfc_ssrRender$5]]);
+var hello_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": hello_html$1
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$p = {};
+function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs) {
+}
+const _sfc_setup$p = _sfc_main$p.setup;
+_sfc_main$p.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/404.html.vue");
-  return _sfc_setup$m ? _sfc_setup$m(props, ctx) : void 0;
+  return _sfc_setup$p ? _sfc_setup$p(props, ctx) : void 0;
 };
-var _404_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["ssrRender", _sfc_ssrRender$2]]);
+var _404_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["ssrRender", _sfc_ssrRender$4]]);
 var _404_html$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": _404_html$1
 }, Symbol.toStringTag, { value: "Module" }));
-const data$3 = {
+const data$9 = {
   "key": "v-8daa1a0e",
   "path": "/",
-  "title": "Home page",
+  "title": "Home",
   "lang": "en-US",
   "frontmatter": {
     "lang": "en-US",
-    "title": "Home page",
-    "description": "Description of the home page"
+    "title": "Home",
+    "description": "Description of the home page",
+    "pageHeader": true
   },
   "excerpt": "",
   "headers": [
@@ -1393,26 +1566,183 @@ const data$3 = {
 };
 var index_html$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
+  data: data$9
+}, Symbol.toStringTag, { value: "Module" }));
+const data$8 = {
+  "key": "v-32e68ee0",
+  "path": "/atoms.html",
+  "title": "Atoms",
+  "lang": "en-US",
+  "frontmatter": {
+    "lang": "en-US",
+    "title": "Atoms",
+    "description": "Description of the atoms page",
+    "pageHeader": true
+  },
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "Atoms",
+      "slug": "atoms",
+      "children": []
+    }
+  ],
+  "git": {
+    "updatedTime": null
+  },
+  "filePathRelative": "atoms.md"
+};
+var atoms_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  data: data$8
+}, Symbol.toStringTag, { value: "Module" }));
+const data$7 = {
+  "key": "v-58900206",
+  "path": "/colour-palette.html",
+  "title": "Colour Palette",
+  "lang": "en-US",
+  "frontmatter": {
+    "lang": "en-US",
+    "title": "Colour Palette",
+    "description": "Description of the colour palette page",
+    "pageHeader": true
+  },
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "Colour Palette",
+      "slug": "colour-palette",
+      "children": []
+    }
+  ],
+  "git": {
+    "updatedTime": null
+  },
+  "filePathRelative": "colour-palette.md"
+};
+var colourPalette_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  data: data$7
+}, Symbol.toStringTag, { value: "Module" }));
+const data$6 = {
+  "key": "v-4b06512c",
+  "path": "/components.html",
+  "title": "Components",
+  "lang": "en-US",
+  "frontmatter": {
+    "lang": "en-US",
+    "title": "Components",
+    "description": "Description of the components page",
+    "pageHeader": true
+  },
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "Components",
+      "slug": "components",
+      "children": []
+    }
+  ],
+  "git": {
+    "updatedTime": null
+  },
+  "filePathRelative": "components.md"
+};
+var components_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  data: data$6
+}, Symbol.toStringTag, { value: "Module" }));
+const data$5 = {
+  "key": "v-3599c490",
+  "path": "/icons.html",
+  "title": "Icons",
+  "lang": "en-US",
+  "frontmatter": {
+    "lang": "en-US",
+    "title": "Icons",
+    "description": "Description of the icons page",
+    "pageHeader": true
+  },
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "Icons",
+      "slug": "icons",
+      "children": []
+    }
+  ],
+  "git": {
+    "updatedTime": null
+  },
+  "filePathRelative": "icons.md"
+};
+var icons_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  data: data$5
+}, Symbol.toStringTag, { value: "Module" }));
+const data$4 = {
+  "key": "v-a200cf0a",
+  "path": "/instructions.html",
+  "title": "Instructions",
+  "lang": "en-US",
+  "frontmatter": {
+    "lang": "en-US",
+    "title": "Instructions",
+    "description": "Description of the instructions page",
+    "pageHeader": true
+  },
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "Instructions",
+      "slug": "instructions",
+      "children": []
+    }
+  ],
+  "git": {
+    "updatedTime": null
+  },
+  "filePathRelative": "instructions.md"
+};
+var instructions_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  data: data$4
+}, Symbol.toStringTag, { value: "Module" }));
+const data$3 = {
+  "key": "v-be99661e",
+  "path": "/typography.html",
+  "title": "Typography",
+  "lang": "en-US",
+  "frontmatter": {
+    "lang": "en-US",
+    "title": "Typography",
+    "description": "Description of the typography page",
+    "pageHeader": true
+  },
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "Typography",
+      "slug": "typography",
+      "children": []
+    }
+  ],
+  "git": {
+    "updatedTime": null
+  },
+  "filePathRelative": "typography.md"
+};
+var typography_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
   data: data$3
 }, Symbol.toStringTag, { value: "Module" }));
 const data$2 = {
-  "key": "v-52062726",
-  "path": "/introduction.html",
-  "title": "Introduction Hi!",
-  "lang": "en-US",
-  "frontmatter": {},
-  "excerpt": "",
-  "headers": [],
-  "git": {
-    "updatedTime": 1646367617e3
-  },
-  "filePathRelative": "introduction.md"
-};
-var introduction_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  data: data$2
-}, Symbol.toStringTag, { value: "Module" }));
-const data$1 = {
   "key": "v-15554e84",
   "path": "/test/",
   "title": "Test",
@@ -1420,7 +1750,8 @@ const data$1 = {
   "frontmatter": {
     "lang": "en-US",
     "title": "Test",
-    "description": "Description of the test page"
+    "description": "Description of the test page",
+    "pageHeader": true
   },
   "excerpt": "",
   "headers": [],
@@ -1430,6 +1761,23 @@ const data$1 = {
   "filePathRelative": "test/README.md"
 };
 var index_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  data: data$2
+}, Symbol.toStringTag, { value: "Module" }));
+const data$1 = {
+  "key": "v-4490d4cb",
+  "path": "/test/hello.html",
+  "title": "Hello!",
+  "lang": "en-US",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [],
+  "git": {
+    "updatedTime": null
+  },
+  "filePathRelative": "test/hello.md"
+};
+var hello_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   data: data$1
 }, Symbol.toStringTag, { value: "Module" }));
@@ -1450,7 +1798,7 @@ var _404_html = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePrope
   __proto__: null,
   data
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$l = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$o = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     var _a, _b, _c;
@@ -1479,31 +1827,31 @@ const _sfc_main$l = /* @__PURE__ */ vue.defineComponent({
     };
   }
 });
-const _sfc_setup$l = _sfc_main$l.setup;
-_sfc_main$l.setup = (props, ctx) => {
+const _sfc_setup$o = _sfc_main$o.setup;
+_sfc_main$o.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/layouts/404.vue");
-  return _sfc_setup$l ? _sfc_setup$l(props, ctx) : void 0;
+  return _sfc_setup$o ? _sfc_setup$o(props, ctx) : void 0;
 };
 var _404 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  "default": _sfc_main$l
+  "default": _sfc_main$o
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$k = {};
-function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
+const _sfc_main$n = {};
+function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs) {
   const _component_Content = vue.resolveComponent("Content");
   _push(`<div${serverRenderer.ssrRenderAttrs(vue.mergeProps({ class: "theme-default-content custom" }, _attrs))}>`);
   _push(serverRenderer.ssrRenderComponent(_component_Content, null, null, _parent));
   _push(`</div>`);
 }
-const _sfc_setup$k = _sfc_main$k.setup;
-_sfc_main$k.setup = (props, ctx) => {
+const _sfc_setup$n = _sfc_main$n.setup;
+_sfc_main$n.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/HomeContent.vue");
-  return _sfc_setup$k ? _sfc_setup$k(props, ctx) : void 0;
+  return _sfc_setup$n ? _sfc_setup$n(props, ctx) : void 0;
 };
-var HomeContent = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["ssrRender", _sfc_ssrRender$1]]);
-const _sfc_main$j = /* @__PURE__ */ vue.defineComponent({
+var HomeContent = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["ssrRender", _sfc_ssrRender$3]]);
+const _sfc_main$m = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     const frontmatter = usePageFrontmatter();
@@ -1526,13 +1874,13 @@ const _sfc_main$j = /* @__PURE__ */ vue.defineComponent({
     };
   }
 });
-const _sfc_setup$j = _sfc_main$j.setup;
-_sfc_main$j.setup = (props, ctx) => {
+const _sfc_setup$m = _sfc_main$m.setup;
+_sfc_main$m.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/HomeFeatures.vue");
-  return _sfc_setup$j ? _sfc_setup$j(props, ctx) : void 0;
+  return _sfc_setup$m ? _sfc_setup$m(props, ctx) : void 0;
 };
-const _sfc_main$i = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$l = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     const frontmatter = usePageFrontmatter();
@@ -1553,16 +1901,16 @@ const _sfc_main$i = /* @__PURE__ */ vue.defineComponent({
     };
   }
 });
-const _sfc_setup$i = _sfc_main$i.setup;
-_sfc_main$i.setup = (props, ctx) => {
+const _sfc_setup$l = _sfc_main$l.setup;
+_sfc_main$l.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/HomeFooter.vue");
-  return _sfc_setup$i ? _sfc_setup$i(props, ctx) : void 0;
+  return _sfc_setup$l ? _sfc_setup$l(props, ctx) : void 0;
 };
 const __default__ = vue.defineComponent({
   inheritAttrs: false
 });
-const _sfc_main$h = /* @__PURE__ */ vue.defineComponent(__spreadProps(__spreadValues({}, __default__), {
+const _sfc_main$k = /* @__PURE__ */ vue.defineComponent(__spreadProps(__spreadValues({}, __default__), {
   __ssrInlineRender: true,
   props: {
     item: {
@@ -1665,13 +2013,13 @@ const _sfc_main$h = /* @__PURE__ */ vue.defineComponent(__spreadProps(__spreadVa
     };
   }
 }));
-const _sfc_setup$h = _sfc_main$h.setup;
-_sfc_main$h.setup = (props, ctx) => {
+const _sfc_setup$k = _sfc_main$k.setup;
+_sfc_main$k.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/AutoLink.vue");
-  return _sfc_setup$h ? _sfc_setup$h(props, ctx) : void 0;
+  return _sfc_setup$k ? _sfc_setup$k(props, ctx) : void 0;
 };
-const _sfc_main$g = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$j = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     const frontmatter = usePageFrontmatter();
@@ -1734,7 +2082,7 @@ const _sfc_main$g = /* @__PURE__ */ vue.defineComponent({
       if (vue.unref(actions).length) {
         _push(`<p class="actions"><!--[-->`);
         serverRenderer.ssrRenderList(vue.unref(actions), (action) => {
-          _push(serverRenderer.ssrRenderComponent(_sfc_main$h, {
+          _push(serverRenderer.ssrRenderComponent(_sfc_main$k, {
             key: action.text,
             class: ["action-button", [action.type]],
             item: action
@@ -1748,32 +2096,32 @@ const _sfc_main$g = /* @__PURE__ */ vue.defineComponent({
     };
   }
 });
-const _sfc_setup$g = _sfc_main$g.setup;
-_sfc_main$g.setup = (props, ctx) => {
+const _sfc_setup$j = _sfc_main$j.setup;
+_sfc_main$j.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/HomeHero.vue");
-  return _sfc_setup$g ? _sfc_setup$g(props, ctx) : void 0;
+  return _sfc_setup$j ? _sfc_setup$j(props, ctx) : void 0;
 };
-const _sfc_main$f = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$i = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<main${serverRenderer.ssrRenderAttrs(vue.mergeProps({ class: "home" }, _attrs))}>`);
-      _push(serverRenderer.ssrRenderComponent(_sfc_main$g, null, null, _parent));
       _push(serverRenderer.ssrRenderComponent(_sfc_main$j, null, null, _parent));
+      _push(serverRenderer.ssrRenderComponent(_sfc_main$m, null, null, _parent));
       _push(serverRenderer.ssrRenderComponent(HomeContent, null, null, _parent));
-      _push(serverRenderer.ssrRenderComponent(_sfc_main$i, null, null, _parent));
+      _push(serverRenderer.ssrRenderComponent(_sfc_main$l, null, null, _parent));
       _push(`</main>`);
     };
   }
 });
-const _sfc_setup$f = _sfc_main$f.setup;
-_sfc_main$f.setup = (props, ctx) => {
+const _sfc_setup$i = _sfc_main$i.setup;
+_sfc_main$i.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/Home.vue");
-  return _sfc_setup$f ? _sfc_setup$f(props, ctx) : void 0;
+  return _sfc_setup$i ? _sfc_setup$i(props, ctx) : void 0;
 };
-const _sfc_main$e = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$h = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     const routeLocale = useRouteLocale();
@@ -1827,13 +2175,13 @@ const _sfc_main$e = /* @__PURE__ */ vue.defineComponent({
     };
   }
 });
-const _sfc_setup$e = _sfc_main$e.setup;
-_sfc_main$e.setup = (props, ctx) => {
+const _sfc_setup$h = _sfc_main$h.setup;
+_sfc_main$h.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/NavbarBrand.vue");
-  return _sfc_setup$e ? _sfc_setup$e(props, ctx) : void 0;
+  return _sfc_setup$h ? _sfc_setup$h(props, ctx) : void 0;
 };
-const _sfc_main$d = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$g = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
@@ -1841,13 +2189,13 @@ const _sfc_main$d = /* @__PURE__ */ vue.defineComponent({
     };
   }
 });
-const _sfc_setup$d = _sfc_main$d.setup;
-_sfc_main$d.setup = (props, ctx) => {
+const _sfc_setup$g = _sfc_main$g.setup;
+_sfc_main$g.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/DropdownTransition.vue");
-  return _sfc_setup$d ? _sfc_setup$d(props, ctx) : void 0;
+  return _sfc_setup$g ? _sfc_setup$g(props, ctx) : void 0;
 };
-const _sfc_main$c = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$f = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   props: {
     item: {
@@ -1869,7 +2217,7 @@ const _sfc_main$c = /* @__PURE__ */ vue.defineComponent({
       _push(`<div${serverRenderer.ssrRenderAttrs(vue.mergeProps({
         class: ["navbar-dropdown-wrapper", { open: open.value }]
       }, _attrs))}><button class="navbar-dropdown-title" type="button"${serverRenderer.ssrRenderAttr("aria-label", vue.unref(dropdownAriaLabel))}><span class="title">${serverRenderer.ssrInterpolate(vue.unref(item).text)}</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button"${serverRenderer.ssrRenderAttr("aria-label", vue.unref(dropdownAriaLabel))}><span class="title">${serverRenderer.ssrInterpolate(vue.unref(item).text)}</span><span class="${serverRenderer.ssrRenderClass([open.value ? "down" : "right", "arrow"])}"></span></button>`);
-      _push(serverRenderer.ssrRenderComponent(_sfc_main$d, null, {
+      _push(serverRenderer.ssrRenderComponent(_sfc_main$g, null, {
         default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<ul style="${serverRenderer.ssrRenderStyle(open.value ? null : { display: "none" })}" class="navbar-dropdown"${_scopeId}><!--[-->`);
@@ -1878,19 +2226,19 @@ const _sfc_main$c = /* @__PURE__ */ vue.defineComponent({
               if (child.children) {
                 _push2(`<!--[--><h4 class="navbar-dropdown-subtitle"${_scopeId}>`);
                 if (child.link) {
-                  _push2(serverRenderer.ssrRenderComponent(_sfc_main$h, { item: child }, null, _parent2, _scopeId));
+                  _push2(serverRenderer.ssrRenderComponent(_sfc_main$k, { item: child }, null, _parent2, _scopeId));
                 } else {
                   _push2(`<span${_scopeId}>${serverRenderer.ssrInterpolate(child.text)}</span>`);
                 }
                 _push2(`</h4><ul class="navbar-dropdown-subitem-wrapper"${_scopeId}><!--[-->`);
                 serverRenderer.ssrRenderList(child.children, (grandchild) => {
                   _push2(`<li class="navbar-dropdown-subitem"${_scopeId}>`);
-                  _push2(serverRenderer.ssrRenderComponent(_sfc_main$h, { item: grandchild }, null, _parent2, _scopeId));
+                  _push2(serverRenderer.ssrRenderComponent(_sfc_main$k, { item: grandchild }, null, _parent2, _scopeId));
                   _push2(`</li>`);
                 });
                 _push2(`<!--]--></ul><!--]-->`);
               } else {
-                _push2(serverRenderer.ssrRenderComponent(_sfc_main$h, { item: child }, null, _parent2, _scopeId));
+                _push2(serverRenderer.ssrRenderComponent(_sfc_main$k, { item: child }, null, _parent2, _scopeId));
               }
               _push2(`</li>`);
             });
@@ -1905,7 +2253,7 @@ const _sfc_main$c = /* @__PURE__ */ vue.defineComponent({
                   }, [
                     child.children ? (vue.openBlock(), vue.createBlock(vue.Fragment, { key: 0 }, [
                       vue.createVNode("h4", { class: "navbar-dropdown-subtitle" }, [
-                        child.link ? (vue.openBlock(), vue.createBlock(_sfc_main$h, {
+                        child.link ? (vue.openBlock(), vue.createBlock(_sfc_main$k, {
                           key: 0,
                           item: child,
                           onFocusout: ($event) => isLastItemOfArray(child, vue.unref(item).children) && child.children.length === 0 && (open.value = false)
@@ -1917,14 +2265,14 @@ const _sfc_main$c = /* @__PURE__ */ vue.defineComponent({
                             key: grandchild.link,
                             class: "navbar-dropdown-subitem"
                           }, [
-                            vue.createVNode(_sfc_main$h, {
+                            vue.createVNode(_sfc_main$k, {
                               item: grandchild,
                               onFocusout: ($event) => isLastItemOfArray(grandchild, child.children) && isLastItemOfArray(child, vue.unref(item).children) && (open.value = false)
                             }, null, 8, ["item", "onFocusout"])
                           ]);
                         }), 128))
                       ])
-                    ], 64)) : (vue.openBlock(), vue.createBlock(_sfc_main$h, {
+                    ], 64)) : (vue.openBlock(), vue.createBlock(_sfc_main$k, {
                       key: 1,
                       item: child,
                       onFocusout: ($event) => isLastItemOfArray(child, vue.unref(item).children) && (open.value = false)
@@ -1943,11 +2291,11 @@ const _sfc_main$c = /* @__PURE__ */ vue.defineComponent({
     };
   }
 });
-const _sfc_setup$c = _sfc_main$c.setup;
-_sfc_main$c.setup = (props, ctx) => {
+const _sfc_setup$f = _sfc_main$f.setup;
+_sfc_main$f.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/NavbarDropdown.vue");
-  return _sfc_setup$c ? _sfc_setup$c(props, ctx) : void 0;
+  return _sfc_setup$f ? _sfc_setup$f(props, ctx) : void 0;
 };
 const normalizePath = (path) => decodeURI(path).replace(/#.*$/, "").replace(/(index)?\.(md|html)$/, "");
 const isActiveLink = (link, route) => {
@@ -2002,7 +2350,7 @@ const resolveEditLink = ({ docsRepo, docsBranch, docsDir, filePathRelative, edit
     return null;
   return pattern.replace(/:repo/, isLinkHttp(docsRepo) ? docsRepo : `https://github.com/${docsRepo}`).replace(/:branch/, docsBranch).replace(/:path/, removeLeadingSlash(`${removeEndingSlash(docsDir)}/${filePathRelative}`));
 };
-const _sfc_main$b = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$e = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     const useNavbarSelectLanguage = () => {
@@ -2106,10 +2454,10 @@ const _sfc_main$b = /* @__PURE__ */ vue.defineComponent({
         _push(`<nav${serverRenderer.ssrRenderAttrs(vue.mergeProps({ class: "navbar-items" }, _attrs))}><!--[-->`);
         serverRenderer.ssrRenderList(vue.unref(navbarLinks), (item) => {
           _push(`<div class="navbar-item">`);
-          if (item.children) {
-            _push(serverRenderer.ssrRenderComponent(_sfc_main$c, { item }, null, _parent));
+          if (item.link) {
+            _push(serverRenderer.ssrRenderComponent(_sfc_main$k, { item }, null, _parent));
           } else {
-            _push(serverRenderer.ssrRenderComponent(_sfc_main$h, { item }, null, _parent));
+            _push(serverRenderer.ssrRenderComponent(_sfc_main$f, { item }, null, _parent));
           }
           _push(`</div>`);
         });
@@ -2120,13 +2468,13 @@ const _sfc_main$b = /* @__PURE__ */ vue.defineComponent({
     };
   }
 });
-const _sfc_setup$b = _sfc_main$b.setup;
-_sfc_main$b.setup = (props, ctx) => {
+const _sfc_setup$e = _sfc_main$e.setup;
+_sfc_main$e.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/NavbarItems.vue");
-  return _sfc_setup$b ? _sfc_setup$b(props, ctx) : void 0;
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../theme/components/NavbarItems.vue");
+  return _sfc_setup$e ? _sfc_setup$e(props, ctx) : void 0;
 };
-const _sfc_main$a = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$d = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     const themeLocale = useThemeLocaleData();
@@ -2139,13 +2487,13 @@ const _sfc_main$a = /* @__PURE__ */ vue.defineComponent({
     };
   }
 });
-const _sfc_setup$a = _sfc_main$a.setup;
-_sfc_main$a.setup = (props, ctx) => {
+const _sfc_setup$d = _sfc_main$d.setup;
+_sfc_main$d.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/ToggleDarkModeButton.vue");
-  return _sfc_setup$a ? _sfc_setup$a(props, ctx) : void 0;
+  return _sfc_setup$d ? _sfc_setup$d(props, ctx) : void 0;
 };
-const _sfc_main$9 = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$c = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   emits: ["toggle"],
   setup(__props) {
@@ -2161,13 +2509,13 @@ const _sfc_main$9 = /* @__PURE__ */ vue.defineComponent({
     };
   }
 });
-const _sfc_setup$9 = _sfc_main$9.setup;
-_sfc_main$9.setup = (props, ctx) => {
+const _sfc_setup$c = _sfc_main$c.setup;
+_sfc_main$c.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/ToggleSidebarButton.vue");
-  return _sfc_setup$9 ? _sfc_setup$9(props, ctx) : void 0;
+  return _sfc_setup$c ? _sfc_setup$c(props, ctx) : void 0;
 };
-const _sfc_main$8 = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$b = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   emits: ["toggle-sidebar"],
   setup(__props) {
@@ -2212,15 +2560,15 @@ const _sfc_main$8 = /* @__PURE__ */ vue.defineComponent({
         ref: navbar,
         class: "navbar"
       }, _attrs))}>`);
-      _push(serverRenderer.ssrRenderComponent(_sfc_main$9, null, null, _parent));
+      _push(serverRenderer.ssrRenderComponent(_sfc_main$c, null, null, _parent));
       _push(`<span>`);
-      _push(serverRenderer.ssrRenderComponent(_sfc_main$e, null, null, _parent));
+      _push(serverRenderer.ssrRenderComponent(_sfc_main$h, null, null, _parent));
       _push(`</span><div class="navbar-items-wrapper" style="${serverRenderer.ssrRenderStyle(vue.unref(linksWrapperStyle))}">`);
       serverRenderer.ssrRenderSlot(_ctx.$slots, "before", {}, null, _push, _parent);
-      _push(serverRenderer.ssrRenderComponent(_sfc_main$b, { class: "can-hide" }, null, _parent));
+      _push(serverRenderer.ssrRenderComponent(_sfc_main$e, { class: "can-hide" }, null, _parent));
       serverRenderer.ssrRenderSlot(_ctx.$slots, "after", {}, null, _push, _parent);
       if (vue.unref(enableDarkMode)) {
-        _push(serverRenderer.ssrRenderComponent(_sfc_main$a, null, null, _parent));
+        _push(serverRenderer.ssrRenderComponent(_sfc_main$d, null, null, _parent));
       } else {
         _push(`<!---->`);
       }
@@ -2229,13 +2577,13 @@ const _sfc_main$8 = /* @__PURE__ */ vue.defineComponent({
     };
   }
 });
-const _sfc_setup$8 = _sfc_main$8.setup;
-_sfc_main$8.setup = (props, ctx) => {
+const _sfc_setup$b = _sfc_main$b.setup;
+_sfc_main$b.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/Navbar.vue");
-  return _sfc_setup$8 ? _sfc_setup$8(props, ctx) : void 0;
+  return _sfc_setup$b ? _sfc_setup$b(props, ctx) : void 0;
 };
-const _sfc_main$7 = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$a = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     const useEditNavLink = () => {
@@ -2308,7 +2656,7 @@ const _sfc_main$7 = /* @__PURE__ */ vue.defineComponent({
       _push(`<footer${serverRenderer.ssrRenderAttrs(vue.mergeProps({ class: "page-meta" }, _attrs))}>`);
       if (vue.unref(editNavLink)) {
         _push(`<div class="meta-item edit-link">`);
-        _push(serverRenderer.ssrRenderComponent(_sfc_main$h, {
+        _push(serverRenderer.ssrRenderComponent(_sfc_main$k, {
           class: "meta-item-label",
           item: vue.unref(editNavLink)
         }, null, _parent));
@@ -2353,13 +2701,13 @@ const _sfc_main$7 = /* @__PURE__ */ vue.defineComponent({
     };
   }
 });
-const _sfc_setup$7 = _sfc_main$7.setup;
-_sfc_main$7.setup = (props, ctx) => {
+const _sfc_setup$a = _sfc_main$a.setup;
+_sfc_main$a.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/PageMeta.vue");
-  return _sfc_setup$7 ? _sfc_setup$7(props, ctx) : void 0;
+  return _sfc_setup$a ? _sfc_setup$a(props, ctx) : void 0;
 };
-const _sfc_main$6 = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$9 = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     const resolveFromFrontmatterConfig = (conf) => {
@@ -2415,14 +2763,14 @@ const _sfc_main$6 = /* @__PURE__ */ vue.defineComponent({
         _push(`<nav${serverRenderer.ssrRenderAttrs(vue.mergeProps({ class: "page-nav" }, _attrs))}><p class="inner">`);
         if (vue.unref(prevNavLink)) {
           _push(`<span class="prev">`);
-          _push(serverRenderer.ssrRenderComponent(_sfc_main$h, { item: vue.unref(prevNavLink) }, null, _parent));
+          _push(serverRenderer.ssrRenderComponent(_sfc_main$k, { item: vue.unref(prevNavLink) }, null, _parent));
           _push(`</span>`);
         } else {
           _push(`<!---->`);
         }
         if (vue.unref(nextNavLink)) {
           _push(`<span class="next">`);
-          _push(serverRenderer.ssrRenderComponent(_sfc_main$h, { item: vue.unref(nextNavLink) }, null, _parent));
+          _push(serverRenderer.ssrRenderComponent(_sfc_main$k, { item: vue.unref(nextNavLink) }, null, _parent));
           _push(`</span>`);
         } else {
           _push(`<!---->`);
@@ -2434,13 +2782,13 @@ const _sfc_main$6 = /* @__PURE__ */ vue.defineComponent({
     };
   }
 });
-const _sfc_setup$6 = _sfc_main$6.setup;
-_sfc_main$6.setup = (props, ctx) => {
+const _sfc_setup$9 = _sfc_main$9.setup;
+_sfc_main$9.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/PageNav.vue");
-  return _sfc_setup$6 ? _sfc_setup$6(props, ctx) : void 0;
+  return _sfc_setup$9 ? _sfc_setup$9(props, ctx) : void 0;
 };
-const _sfc_main$5 = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$8 = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
@@ -2450,20 +2798,20 @@ const _sfc_main$5 = /* @__PURE__ */ vue.defineComponent({
       _push(`<div class="theme-default-content">`);
       _push(serverRenderer.ssrRenderComponent(_component_Content, null, null, _parent));
       _push(`</div>`);
-      _push(serverRenderer.ssrRenderComponent(_sfc_main$7, null, null, _parent));
-      _push(serverRenderer.ssrRenderComponent(_sfc_main$6, null, null, _parent));
+      _push(serverRenderer.ssrRenderComponent(_sfc_main$a, null, null, _parent));
+      _push(serverRenderer.ssrRenderComponent(_sfc_main$9, null, null, _parent));
       serverRenderer.ssrRenderSlot(_ctx.$slots, "bottom", {}, null, _push, _parent);
       _push(`</main>`);
     };
   }
 });
-const _sfc_setup$5 = _sfc_main$5.setup;
-_sfc_main$5.setup = (props, ctx) => {
+const _sfc_setup$8 = _sfc_main$8.setup;
+_sfc_main$8.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/Page.vue");
-  return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
+  return _sfc_setup$8 ? _sfc_setup$8(props, ctx) : void 0;
 };
-const _sfc_main$4 = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$7 = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   props: {
     item: {
@@ -2504,21 +2852,15 @@ const _sfc_main$4 = /* @__PURE__ */ vue.defineComponent({
       const _component_SidebarItem = vue.resolveComponent("SidebarItem", true);
       _push(`<li${serverRenderer.ssrRenderAttrs(_attrs)}>`);
       if (vue.unref(item).link) {
-        _push(serverRenderer.ssrRenderComponent(_sfc_main$h, {
+        _push(serverRenderer.ssrRenderComponent(_sfc_main$k, {
           class: vue.unref(itemClass),
           item: vue.unref(item)
         }, null, _parent));
       } else {
-        _push(`<p tabindex="0" class="${serverRenderer.ssrRenderClass(vue.unref(itemClass))}">${serverRenderer.ssrInterpolate(vue.unref(item).text)} `);
-        if (vue.unref(item).collapsible) {
-          _push(`<span class="${serverRenderer.ssrRenderClass([isOpen.value ? "down" : "right", "arrow"])}"></span>`);
-        } else {
-          _push(`<!---->`);
-        }
-        _push(`</p>`);
+        _push(`<!---->`);
       }
       if ((_a = vue.unref(item).children) == null ? void 0 : _a.length) {
-        _push(serverRenderer.ssrRenderComponent(_sfc_main$d, null, {
+        _push(serverRenderer.ssrRenderComponent(_sfc_main$g, null, {
           default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
             if (_push2) {
               _push2(`<ul style="${serverRenderer.ssrRenderStyle(isOpen.value ? null : { display: "none" })}" class="sidebar-item-children"${_scopeId}><!--[-->`);
@@ -2555,13 +2897,13 @@ const _sfc_main$4 = /* @__PURE__ */ vue.defineComponent({
     };
   }
 });
-const _sfc_setup$4 = _sfc_main$4.setup;
-_sfc_main$4.setup = (props, ctx) => {
+const _sfc_setup$7 = _sfc_main$7.setup;
+_sfc_main$7.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/SidebarItem.vue");
-  return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../theme/components/SidebarItem.vue");
+  return _sfc_setup$7 ? _sfc_setup$7(props, ctx) : void 0;
 };
-const _sfc_main$3 = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$6 = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     const sidebarItems = useSidebarItems();
@@ -2569,7 +2911,7 @@ const _sfc_main$3 = /* @__PURE__ */ vue.defineComponent({
       if (vue.unref(sidebarItems).length) {
         _push(`<ul${serverRenderer.ssrRenderAttrs(vue.mergeProps({ class: "sidebar-items" }, _attrs))}><!--[-->`);
         serverRenderer.ssrRenderList(vue.unref(sidebarItems), (item) => {
-          _push(serverRenderer.ssrRenderComponent(_sfc_main$4, {
+          _push(serverRenderer.ssrRenderComponent(_sfc_main$7, {
             key: item.link || item.text,
             item
           }, null, _parent));
@@ -2581,31 +2923,248 @@ const _sfc_main$3 = /* @__PURE__ */ vue.defineComponent({
     };
   }
 });
-const _sfc_setup$3 = _sfc_main$3.setup;
-_sfc_main$3.setup = (props, ctx) => {
+const _sfc_setup$6 = _sfc_main$6.setup;
+_sfc_main$6.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/SidebarItems.vue");
-  return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
+  return _sfc_setup$6 ? _sfc_setup$6(props, ctx) : void 0;
 };
-const _sfc_main$2 = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$5 = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<aside${serverRenderer.ssrRenderAttrs(vue.mergeProps({ class: "sidebar" }, _attrs))}>`);
-      _push(serverRenderer.ssrRenderComponent(_sfc_main$b, null, null, _parent));
+      _push(`<aside${serverRenderer.ssrRenderAttrs(vue.mergeProps({ class: "sidebar" }, _attrs))}><div class="subtitle">On This Page</div>`);
+      _push(serverRenderer.ssrRenderComponent(_sfc_main$e, null, null, _parent));
       serverRenderer.ssrRenderSlot(_ctx.$slots, "top", {}, null, _push, _parent);
-      _push(serverRenderer.ssrRenderComponent(_sfc_main$3, null, null, _parent));
+      _push(serverRenderer.ssrRenderComponent(_sfc_main$6, null, null, _parent));
       serverRenderer.ssrRenderSlot(_ctx.$slots, "bottom", {}, null, _push, _parent);
       _push(`</aside>`);
     };
   }
 });
+const _sfc_setup$5 = _sfc_main$5.setup;
+_sfc_main$5.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../theme/components/SidebarPageSections.vue");
+  return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
+};
+const _sfc_main$4 = /* @__PURE__ */ vue.defineComponent({
+  __ssrInlineRender: true,
+  setup(__props) {
+    const useNavbarSelectLanguage = () => {
+      const router = vueRouter.useRouter();
+      const routeLocale = useRouteLocale();
+      const siteLocale = useSiteLocaleData();
+      const themeLocale = useThemeLocaleData();
+      return vue.computed(() => {
+        var _a, _b;
+        const localePaths = Object.keys(siteLocale.value.locales);
+        if (localePaths.length < 2) {
+          return [];
+        }
+        const currentPath = router.currentRoute.value.path;
+        const currentFullPath = router.currentRoute.value.fullPath;
+        const languageDropdown = {
+          text: (_a = themeLocale.value.selectLanguageText) != null ? _a : "unknown language",
+          ariaLabel: (_b = themeLocale.value.selectLanguageAriaLabel) != null ? _b : "unkown language",
+          children: localePaths.map((targetLocalePath) => {
+            var _a2, _b2, _c, _d, _e, _f;
+            const targetSiteLocale = (_b2 = (_a2 = siteLocale.value.locales) == null ? void 0 : _a2[targetLocalePath]) != null ? _b2 : {};
+            const targetThemeLocale = (_d = (_c = themeLocale.value.locales) == null ? void 0 : _c[targetLocalePath]) != null ? _d : {};
+            const targetLang = `${targetSiteLocale.lang}`;
+            const text = (_e = targetThemeLocale.selectLanguageName) != null ? _e : targetLang;
+            let link;
+            if (targetLang === siteLocale.value.lang) {
+              link = currentFullPath;
+            } else {
+              const targetLocalePage = currentPath.replace(routeLocale.value, targetLocalePath);
+              if (router.getRoutes().some((item) => item.path === targetLocalePage)) {
+                link = targetLocalePage;
+              } else {
+                link = (_f = targetThemeLocale.home) != null ? _f : targetLocalePath;
+              }
+            }
+            return {
+              text,
+              link
+            };
+          })
+        };
+        return [languageDropdown];
+      });
+    };
+    const useNavbarRepo = () => {
+      const themeLocale = useThemeLocaleData();
+      const repo = vue.computed(() => themeLocale.value.repo);
+      const repoType = vue.computed(() => repo.value ? resolveRepoType(repo.value) : null);
+      const repoLink = vue.computed(() => {
+        if (repo.value && !isLinkHttp(repo.value)) {
+          return `https://github.com/${repo.value}`;
+        }
+        return repo.value;
+      });
+      const repoLabel = vue.computed(() => {
+        if (!repoLink.value)
+          return null;
+        if (themeLocale.value.repoLabel)
+          return themeLocale.value.repoLabel;
+        if (repoType.value === null)
+          return "Source";
+        return repoType.value;
+      });
+      return vue.computed(() => {
+        if (!repoLink.value || !repoLabel.value) {
+          return [];
+        }
+        return [
+          {
+            text: repoLabel.value,
+            link: repoLink.value
+          }
+        ];
+      });
+    };
+    const resolveNavbarItem = (item) => {
+      if (isString(item)) {
+        return useNavLink(item);
+      }
+      if (item.children) {
+        return __spreadProps(__spreadValues({}, item), {
+          children: item.children.map(resolveNavbarItem)
+        });
+      }
+      return item;
+    };
+    const useNavbarConfig = () => {
+      const themeLocale = useThemeLocaleData();
+      return vue.computed(() => (themeLocale.value.navbar || []).map(resolveNavbarItem));
+    };
+    const navbarConfig = useNavbarConfig();
+    const navbarSelectLanguage = useNavbarSelectLanguage();
+    const navbarRepo = useNavbarRepo();
+    const navbarLinks = vue.computed(() => [
+      ...navbarConfig.value,
+      ...navbarSelectLanguage.value,
+      ...navbarRepo.value
+    ]);
+    const route = vueRouter.useRoute();
+    const site = useSiteData();
+    const hasHttpProtocol = (item) => isLinkHttp(item.link);
+    const hasNonHttpProtocol = (item) => isLinkMailto(item.link) || isLinkTel(item.link);
+    const linkTarget = (item) => {
+      if (hasNonHttpProtocol(item))
+        return void 0;
+      if (item.target)
+        return item.target;
+      if (hasHttpProtocol(item))
+        return "_blank";
+      return void 0;
+    };
+    const isBlankTarget = (item) => linkTarget(item) === "_blank";
+    const isRouterLink = (child) => !hasHttpProtocol(child) && !hasNonHttpProtocol(child) && !isBlankTarget(child);
+    const shouldBeActiveInSubpath = (item) => {
+      const localeKeys = Object.keys(site.value.locales);
+      if (localeKeys.length) {
+        return !localeKeys.some((key) => key === item.link);
+      }
+      return item.value.link !== "/";
+    };
+    const isActiveInSubpath = (item) => {
+      if (!shouldBeActiveInSubpath) {
+        return false;
+      }
+      return route.path.startsWith(item.link);
+    };
+    const isActive = (child) => {
+      if (!isRouterLink(child)) {
+        return false;
+      }
+      if (child.activeMatch) {
+        return new RegExp(child.activeMatch).test(route.path);
+      }
+      return isActiveInSubpath(child);
+    };
+    const activeItem = vue.computed(() => {
+      for (const item of navbarLinks.value) {
+        if (!item.children) {
+          continue;
+        }
+        for (const child of item.children) {
+          if (isActive(child)) {
+            return item;
+          }
+          continue;
+        }
+      }
+      return null;
+    });
+    return (_ctx, _push, _parent, _attrs) => {
+      _push(`<!--[-->${serverRenderer.ssrInterpolate(vue.unref(activeItem))} <aside class="sidebar">`);
+      if (vue.unref(activeItem)) {
+        _push(`<ul class="sidebar-items"><!--[-->`);
+        serverRenderer.ssrRenderList(vue.unref(activeItem).children, (child) => {
+          _push(`<li class="navbar-dropdown-item">`);
+          if (child.children) {
+            _push(`<!--[--><h4 class="navbar-dropdown-subtitle">`);
+            if (child.link) {
+              _push(serverRenderer.ssrRenderComponent(_sfc_main$k, { item: child }, null, _parent));
+            } else {
+              _push(`<span>${serverRenderer.ssrInterpolate(child.text)}</span>`);
+            }
+            _push(`</h4><ul class="navbar-dropdown-subitem-wrapper"><!--[-->`);
+            serverRenderer.ssrRenderList(child.children, (grandchild) => {
+              _push(`<li class="navbar-dropdown-subitem">`);
+              _push(serverRenderer.ssrRenderComponent(_sfc_main$k, { item: grandchild }, null, _parent));
+              _push(`</li>`);
+            });
+            _push(`<!--]--></ul><!--]-->`);
+          } else {
+            _push(serverRenderer.ssrRenderComponent(_sfc_main$k, { item: child }, null, _parent));
+          }
+          _push(`</li>`);
+        });
+        _push(`<!--]--></ul>`);
+      } else {
+        _push(`<!---->`);
+      }
+      _push(`</aside><!--]-->`);
+    };
+  }
+});
+const _sfc_setup$4 = _sfc_main$4.setup;
+_sfc_main$4.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../theme/components/SidebarSubMenu.vue");
+  return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
+};
+const _sfc_main$3 = {};
+function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
+  _push(`<div${serverRenderer.ssrRenderAttrs(vue.mergeProps({ class: "c-page-header" }, _attrs))}><div class="content"><h1>${serverRenderer.ssrInterpolate(_ctx.$frontmatter.title)}</h1>`);
+  if (_ctx.$frontmatter.description) {
+    _push(`<p class="lead-text">${serverRenderer.ssrInterpolate(_ctx.$frontmatter.description)}</p>`);
+  } else {
+    _push(`<!---->`);
+  }
+  _push(`</div></div>`);
+}
+const _sfc_setup$3 = _sfc_main$3.setup;
+_sfc_main$3.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../theme/components/PageHeader.vue");
+  return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
+};
+var PageHeader = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$2]]);
+const _sfc_main$2 = {};
+function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
+  _push(`<footer${serverRenderer.ssrRenderAttrs(vue.mergeProps({ class: "c-page-footer" }, _attrs))}><div class="content"><h2>Feedback?</h2><p class="lead-text">We welcome all feedback, designs, or ideas in order to produce the best possible experience for our users. If you\u2019re interested in contributing, submit your ideas to the team.</p><a href="#">Contact the design system team</a></div></footer>`);
+}
 const _sfc_setup$2 = _sfc_main$2.setup;
 _sfc_main$2.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/Sidebar.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../theme/components/PageFooter.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
+var PageFooter = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender$1]]);
 const _sfc_main$1 = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
@@ -2618,7 +3177,7 @@ const _sfc_main$1 = /* @__PURE__ */ vue.defineComponent({
     const toggleSidebar = (to) => {
       isSidebarOpen.value = typeof to === "boolean" ? to : !isSidebarOpen.value;
     };
-    const containerClass = vue.computed(() => [
+    vue.computed(() => [
       {
         "no-navbar": !shouldShowNavbar.value,
         "no-sidebar": !sidebarItems.value.length,
@@ -2637,65 +3196,47 @@ const _sfc_main$1 = /* @__PURE__ */ vue.defineComponent({
       unregisterRouterHook();
     });
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<div${serverRenderer.ssrRenderAttrs(vue.mergeProps({
-        class: ["theme-container", vue.unref(containerClass)]
-      }, _attrs))}>`);
+      _push(`<div${serverRenderer.ssrRenderAttrs(vue.mergeProps({ class: "theme-container" }, _attrs))}>`);
       serverRenderer.ssrRenderSlot(_ctx.$slots, "navbar", {}, () => {
-        if (vue.unref(shouldShowNavbar)) {
-          _push(serverRenderer.ssrRenderComponent(_sfc_main$8, null, {
-            before: vue.withCtx((_, _push2, _parent2, _scopeId) => {
-              if (_push2) {
-                serverRenderer.ssrRenderSlot(_ctx.$slots, "navbar-before", {}, null, _push2, _parent2, _scopeId);
-              } else {
-                return [
-                  vue.renderSlot(_ctx.$slots, "navbar-before")
-                ];
-              }
-            }),
-            after: vue.withCtx((_, _push2, _parent2, _scopeId) => {
-              if (_push2) {
-                serverRenderer.ssrRenderSlot(_ctx.$slots, "navbar-after", {}, null, _push2, _parent2, _scopeId);
-              } else {
-                return [
-                  vue.renderSlot(_ctx.$slots, "navbar-after")
-                ];
-              }
-            }),
-            _: 3
-          }, _parent));
-        } else {
-          _push(`<!---->`);
-        }
-      }, _push, _parent);
-      _push(`<div class="sidebar-mask"></div>`);
-      serverRenderer.ssrRenderSlot(_ctx.$slots, "sidebar", {}, () => {
-        _push(serverRenderer.ssrRenderComponent(_sfc_main$2, null, {
-          top: vue.withCtx((_, _push2, _parent2, _scopeId) => {
+        _push(serverRenderer.ssrRenderComponent(_sfc_main$b, null, {
+          before: vue.withCtx((_, _push2, _parent2, _scopeId) => {
             if (_push2) {
-              serverRenderer.ssrRenderSlot(_ctx.$slots, "sidebar-top", {}, null, _push2, _parent2, _scopeId);
+              serverRenderer.ssrRenderSlot(_ctx.$slots, "navbar-before", {}, null, _push2, _parent2, _scopeId);
             } else {
               return [
-                vue.renderSlot(_ctx.$slots, "sidebar-top")
+                vue.renderSlot(_ctx.$slots, "navbar-before")
               ];
             }
           }),
-          bottom: vue.withCtx((_, _push2, _parent2, _scopeId) => {
+          after: vue.withCtx((_, _push2, _parent2, _scopeId) => {
             if (_push2) {
-              serverRenderer.ssrRenderSlot(_ctx.$slots, "sidebar-bottom", {}, null, _push2, _parent2, _scopeId);
+              serverRenderer.ssrRenderSlot(_ctx.$slots, "navbar-after", {}, null, _push2, _parent2, _scopeId);
             } else {
               return [
-                vue.renderSlot(_ctx.$slots, "sidebar-bottom")
+                vue.renderSlot(_ctx.$slots, "navbar-after")
               ];
             }
           }),
           _: 3
         }, _parent));
+        if (_ctx.$frontmatter.pageHeader) {
+          _push(serverRenderer.ssrRenderComponent(PageHeader, null, null, _parent));
+        } else {
+          _push(`<!---->`);
+        }
+      }, _push, _parent);
+      serverRenderer.ssrRenderSlot(_ctx.$slots, "sidebar", {}, () => {
+        _push(`<div id="sidebar-left">`);
+        _push(serverRenderer.ssrRenderComponent(_sfc_main$4, null, null, _parent));
+        _push(`</div><div id="sidebar-right">`);
+        _push(serverRenderer.ssrRenderComponent(_sfc_main$5, null, null, _parent));
+        _push(`</div>`);
       }, _push, _parent);
       serverRenderer.ssrRenderSlot(_ctx.$slots, "page", {}, () => {
         if (vue.unref(frontmatter).home) {
-          _push(serverRenderer.ssrRenderComponent(_sfc_main$f, null, null, _parent));
+          _push(serverRenderer.ssrRenderComponent(_sfc_main$i, null, null, _parent));
         } else {
-          _push(serverRenderer.ssrRenderComponent(_sfc_main$5, vue.mergeProps({
+          _push(serverRenderer.ssrRenderComponent(_sfc_main$8, vue.mergeProps({
             key: vue.unref(page).path
           }, _attrs), {
             top: vue.withCtx((_, _push2, _parent2, _scopeId) => {
@@ -2708,18 +3249,17 @@ const _sfc_main$1 = /* @__PURE__ */ vue.defineComponent({
               }
             }),
             bottom: vue.withCtx((_, _push2, _parent2, _scopeId) => {
-              if (_push2) {
-                serverRenderer.ssrRenderSlot(_ctx.$slots, "page-bottom", {}, null, _push2, _parent2, _scopeId);
-              } else {
-                return [
-                  vue.renderSlot(_ctx.$slots, "page-bottom")
-                ];
+              if (_push2)
+                ;
+              else {
+                return [];
               }
             }),
             _: 3
           }, _parent));
         }
       }, _push, _parent);
+      _push(serverRenderer.ssrRenderComponent(PageFooter, null, null, _parent));
       _push(`</div>`);
     };
   }
@@ -2727,7 +3267,7 @@ const _sfc_main$1 = /* @__PURE__ */ vue.defineComponent({
 const _sfc_setup$1 = _sfc_main$1.setup;
 _sfc_main$1.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/layouts/Layout.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../theme/layouts/Layout.vue");
   return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
 };
 var Layout = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({

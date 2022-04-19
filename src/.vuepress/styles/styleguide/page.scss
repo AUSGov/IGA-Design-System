@@ -2,7 +2,7 @@
 @import '_variables';
 
 .page {
-  padding-bottom: 2rem;
+  padding-right: var(--sidebar-width);
   display: block;
 }
 

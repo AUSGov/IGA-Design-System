@@ -1,7 +1,8 @@
 ---
 lang: en-US
-title: Home page
+title: Home
 description: Description of the home page
+pageHeader: true
 ---
 
 # Hello World

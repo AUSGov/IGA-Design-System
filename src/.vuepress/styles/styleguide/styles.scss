@@ -25,6 +25,7 @@ html {
 
 header.navbar {
   position: fixed;
+  padding: var(--navbar-padding-v) var(--navbar-padding-h);
 }
 
 /* Content width fix */

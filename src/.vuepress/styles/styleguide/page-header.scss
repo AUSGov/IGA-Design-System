@@ -1,0 +1,25 @@
+.c-page-header {
+  padding-top: var(--navbar-height);
+  background-color: var(--doi-dark-blue);
+  color: var(--c-text-navbar);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .content {
+    padding: 15rem var(--navbar-padding-h) 2.5rem var(--navbar-padding-h);
+  }
+
+  h1 {
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    font-weight: var(--font-weight-semi-bold);
+    font-size: 3.75rem;
+  }
+
+  .lead-text {
+    font-size: var(--font-size-lead-text);
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,30 @@
+@import '_mixins';
+
+.c-page-footer {
+  background-color: var(--doi-cyan);
+  color: #323232;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .content {
+    @include content_wrapper;
+  }
+
+  h2 {
+    font-size: 36px;
+    border-bottom: none;
+    margin-bottom: 1.5rem;
+    font-weight: var(--font-weight-semi-bold);
+  }
+
+  .lead-text {
+    font-size: var(--font-size-lead-text);
+    margin-bottom: 2rem;
+  }
+
+  a {
+    color: var(--c-text-accent);
+    text-decoration: underline;
+  }
+}
