@@ -1,12 +1,14 @@
-@import '_mixins';
-@import '_variables';
-
 .sidebar {
   padding-top: 7rem;
   padding-bottom: 7rem;
+  margin: 0;
   position: absolute;
   top: unset;
   bottom: unset;
+  font-size: 16px;
+  overflow-y: auto;
+  width: var(--sidebar-width);
+  transition: transform var(--t-transform), background-color var(--t-color), border-color var(--t-color);
 
   .subtitle {
     padding-bottom: 1rem;
@@ -24,6 +26,7 @@
   a {
     display: inline-block;
     color: #000;
+    font-weight: $font-weight-semi-bold;
 
     &:hover {
       color: var(--c-text-accent);
@@ -72,6 +75,115 @@
   }
 }
 
+.sidebar-mask {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+.theme-container {
+  &.sidebar-open {
+    .sidebar-mask {
+      display: block;
+    }
+
+    .navbar > .toggle-sidebar-button .icon {
+      span {
+        &:nth-child(1) {
+          transform: rotate(45deg) translate3d(5.5px, 5.5px, 0);
+        }
+
+        &:nth-child(2) {
+          transform: scale3d(0, 1, 1);
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate3d(6px, -6px, 0);
+        }
+
+        &:nth-child(1),
+        &:nth-child(3) {
+          transform-origin: center;
+        }
+      }
+    }
+  }
+
+  &.no-navbar {
+    .theme-default-content:not(.custom) > h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    .page {
+      padding-top: 0;
+    }
+
+    .sidebar {
+      top: 0;
+    }
+  }
+}
+
+@media (min-width: ($MQMobile + 1px)) {
+  .theme-container.no-sidebar {
+    .sidebar {
+      display: none;
+    }
+
+    .page {
+      padding-left: 0;
+    }
+  }
+}
+
+// narrow desktop / iPad
+@media (max-width: $MQNarrow) {
+  .sidebar {
+    font-size: 15px;
+    width: var(--sidebar-width-mobile);
+  }
+
+  .page {
+    padding-left: var(--sidebar-width-mobile);
+  }
+}
+
+// wide mobile
+@media (max-width: $MQMobile) {
+  .sidebar {
+    top: 0;
+    transform: translateX(-100%);
+  }
+
+  .page {
+    padding-left: 0;
+  }
+
+  .theme-container {
+    &.sidebar-open {
+      .sidebar {
+        transform: translateX(0);
+      }
+    }
+
+    &.no-navbar {
+      .sidebar {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
 #sidebar-left {
   .sidebar {
     left: 0;
@@ -82,6 +194,11 @@
   a {
     margin: 0;
     padding: 0.35rem 1rem 0.35rem 1.25rem;
+
+    &.router-link-active,
+    &:hover {
+      color: var(--c-text-accent);
+    }
   }
 }
 
@@ -91,6 +208,12 @@
     right: 0;
     border-right: none;
     padding-left: var(--navbar-padding-h);
+  }
+
+  a {
+    &.active {
+      color: var(--c-text-accent);
+    }
   }
 }
 

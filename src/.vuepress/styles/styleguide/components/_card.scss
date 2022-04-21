@@ -1,0 +1,40 @@
+.c-card {
+  margin-bottom: $component-spacing;
+
+  .img-wrap {
+    background: rgba(216, 216, 216, 0.3);
+    height: 0;
+    padding-bottom: 76%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .h4 {
+    margin-bottom: 1.5rem;
+  }
+
+  a {
+    font-weight: $font-weight-bold;
+    display: flex;
+    align-items: center;
+  }
+
+  .icon {
+    display: flex;
+
+    svg {
+      width: 12px;
+      height: auto;
+    }
+
+    img {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<template>
+  <div class="c-cards">
+    <div class="row">
+      <div v-for="card in contents" class="col-md-6 col-lg-4">
+        <Card :image="card.image" :title="card.title" :link-url="card.linkUrl" :link-text="card.linkText"/>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+  export default {
+    props: {
+      contents: {
+        type: Array,
+        required: true
+      }
+    }
+  }
+</script>

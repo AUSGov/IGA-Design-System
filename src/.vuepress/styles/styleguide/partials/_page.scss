@@ -1,8 +1,6 @@
-@import '_mixins';
-@import '_variables';
-
 .page {
-  padding-right: var(--sidebar-width);
+  min-height: calc(100vh - var(--navbar-height));
+  padding: 7rem var(--sidebar-width) 0 0;
   display: block;
 }
 

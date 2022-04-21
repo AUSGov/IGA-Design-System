@@ -1,5 +1,3 @@
-@import '_variables';
-
 @mixin content_wrapper {
   max-width: var(--content-width);
   margin: 0 auto;

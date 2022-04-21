@@ -8,6 +8,11 @@ body {
 
 html.dark {
   color-scheme: dark;
+
+  body {
+    background-color: var(--c-bg);
+    color: var(--c-text);
+  }
 }
 
 body {
@@ -79,43 +84,70 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
-  line-height: 1.25;
+  .theme-default-content:not(.custom) > & {
+    &:first-child {
+      padding-top: 0;
+      margin-bottom: 1rem;
 
-  &:focus-visible {
-    outline: none;
+      + p,
+      + pre,
+      + .custom-container {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.theme-default-content:not(.custom) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding: 1rem 0 0 0;
+    margin: 0 0 1.5rem 0;
+    border-bottom: none;
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:hover .header-anchor {
+      opacity: 1;
+    }
   }
 
-  &:hover .header-anchor {
-    opacity: 1;
+  h1 {
+    font-size: 60px;
+    line-height: 1;
+    font-weight: $font-weight-bold;
   }
-}
 
-h1 {
-  font-size: 2.2rem;
-}
+  h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: $font-weight-semi-bold;
+  }
 
-h2 {
-  font-size: 1.65rem;
-  padding-bottom: 0.3rem;
-  border-bottom: 1px solid var(--c-border);
-  transition: border-color var(--t-color);
-}
+  h3 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    font-weight: $font-weight-semi-bold;
+  }
 
-h3 {
-  font-size: 1.35rem;
-}
+  h4 {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: $font-weight-semi-bold;
+  }
 
-h4 {
-  font-size: 1.15rem;
-}
-
-h5 {
-  font-size: 1.05rem;
-}
-
-h6 {
-  font-size: 1rem;
+  h5 {
+    font-size: 21px;
+    line-height: 1.2;
+    font-weight: $font-weight-semi-bold;
+  }
 }
 
 a.header-anchor {
@@ -144,29 +176,4 @@ ol {
 hr {
   border: 0;
   border-top: 1px solid var(--c-border);
-}
-
-table {
-  border-collapse: collapse;
-  margin: 1rem 0;
-  display: block;
-  overflow-x: auto;
-  transition: border-color var(--t-color);
-}
-
-tr {
-  border-top: 1px solid var(--c-border-dark);
-  transition: border-color var(--t-color);
-
-  &:nth-child(2n) {
-    background-color: var(--c-bg-light);
-    transition: background-color var(--t-color);
-  }
-}
-
-th,
-td {
-  padding: 0.6em 1em;
-  border: 1px solid var(--c-border-dark);
-  transition: border-color var(--t-color);
 }

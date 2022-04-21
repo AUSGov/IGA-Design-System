@@ -1,21 +1,30 @@
-@use 'styles';
-@use 'vars';
-@use 'vars-dark';
-@use 'normalize';
+/* Global styles */
+@import 'variables';
+@import 'root-vars';
+@import 'root-vars-dark';
+@import 'normalize';
+@import 'mixins';
 
-@use 'arrow';
-@use 'badge';
-@use 'code';
-@use 'code-group';
-@use 'custom-container';
-@use 'home';
-@use 'layout';
-@use 'navbar';
-@use 'navbar-dropdown';
-@use 'page';
-@use 'sidebar';
-@use 'toc';
-@use 'transitions';
+/* Default component styles */
+@import 'partials/arrow';
+@import 'partials/badge';
+@import 'partials/code';
+@import 'partials/code-group';
+@import 'partials/custom-container';
+@import 'partials/home';
+@import 'partials/tables';
+@import 'partials/layout';
+@import 'partials/navbar';
+@import 'partials/navbar-dropdown';
+@import 'partials/page';
+@import 'partials/sidebar';
+@import 'partials/toc';
+@import 'partials/transitions';
 
-@use 'page-header';
-@use 'page-footer';
+/* Custom component styles */
+@import 'components/page-header';
+@import 'components/page-footer';
+@import 'components/card';
+@import 'components/arrows-list';
+@import 'components/columns';
+@import 'components/two-cards';

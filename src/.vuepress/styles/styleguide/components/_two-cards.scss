@@ -1,0 +1,24 @@
+.c-two-cards {
+  margin-bottom: $component-spacing;
+
+  .card-content {
+    padding: 1rem;
+    border-radius: 6px;
+  }
+
+  .row {
+    .card-wrap {
+      &:first-child {
+        .card-content {
+          background-color: rgba(234, 245, 245, 1);
+        }
+      }
+
+      &:last-child {
+        .card-content {
+          background-color: rgba(255, 224, 227, 0.6);
+        }
+      }
+    }
+  }
+}
