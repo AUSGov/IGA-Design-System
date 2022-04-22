@@ -30,13 +30,13 @@
   }
 
   // console.log('$front', frontmatter)
+  console.log('children', themeLocale)
   const subMenu = computed(() => {
     const parentMenu = themeLocale.value.navbar.find(item => item.children && isActive(item))
     if (!parentMenu) {
       return null
     }
     let result = []
-    console.log('children', parentMenu.children)
     for (const child of parentMenu.children) {
       result.push({
         image: '',

@@ -5,11 +5,11 @@
     </div>
     <div class="card-body">
       <p class="h4">{{ title }}</p>
-      <a v-if="linkUrl" :href="linkUrl">
+      <RouterLink v-if="linkUrl" :to="linkUrl">
         <span class="me-2">{{ linkText }}</span>
         <span class="icon" v-html="arrowRight">
         </span>
-      </a>
+      </RouterLink>
     </div>
   </div>
 </template>
