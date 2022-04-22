@@ -3376,7 +3376,7 @@ const data$f = {
     }
   ],
   "git": {
-    "updatedTime": 1650592935e3
+    "updatedTime": 1650597037e3
   },
   "filePathRelative": "components/README.md"
 };
@@ -4427,6 +4427,7 @@ const _sfc_main$7 = {
   }
 };
 function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_RouterLink = vue.resolveComponent("RouterLink");
   _push(`<div${serverRenderer.ssrRenderAttrs(vue.mergeProps({ class: "card c-card" }, _attrs))}><div class="img-wrap card-img-top">`);
   if ($props.image) {
     _push(`<img${serverRenderer.ssrRenderAttr("src", $props.image)}${serverRenderer.ssrRenderAttr("alt", $props.title)}>`);
@@ -4435,7 +4436,22 @@ function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
   }
   _push(`</div><div class="card-body"><p class="h4">${serverRenderer.ssrInterpolate($props.title)}</p>`);
   if ($props.linkUrl) {
-    _push(`<a${serverRenderer.ssrRenderAttr("href", $props.linkUrl)}><span class="me-2">${serverRenderer.ssrInterpolate($props.linkText)}</span><span class="icon">${$data.arrowRight}</span></a>`);
+    _push(serverRenderer.ssrRenderComponent(_component_RouterLink, { to: $props.linkUrl }, {
+      default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
+        if (_push2) {
+          _push2(`<span class="me-2"${_scopeId}>${serverRenderer.ssrInterpolate($props.linkText)}</span><span class="icon"${_scopeId}>${$data.arrowRight}</span>`);
+        } else {
+          return [
+            vue.createVNode("span", { class: "me-2" }, vue.toDisplayString($props.linkText), 1),
+            vue.createVNode("span", {
+              class: "icon",
+              innerHTML: $data.arrowRight
+            }, null, 8, ["innerHTML"])
+          ];
+        }
+      }),
+      _: 1
+    }, _parent));
   } else {
     _push(`<!---->`);
   }
@@ -4719,13 +4735,13 @@ const _sfc_main$1 = /* @__PURE__ */ vue.defineComponent({
       }
       return isActiveInSubpath(child);
     };
+    console.log("children", themeLocale);
     const subMenu = vue.computed(() => {
       const parentMenu = themeLocale.value.navbar.find((item) => item.children && isActive(item));
       if (!parentMenu) {
         return null;
       }
       let result = [];
-      console.log("children", parentMenu.children);
       for (const child of parentMenu.children) {
         result.push({
           image: "",
