@@ -1,13 +1,13 @@
 .page {
   min-height: calc(100vh - var(--navbar-height));
-  padding: 7rem var(--sidebar-width) 0 0;
+  padding: 7rem 0 0 0;
   display: block;
 }
 
 .page-meta {
   @include content_wrapper;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+
+  padding: 1rem 0;
   overflow: auto;
 
   .meta-item {
@@ -31,7 +31,7 @@
   }
 
   .last-updated {
-    float: right;
+    float: none;
   }
 }
 
@@ -67,8 +67,10 @@
       content: '←';
     }
   }
+
   .next {
     float: right;
+
     a:after {
       content: '→';
     }

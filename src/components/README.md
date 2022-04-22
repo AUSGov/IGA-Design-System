@@ -3,6 +3,7 @@ lang: en-US
 title: Components
 description: Description of the components page
 pageHeader: true
+layout: ParentPage
 ---
 
 ## Overview
@@ -14,7 +15,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel mauris fermentum
     { title: 'When not to use', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel mauris fermentum volutpat quisque. Et egestas sem tellus duis dignissim adipiscing in. Nec porttitor adipiscing nam lobortis urna non pharetra, ullamcorper. Ipsum nulla proin donec faucibus in pretium.'},
 ]"/>
 
-## Image (Variants)
+<SubMenuCards/>
+
+<ImageMap
+    :image="$withBase('/images/map-sample.png')"
+    :contents="[
+        { x: 4, y: 8.5, title: 'Breadcrumbs', text: 'A breadcrumb, showing the navigation history.' },
+        { x: 4, y: 20, title: 'Heading (sub-topic title)', text: 'A direct, short title focused on the main action the user will complete on the page.' },
+    ]"
+/>
 
 ## Table
 <div>

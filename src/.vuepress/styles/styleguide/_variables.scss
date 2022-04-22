@@ -1,15 +1,14 @@
+@import "../bootstrap/variables";
+
 /* Responsive breakpoints */
 $MQNarrow: 959px !default;
 $MQMobile: 719px !default;
 $MQMobileNarrow: 419px !default;
 
 /* Code languages */
-$codeLang: 'c' 'cpp' 'cs' 'css' 'dart' 'docker' 'fs' 'go' 'html' 'java' 'js'
-  'json' 'kt' 'less' 'makefile' 'md' 'php' 'py' 'rb' 'rs' 'sass' 'scss' 'sh'
-  'styl' 'ts' 'toml' 'vue' 'yml' !default;
+$codeLang: 'c' 'cpp' 'cs' 'css' 'dart' 'docker' 'fs' 'go' 'html' 'java' 'js' 'json' 'kt' 'less' 'makefile' 'md' 'php' 'py' 'rb' 'rs' 'sass' 'scss' 'sh' 'styl' 'ts' 'toml' 'vue' 'yml' !default;
 
 /* Colours */
-@import "../bootstrap/variables";
 $primary: $doi-primary;
 $secondary: $doi-secondary;
 
@@ -40,3 +39,17 @@ $component-spacing: 4rem;
 @import url("https://use.typekit.net/rnj7aix.css");
 @import "hack-subset";
 @import "node_modules/bootstrap/scss/bootstrap";
+
+//$utilities: map-merge(
+//    $utilities,
+//    ("background-color": (
+//      property: background-color,
+//      class: bg,
+//      local-vars: (
+//        "bg-opacity": 1
+//      ),
+//      values:(
+//        "promo": $doi-promo
+//      )
+//    ))
+//);

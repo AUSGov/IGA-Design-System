@@ -1,11 +1,9 @@
 .sidebar {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-  margin: 0;
-  position: absolute;
+  position: unset;
   top: unset;
   bottom: unset;
-  font-size: 16px;
+  margin: 0;
+  padding: 7rem 0 0 0;
   overflow-y: auto;
   width: var(--sidebar-width);
   transition: transform var(--t-transform), background-color var(--t-color), border-color var(--t-color);
@@ -185,10 +183,12 @@
 }
 
 #sidebar-left {
+  position: sticky;
+  top: var(--navbar-height);
+
   .sidebar {
     left: 0;
     border-right: none;
-    padding-right: var(--navbar-padding-h);
   }
 
   a {
@@ -203,11 +203,13 @@
 }
 
 #sidebar-right {
+  position: sticky;
+  top: var(--navbar-height);
+
   .sidebar {
     left: unset;
     right: 0;
     border-right: none;
-    padding-left: var(--navbar-padding-h);
   }
 
   a {

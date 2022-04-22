@@ -1,0 +1,21 @@
+.c-color-tile {
+  .card-img-top {
+    height: 0;
+    padding-bottom: 100%;
+  }
+
+  .card-body {
+    padding: 8px;
+  }
+
+  .title {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-bold;
+    line-height: 1;
+  }
+
+  .hex {
+    font-size: 12px;
+    color: #83858D;
+  }
+}

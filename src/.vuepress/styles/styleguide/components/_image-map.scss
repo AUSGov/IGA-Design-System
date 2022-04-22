@@ -1,0 +1,56 @@
+.c-image-map {
+  .image-container {
+    position: relative;
+  }
+
+  .circle-point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background: $doi-action;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: $font-weight-bold;
+  }
+
+  .image-point {
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+
+    a {
+      color: #fff;
+      text-align: center;
+      font-weight: $font-weight-bold;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    cursor: pointer;
+
+    .circle-point {
+      margin-right: 8px;
+    }
+
+    .h5 {
+      margin: 0;
+      padding: 0;
+      flex-grow: 1;
+    }
+  }
+}

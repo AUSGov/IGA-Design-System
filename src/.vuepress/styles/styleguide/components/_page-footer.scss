@@ -1,12 +1,10 @@
 .c-page-footer {
   background-color: var(--doi-cyan);
   color: #323232;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  justify-content: center;
 
-  .content {
-    @include content_wrapper;
+  .theme-default-content {
+    padding: 2rem 0;
   }
 
   h2 {
