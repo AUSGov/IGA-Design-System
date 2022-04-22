@@ -2562,7 +2562,6 @@ function _sfc_ssrRender$o(_ctx, _push, _parent, _attrs) {
     { title: "When not to use", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel mauris fermentum volutpat quisque. Et egestas sem tellus duis dignissim adipiscing in. Nec porttitor adipiscing nam lobortis urna non pharetra, ullamcorper. Ipsum nulla proin donec faucibus in pretium." }
   ] }, null, _parent));
   _push(serverRenderer.ssrRenderComponent(_component_SubMenuCards, null, null, _parent));
-  _push(`<p>`);
   _push(serverRenderer.ssrRenderComponent(_component_ImageMap, {
     image: _ctx.$withBase("/images/map-sample.png"),
     contents: [
@@ -2570,7 +2569,7 @@ function _sfc_ssrRender$o(_ctx, _push, _parent, _attrs) {
       { x: 4, y: 20, title: "Heading (sub-topic title)", text: "A direct, short title focused on the main action the user will complete on the page." }
     ]
   }, null, _parent));
-  _push(`</p><h2 id="table" tabindex="-1"><a class="header-anchor" href="#table" aria-hidden="true">#</a> Table</h2><div><table class="table"><thead class="table-light"><tr><th scope="col">#</th><th scope="col">Table Header</th><th scope="col">Table Header</th></tr></thead><tbody><tr><th scope="row">1</th><td>Table Body</td><td>Table Body</td></tr><tr><th scope="row">2</th><td>Table Body</td><td>Table Body</td></tr></tbody></table></div><h2 id="demo" tabindex="-1"><a class="header-anchor" href="#demo" aria-hidden="true">#</a> Demo</h2>`);
+  _push(`<h2 id="table" tabindex="-1"><a class="header-anchor" href="#table" aria-hidden="true">#</a> Table</h2><div><table class="table"><thead class="table-light"><tr><th scope="col">#</th><th scope="col">Table Header</th><th scope="col">Table Header</th></tr></thead><tbody><tr><th scope="row">1</th><td>Table Body</td><td>Table Body</td></tr><tr><th scope="row">2</th><td>Table Body</td><td>Table Body</td></tr></tbody></table></div><h2 id="demo" tabindex="-1"><a class="header-anchor" href="#demo" aria-hidden="true">#</a> Demo</h2>`);
   _push(serverRenderer.ssrRenderComponent(_component_CodeGroup, null, {
     default: vue.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -3313,7 +3312,7 @@ const data$h = {
     }
   ],
   "git": {
-    "updatedTime": 1650502701e3
+    "updatedTime": 1650592935e3
   },
   "filePathRelative": "test.md"
 };
@@ -3335,7 +3334,7 @@ const data$g = {
   "excerpt": "",
   "headers": [],
   "git": {
-    "updatedTime": 1649918072e3
+    "updatedTime": 1650592935e3
   },
   "filePathRelative": "typography.md"
 };
@@ -3377,7 +3376,7 @@ const data$f = {
     }
   ],
   "git": {
-    "updatedTime": 1650502701e3
+    "updatedTime": 1650592935e3
   },
   "filePathRelative": "components/README.md"
 };
@@ -3406,7 +3405,7 @@ const data$e = {
     }
   ],
   "git": {
-    "updatedTime": 1650337885e3
+    "updatedTime": 1650592935e3
   },
   "filePathRelative": "components/banners.md"
 };
@@ -3435,7 +3434,7 @@ const data$d = {
     }
   ],
   "git": {
-    "updatedTime": 165033935e4
+    "updatedTime": 1650592935e3
   },
   "filePathRelative": "components/entity-bar.md"
 };
@@ -3584,7 +3583,7 @@ const data$7 = {
     }
   ],
   "git": {
-    "updatedTime": 1650337885e3
+    "updatedTime": 1650592935e3
   },
   "filePathRelative": "components/navigation.md"
 };
