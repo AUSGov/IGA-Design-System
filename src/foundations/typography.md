@@ -1,11 +1,11 @@
 ---
 lang: en-US
-title: Typography
-description: Description of the typography page
+title: Foundations
+description: The global rules and elements which govern the appearance, structure and behaviour of components.
 pageHeader: true
 ---
 
-<ColorTiles />
+# Typography
 
 <h1>Heading 1</h1>
 

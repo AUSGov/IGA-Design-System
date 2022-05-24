@@ -1,8 +1,8 @@
 ---
 lang: en-US
-title: Secondary Footer
+title: Homepage banner
 description: Description of the page
 pageHeader: true
 ---
 
-## Secondary Footer
+## Banners

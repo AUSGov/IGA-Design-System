@@ -1,8 +1,8 @@
 ---
 lang: en-US
-title: Banners
+title: Footer
 description: Description of the page
 pageHeader: true
 ---
 
-## Banners
+## Footer

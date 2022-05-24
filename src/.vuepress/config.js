@@ -35,16 +35,22 @@ module.exports = {
     navbar: [
       // nested group - max depth is 2
       {
-        text: 'Home',
-        link: '/',
+        text: 'Introduction',
+        link: '/introduction',
       },
       {
-        text: 'Instructions',
-        link: '/instructions',
-      },
-      {
-        text: 'Typography',
-        link: '/typography',
+        text: 'Foundations',
+        link: '/foundations/colour-palette',
+        children: [
+          {
+            text: 'Colour Palette',
+            link: '/foundations/colour-palette',
+          },
+          {
+            text: 'Typography',
+            link: '/foundations/typography',
+          },
+        ],
       },
       {
         text: 'Colour Palette',
@@ -63,12 +69,36 @@ module.exports = {
         link: '/components/',
         children: [
           {
-            text: 'Navigation',
-            link: '/components/navigation',
+            text: 'Headers and footers',
+            link: '/components/header',
+            children: [
+              {
+                text: 'Header',
+                link: '/components/header',
+              },
+              {
+                text: 'Footer',
+                link: '/components/footer',
+              },
+              {
+                text: 'Secondary Footer',
+                link: '/components/secondary-footer',
+              },
+            ],
           },
           {
-            text: 'Banners',
-            link: '/components/banners',
+            text: 'Banner',
+            link: '/components/homepage-banner',
+            children: [
+              {
+                text: 'Homepage banner',
+                link: '/components/homepage-banner',
+              },
+              {
+                text: 'Standard content banner',
+                link: '/components/standard-content-banner',
+              },
+            ],
           },
           {
             text: 'Entity Bar',
@@ -85,14 +115,6 @@ module.exports = {
           {
             text: 'Navigate (pubs)',
             link: '/components/navigate-pubs',
-          },
-          {
-            text: 'Secondary Footer',
-            link: '/components/secondary-footer',
-          },
-          {
-            text: 'Global Footer',
-            link: '/components/global-footer',
           },
           {
             text: 'Publications',

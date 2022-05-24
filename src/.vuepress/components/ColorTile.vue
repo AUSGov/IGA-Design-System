@@ -1,5 +1,5 @@
 <template>
-  <div class="col-4 col-md-3 col-lg-2">
+  <div class="col-4 col-md-3">
     <div class="card c-color-tile">
 <!--      <div class="card-img-top" :class="'bg-' + colorKey"></div>-->
       <div class="card-img-top" :style="{'background-color': hex}"></div>

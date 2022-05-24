@@ -1,8 +1,8 @@
 ---
 lang: en-US
-title: Navigation
+title: Standard content banner
 description: Description of the page
 pageHeader: true
 ---
 
-## Navigation
+## Banners
