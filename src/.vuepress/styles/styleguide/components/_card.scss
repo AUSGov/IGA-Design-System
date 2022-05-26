@@ -1,10 +1,12 @@
 .c-card {
   height: 100%;
+  border: 1px solid $gray-100;
 
   .img-wrap {
     background: rgba(216, 216, 216, 0.3);
     height: 0;
     padding-bottom: 76%;
+    border-radius: 12px 12px 0 0;
 
     img {
       width: 100%;
@@ -13,7 +15,12 @@
     }
   }
 
+  .card-body {
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+  }
+
   .h4 {
+    padding: 0;
     margin-bottom: 1.5rem;
   }
 
@@ -36,5 +43,10 @@
       width: auto;
       object-fit: contain;
     }
+  }
+
+  &--compact {
+    border: 1px solid #c4c4c4;
+    padding: 1.5rem;
   }
 }

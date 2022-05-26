@@ -1,6 +1,6 @@
 <template>
-  <div class="card c-card">
-    <div class="img-wrap card-img-top">
+  <div class="card c-card" :class="{'c-card--compact': compact}">
+    <div v-if="!compact" class="img-wrap card-img-top">
       <img v-if="image" :src="image" :alt="title">
     </div>
     <div class="card-body">
@@ -29,6 +29,10 @@
       },
       linkText: {
         type: String
+      },
+      compact: {
+        type: Boolean,
+        default: false
       }
     },
     data () {

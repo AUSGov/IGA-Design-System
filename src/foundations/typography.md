@@ -7,6 +7,11 @@ pageHeader: true
 
 # Typography
 
+## Heading styles
+<table class="table">
+  <thead class="table-light">
+</thead>
+</table>
 <h1>Heading 1</h1>
 
 <h2>Heading 2</h2>
@@ -21,6 +26,15 @@ pageHeader: true
 
 <p class="fw-semi-bold">Paragraph Semi-Bold</p>
 
+## Paragraph
 Paragraph
+
+## Captions
+
+## Links
+
+## Lists
+
+## Blockquote
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel mauris fermentum volutpat quisque. Et egestas sem tellus duis dignissim adipiscing in. Nec porttitor adipiscing nam lobortis urna non pharetra, ullamcorper. Ipsum nulla proin donec faucibus in pretium.

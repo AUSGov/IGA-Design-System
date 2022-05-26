@@ -5,9 +5,9 @@
 }
 
 .page-meta {
-  @include content_wrapper;
-
   padding: 1rem 0;
+  margin: 0;
+  max-width: none;
   overflow: auto;
 
   .meta-item {
@@ -49,7 +49,6 @@
 }
 
 .page-nav {
-  @include content_wrapper;
   padding-top: 1rem;
   padding-bottom: 0;
 

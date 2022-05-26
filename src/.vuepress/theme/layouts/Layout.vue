@@ -83,21 +83,23 @@
     </slot>
     <div class="content-container">
       <PageHeader v-if="$frontmatter.pageHeader"/>
-      <div class="row">
-        <div class="col-12 col-sm-4 col-md-3 col-lg-2">
-          <div id="sidebar-left">
-            <SidebarSubMenu/>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-sm-4 col-md-3 col-lg-2">
+            <div id="sidebar-left">
+              <SidebarSubMenu/>
+            </div>
           </div>
-        </div>
-        <div class="col-12 col-sm-4 col-md-6 col-lg-8">
-          <Home v-if="frontmatter.home"/>
-          <Transition v-else name="fade-slide-y" mode="out-in">
-            <Page :key="page.path"/>
-          </Transition>
-        </div>
-        <div class="col-12 col-sm-4 col-md-3 col-lg-2">
-          <div id="sidebar-right">
-            <SidebarPageSections/>
+          <div class="col-12 col-sm-4 col-md-6 col-lg-8">
+            <Home v-if="frontmatter.home"/>
+            <Transition v-else name="fade-slide-y" mode="out-in">
+              <Page :key="page.path"/>
+            </Transition>
+          </div>
+          <div class="col-12 col-sm-4 col-md-3 col-lg-2">
+            <div id="sidebar-right">
+              <SidebarPageSections/>
+            </div>
           </div>
         </div>
       </div>

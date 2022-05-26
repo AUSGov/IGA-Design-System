@@ -1,9 +1,12 @@
+/* Fonts */
+@import url("https://use.typekit.net/rnj7aix.css");
+@import "./fonts/hack-subset";
+
 /* Global styles */
-@import 'variables';
-@import 'root-vars';
-@import 'root-vars-dark';
-@import 'normalize';
-@import 'mixins';
+@import 'common/bootstrap';
+@import 'common/root-vars';
+@import 'common/root-vars-dark';
+@import 'common/normalize';
 
 /* Default component styles */
 @import 'partials/arrow';
@@ -11,6 +14,7 @@
 @import 'partials/code';
 @import 'partials/code-group';
 @import 'partials/custom-container';
+@import 'partials/icons';
 @import 'partials/home';
 @import 'partials/tables';
 @import 'partials/layout';

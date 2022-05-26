@@ -12,5 +12,6 @@ module.exports = {
     '@theme/SidebarPageSections.vue': path.resolve(__dirname, 'components/SidebarPageSections.vue'),
     '@theme/SidebarItem.vue': path.resolve(__dirname, 'components/SidebarItem.vue'),
     '@theme/NavbarBrand.vue': path.resolve(__dirname, 'components/NavbarBrand.vue'),
+    '@theme/Page.vue': path.resolve(__dirname, 'components/Page.vue'),
   },
 }

@@ -3,7 +3,7 @@
   color: #323232;
   justify-content: center;
 
-  .theme-default-content {
+  .footer-wrap {
     padding: 2rem 0;
   }
 
@@ -22,5 +22,11 @@
   a {
     color: var(--c-text-accent);
     text-decoration: underline;
+  }
+
+  .btn-arrow {
+    svg {
+      height: 17px;
+    }
   }
 }

@@ -50,19 +50,11 @@ module.exports = {
             text: 'Typography',
             link: '/foundations/typography',
           },
+          {
+            text: 'CTAs and links',
+            link: '/foundations/cta-links',
+          },
         ],
-      },
-      {
-        text: 'Colour Palette',
-        link: '/colour-palette',
-      },
-      {
-        text: 'Icons',
-        link: '/icons',
-      },
-      {
-        text: 'Atoms',
-        link: '/atoms',
       },
       {
         text: 'Components',
@@ -141,6 +133,14 @@ module.exports = {
             link: '/components/tables',
           },
         ],
+      },
+      {
+        text: 'Page Patterns',
+        link: '/page-patterns',
+      },
+      {
+        text: 'Accessibility',
+        link: '/accessibility',
       },
       // control when should the item be active
       // {

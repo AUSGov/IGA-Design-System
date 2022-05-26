@@ -47,4 +47,4 @@ We incorporate the six principles in our design system:
 ## Related Links
 Australian Government style manual
 
-<a href="#">How people find information</a>
+<a href="#" class="d-flex align-items-center"><span class="me-1">How people find information</span><ArrowRight/></a>

@@ -122,8 +122,6 @@
     }
 
     .navbar-dropdown {
-      @include dropdown_wrapper;
-
       .navbar-dropdown-item {
         .navbar-dropdown-subtitle {
           border-top: 0;

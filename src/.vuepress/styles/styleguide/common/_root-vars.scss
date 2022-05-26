@@ -3,7 +3,8 @@
   --c-brand: #3eaf7c;
   --c-brand-light: #4abf8a;
 
-  // custom doi colors
+  // custom doi colors (for in-house use)
+  // custom variables for client use is available on /styles/bootstrap/variables.scss
   --doi-primary: #285576;
   --doi-secondary: #3E837C;
   --doi-promo: #7AC4C3;
@@ -15,7 +16,7 @@
   --c-bg: #ffffff;
   --c-bg-light: #f3f4f5;
   --c-bg-lighter: #eeeeee;
-  --c-bg-navbar: var(--c-bg);
+  --c-bg-navbar: var(--doi-dark-blue);
   --c-bg-sidebar: var(--c-bg);
   --c-bg-arrow: #cccccc;
 

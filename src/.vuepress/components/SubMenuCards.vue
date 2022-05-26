@@ -2,12 +2,9 @@
   import { computed } from 'vue'
   import { useRoute } from 'vue-router'
   import { useThemeLocaleData } from '@vuepress/theme-default/lib/client/composables'
-  import { usePageFrontmatter } from '@vuepress/client'
-  import type { DefaultThemePageFrontmatter } from '@vuepress/theme-default/lib/shared'
 
   const themeLocale = useThemeLocaleData()
   const route = useRoute()
-  // const frontmatter = usePageFrontmatter<DefaultThemePageFrontmatter>()
 
   const shouldBeActiveInSubpath = (item) => {
     const localeKeys = Object.keys(site.value.locales)
@@ -51,6 +48,6 @@
 
 <template>
   <div v-if="subMenu" class="c-sub-menu-cards">
-    <Cards :contents="subMenu"/>
+    <Cards :contents="subMenu" :compact="true"/>
   </div>
 </template>

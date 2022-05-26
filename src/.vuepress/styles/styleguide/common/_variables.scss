@@ -1,7 +1,4 @@
-@import "../bootstrap/variables";
-
 /* Responsive breakpoints */
-$MQNarrow: 959px !default;
 $MQMobile: 719px !default;
 $MQMobileNarrow: 419px !default;
 
@@ -34,22 +31,3 @@ $card-border-radius: 12px;
 
 /* Spacings */
 $component-spacing: 4rem;
-
-/* Import bootstrap */
-@import url("https://use.typekit.net/rnj7aix.css");
-@import "hack-subset";
-@import "node_modules/bootstrap/scss/bootstrap";
-
-//$utilities: map-merge(
-//    $utilities,
-//    ("background-color": (
-//      property: background-color,
-//      class: bg,
-//      local-vars: (
-//        "bg-opacity": 1
-//      ),
-//      values:(
-//        "promo": $doi-promo
-//      )
-//    ))
-//);

@@ -1,0 +1,23 @@
+.bg-promo {
+  background-color: #7ac4c3;
+}
+
+.bg-action {
+  background-color: #a44d8e;
+}
+
+.bg-dark-blue {
+  background-color: #0B253B;
+}
+
+@each $slug, $color in $grays {
+  .bg-gray-#{$slug} {
+    background-color: $color;
+  }
+}
+
+@each $slug, $color in $brand-colors {
+  .bg-#{$slug} {
+    background-color: $color;
+  }
+}
