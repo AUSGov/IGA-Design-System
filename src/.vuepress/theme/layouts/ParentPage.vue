@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import Navbar from '@theme/Navbar.vue'
   import Page from '@theme/Page.vue'
+  import SidebarSubMenu from '@theme/SidebarSubMenu.vue'
   import { usePageData, usePageFrontmatter } from '@vuepress/client'
   import { computed, onMounted, onUnmounted, ref } from 'vue'
   import { useRoute, useRouter } from 'vue-router'
@@ -111,7 +112,11 @@
     <div class="content-container">
       <PageHeader v-if="$frontmatter.pageHeader"/>
       <div class="row">
-        <div class="d-none d-md-block col-md-3 col-lg-2"></div>
+        <div class="col-12 col-sm-4 col-md-3 col-lg-2">
+          <div id="sidebar-left">
+            <SidebarSubMenu/>
+          </div>
+        </div>
         <div class="col-12 col-md-6 col-lg-8">
           <Transition name="fade-slide-y" mode="out-in">
             <Page :key="page.path"/>

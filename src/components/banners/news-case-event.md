@@ -1,8 +1,6 @@
 ---
 lang: en-US
-title: Standard content banner
+title: News article, case study, event banner
 description: Description of the page
 pageHeader: true
 ---
-
-## Banners

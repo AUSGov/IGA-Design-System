@@ -1,8 +1,6 @@
 ---
 lang: en-US
-title: Homepage banner
+title: Request for quote
 description: Description of the page
 pageHeader: true
 ---
-
-## Banners

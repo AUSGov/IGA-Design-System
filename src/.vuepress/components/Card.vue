@@ -1,6 +1,6 @@
 <template>
   <div class="card c-card" :class="{'c-card--compact': compact}">
-    <div v-if="!compact" class="img-wrap card-img-top">
+    <div v-if="!compact && image" class="img-wrap card-img-top">
       <img v-if="image" :src="image" :alt="title">
     </div>
     <div class="card-body">

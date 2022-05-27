@@ -1,6 +1,6 @@
 ---
 lang: en-US
-title: Home
+title: DOI Styleguide
 description: Description of the home page
 pageHeader: true
 ---

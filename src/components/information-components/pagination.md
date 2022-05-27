@@ -1,8 +1,6 @@
 ---
 lang: en-US
-title: Footer
+title: Pagination
 description: Description of the page
 pageHeader: true
 ---
-
-## Footer

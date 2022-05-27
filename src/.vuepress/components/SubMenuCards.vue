@@ -35,11 +35,17 @@
     }
     let result = []
     for (const child of parentMenu.children) {
-      result.push({
-        image: '',
-        title: child.text,
-        linkUrl: child.link,
+      if (!child.children || !child.children.length) {
+        continue
+      }
+      let processedChildren = child.children.map(item => ({
+        title: item.text,
+        linkUrl: item.link,
         linkText: 'Link',
+      }))
+      result.push({
+        title: child.text,
+        children: processedChildren
       })
     }
     return result
@@ -48,6 +54,9 @@
 
 <template>
   <div v-if="subMenu" class="c-sub-menu-cards">
-    <Cards :contents="subMenu" :compact="true"/>
+    <div v-for="menu in subMenu" class="mb-12">
+      <h2>{{ menu.title }}</h2>
+      <Cards :contents="menu.children" :compact="true"/>
+    </div>
   </div>
 </template>

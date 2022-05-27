@@ -1,8 +1,6 @@
 ---
 lang: en-US
-title: Entity Bar
+title: Bio card
 description: Description of the page
 pageHeader: true
 ---
-
-## Entity Bar

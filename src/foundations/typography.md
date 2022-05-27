@@ -8,10 +8,30 @@ pageHeader: true
 # Typography
 
 ## Heading styles
-<table class="table">
-  <thead class="table-light">
-</thead>
-</table>
+<div>
+  <table class="table">
+    <thead class="table-light">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Table Header</th>
+        <th scope="col">Table Header</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Table Body</td>
+        <td>Table Body</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Table Body</td>
+        <td>Table Body</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 <h1>Heading 1</h1>
 
 <h2>Heading 2</h2>

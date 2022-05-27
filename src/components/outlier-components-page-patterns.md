@@ -1,1 +1,0 @@
-## Outlier Components and Page Patterns

@@ -1,8 +1,6 @@
 ---
 lang: en-US
-title: Header
+title: Event card and containers
 description: Description of the page
 pageHeader: true
 ---
-
-## Header
