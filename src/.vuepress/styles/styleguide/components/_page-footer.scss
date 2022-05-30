@@ -1,7 +1,10 @@
 .c-page-footer {
   background-color: var(--doi-cyan);
   color: #323232;
-  justify-content: center;
+
+  .row {
+    justify-content: center;
+  }
 
   .footer-wrap {
     padding: 2rem 0;

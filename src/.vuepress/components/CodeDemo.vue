@@ -1,11 +1,25 @@
 <template>
   <div class="c-image-map">
-    <div class="image-container">
-      <div class="image-wrap">
-        <img :src="image" alt="">
+    <div class="preview-container">
+      <div class="top-container">
+        <div @click="fullScreen = true" class="icon me-4" v-html="Expand"></div>
+        <div @click="menu" class="icon" v-html="Hamburger"></div>
       </div>
-      <div v-for="(content, index) in localContents" class="circle-point image-point" :style="{'top': content.y + '%', 'left': content.x + '%'}" @click.prevent="scrollTo(image, index)">
-        <a>{{ index + 1 }}</a>
+      <div class="middle-container">
+        <div class="image-container">
+          <div class="image-wrap">
+            <img :src="image" alt="">
+          </div>
+          <div v-for="(content, index) in localContents" class="circle-point image-point" :style="{'top': content.y + '%', 'left': content.x + '%'}" @click.prevent="scrollTo(image, index)">
+            <a>{{ index + 1 }}</a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-container">
+        <div @click="viewCode = !viewCode" class="toggle">View Code <span v-html="ChevronDown" class="icon"></span></div>
+      </div>
+      <div v-if="viewCode" class="code-container">
+        <slot name="code"></slot>
       </div>
     </div>
     <div class="description-wrap">
@@ -22,10 +36,15 @@
         </li>
       </ul>
     </div>
+    <div v-if="fullScreen" class="full-view-wrap">
+
+    </div>
   </div>
 </template>
 <script>
   import ChevronDown from '../public/icons/chevron-down.svg?raw'
+  import Expand from '../public/icons/expand.svg?raw'
+  import Hamburger from '../public/icons/hamburger.svg?raw'
 
   export default {
     props: {
@@ -41,7 +60,11 @@
     data () {
       return {
         ChevronDown,
-        localContents: null
+        Expand,
+        Hamburger,
+        localContents: null,
+        fullScreen: false,
+        viewCode: false,
       }
     },
     watch: {
@@ -60,6 +83,9 @@
         const item = this.$refs[image + '-' + index]
         window.scrollTo(0, item[0].offsetTop - 105)
         this.localContents[index].active = true
+      },
+      menu () {
+
       }
     }
   }

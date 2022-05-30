@@ -1,6 +1,42 @@
 .c-image-map {
+  .preview-container {
+    border: 1px solid #000;
+    border-radius: $card-border-radius;
+  }
+
+  .top-container {
+    background-color: $gray-200;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+    border-radius: $card-border-radius $card-border-radius 0 0;
+
+    .icon {
+      cursor: pointer;
+
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
+  .middle-container {
+    padding: 2rem;
+  }
+
   .image-container {
     position: relative;
+  }
+
+  .bottom-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 2rem 2rem 2rem;
+
+    .toggle {
+      cursor: pointer;
+    }
   }
 
   .circle-point {
@@ -52,5 +88,19 @@
       padding: 0;
       flex-grow: 1;
     }
+  }
+
+  .code-container {
+    padding: 1rem 2rem;
+  }
+
+  .full-view-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: #fff;
   }
 }

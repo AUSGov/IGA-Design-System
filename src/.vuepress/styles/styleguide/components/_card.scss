@@ -47,6 +47,9 @@
 
   &--compact {
     border: 1px solid #c4c4c4;
-    padding: 1.5rem;
+
+    .card-body {
+      padding: 1.5rem;
+    }
   }
 }
