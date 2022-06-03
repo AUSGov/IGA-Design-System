@@ -10,8 +10,10 @@
           <div class="image-wrap">
             <img :src="image" alt="">
           </div>
-          <div v-for="(content, index) in localContents" class="circle-point image-point" :style="{'top': content.y + '%', 'left': content.x + '%'}" @click.prevent="scrollTo(image, index)">
-            <a>{{ index + 1 }}</a>
+          <div v-if="contents">
+            <div v-for="(content, index) in localContents" class="circle-point image-point" :style="{'top': content.y + '%', 'left': content.x + '%'}" @click.prevent="scrollTo(image, index)">
+              <a>{{ index + 1 }}</a>
+            </div>
           </div>
         </div>
       </div>
@@ -22,7 +24,7 @@
         <slot name="code"></slot>
       </div>
     </div>
-    <div class="description-wrap">
+    <div v-if="contents" class="description-wrap">
       <ul>
         <li v-for="(content, index) in localContents" :key="index" :ref="image + '-' + index">
           <div class="title" @click="content.active = !content.active">
@@ -54,7 +56,6 @@
       },
       contents: {
         type: Array,
-        required: true
       }
     },
     data () {
@@ -67,15 +68,25 @@
         viewCode: false,
       }
     },
-    watch: {
-      contents: {
-        immediate: true,
-        handler() {
+    // watch: {
+    //   contents: {
+    //     immediate: true,
+    //     handler() {
+    //       this.localContents = this.contents.map(content => {
+    //         content.active = false
+    //         return content
+    //       })
+    //     }
+    //   }
+    // },
+    created() {
+      if(this.contents) {
+        this.$watch('contents',() => {
           this.localContents = this.contents.map(content => {
             content.active = false
             return content
           })
-        }
+        }, { immediate: true })
       }
     },
     methods: {
