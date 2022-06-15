@@ -1,0 +1,24 @@
+.btn-primary {
+  @include button-variant($primary, $primary, white, $doi-primary-hover, $doi-primary-hover, $disabled-color: white,$disabled-background:$doi-primary-disabled, $disabled-border: $doi-primary-disabled);
+
+  .btn-check:focus + &,
+  &:focus {
+    box-shadow: 0 0 0 $btn-focus-width $doi-primary-outline;
+  }
+}
+
+.btn-outline-primary {
+  @include button-outline-variant($doi-primary, $doi-primary-hover, white, $doi-primary-hover);
+
+  .btn-check:focus + &,
+  &:focus {
+    box-shadow: 0 0 0 $btn-focus-width $doi-primary-outline;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $doi-primary-disabled;
+    border-color: $doi-primary-disabled;
+    background-color: transparent;
+  }
+}

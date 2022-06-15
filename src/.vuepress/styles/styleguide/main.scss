@@ -4,9 +4,10 @@
 @import "./fonts/hack-subset";
 
 /* Global styles */
-@import 'common/bootstrap';
+@import '../bootstrap/bootstrap';
 @import 'common/root-vars';
 @import 'common/root-vars-dark';
+@import 'common/variables';
 @import 'common/normalize';
 
 /* Default component styles */
@@ -27,14 +28,16 @@
 @import 'partials/transitions';
 
 /* Custom component styles */
-@import 'components/page-header';
-@import 'components/page-footer';
+@import 'components/arrows-list';
 @import 'components/card';
 @import 'components/cards';
 @import 'components/color-tile';
 @import 'components/color-tiles';
-@import 'components/arrows-list';
-@import 'components/image-map';
 @import 'components/columns';
+@import 'components/cta-links';
+@import 'components/image-map';
+@import 'components/page-header';
+@import 'components/page-footer';
 @import 'components/two-cards';
 @import 'components/typography-row';
+
