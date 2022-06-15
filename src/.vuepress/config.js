@@ -1,5 +1,6 @@
 const { path } = require('@vuepress/utils')
 const localTheme = require('./theme/index')
+const { registerComponentsPlugin } = require('@vuepress/plugin-register-components')
 
 module.exports = {
   // site config
@@ -255,12 +256,8 @@ module.exports = {
     ]
   }),
   plugins: [
-    [
-      '@vuepress/register-components',
-      {
-        componentsDir: path.resolve(__dirname, './components'),
-      },
-    ],
-    // '@vuepress/plugin-search'
+    registerComponentsPlugin({
+      componentsDir: path.resolve(__dirname, './components')
+    })
   ]
 }

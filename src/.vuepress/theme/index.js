@@ -7,6 +7,7 @@ module.exports = options => {
     extends: defaultTheme(options),
     layouts: {
       Layout: path.resolve(__dirname, 'layouts/Layout.vue'),
+      ParentPage: path.resolve(__dirname, 'layouts/ParentPage.vue'),
     },
     alias: {
       '@theme/SidebarSubMenu.vue': path.resolve(__dirname, 'components/SidebarSubMenu.vue'),

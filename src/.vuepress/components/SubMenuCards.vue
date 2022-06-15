@@ -6,8 +6,10 @@
   const themeLocale = useThemeLocaleData()
   const route = useRoute()
 
+  console.log(themeLocale)
+
   const shouldBeActiveInSubpath = (item) => {
-    const localeKeys = Object.keys(site.value.locales)
+    const localeKeys = Object.keys(item.value.locales)
     if (localeKeys.length) {
       return !localeKeys.some((key) => key === item.link)
     }
