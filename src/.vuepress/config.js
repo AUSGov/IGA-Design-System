@@ -1,4 +1,5 @@
 const { path } = require('@vuepress/utils')
+const localTheme = require('./theme/index')
 
 module.exports = {
   // site config
@@ -8,17 +9,7 @@ module.exports = {
   base: process.env.NODE_ENV === 'production' ? '/DOI-Styleguide/' : '/',
 
   // theme and its config
-  theme: path.resolve(__dirname, './theme'),
-  plugins: [
-    [
-      '@vuepress/register-components',
-      {
-        componentsDir: path.resolve(__dirname, './components'),
-      },
-    ],
-    // '@vuepress/plugin-search'
-  ],
-  themeConfig: {
+  theme: localTheme({
     logo: '/images/diser-logo.svg',
     logoDark: '/images/diser-logo.svg',
     // darkMode: false,
@@ -140,5 +131,14 @@ module.exports = {
       //   ],
       // }
     ]
-  }
+  }),
+  plugins: [
+    [
+      '@vuepress/register-components',
+      {
+        componentsDir: path.resolve(__dirname, './components'),
+      },
+    ],
+    // '@vuepress/plugin-search'
+  ]
 }
