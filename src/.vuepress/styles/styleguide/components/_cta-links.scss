@@ -22,6 +22,37 @@
 }
 
 a {
+  &.link-secondary {
+    color: black;
+    svg {
+      opacity: 0;
+    }
+
+    &:hover,
+    &.hover {
+      color: black;
+      svg {
+        opacity: 100%;
+
+        path {
+          fill: black;
+        }
+      }
+    }
+
+    &:focus,
+    &.focus {
+      color: black;
+      svg {
+        opacity: 100%;
+
+        path {
+          fill: black;
+        }
+      }
+    }
+  }
+
   &.hover {
     color: darken($doi-action, 15%);
     text-decoration: underline;

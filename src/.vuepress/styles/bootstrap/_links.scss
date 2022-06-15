@@ -8,13 +8,20 @@ a {
     &:hover {
       svg {
         opacity: 100%;
-        fill: black !important;
+
+        path {
+          fill: black;
+        }
       }
     }
 
     &:focus {
       svg {
         opacity: 100%;
+
+        path {
+          fill: black;
+        }
       }
     }
   }
