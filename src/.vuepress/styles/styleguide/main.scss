@@ -1,21 +1,40 @@
-@use 'styles';
-@use 'vars';
-@use 'vars-dark';
-@use 'normalize';
+/* Fonts */
+@import url("https://use.typekit.net/rnj7aix.css");
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@import "./fonts/hack-subset";
 
-@use 'arrow';
-@use 'badge';
-@use 'code';
-@use 'code-group';
-@use 'custom-container';
-@use 'home';
-@use 'layout';
-@use 'navbar';
-@use 'navbar-dropdown';
-@use 'page';
-@use 'sidebar';
-@use 'toc';
-@use 'transitions';
+/* Global styles */
+@import 'common/bootstrap';
+@import 'common/root-vars';
+@import 'common/root-vars-dark';
+@import 'common/normalize';
 
-@use 'page-header';
-@use 'page-footer';
+/* Default component styles */
+@import 'partials/arrow';
+@import 'partials/badge';
+@import 'partials/code';
+@import 'partials/code-group';
+@import 'partials/custom-container';
+@import 'partials/icons';
+@import 'partials/home';
+@import 'partials/tables';
+@import 'partials/layout';
+@import 'partials/navbar';
+@import 'partials/navbar-dropdown';
+@import 'partials/page';
+@import 'partials/sidebar';
+@import 'partials/toc';
+@import 'partials/transitions';
+
+/* Custom component styles */
+@import 'components/page-header';
+@import 'components/page-footer';
+@import 'components/card';
+@import 'components/cards';
+@import 'components/color-tile';
+@import 'components/color-tiles';
+@import 'components/arrows-list';
+@import 'components/image-map';
+@import 'components/columns';
+@import 'components/two-cards';
+@import 'components/typography-row';

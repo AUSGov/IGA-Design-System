@@ -1,0 +1,55 @@
+.c-card {
+  height: 100%;
+  border: 1px solid $gray-100;
+
+  .img-wrap {
+    background: rgba(216, 216, 216, 0.3);
+    height: 0;
+    padding-bottom: 76%;
+    border-radius: 12px 12px 0 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .card-body {
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  .h4 {
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  a {
+    font-weight: $font-weight-bold;
+    display: flex;
+    align-items: center;
+  }
+
+  .icon {
+    display: flex;
+
+    svg {
+      width: 12px;
+      height: auto;
+    }
+
+    img {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+
+  &--compact {
+    border: 1px solid #c4c4c4;
+
+    .card-body {
+      padding: 1.5rem;
+    }
+  }
+}

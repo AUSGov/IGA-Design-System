@@ -220,14 +220,9 @@
           class="navbar-dropdown-item"
       >
         <template v-if="child.children">
-          <h4 class="navbar-dropdown-subtitle">
-            <AutoLink
-                v-if="child.link"
-                :item="child"
-            />
-
-            <span v-else>{{ child.text }}</span>
-          </h4>
+          <div class="subtitle">
+            <span>{{ child.text }}</span>
+          </div>
 
           <ul class="navbar-dropdown-subitem-wrapper">
             <li

@@ -1,0 +1,33 @@
+/* Responsive breakpoints */
+$MQMobile: 719px !default;
+$MQMobileNarrow: 419px !default;
+
+/* Code languages */
+$codeLang: 'c' 'cpp' 'cs' 'css' 'dart' 'docker' 'fs' 'go' 'html' 'java' 'js' 'json' 'kt' 'less' 'makefile' 'md' 'php' 'py' 'rb' 'rs' 'sass' 'scss' 'sh' 'styl' 'ts' 'toml' 'vue' 'yml' !default;
+
+/* Colours */
+$primary: $doi-primary;
+$secondary: $doi-secondary;
+
+$link-color: $doi-action;
+$link-hover-color: lighten($link-color, 15%);
+$link-decoration: none;
+
+/* General */
+$enable-shadows: true;
+
+/* Fonts */
+$font-family-sans-serif: proxima-nova, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace: "Hack", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+.fw-semi-bold {
+  font-weight: $font-weight-semi-bold;
+}
+
+/* Cards */
+$card-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.04);
+$card-border-color: rgb(245, 245, 245);
+$card-border-radius: 12px;
+
+/* Spacings */
+$component-spacing: 4rem;
