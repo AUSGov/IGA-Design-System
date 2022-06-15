@@ -1,0 +1,43 @@
+.btn-primary {
+  &.hover {
+    background-color: $doi-primary-hover;
+    border-color: $doi-primary-hover;
+  }
+
+  &.focus {
+    border-color: $doi-primary-hover;
+    box-shadow: 0 0 0 $btn-focus-width $doi-primary-outline;
+  }
+}
+
+.btn-outline-primary {
+  &.hover {
+    border-color: $doi-primary-hover;
+  }
+
+  &.focus {
+    border-color: $doi-primary-hover;
+    box-shadow: 0 0 0 $btn-focus-width $doi-primary-outline;
+  }
+}
+
+a {
+  &.hover {
+    color: darken($doi-action, 15%);
+    text-decoration: underline;
+    text-underline-offset: 0.125rem;
+  }
+
+  &.focus {
+    text-decoration: underline;
+    text-underline-offset: 0.125rem;
+    color: darken($doi-action, 15%)
+  }
+
+  .disabled {
+    color: $doi-action;
+    pointer-events: none;
+    opacity: 0.5;
+    text-decoration: none;
+  }
+}

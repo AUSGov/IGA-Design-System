@@ -1,0 +1,56 @@
+a {
+  &.link-secondary {
+    color: black;
+    svg {
+      opacity: 0;
+    }
+
+    &:hover {
+      svg {
+        opacity: 100%;
+        fill: black !important;
+      }
+    }
+
+    &:focus {
+      svg {
+        opacity: 100%;
+      }
+    }
+  }
+  &:hover,
+  .hover {
+    text-underline-offset: 0.125rem;
+  }
+  &:focus,
+  .focus {
+    text-decoration: underline;
+    text-underline-offset: 0.125rem;
+    color: darken($doi-action, 15%)
+  }
+
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    text-decoration: none;
+  }
+}
+
+.link-icon {
+  width: auto;
+  height: auto;
+
+  &.link-external {
+    svg {
+      margin-left: 0.48rem;
+      width: 14px;
+      height: 14px;
+      margin-bottom: 0.1rem;
+    }
+  }
+  svg {
+    margin-left: 0.734rem;
+    width: 13px;
+    height: 9px;
+  }
+}

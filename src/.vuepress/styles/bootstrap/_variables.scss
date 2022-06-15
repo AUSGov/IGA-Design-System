@@ -1,6 +1,9 @@
 /* CUSTOM DOI VARIABLES */
 /* Primary Colours */
 $doi-primary: #285576;
+$doi-primary-hover: #244D6B;
+$doi-primary-outline: #649DC7;
+$doi-primary-disabled: #D1D7E0;
 $doi-secondary: #3e837c;
 $doi-promo: #7ac4c3;
 $doi-action: #a44d8e;
@@ -43,6 +46,13 @@ $brand-colors: (
   "pm-prize": #7E2923,
 );
 
+/* Colors */
+$primary: $doi-primary;
+$secondary: $doi-secondary;
+
+/* Borders */
+$border-radius: 0.1875rem;
+
 /* Font sizes */
 $font-size-base: 1.125rem;
 $h1-font-size: $font-size-base * 3.333;
@@ -56,3 +66,16 @@ $font-weight-semi-bold: 600;
 
 /* Font Family */
 $font-family-public-sans: "Public Sans", sans-serif;
+
+/* Button Padding */
+$input-btn-padding-y: 0.5rem;
+$input-btn-padding-x: 2.1875rem;
+$input-btn-padding-y-sm: 0.5rem;
+$input-btn-padding-x-sm: 1.8125rem;
+
+/* Link */
+$link-color: $doi-action;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: underline;
+
+
