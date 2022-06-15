@@ -5,7 +5,7 @@ description: The global rules and elements which govern the appearance, structur
 pageHeader: true
 ---
 
-# CTAS and links
+# CTAs and links
 
 ## Buttons
 
