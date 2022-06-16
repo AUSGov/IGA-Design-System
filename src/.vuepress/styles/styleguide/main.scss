@@ -4,11 +4,14 @@
 @import "./fonts/hack-subset";
 
 /* Global styles */
-@import '../bootstrap/bootstrap';
 @import 'common/root-vars';
 @import 'common/root-vars-dark';
+
+@import "../bootstrap/doi_variables";
 @import 'common/variables';
+@import 'common/bootstrap';
 @import 'common/normalize';
+@import 'common/typography';
 
 /* Default component styles */
 @import 'partials/arrow';
@@ -31,6 +34,7 @@
 @import 'components/arrows-list';
 @import 'components/card';
 @import 'components/cards';
+@import 'components/code-demo';
 @import 'components/color-tile';
 @import 'components/color-tiles';
 @import 'components/columns';

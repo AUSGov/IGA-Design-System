@@ -1,0 +1,106 @@
+.c-code-demo {
+  .preview-container {
+    border: 1px solid #000;
+    border-radius: $card-border-radius;
+  }
+
+  .top-container {
+    background-color: $gray-200;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    border-radius: $card-border-radius $card-border-radius 0 0;
+
+    .icon {
+      cursor: pointer;
+
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
+  .middle-container {
+    padding: 1.5rem;
+  }
+
+  .preview-container {
+    position: relative;
+  }
+
+  .bottom-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 1.5rem 1.5rem;
+
+    button:last-child {
+      margin-right: -0.75rem;
+    }
+  }
+
+  .circle-point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background: $doi-action;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: $font-weight-bold;
+  }
+
+  .image-point {
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+
+    a {
+      color: #fff;
+      text-align: center;
+      font-weight: $font-weight-bold;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    cursor: pointer;
+
+    .circle-point {
+      margin-right: 8px;
+    }
+
+    .h5 {
+      margin: 0;
+      padding: 0;
+      flex-grow: 1;
+    }
+  }
+
+  .code-container {
+    padding: 1rem 2rem;
+  }
+
+  .full-view-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: #fff;
+  }
+}

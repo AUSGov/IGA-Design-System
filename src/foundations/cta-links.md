@@ -17,41 +17,41 @@ This button style gives prominence to featured content and important user action
 
 Labels for the primary button should be short and specific, communicating the prominent action a user could or should take.
 
-<div class="cta-buttons-container">
-    <table class="table">
-        <thead class="borderless">
+<div class="doi-content cta-buttons-container">
+    <table class="table table-borderless table-row-space-lg">
+        <thead>
           <tr>
-            <th scope="col"><h4><span></span></h4></th>
-            <th scope="col"><h4>Primary</h4></th>
-            <th scope="col"><h4>Ghost</h4></th>
-            <th scope="col"><h4>Small Primary</h4></th>
-            <th scope="col"><h4>Small Ghost</h4></th>
+            <th scope="col"><span></span></th>
+            <th scope="col">Primary</th>
+            <th scope="col">Ghost</th>
+            <th scope="col">Small Primary</th>
+            <th scope="col">Small Ghost</th>
           </tr>
         </thead>
-        <tbody class="borderless">
+        <tbody>
             <tr>
-                <td><h4>Default</h4></td>
+                <td class="row-heading">Default</td>
                 <td><button class="btn btn-primary">Button</button></td>
                 <td><button class="btn btn-outline-primary">Button</button></td>
                 <td><button class="btn btn-sm btn-primary">Button</button></td>
                 <td><button class="btn btn-sm btn-outline-primary">Button</button></td>
             </tr>
             <tr>
-                <td><h4>Hover</h4></td>
+                <td class="row-heading">Hover</td>
                 <td><button class="btn btn-primary hover">Button</button></td>
                 <td><button class="btn btn-outline-primary hover">Button</button></td>
                 <td><button class="btn btn-sm btn-primary hover">Button</button></td>
                 <td><button class="btn btn-sm btn-outline-primary hover">Button</button></td>
             </tr>
             <tr>
-                <td><h4>Focus</h4></td>
+                <td class="row-heading">Focus</td>
                 <td><button class="btn btn-primary focus">Button</button></td>
                 <td><button class="btn btn-outline-primary focus">Button</button></td>
                 <td><button class="btn btn-sm btn-primary focus">Button</button></td>
                 <td><button class="btn btn-sm btn-outline-primary focus">Button</button></td>
             </tr>
             <tr>
-                <td><h4>Disabled</h4></td>
+                <td class="row-heading">Disabled</td>
                 <td><button class="btn btn-primary disabled">Button</button></td>
                 <td><button class="btn btn-outline-primary disabled">Button</button></td>
                 <td><button class="btn btn-sm btn-primary disabled">Button</button></td>
@@ -76,19 +76,19 @@ Text buttons are white when used on shaded background entity cards.
 
 Text buttons are typically left aligned within cards and “read more” containers. They are typically right aligned within sections of content, such as the “Find all” text button under the featured card container.
 
-<div class="cta-links-container">
-    <table class="table">
-        <thead class="borderless">
+<div class="doi-content cta-links-container">
+    <table class="table table-borderless table-row-space-lg">
+        <thead>
           <tr>
-            <th scope="col"><h4><span></span></h4></th>
-            <th scope="col"><h4>Primary</h4></th>
-            <th scope="col"><h4>External</h4></th>
-            <th scope="col"><h4>Secondary</h4></th>
+            <th scope="col"></th>
+            <th scope="col">Primary</th>
+            <th scope="col">External</th>
+            <th scope="col">Secondary</th>
           </tr>
         </thead>
-        <tbody class="borderless">
+        <tbody>
             <tr>
-                <td><h4>Default</h4></td>
+                <td class="row-heading">Default</td>
                 <td class="body-large">
                     <a href="#" class="link-icon">
                         <span>Link</span>
@@ -119,7 +119,7 @@ Text buttons are typically left aligned within cards and “read more” contain
                 </td>
             </tr>
             <tr>
-                <td><h4>Hover</h4></td>
+                <td class="row-heading">Hover</td>
                 <td class="body-large">
                     <a href="#" class="link-icon hover">
                         <span>Link</span>
@@ -150,7 +150,7 @@ Text buttons are typically left aligned within cards and “read more” contain
                 </td>
             </tr>
             <tr>
-                <td><h4>Pressed</h4></td>
+                <td class="row-heading">Pressed</td>
                 <td class="body-large">
                     <a href="#" class="link-icon focus">
                         <span>Link</span>
@@ -181,7 +181,7 @@ Text buttons are typically left aligned within cards and “read more” contain
                 </td>
             </tr>
             <tr>
-                <td><h4>Disabled</h4></td>
+                <td class="row-heading">Disabled</td>
                 <td class="body-large">
                     <a href="#" class="link-icon disabled">
                         <span>Link</span>
@@ -209,6 +209,8 @@ Text buttons are typically left aligned within cards and “read more” contain
         </tbody>
     </table>
 </div>
+
+<DemoLinks/>
 
 ## Link
 

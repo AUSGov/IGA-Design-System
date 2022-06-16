@@ -8,38 +8,20 @@ table {
   margin: 1rem 0;
   display: block;
   overflow-x: auto;
-  transition: border-color var(--t-color);
 
-  &.table > :not(:first-child) {
-    border-top: none;
-  }
-}
-
-thead, tbody {
-  &.borderless {
+  &.table-row-space-lg {
     tr {
-      border-bottom: none;
-      width: 100%;
-
-      td {
-      }
+      margin-bottom: 1.5rem;
     }
   }
 }
 
 tr {
-  border-bottom: 1px solid var(--c-border-dark);
-  transition: border-color var(--t-color);
-
   &:nth-child(2n) {
     background-color: transparent;
   }
 }
 
-th,
-td {
-  padding: 0.6em 1em;
-  border: none;
-  transition: border-color var(--t-color);
-  vertical-align: middle;
+.row-heading {
+  @extend .h4;
 }

@@ -1,6 +1,7 @@
 const { path } = require('@vuepress/utils')
 const localTheme = require('./theme/index')
 const { registerComponentsPlugin } = require('@vuepress/plugin-register-components')
+const { viteBundler } = require('@vuepress/bundler-vite')
 
 module.exports = {
   // site config
@@ -255,9 +256,21 @@ module.exports = {
       // }
     ]
   }),
+
   plugins: [
     registerComponentsPlugin({
-      componentsDir: path.resolve(__dirname, './components')
+      componentsDir: path.resolve(__dirname, './modules')
     })
-  ]
+  ],
+
+  bundler: viteBundler({
+    viteOptions: {
+      resolve: {
+        alias: {
+          vue: 'vue/dist/vue.esm-bundler.js'
+        }
+      }
+    },
+    vuePluginOptions: {}
+  })
 }
