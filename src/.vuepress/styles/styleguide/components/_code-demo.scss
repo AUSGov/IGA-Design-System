@@ -1,14 +1,20 @@
+$variations-menu-width: 12rem;
+
 .c-code-demo {
-  .preview-container {
-    border: 1px solid #000;
-    border-radius: $card-border-radius;
+  border: 1px solid #000;
+  border-radius: $card-border-radius;
+  position: relative;
+
+  .menu-container {
+    position: relative;
+    overflow: hidden;
   }
 
   .top-container {
     background-color: $gray-200;
     display: flex;
     justify-content: flex-end;
-    padding: 1.5rem;
+    padding: 1rem 1.25rem;
     border-radius: $card-border-radius $card-border-radius 0 0;
 
     .icon {
@@ -21,86 +27,69 @@
     }
   }
 
-  .middle-container {
-    padding: 1.5rem;
+  .spacer {
+    width: 0;
+    transition: width 0.3s ease;
+
+    &.show {
+      width: $variations-menu-width;
+    }
   }
 
   .preview-container {
+    padding: 1.5rem;
     position: relative;
+    min-height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    .spacer {
+      height: 100%;
+    }
+  }
+  .variations-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: $variations-menu-width;
+    right: -$variations-menu-width;
+    border-left: 1px solid #000;
+    transition: transform 0.3s ease;
+    background-color: #fff;
+
+    .close-container {
+      background-color: $gray-200;
+      display: flex;
+      justify-content: flex-end;
+      padding: 1rem 1.25rem;
+    }
+
+    &.show {
+      transform: translateX(-100%);
+    }
   }
 
   .bottom-container {
     display: flex;
     justify-content: flex-end;
-    padding: 0 1.5rem 1.5rem;
-
-    button:last-child {
-      margin-right: -0.75rem;
-    }
-  }
-
-  .circle-point {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 32px;
-    height: 32px;
-    background: $doi-action;
-    border-radius: 50%;
-    color: #fff;
-    font-weight: $font-weight-bold;
-  }
-
-  .image-point {
-    position: absolute;
-    cursor: pointer;
-    z-index: 10;
-
-    a {
-      color: #fff;
-      text-align: center;
-      font-weight: $font-weight-bold;
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .title {
-    display: flex;
-    align-items: center;
-    padding: 1rem 0;
-    cursor: pointer;
-
-    .circle-point {
-      margin-right: 8px;
-    }
-
-    .h5 {
-      margin: 0;
-      padding: 0;
-      flex-grow: 1;
-    }
+    background-color: $gray-200;
+    padding: 1rem 1.25rem;
   }
 
   .code-container {
-    padding: 1rem 2rem;
+    padding: 1.5rem;
   }
+}
 
-  .full-view-wrap {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-    background-color: #fff;
-  }
+.fullscreen-container {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: #fff;
 }

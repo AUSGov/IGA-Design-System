@@ -13,7 +13,7 @@
 </template>
 
 <script>
-  import arrowRight from '../../public/icons/arrow-right.svg?raw'
+  import arrowRight from '../../public/icons/link-arrow-right.svg?raw'
 
   export default {
     data () {

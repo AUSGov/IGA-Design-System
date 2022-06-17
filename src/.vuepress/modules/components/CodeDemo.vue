@@ -1,34 +1,60 @@
 <template>
   <div class="c-code-demo">
-    <div class="preview-container">
+    <div class="menu-container">
       <div class="top-container">
-        <div v-if="allowFullScreen" @click="fullScreen = true" class="icon me-4" v-html="Expand"></div>
-        <div @click="menu" class="icon" v-html="Hamburger"></div>
+        <button v-if="allowFullScreen" @click="showFullScreen = true" class="icon me-2 btn" v-html="Expand"></button>
+        <button @click="showVariations = !showVariations" class="icon btn" v-html="Hamburger"></button>
+        <div class="spacer" :class="{ show: showVariations }"></div>
       </div>
-      <div class="middle-container doi-content">
-        <slot name="preview"></slot>
+      <div class="preview-container">
+        <div class="doi-content">
+          <slot name="preview" @click="previewClick" :test="test" :form-data="formData"></slot>
+        </div>
+        <div class="spacer" :class="{ show: showVariations }"></div>
       </div>
-      <div class="bottom-container">
-        <button @click="viewCode = !viewCode" class="btn">View Code <span v-html="ChevronDown" class="icon"></span></button>
+      <div v-if="allowVariations" class="variations-container" :class="{ show: showVariations }">
+        <div class="close-container"><button @click="showVariations = false" class="icon btn" v-html="Close"></button></div>
+        <component v-for="element in formConfig" :is="componentType(element.type)" @change="handleChange"/>
+        <DemoCheckbox/>
+        <DemoRadio/>
+        <DemoSelect />
       </div>
     </div>
-    <div v-if="allowVariations" class="variations-container" :class="{ show: showVariations }">
-      <slot name="variations"></slot>
+    <div class="bottom-container">
+      <button @click="showCodeView = !showCodeView" class="btn">View Code <span v-html="ChevronDown" class="icon"></span></button>
     </div>
-    <div v-if="allowCodeView" class="code-container">
-      <slot name="code"></slot>
-    </div>
-    <Teleport to="body">
-    <div v-if="allowFullScreen" class="full-view-wrap" :class="{ show: showFullScreen }"></div>
-    </Teleport>
+    <Transition v-if="allowCodeView" name="slide-down">
+      <div v-if="showCodeView" class="code-container">
+        <DemoMarkdown :markdown="codeRender"/>
+        <DemoPrism :markdown="codeRender"/>
+      </div>
+    </Transition>
   </div>
+  <Teleport to="body">
+  <div v-if="allowFullScreen" class="fullscreen-container" :class="{ show: showFullScreen }">
+    <slot name="fullscreen-preview"></slot>
+  </div>
+  </Teleport>
 </template>
 <script>
 import ChevronDown from '../../public/icons/chevron-down.svg?raw'
 import Expand from '../../public/icons/expand.svg?raw'
 import Hamburger from '../../public/icons/hamburger.svg?raw'
+import Close from '../../public/icons/demo-close.svg?raw'
+import DemoRadio from './DemoRadio.vue'
+import DemoCheckbox from './DemoCheckbox.vue'
+import DemoSelect from './DemoSelect.vue'
+import DemoMarkdown from './DemoMarkdown.vue'
+import DemoPrism from './DemoPrism.vue'
 
 export default {
+  components: {
+    DemoPrism,
+    DemoMarkdown,
+    DemoCheckbox,
+    DemoRadio,
+    DemoSelect
+  },
   props: {
     allowFullScreen: {
       type: Boolean,
@@ -41,6 +67,9 @@ export default {
     allowCodeView: {
       type: Boolean,
       default: true
+    },
+    formConfig: {
+      type: Object
     }
   },
   data () {
@@ -48,19 +77,13 @@ export default {
       ChevronDown,
       Expand,
       Hamburger,
+      Close,
       showFullScreen: false,
-      showVariations: false,
-      showCodeView: false,
-    }
-  },
-  created() {
-    if(this.contents) {
-      this.$watch('contents',() => {
-        this.localContents = this.contents.map(content => {
-          content.active = false
-          return content
-        })
-      }, { immediate: true })
+      showVariations: true,
+      showCodeView: true,
+      test: 'test variable',
+      formData: {},
+      codeRender: '<div>YAY</div>\n<a>Something</a>'
     }
   },
   methods: {
@@ -69,8 +92,13 @@ export default {
       window.scrollTo(0, item[0].offsetTop - 105)
       this.localContents[index].active = true
     },
-    menu () {
-
+    previewClick (e) {
+      console.log('Preview slot click event', e)
+    },
+    componentType (type) { return 'demo-' + type },
+    handleChange (e) {
+      this.formData[e.key] = e.value
+      // this.codeRender =
     }
   }
 }
