@@ -1,0 +1,95 @@
+$variations-menu-width: 12rem;
+
+.c-code-demo {
+  border: 1px solid #000;
+  border-radius: $card-border-radius;
+  position: relative;
+
+  .menu-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .top-container {
+    background-color: $gray-200;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 1.25rem;
+    border-radius: $card-border-radius $card-border-radius 0 0;
+
+    .icon {
+      cursor: pointer;
+
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
+  .spacer {
+    width: 0;
+    transition: width 0.3s ease;
+
+    &.show {
+      width: $variations-menu-width;
+    }
+  }
+
+  .preview-container {
+    padding: 1.5rem;
+    position: relative;
+    min-height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    .spacer {
+      height: 100%;
+    }
+  }
+  .variations-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: $variations-menu-width;
+    right: -$variations-menu-width;
+    border-left: 1px solid #000;
+    transition: transform 0.3s ease;
+    background-color: #fff;
+
+    .close-container {
+      background-color: $gray-200;
+      display: flex;
+      justify-content: flex-end;
+      padding: 1rem 1.25rem;
+    }
+
+    &.show {
+      transform: translateX(-100%);
+    }
+  }
+
+  .bottom-container {
+    display: flex;
+    justify-content: flex-end;
+    background-color: $gray-200;
+    padding: 1rem 1.25rem;
+  }
+
+  .code-container {
+    padding: 1.5rem;
+  }
+}
+
+.fullscreen-container {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: #fff;
+}

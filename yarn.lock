@@ -175,7 +175,7 @@
   "resolved" "https://registry.npmjs.org/@vue/shared/-/shared-3.2.37.tgz"
   "version" "3.2.37"
 
-"@vuepress/bundler-vite@2.0.0-beta.48":
+"@vuepress/bundler-vite@^2.0.0-beta.48", "@vuepress/bundler-vite@2.0.0-beta.48":
   "integrity" "sha512-ORT1cY2ScBWVuN/oCa5z0GqkbpdDmy6Pf0oe3GdiPA/w0kUbKeUPrWGDGHINqrSyvN0h5GbmLbvw6jSeUr2gAQ=="
   "resolved" "https://registry.npmjs.org/@vuepress/bundler-vite/-/bundler-vite-2.0.0-beta.48.tgz"
   "version" "2.0.0-beta.48"
