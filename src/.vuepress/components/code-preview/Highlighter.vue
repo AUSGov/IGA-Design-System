@@ -1,20 +1,17 @@
 <template>
-  Prism
-  <div ref="codeContainer" :class="containerClass" tabindex="0"><pre><code>{{ preview }}</code></pre></div>
+  <div ref="codeContainer" :class="containerClass" tabindex="0"><pre><code>{{ code }}</code></pre></div>
 </template>
 <script>
+import { computed, watchEffect, watch, ref, nextTick, toRef } from 'vue'
 import Prism from 'prismjs'
-import 'prismjs/plugins/line-numbers/prism-line-numbers'
-import { computed, watchEffect, ref } from 'vue'
+// Can't get line numbers working, who cares?
+// import 'prismjs/plugins/line-numbers/prism-line-numbers'
 
 export default {
   props: {
     lang: {
       type: String,
       default: 'html'
-    },
-    preview: {
-      required: true
     },
     code: {
       required: true
@@ -25,29 +22,34 @@ export default {
       return `language-${props.lang} ext-${props.lang}`
     })
     const codeContainer = ref(null)
-    const code = ref(props.code)
-    const preview = ref(props.preview ? props.preview.innerHTML : '')
-    console.log('props.preview', props.preview)
-    console.log('props.code', props.code)
 
     Prism.manual = true
     Prism.hooks.add('before-sanity-check', function (env) {
-      console.log('before-sanity-check', env, env.element)
-      const match = /\r|\n/.exec(env.element.innerText)
-      console.log('has line breaks', match)
+      // console.log('before-sanity-check', env, env.element)
+      // const match = /\r|\n/.exec(env.element.innerText)
+      // console.log('has line breaks', match)
       env.code = env.element.innerText
     })
 
+    // const codeReactive = toRef(props, 'code')
+    watch(() => props.code, (newVal) => {
+      console.log('watcher', newVal, props.code, codeContainer.value)
+    })
+
     watchEffect(() => {
-      console.log(`preview is ${props.preview}`)
-      Prism.highlightElement(codeContainer)
+      console.log('watcheffect', props.code, codeContainer.value)
+      const match = /\r|\n/.exec(props.code)
+      console.log('hasLinebreaks', match)
+      if (codeContainer.value) {
+        codeContainer.value.getElementsByTagName('code')[0].innerText = props.code
+        Prism.highlightAllUnder(codeContainer.value)
+      }
     })
 
     return {
       codeContainer,
       containerClass,
-      code,
-      preview
+      code: props.code
     }
   }
 }
