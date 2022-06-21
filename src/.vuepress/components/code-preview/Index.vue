@@ -7,7 +7,7 @@
         <div class="spacer" :class="{ show: showVariations }"></div>
       </div>
       <div class="preview-container">
-        <div class="doi-content">
+        <div class="doi-content" ref="preview">
           <slot name="preview" @click="previewClick" :test="test" :form-data="formData"></slot>
         </div>
         <div class="spacer" :class="{ show: showVariations }"></div>
@@ -15,9 +15,9 @@
       <div v-if="allowVariations" class="variations-container" :class="{ show: showVariations }">
         <div class="close-container"><button @click="showVariations = false" class="icon btn" v-html="Close"></button></div>
         <component v-for="element in formConfig" :is="componentType(element.type)" @change="handleChange"/>
-        <DemoCheckbox/>
-        <DemoRadio/>
-        <DemoSelect />
+        <Checkbox/>
+        <Radio/>
+        <Select />
       </div>
     </div>
     <div class="bottom-container">
@@ -25,8 +25,8 @@
     </div>
     <Transition v-if="allowCodeView" name="slide-down">
       <div v-if="showCodeView" class="code-container">
-        <DemoMarkdown :markdown="codeRender"/>
-        <DemoPrism :markdown="codeRender"/>
+        <Markdown v-if="code !== null" :code="code" lang="js" />
+        <Highlighter v-if="code !== null" :preview="preview" :code="code"/>
       </div>
     </Transition>
   </div>
@@ -41,19 +41,20 @@ import ChevronDown from '../../public/icons/chevron-down.svg?raw'
 import Expand from '../../public/icons/expand.svg?raw'
 import Hamburger from '../../public/icons/hamburger.svg?raw'
 import Close from '../../public/icons/demo-close.svg?raw'
-import DemoRadio from './DemoRadio.vue'
-import DemoCheckbox from './DemoCheckbox.vue'
-import DemoSelect from './DemoSelect.vue'
-import DemoMarkdown from './DemoMarkdown.vue'
-import DemoPrism from './DemoPrism.vue'
+import Radio from './Radio.vue'
+import Checkbox from './Checkbox.vue'
+import Select from './Select.vue'
+import Markdown from './Markdown.vue'
+import Highlighter from './Highlighter.vue'
+import { computed, ref } from 'vue'
 
 export default {
   components: {
-    DemoPrism,
-    DemoMarkdown,
-    DemoCheckbox,
-    DemoRadio,
-    DemoSelect
+    Highlighter,
+    Markdown,
+    Checkbox,
+    Radio,
+    Select
   },
   props: {
     allowFullScreen: {
@@ -72,7 +73,15 @@ export default {
       type: Object
     }
   },
-  data () {
+  setup () {
+    const preview = ref(null)
+    const code = computed(() => {
+      return preview.value ? preview.value.innerHTML: null
+    })
+
+    console.log('preview', preview.value)
+    console.log('code', code)
+
     return {
       ChevronDown,
       Expand,
@@ -83,22 +92,18 @@ export default {
       showCodeView: true,
       test: 'test variable',
       formData: {},
-      codeRender: '<div>YAY</div>\n<a>Something</a>'
-    }
-  },
-  methods: {
-    scrollTo (image, index) {
-      const item = this.$refs[image + '-' + index]
-      window.scrollTo(0, item[0].offsetTop - 105)
-      this.localContents[index].active = true
-    },
-    previewClick (e) {
-      console.log('Preview slot click event', e)
-    },
-    componentType (type) { return 'demo-' + type },
-    handleChange (e) {
-      this.formData[e.key] = e.value
-      // this.codeRender =
+      previewClick (e) {
+        console.log('Preview slot click event', e)
+      },
+      componentType (type) {
+        return 'demo-' + type
+      },
+      handleChange (e) {
+        this.formData[e.key] = e.value
+        // this.codeRender =
+      },
+      preview,
+      code
     }
   }
 }

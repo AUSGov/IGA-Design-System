@@ -210,7 +210,7 @@ Text buttons are typically left aligned within cards and “read more” contain
     </table>
 </div>
 
-<DemoLinks/>
+<PreviewLinks/>
 
 ```html
 <div>HTML stuff</div>
