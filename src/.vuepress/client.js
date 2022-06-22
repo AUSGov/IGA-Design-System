@@ -3,6 +3,8 @@ import ParentPage from './theme/layouts/ParentPage.vue'
 import DoiContent from './theme/layouts/DoiContent.vue'
 import DoiContentHeadersFooters from './theme/layouts/DoiContentHeadersFooters.vue'
 
+import 'bootstrap/dist/js/bootstrap.min'
+
 export default defineClientConfig({
   enhance({ app }) {
     app.component('ParentPage', ParentPage)

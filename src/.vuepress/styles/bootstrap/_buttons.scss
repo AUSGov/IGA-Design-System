@@ -1,5 +1,7 @@
 .btn-primary {
-  @include button-variant($primary, $primary, white, $doi-primary-hover, $doi-primary-hover, $disabled-color: white,$disabled-background:$doi-primary-disabled, $disabled-border: $doi-primary-disabled);
+  @include button-variant($primary, $primary, white, $doi-primary-hover, $doi-primary-hover, $disabled-color: white, $disabled-background: $doi-primary-disabled, $disabled-border: $doi-primary-disabled);
+
+  box-shadow: none;
 
   .btn-check:focus + &,
   &:focus {
@@ -9,6 +11,8 @@
 
 .btn-outline-primary {
   @include button-outline-variant($doi-primary, $doi-primary-hover, white, $doi-primary-hover);
+
+  box-shadow: none;
 
   .btn-check:focus + &,
   &:focus {

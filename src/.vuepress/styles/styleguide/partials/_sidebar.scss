@@ -3,7 +3,7 @@
   top: unset;
   bottom: unset;
   margin: 0;
-  padding: 7rem 0 0 0;
+  padding: 3rem 0;
   overflow-y: auto;
   width: auto;
   max-width: var(--sidebar-width);
@@ -154,6 +154,8 @@
 #sidebar-left {
   position: sticky;
   top: var(--navbar-height);
+  max-height: calc(100vh - var(--navbar-height));
+  overflow-y: scroll;
 
   .sidebar {
     left: 0;
@@ -175,6 +177,8 @@
 #sidebar-right {
   position: sticky;
   top: var(--navbar-height);
+  max-height: calc(100vh - var(--navbar-height));
+  overflow-y: scroll;
 
   .sidebar {
     left: unset;

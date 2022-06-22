@@ -46,7 +46,7 @@
 <script>
   import ChevronDown from '../public/icons/chevron-down.svg?raw'
   import Expand from '../public/icons/expand.svg?raw'
-  import Hamburger from '../public/icons/hamburger.svg?raw'
+  import Hamburger from '../public/icons/hamburger-2.svg?raw'
 
   export default {
     props: {

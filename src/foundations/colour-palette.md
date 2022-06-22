@@ -40,13 +40,13 @@ pageHeader: true
 
 ## Blacks
 <div class="row g-3">
-  <ColorTile color-key="gray-100" name="100" hex="#F5F5F5"></ColorTile>
-  <ColorTile color-key="gray-200" name="200" hex="#eeeeee"></ColorTile>
-  <ColorTile color-key="gray-300" name="300" hex="#E0E0E0"></ColorTile>
-  <ColorTile color-key="gray-400" name="400" hex="#BDBDBD"></ColorTile>
-  <ColorTile color-key="gray-500" name="500" hex="#9E9E9E"></ColorTile>
-  <ColorTile color-key="gray-600" name="600" hex="#757575"></ColorTile>
-  <ColorTile color-key="gray-700" name="700" hex="#616161"></ColorTile>
-  <ColorTile color-key="gray-800" name="800" hex="#424242"></ColorTile>
-  <ColorTile color-key="gray-900" name="900" hex="#212121"></ColorTile>
+  <ColorTile color-key="gray-100" name="100" hex="#FAFAFB"></ColorTile>
+  <ColorTile color-key="gray-200" name="200" hex="#F5F5F5"></ColorTile>
+  <ColorTile color-key="gray-300" name="300" hex="#EAEAEA"></ColorTile>
+  <ColorTile color-key="gray-400" name="400" hex="#C4C4C4"></ColorTile>
+  <ColorTile color-key="gray-500" name="500" hex="#807E7E"></ColorTile>
+  <ColorTile color-key="gray-600" name="600" hex="#605F5F"></ColorTile>
+  <ColorTile color-key="gray-700" name="700" hex="#3F3B3B"></ColorTile>
+  <ColorTile color-key="gray-800" name="800" hex="#212121"></ColorTile>
+  <ColorTile color-key="gray-900" name="900" hex="#121212"></ColorTile>
 </div>
