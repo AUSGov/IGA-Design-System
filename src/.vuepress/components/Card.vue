@@ -14,7 +14,7 @@
   </div>
 </template>
 <script>
-  import arrowRight from '../public/icons/arrow-right.svg?raw'
+  import arrowRight from '../public/icons/arrow-long-right.svg?raw'
 
   export default {
     props: {

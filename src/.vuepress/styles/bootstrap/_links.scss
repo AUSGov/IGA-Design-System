@@ -25,10 +25,12 @@ a {
       }
     }
   }
+
   &:hover,
   .hover {
     text-underline-offset: 0.125rem;
   }
+
   &:focus,
   .focus {
     text-decoration: underline;
@@ -55,6 +57,7 @@ a {
       margin-bottom: 0.1rem;
     }
   }
+
   svg {
     margin-left: 0.734rem;
     width: 13px;
