@@ -3,7 +3,18 @@ $variations-menu-width: 12rem;
 .c-code-demo {
   border: 1px solid #000;
   border-radius: $card-border-radius;
+  background-color: #fff;
   position: relative;
+  overflow: hidden;
+
+  &.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    z-index: 1000;
+  }
 
   .menu-container {
     position: relative;
@@ -15,7 +26,6 @@ $variations-menu-width: 12rem;
     display: flex;
     justify-content: flex-end;
     padding: 1rem 1.25rem;
-    border-radius: $card-border-radius $card-border-radius 0 0;
   }
 
   .spacer {
@@ -27,7 +37,7 @@ $variations-menu-width: 12rem;
     }
   }
 
-  .btn- icon {
+  .btn-icon {
     cursor: pointer;
     min-height: 42px;
     display: flex;
@@ -90,10 +100,6 @@ $variations-menu-width: 12rem;
   }
 
   .code-container {
-    div[class*=language-] {
-      border-radius: 0 0 $card-border-radius $card-border-radius;
-    }
-
     pre {
       margin: 0;
     }
@@ -116,5 +122,28 @@ $variations-menu-width: 12rem;
 
   &.show {
     display: block;
+  }
+}
+
+div[class*=language-] {
+  border-radius: 0;
+
+  &.line-numbers-mode .line-numbers {
+    padding: 1.5rem 0;
+    font-size: 1em;
+    line-height: 24px;
+
+    .line-number {
+      line-height: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.theme-default-content pre, .theme-default-content pre[class*=language-] {
+  padding: 1.5rem;
+
+  code {
+    line-height: 24px;
   }
 }

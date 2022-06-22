@@ -3,11 +3,13 @@
 <template v-slot="slotProps">
 <pre>
 
+
 <ul>
   <li>
     <a href="#" :class="linkClass" @click.prevent="clickChild">This is a link {{ counter }}</a>
   </li>
 </ul>
+
 
 </pre>
 </template>
@@ -27,6 +29,7 @@ export default {
         {
           label: 'Variation',
           key: 'variation',
+          slug: 'variation',
           type: 'select',
           options: [
             {
@@ -43,7 +46,7 @@ export default {
         },
         {
           label: 'Type',
-          key: 'type',
+          key: 'type-radio',
           type: 'radio',
           options: [
             {
@@ -60,6 +63,7 @@ export default {
         },
         {
           label: 'Type',
+          key: 'type-check',
           type: 'checkbox',
           options: [
             {

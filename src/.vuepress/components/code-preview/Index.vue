@@ -1,5 +1,5 @@
 <template>
-  <div class="c-code-demo">
+  <div class="c-code-demo" :class="{ fullscreen: showFullScreen }">
     <div class="menu-container">
       <div class="top-container">
         <button v-if="allowFullScreen" @click="showFullScreen = true" class="btn-icon me-2 btn" v-html="Expand"></button>
@@ -14,10 +14,12 @@
       </div>
       <div v-if="allowVariations" class="variations-container" :class="{ show: showVariations }">
         <div class="close-container"><button @click="showVariations = false" class="btn-icon btn" v-html="Close"></button></div>
-        <component v-for="element in formConfig" :is="componentType(element.type)" @change="handleChange"/>
-        <Checkbox/>
-        <Radio/>
-        <Select />
+        <div v-for="(element, index) in formConfig" :key="element.slug">
+          <component :is="element.type" @change="handleChange" v-bind.prop="element" :key="element.key" :slu="element.slug" :index="index" />
+          <pre>
+          {{ element }}
+          </pre>
+        </div>
       </div>
     </div>
     <div class="bottom-container">
