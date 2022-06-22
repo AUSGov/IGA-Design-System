@@ -16,15 +16,6 @@ $variations-menu-width: 12rem;
     justify-content: flex-end;
     padding: 1rem 1.25rem;
     border-radius: $card-border-radius $card-border-radius 0 0;
-
-    .icon {
-      cursor: pointer;
-
-      svg {
-        width: 25px;
-        height: 25px;
-      }
-    }
   }
 
   .spacer {
@@ -36,6 +27,15 @@ $variations-menu-width: 12rem;
     }
   }
 
+  .btn- icon {
+    cursor: pointer;
+    min-height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
   .preview-container {
     padding: 1.5rem;
     position: relative;
@@ -44,11 +44,20 @@ $variations-menu-width: 12rem;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    overflow: hidden;
+
+    pre {
+      white-space: normal;
+      margin: 0;
+      padding: 0;
+      font-size: initial;
+    }
 
     .spacer {
       height: 100%;
     }
   }
+
   .variations-container {
     position: absolute;
     top: 0;
@@ -58,6 +67,8 @@ $variations-menu-width: 12rem;
     border-left: 1px solid #000;
     transition: transform 0.3s ease;
     background-color: #fff;
+    border-radius: 0 $card-border-radius 0 0;
+    overflow: hidden;
 
     .close-container {
       background-color: $gray-200;
@@ -79,7 +90,17 @@ $variations-menu-width: 12rem;
   }
 
   .code-container {
-    padding: 1.5rem;
+    div[class*=language-] {
+      border-radius: 0 0 $card-border-radius $card-border-radius;
+    }
+
+    pre {
+      margin: 0;
+    }
+  }
+
+  .hidden-container {
+    display: none;
   }
 }
 
@@ -92,4 +113,8 @@ $variations-menu-width: 12rem;
   height: 100%;
   z-index: 100;
   background-color: #fff;
+
+  &.show {
+    display: block;
+  }
 }

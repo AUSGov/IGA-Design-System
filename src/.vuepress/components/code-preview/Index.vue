@@ -2,18 +2,18 @@
   <div class="c-code-demo">
     <div class="menu-container">
       <div class="top-container">
-        <button v-if="allowFullScreen" @click="showFullScreen = true" class="icon me-2 btn" v-html="Expand"></button>
-        <button @click="showVariations = !showVariations" class="icon btn" v-html="Hamburger"></button>
+        <button v-if="allowFullScreen" @click="showFullScreen = true" class="btn-icon me-2 btn" v-html="Expand"></button>
+        <button @click="showVariations = !showVariations" class="btn-icon btn" v-html="Hamburger"></button>
         <div class="spacer" :class="{ show: showVariations }"></div>
       </div>
       <div class="preview-container">
-        <div class="doi-content" ref="preview">
-          <slot name="preview" @click="previewClick" :test="test" :form-data="formData"></slot>
+        <div class="doi-content">
+          <slot :form-data="formData"></slot>
         </div>
         <div class="spacer" :class="{ show: showVariations }"></div>
       </div>
       <div v-if="allowVariations" class="variations-container" :class="{ show: showVariations }">
-        <div class="close-container"><button @click="showVariations = false" class="icon btn" v-html="Close"></button></div>
+        <div class="close-container"><button @click="showVariations = false" class="btn-icon btn" v-html="Close"></button></div>
         <component v-for="element in formConfig" :is="componentType(element.type)" @change="handleChange"/>
         <Checkbox/>
         <Radio/>
@@ -21,19 +21,23 @@
       </div>
     </div>
     <div class="bottom-container">
-      <button @click="showCodeView = !showCodeView" class="btn">View Code <span v-html="ChevronDown" class="icon"></span></button>
+      <button @click="showCodeView = !showCodeView" class="btn btn-icon">
+        <span class="me-2">View Code</span>
+        <span v-html="ChevronDown"></span>
+      </button>
     </div>
     <Transition v-if="allowCodeView" name="slide-down">
       <div v-if="showCodeView" class="code-container">
-        <Markdown v-if="code !== null" :code="code" lang="js" />
-        <Highlighter v-if="code !== null" :preview="preview" :code="code"/>
+        <Highlighter v-if="code !== null" :code="code"/>
       </div>
     </Transition>
+
+    <div class="hidden-container" ref="codeRef">
+      <slot :form-data="formData"></slot>
+    </div>
   </div>
   <Teleport to="body">
-  <div v-if="allowFullScreen" class="fullscreen-container" :class="{ show: showFullScreen }">
-    <slot name="fullscreen-preview"></slot>
-  </div>
+  <div v-if="allowFullScreen" class="fullscreen-container" :class="{ show: showFullScreen }" v-html="code"></div>
   </Teleport>
 </template>
 <script>
@@ -44,19 +48,18 @@ import Close from '../../public/icons/demo-close.svg?raw'
 import Radio from './Radio.vue'
 import Checkbox from './Checkbox.vue'
 import Select from './Select.vue'
-import Markdown from './Markdown.vue'
 import Highlighter from './Highlighter.vue'
-import { computed, ref } from 'vue'
+import { computed, ref, watchEffect, watch, onMounted, onUnmounted } from 'vue'
 
 export default {
   components: {
     Highlighter,
-    Markdown,
     Checkbox,
     Radio,
     Select
   },
   props: {
+    changePreview: {},
     allowFullScreen: {
       type: Boolean,
       default: true
@@ -73,28 +76,44 @@ export default {
       type: Object
     }
   },
-  setup () {
-    const preview = ref(null)
-    const code = computed(() => {
-      return preview.value ? preview.value.innerHTML: null
+  setup (props) {
+    const previewRef = ref(null)
+    const codeRef = ref(null)
+    const code = ref(null)
+
+    let observer
+    const updateCode = () => {
+      if (codeRef.value) {
+        const temp = codeRef.value.innerHTML
+        code.value = temp.replace('<pre>\n', '').replace('\n</pre>', '')
+      }
+    }
+
+    onMounted(() => {
+      updateCode()
+      observer = new MutationObserver(updateCode);
+      observer.observe(codeRef.value, {
+        childList: true,
+        subtree: true
+      });
     })
 
-    console.log('preview', preview.value)
-    console.log('code', code)
+    onUnmounted(() => {
+      observer.disconnect();
+    })
 
     return {
       ChevronDown,
       Expand,
       Hamburger,
       Close,
-      showFullScreen: false,
-      showVariations: true,
-      showCodeView: true,
-      test: 'test variable',
+      showFullScreen: ref(false),
+      showVariations: ref(true),
+      showCodeView: ref(true),
       formData: {},
-      previewClick (e) {
-        console.log('Preview slot click event', e)
-      },
+      previewRef,
+      codeRef,
+      code,
       componentType (type) {
         return 'demo-' + type
       },
@@ -102,8 +121,6 @@ export default {
         this.formData[e.key] = e.value
         // this.codeRender =
       },
-      preview,
-      code
     }
   }
 }

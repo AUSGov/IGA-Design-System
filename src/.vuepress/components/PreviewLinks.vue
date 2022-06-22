@@ -1,24 +1,24 @@
 <template>
-  <CodePreview :formConfig="formConfig">
-    <template #preview="slotProps">
+<CodePreview :formConfig="formConfig" :changePreview="changePreview">
+<template v-slot="slotProps">
+<pre>
 
 <ul>
   <li>
-    <a href="#" :class="linkClass" @click.prevent="clickChild">
-      This is a link {{ counter }}
-    </a>
+    <a href="#" :class="linkClass" @click.prevent="clickChild">This is a link {{ counter }}</a>
   </li>
 </ul>
 
-    </template>
-  </CodePreview>
+</pre>
+</template>
+</CodePreview>
 </template>
 <script>
 import CodePreview from './code-preview/Index.vue'
 
 export default {
   components: {
-    CodePreview,
+    CodePreview
   },
   data () {
     return {
@@ -74,7 +74,8 @@ export default {
             }
           ]
         }
-      ]
+      ],
+      changePreview: 0
     }
   },
   computed: {
@@ -88,6 +89,7 @@ export default {
   methods: {
     clickChild (e) {
       console.log('click child', e)
+      this.changePreview++
       this.counter++
       this.$emit('click', e)
     }
