@@ -1,0 +1,18 @@
+.entity-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 14px 1rem;
+  letter-spacing: 5px;
+  font-weight: $font-weight-bold;
+  font-size: 14px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+  }
+}

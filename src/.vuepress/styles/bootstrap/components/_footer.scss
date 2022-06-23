@@ -1,5 +1,5 @@
 .global-footer {
-  color: #fff;
+  color: $gray-100;
   font-size: 15px;
 
   .top-footer {
@@ -59,24 +59,24 @@
   }
 
   a {
-    color: #fff;
+    color: $gray-100;
 
     &:not(:hover):not(:active) {
       text-decoration: none;
     }
-  }
 
-  .icon {
-    svg {
-      path {
-        fill: #fff;
+    &.link-secondary {
+      color: $gray-100;
+
+      svg {
+        path {
+          fill: #fff;
+        }
       }
     }
   }
 
-  a.link-secondary {
-    color: #fff;
-
+  .icon {
     svg {
       path {
         fill: #fff;
@@ -118,6 +118,103 @@
   .img-wrap {
     img {
       min-width: 100px;
+    }
+  }
+}
+
+.secondary-footer {
+  background-color: $gray-200;
+  padding: 3rem 0;
+  color: $gray-700;
+
+  .h4 {
+    color: $gray-700;
+    font-weight: $font-weight-semi-bold;
+  }
+
+  .h4-placeholder {
+    height: $h4-font-size;
+    display: none;
+
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+  }
+
+  .body-large-bold {
+    font-weight: $font-weight-semi-bold;
+  }
+
+  a {
+    color: $gray-700;
+
+    &:not(:hover):not(:active) {
+      text-decoration: none;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .icon {
+    margin-right: 12px;
+    display: inline-block;
+
+    svg {
+      path {
+        fill: #2C3E50;
+      }
+    }
+  }
+
+  .base-contact,
+  .extended-contact,
+  .connect-with-us {
+    margin-bottom: 2rem;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
+  }
+
+  .extended-contact {
+    display: none;
+  }
+
+  .connect-with-us {
+    display: none;
+  }
+
+  .subscribe-updates {
+    display: none;
+  }
+
+  &--extended-contact {
+    .extended-contact {
+      display: block;
+    }
+  }
+
+  &--connect-with-us {
+    .connect-with-us {
+      display: block;
+    }
+  }
+
+  &--subscribe-updates {
+    .subscribe-updates {
+      display: block;
+    }
+  }
+
+  &.secondary-footer--extended-contact.secondary-footer--connect-with-us.secondary-footer--subscribe-updates {
+    .main-row {
+      > [class*="col-"] {
+          @extend .col-md-6, .col-lg;
+      }
     }
   }
 }
