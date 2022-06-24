@@ -1,0 +1,29 @@
+.filters {
+  display: flex;
+  box-shadow: 0px 8px 16px rgba(40, 41, 61, 0.0364);
+
+  .title-wrapper-container {
+    display: flex;
+    align-items: center;
+    padding-left: 4.5rem;
+    padding-right: 0;
+  }
+
+  .title-container {
+    padding-right: 1.25rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 1.3125rem;
+  }
+
+  a {
+    &:not(:hover):not(:focus) {
+      color: black;
+    }
+  }
+}

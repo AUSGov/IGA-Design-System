@@ -1,6 +1,9 @@
 a {
+  text-decoration: none;
+
   &.link-secondary {
     color: black;
+
     svg {
       opacity: 0;
     }
@@ -28,6 +31,7 @@ a {
 
   &:hover,
   .hover {
+    text-decoration: underline;
     text-underline-offset: 0.125rem;
   }
 
