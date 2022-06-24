@@ -8,7 +8,7 @@ pageHeader: true
 # Typography
 
 ## Heading styles
-<div>
+<div class="doi-content">
   <table class="table">
     <thead class="table-light">
       <tr>
@@ -62,7 +62,7 @@ pageHeader: true
 </div>
 
 ## Paragraph
-<div>
+<div class="doi-content">
   <table class="table">
     <thead class="table-light">
       <tr>
@@ -112,7 +112,7 @@ pageHeader: true
 
 ## Captions
 
-<div>
+<div class="doi-content">
   <table class="table">
     <thead class="table-light">
       <tr>
@@ -137,7 +137,7 @@ pageHeader: true
 
 ## Links
 
-<div>
+<div class="doi-content">
   <table class="table">
     <thead class="table-light">
       <tr>
@@ -162,7 +162,7 @@ pageHeader: true
 
 ## Lists
 
-<div>
+<div class="doi-content">
   <table class="table">
     <thead class="table-light">
       <tr>
@@ -197,7 +197,7 @@ pageHeader: true
 
 ## Blockquote
 
-<div>
+<div class="doi-content">
   <table class="table">
     <thead class="table-light">
       <tr>

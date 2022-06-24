@@ -1,0 +1,121 @@
+.standard-banner {
+  padding: 3rem 0;
+
+  .banner-content {
+    max-width: 600px;
+  }
+
+  .banner-title {
+    @include heading-small;
+
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-up(md) {
+      @include heading-medium;
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include heading-large;
+
+      margin-bottom: 1.25rem;
+    }
+  }
+}
+
+.section-banner {
+  padding-top: 3rem;
+  background-color: $primary;
+  color: #fff;
+  position: relative;
+
+  @include media-breakpoint-up(md) {
+    padding-bottom: 3rem;
+  }
+
+  .banner-content {
+    padding-bottom: 3rem;
+
+    @include media-breakpoint-up(md) {
+      padding-bottom: 0;
+      max-width: 50%;
+    }
+  }
+
+  .banner-title {
+    @include heading-medium;
+
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-up(lg) {
+      @include display-large;
+
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  .img-wrap {
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 5;
+      clip-path: polygon(70% 0, 100% 0, 100% 100%, 50% 100%);
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.publication-banner {
+  background-image: url("../../../public/images/publication-banner-sample.png");
+  position: relative;
+  color: #fff;
+
+  .banner-overlay {
+    background: #323232;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .banner-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+
+  .banner-title {
+    @include display-small;
+
+    @include media-breakpoint-up(md) {
+      @include display-large;
+    }
+  }
+
+  .banner-subtitle {
+    @include heading-small;
+
+    @include media-breakpoint-up(md) {
+      @include heading-large;
+    }
+  }
+
+  .date {
+    @include heading-extra-small;
+
+    @include media-breakpoint-up(md) {
+      @include heading-small;
+    }
+  }
+}

@@ -7,9 +7,17 @@
   }
 
   h2 {
-    font-weight: $font-weight-bold;
-    font-size: 48px;
+    @include display-small;
+
     text-align: left;
+
+    @include media-breakpoint-up(md) {
+      @include display-medium;
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include display-large;
+    }
   }
 
   .carousel-controls {

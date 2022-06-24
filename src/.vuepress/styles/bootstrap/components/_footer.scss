@@ -113,6 +113,12 @@
 
   .description {
     max-width: 650px;
+
+    p {
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: 0.3px;
+    }
   }
 
   .img-wrap {
@@ -127,17 +133,31 @@
   padding: 3rem 0;
   color: $gray-700;
 
-  .h4 {
-    color: $gray-700;
-    font-weight: $font-weight-semi-bold;
+  @include media-breakpoint-up(lg) {
+    @include body-large;
   }
 
-  .h4-placeholder {
-    height: $h4-font-size;
+  .footer-title {
+    @include heading-small;
+
+    color: $gray-700;
+    margin-bottom: 22px;
+
+    @include media-breakpoint-up(lg) {
+      @include heading-medium;
+    }
+  }
+
+  .footer-title-placeholder {
+    height: 21px;
     display: none;
 
     @include media-breakpoint-up(md) {
       display: block;
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 24px;
     }
   }
 
@@ -213,7 +233,7 @@
   &.secondary-footer--extended-contact.secondary-footer--connect-with-us.secondary-footer--subscribe-updates {
     .main-row {
       > [class*="col-"] {
-          @extend .col-md-6, .col-lg;
+        @extend .col-md-6, .col-lg;
       }
     }
   }

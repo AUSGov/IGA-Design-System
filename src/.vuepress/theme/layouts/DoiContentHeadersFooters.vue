@@ -66,37 +66,6 @@
       <span>National Measurement Institute</span>
     </div>
 
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-      <div class="carousel-controls">
-        <div data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="icon" v-html="chevronBack"></span>
-          <span class="visually-hidden">Previous</span>
-        </div>
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        </div>
-        <div data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="icon" v-html="chevronForward"></span>
-          <span class="visually-hidden">Next</span>
-        </div>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../../public/images/carousel-sample.png" class="d-block w-100" alt="">
-          <div class="carousel-caption d-none d-md-block">
-            <h2>Supporting economic growth and job creation for all Australians</h2>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="../../public/images/carousel-sample.png" class="d-block w-100" alt="">
-          <div class="carousel-caption d-none d-md-block">
-            <h2>Supporting economic growth and job creation for all Australians</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="global-footer">
       <div class="top-footer bg-gray-800">
         <div class="container">
@@ -194,13 +163,13 @@
       <div class="container">
         <div class="row main-row">
           <div class="col-md base-contact">
-            <div class="h4">Contact Us</div>
+            <div class="footer-title">Contact Us</div>
             <div class="mb-4 d-flex">
               <span class="icon" v-html="email"></span>
               <div class="d-flex flex-column">
-                <span class="body-large-bold">General Enquiries</span>
+                <span class="fw-semi-bold">General Enquiries</span>
                 <a href="mailto:enquiries@space.gov.au">enquiries@space.gov.au</a>
-                <span class="body-large-bold">Media Enquiries</span>
+                <span class="fw-semibold">Media Enquiries</span>
                 <a href="mailto:enquiries@space.gov.au">enquiries@space.gov.au</a>
               </div>
             </div>
@@ -213,7 +182,7 @@
             </div>
           </div>
           <div class="col-md extended-contact">
-            <div class="h4 h4-placeholder"></div>
+            <div class="footer-title footer-title-placeholder"></div>
             <div class="mb-4 d-flex">
               <span class="icon" v-html="mailbox"></span>
               <div class="d-flex flex-column">
@@ -232,26 +201,26 @@
             </div>
           </div>
           <div class="col-md connect-with-us">
-            <div class="h4">Connect with us</div>
+            <div class="footer-title">Connect with us</div>
             <ul>
               <li class="mb-4">
                 <span class="icon" v-html="twitter"></span>
-                <span class="caption-large">Twitter</span>
+                <span>Twitter</span>
               </li>
               <li class="mb-4">
                 <span class="icon" v-html="linkedin"></span>
-                <span class="caption-large">LinkedIn</span>
+                <span>LinkedIn</span>
               </li>
               <li>
                 <span class="icon" v-html="facebook"></span>
-                <span class="caption-large">Facebook</span>
+                <span>Facebook</span>
               </li>
             </ul>
           </div>
           <div class="col-md subscribe-updates">
-            <div class="h4">Subscribe for updates</div>
+            <div class="footer-title">Subscribe for updates</div>
             <span class="icon" v-html="notification"></span>
-            <span class="caption-large">Subscribe for the latest news</span>
+            <span>Subscribe for the latest news</span>
           </div>
         </div>
       </div>
