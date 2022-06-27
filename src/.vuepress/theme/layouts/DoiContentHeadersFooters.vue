@@ -1,20 +1,61 @@
 <template>
   <div class="doi-content">
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg bg-light">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon" v-html="hamburger"></span>
         </button>
         <a class="navbar-brand" href="/" v-html="logo"></a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="mobile-close d-lg-none" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"><span class="icon" v-html="close"></span></div>
+          <ul class="navbar-nav">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="whoWeAre" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Who we are
               </a>
-              <ul class="dropdown-menu" aria-labelledby="whoWeAre">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-              </ul>
+              <div class="dropdown-menu" aria-labelledby="whoWeAre">
+                <div class="row main-row">
+                  <div class="col-md-6 col-lg-3">
+                    <ul>
+                      <li><a href="#">Anti-Dumping Commission</a></li>
+                      <li><a href="#">Anti-Dumping Review Panel</a></li>
+                      <li><a href="#">AusIndustry</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="content-group">
+                      <div class="mega-menu-label"><a href="#">Ministers<span class="icon" v-html="linkArrowRight"></span></a></div>
+                      <ul>
+                        <li><a href="#">Ministers</a></li>
+                      </ul>
+                    </div>
+                    <div class="content-group">
+                      <div class="mega-menu-label"><a href="#">People<span class="icon" v-html="linkArrowRight"></span></a></div>
+                      <ul>
+                        <li><a href="#">Executive team</a></li>
+                        <li><a href="#">Organisation chart</a></li>
+                        <li><a href="#">International engagements</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="content-group">
+                      <div class="mega-menu-label"><a href="#">Corporate Governance<span class="icon" v-html="linkArrowRight"></span></a></div>
+                      <ul>
+                        <li><a href="#">Annual report</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="content-group">
+                      <div class="mega-menu-label"><a href="#">Engage with us<span class="icon" v-html="linkArrowRight"></span></a></div>
+                      <ul>
+                        <li><a href="#">Contact us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="policyTopics" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -246,6 +287,7 @@
   import chevronForward from '../../public/icons/chevron-forward.svg?raw'
   import mailbox from '../../public/icons/mailbox.svg?raw'
   import notification from '../../public/icons/notification.svg?raw'
+  import close from '../../public/icons/close.svg?raw'
 
   export default {
     data () {
@@ -266,7 +308,8 @@
         chevronBack,
         chevronForward,
         mailbox,
-        notification
+        notification,
+        close
       }
     }
   }

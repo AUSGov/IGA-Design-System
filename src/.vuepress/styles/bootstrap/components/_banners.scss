@@ -73,9 +73,7 @@
 }
 
 .publication-banner {
-  background-image: url("../../../public/images/publication-banner-sample.png");
   position: relative;
-  color: #fff;
 
   .banner-overlay {
     background: #323232;
@@ -85,6 +83,11 @@
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 1;
+  }
+
+  .container {
+    position: relative;
   }
 
   .banner-wrap {
@@ -93,10 +96,12 @@
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
+    color: #fff;
   }
 
   .banner-title {
     @include display-small;
+    z-index: 5;
 
     @include media-breakpoint-up(md) {
       @include display-large;
@@ -105,14 +110,24 @@
 
   .banner-subtitle {
     @include heading-small;
+    z-index: 5;
 
     @include media-breakpoint-up(md) {
       @include heading-large;
     }
   }
 
-  .date {
+  .banner-date {
     @include heading-extra-small;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    font-weight: $font-weight-base;
+    margin-bottom: 2rem;
 
     @include media-breakpoint-up(md) {
       @include heading-small;
