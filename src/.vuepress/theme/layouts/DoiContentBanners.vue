@@ -59,11 +59,11 @@
         </div>
       </div>
       <div class="img-wrap">
-        <img src="../../public/images/banner-sample.png" alt="">
+        <img :src="$withBase('/images/banner-sample.png')" alt="">
       </div>
     </div>
 
-    <div class="publication-banner" style="background-image: url('../../../public/images/publication-banner-sample.png');">
+    <div class="publication-banner" style="background-image: url('/images/publication-banner-sample.png');">
       <div class="banner-overlay"></div>
       <div class="container">
         <div class="banner-wrap">

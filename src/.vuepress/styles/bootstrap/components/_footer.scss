@@ -61,10 +61,6 @@
   a {
     color: $gray-100;
 
-    &:not(:hover):not(:active) {
-      text-decoration: none;
-    }
-
     &.link-secondary {
       color: $gray-100;
 
@@ -168,10 +164,6 @@
 
   a {
     color: $gray-700;
-
-    &:not(:hover):not(:active) {
-      text-decoration: none;
-    }
   }
 
   ul {

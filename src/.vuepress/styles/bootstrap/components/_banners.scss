@@ -74,6 +74,9 @@
 
 .publication-banner {
   position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   .banner-overlay {
     background: #323232;
@@ -97,11 +100,13 @@
     align-items: flex-start;
     min-height: 100vh;
     color: #fff;
+    position: relative;
   }
 
   .banner-title {
     @include display-small;
     z-index: 5;
+    margin-bottom: 1.5rem;
 
     @include media-breakpoint-up(md) {
       @include display-large;

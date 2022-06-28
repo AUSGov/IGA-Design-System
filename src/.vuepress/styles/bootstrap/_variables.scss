@@ -2,6 +2,8 @@
 $primary: $doi-primary;
 $secondary: $doi-secondary;
 
+$body-color: $gray-700;
+
 /* Borders */
 $border-radius: 0.1875rem;
 
@@ -37,9 +39,21 @@ $input-btn-padding-x-sm: 1.8125rem;
 $link-color: $doi-action;
 $link-hover-color: darken($link-color, 15%);
 $link-hover-decoration: underline;
+$link-underline-offset: 0.125rem;
 
 /* Navbar */
 $navbar-nav-link-padding-x: 0.75rem;
 
 /* Carousel */
 $carousel-indicator-spacer: 10px;
+
+/* Breadcrumbs */
+$breadcrumb-font-size: 12px;
+$breadcrumb-padding-x: 1rem;
+$breadcrumb-padding-y: 1rem;
+$breadcrumb-margin-bottom: 0;
+$breadcrumb-divider-color: $gray-500;
+$breadcrumb-active-color: $gray-500;
+
+/* Offcanvas */
+$offcanvas-horizontal-width: 600px;
