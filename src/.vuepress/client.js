@@ -5,6 +5,7 @@ import DoiContentHeadersFooters from './theme/layouts/DoiContentHeadersFooters.v
 import DoiContentBanners from './theme/layouts/DoiContentBanners.vue'
 import DoiContentFilters from './theme/layouts/DoiContentFilters.vue'
 import DoiContentNavigation from './theme/layouts/DoiContentNavigation.vue'
+import DoiOtherComponents from './theme/layouts/DoiOtherComponents.vue'
 
 import 'https://code.jquery.com/jquery-3.6.0.min.js'
 import 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'
@@ -19,5 +20,6 @@ export default defineClientConfig({
     app.component('DoiContentBanners', DoiContentBanners)
     app.component('DoiContentFilters', DoiContentFilters)
     app.component('DoiContentNavigation', DoiContentNavigation)
+    app.component('DoiOtherComponents', DoiOtherComponents)
   },
 })
