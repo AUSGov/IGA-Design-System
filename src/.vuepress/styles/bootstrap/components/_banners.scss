@@ -72,6 +72,23 @@
   }
 }
 
+.news-article {
+  h1 {
+    @include display-small;
+    margin-bottom: 1.5rem;
+
+    @include media-breakpoint-up(md) {
+      @include display-large;
+      margin-bottom: 2.875rem;
+    }
+  }
+
+  .categories .border {
+    border-color: $gray-500;
+    color: $gray-600;
+  }
+}
+
 .publication-banner {
   position: relative;
   background-repeat: no-repeat;
@@ -98,7 +115,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    min-height: 100vh;
     color: #fff;
     position: relative;
   }
@@ -136,6 +152,12 @@
 
     @include media-breakpoint-up(md) {
       @include heading-small;
+    }
+  }
+
+  &.full-height {
+    .banner-wrap {
+      min-height: 100vh;
     }
   }
 }
