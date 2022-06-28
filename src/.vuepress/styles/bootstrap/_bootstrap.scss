@@ -59,9 +59,10 @@
 @import "node_modules/bootstrap/scss/utilities/api";
 // scss-docs-end import-stack
 
-@import "navbar";
+@import "components/navbar";
 @import "components/footer";
 @import "components/carousel";
 @import "components/entity-bar";
 @import "components/banners";
 @import "components/filters";
+@import "components/navigation";

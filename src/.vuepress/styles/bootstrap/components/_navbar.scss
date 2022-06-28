@@ -18,18 +18,6 @@
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  @include media-breakpoint-up(lg) {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
-  }
-
-  @include media-breakpoint-up(xxl) {
-    padding-left: $navbar-nav-link-padding-x;
-    padding-right: $navbar-nav-link-padding-x;
-  }
-}
-
-.nav-link {
   color: rgb(50, 50, 50);
   font-weight: $font-weight-bold;
   text-decoration: none;
@@ -153,10 +141,6 @@
         color: #fff;
         padding-left: 13px;
         font-size: 15px;
-
-        &:not(:hover):not(:active) {
-          text-decoration: none;
-        }
       }
 
       ul {

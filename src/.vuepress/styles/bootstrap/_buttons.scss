@@ -26,3 +26,36 @@
     background-color: transparent;
   }
 }
+
+.btn-promo {
+  @include button-variant($doi-promo, $doi-promo, $doi-dark-blue, $doi-secondary, $doi-secondary, white);
+
+  box-shadow: none;
+}
+
+.btn-nav-menu {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: $font-weight-semi-bold;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .navigate-label {
+    flex-grow: 1;
+    text-align: right;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+}

@@ -8,6 +8,16 @@ $doi-secondary: #3e837c;
 $doi-promo: #7ac4c3;
 $doi-action: #a44d8e;
 $doi-dark-blue: #0B253B;
+$doi-snow: #F8FBFB;
+$doi-light-teal: #ABD7DF;
+
+$doi-colors: (
+  "promo": $doi-promo,
+  "action": $doi-action,
+  "dark-blue": $doi-dark-blue,
+  "dark-snow": $doi-snow,
+  "light-teal": $doi-light-teal,
+);
 
 /* Gray Colours */
 $gray-50: #fafafa;

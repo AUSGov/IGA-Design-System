@@ -9,6 +9,8 @@ a {
     }
 
     &:hover {
+      color: black;
+
       svg {
         opacity: 100%;
 
@@ -32,13 +34,13 @@ a {
   &:hover,
   .hover {
     text-decoration: underline;
-    text-underline-offset: 0.125rem;
+    text-underline-offset: $link-underline-offset;
   }
 
   &:focus,
   .focus {
     text-decoration: underline;
-    text-underline-offset: 0.125rem;
+    text-underline-offset: $link-underline-offset;
     color: darken($doi-action, 15%)
   }
 
