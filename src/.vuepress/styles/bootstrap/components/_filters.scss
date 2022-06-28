@@ -108,7 +108,6 @@
 .buttons-container {
   display: flex;
   align-items: center;
-  margin-bottom: 1.5rem;
 }
 
 .button-plain {
@@ -143,8 +142,8 @@
   }
 }
 
-.filters-dropdown {
-  .filters-dropdown-container {
+.filters-accordion {
+  .filters-accordion-container {
     margin-top: 1rem;
     margin-left: 0.8125rem;
   }
@@ -170,7 +169,7 @@
   }
 
   .form-check {
-    margin-bottom: 0;
+    margin-bottom: 1.5rem;
 
     .form-check-input {
       padding-bottom: 1rem;
@@ -183,16 +182,22 @@
   }
 
   .accordion-content {
-    padding-top: 1rem;
-    padding-left: 0.875rem;
+    .content-container {
+      padding-top: 1rem;
+      padding-left: 0.875rem;
+    }
 
     &.show {
-      padding-bottom: 1.5rem;
-      border-bottom: 2px solid $gray-300;
+      .content-container {
+        padding-top: 1rem;
+        padding-left: 0.875rem;
+        border-bottom: 2px solid $gray-300;
+      }
     }
 
     .dropdown {
       border: 2px solid $gray-300;
+      margin-bottom: 1.5rem;
       border-radius: 2px;
       width: 100% !important;
 
@@ -210,26 +215,6 @@
 
     .dropdown-title {
       padding-left: 0.5rem;
-    }
-  }
-
-  .slider {
-    &.slider-horizontal {
-      .slider-track {
-        height: 5px;
-        margin-top: 0;
-        transform: translateY(-50%);
-      }
-    }
-
-    .slider-handle,
-    .slider-selection {
-      background-image: none;
-      background-color: $doi-primary;
-    }
-
-    .tooltip-inner {
-      bottom: 1.25rem;
     }
   }
 }
