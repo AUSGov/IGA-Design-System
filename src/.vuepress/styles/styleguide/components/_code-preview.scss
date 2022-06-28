@@ -87,6 +87,10 @@ $variations-menu-width: 12rem;
       padding: 1rem 1.25rem;
     }
 
+    .scroll-container {
+      overflow: scroll;
+    }
+
     &.show {
       transform: translateX(-100%);
     }

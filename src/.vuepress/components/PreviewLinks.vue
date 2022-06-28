@@ -1,12 +1,12 @@
 <template>
-<CodePreview :formConfig="formConfig" :changePreview="changePreview">
+<CodePreview :formConfig="formConfig" @form-data-changed="formDataChanged">
 <template v-slot="slotProps">
 <pre>
 
 
 <ul>
   <li>
-    <a href="#" :class="linkClass" @click.prevent="clickChild">This is a link {{ counter }}</a>
+    <a href="#" :class="linkClass" @click.prevent="clickChild">This is a link {{ counter }}<br>{{ linkClass }}</a>
   </li>
 </ul>
 
@@ -15,88 +15,89 @@
 </template>
 </CodePreview>
 </template>
-<script>
+<script setup>
+import { ref, computed } from 'vue'
 import CodePreview from './code-preview/Index.vue'
 
-export default {
-  components: {
-    CodePreview
+const formConfig = ref([
+  {
+    label: 'Variation',
+    key: 'variation',
+    type: 'select',
+    options: [
+      {
+        key: 'linkPrimary',
+        label: 'Primary',
+        value: 'link-primary'
+      },
+      {
+        key: 'linkSecondary',
+        label: 'Secondary',
+        value: 'link-secondary'
+      }
+    ]
   },
-  data () {
-    return {
-      counter: 0,
-      formConfig: [
-        {
-          label: 'Variation',
-          key: 'variation',
-          slug: 'variation',
-          type: 'select',
-          options: [
-            {
-              key: 'linkPrimary',
-              label: 'Primary',
-              value: 'link-primary'
-            },
-            {
-              key: 'linkSecondary',
-              label: 'Secondary',
-              value: 'link-secondary'
-            }
-          ]
-        },
-        {
-          label: 'Type',
-          key: 'type-radio',
-          type: 'radio',
-          options: [
-            {
-              key: 'internal',
-              label: 'Internal',
-              value: 'internal'
-            },
-            {
-              key: 'external',
-              label: 'External',
-              value: 'external'
-            }
-          ]
-        },
-        {
-          label: 'Type',
-          key: 'type-check',
-          type: 'checkbox',
-          options: [
-            {
-              key: 'internal',
-              label: 'Internal',
-              value: 'internal'
-            },
-            {
-              key: 'external',
-              label: 'External',
-              value: 'external'
-            }
-          ]
-        }
-      ],
-      changePreview: 0
-    }
+  {
+    label: 'Type Radio',
+    key: 'internal',
+    type: 'radio',
+    options: [
+      {
+        key: 'internal',
+        label: 'Internal',
+        value: 'internal'
+      },
+      {
+        key: 'external',
+        label: 'External',
+        value: 'external'
+      }
+    ]
   },
-  computed: {
-    linkClass () {
-      return 'link-' + this.counter
-    },
-    computedCounter () {
-      return this.counter
-    }
-  },
-  methods: {
-    clickChild (e) {
-      console.log('click child', e)
-      this.changePreview++
-      this.counter++
-      this.$emit('click', e)
-    }
+  {
+    label: 'Type Checkbox',
+    key: 'external',
+    type: 'checkbox',
+    options: [
+      {
+        key: 'internal',
+        label: 'Internal',
+        value: 'internal'
+      },
+      {
+        key: 'external',
+        label: 'External',
+        value: 'external'
+      }
+    ]
   }
+])
+const changePreview = ref(0)
+const counter = ref(0)
+const formData = ref({})
+
+const linkClass = computed(() => {
+  console.log(formData.value)
+  const classes = ['link-' + counter.value]
+  if(typeof formData.value.variation !== 'undefined') {
+    classes.push('btn-' + formData.value.variation)
+  }
+  if(typeof formData.value.internal !== 'undefined') {
+    classes.push('btn-' + formData.value.internal)
+  }
+  if(typeof formData.value.external !== 'undefined') {
+    classes.push('btn-' + formData.value.external)
+  }
+  changePreview.value++
+  return classes.join(' ')
+})
+
+const clickChild = (e) => {
+  console.log('click child', e)
+  counter.value++
+}
+const formDataChanged = (formDataExternal) => {
+  console.log('formDataChanged', formDataExternal)
+  formData.value = formDataExternal
 }
 </script>

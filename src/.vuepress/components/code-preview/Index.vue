@@ -7,18 +7,17 @@
         <div class="spacer" :class="{ show: showVariations }"></div>
       </div>
       <div class="preview-container">
-        <div class="doi-content">
-          <slot :form-data="formData"></slot>
+        <div class="doi-content" ref="codeRef">
+          <slot></slot>
         </div>
         <div class="spacer" :class="{ show: showVariations }"></div>
       </div>
       <div v-if="allowVariations" class="variations-container" :class="{ show: showVariations }">
         <div class="close-container"><button @click="showVariations = false" class="btn-icon btn" v-html="Close"></button></div>
-        <div v-for="(element, index) in formConfig" :key="element.slug">
-          <component :is="element.type" @change="handleChange" v-bind.prop="element" :key="element.key" :slu="element.slug" :index="index" />
-          <pre>
-          {{ element }}
-          </pre>
+        <div class="scroll-container">
+          <div v-for="(element, index) in formConfig" :key="element.slug">
+            <component :is="element.type" @input="handleInput(element.key, $event)" v-bind.prop="element" :key="element.key" :slug="element.slug" :index="index" />
+          </div>
         </div>
       </div>
     </div>
@@ -33,16 +32,13 @@
         <Highlighter v-if="code !== null" :code="code"/>
       </div>
     </Transition>
-
-    <div class="hidden-container" ref="codeRef">
-      <slot :form-data="formData"></slot>
-    </div>
   </div>
   <Teleport to="body">
-  <div v-if="allowFullScreen" class="fullscreen-container" :class="{ show: showFullScreen }" v-html="code"></div>
+    <div v-if="allowFullScreen" class="fullscreen-container" :class="{ show: showFullScreen }" v-html="code"></div>
   </Teleport>
 </template>
 <script>
+import { ref, onMounted, onUnmounted } from 'vue'
 import ChevronDown from '../../public/icons/chevron-down.svg?raw'
 import Expand from '../../public/icons/expand.svg?raw'
 import Hamburger from '../../public/icons/hamburger-2.svg?raw'
@@ -51,7 +47,6 @@ import Radio from './Radio.vue'
 import Checkbox from './Checkbox.vue'
 import Select from './Select.vue'
 import Highlighter from './Highlighter.vue'
-import { computed, ref, watchEffect, watch, onMounted, onUnmounted } from 'vue'
 
 export default {
   components: {
@@ -78,28 +73,27 @@ export default {
       type: Object
     }
   },
-  setup (props) {
-    const previewRef = ref(null)
+  emits: ['formDataChanged'],
+  setup (_, context) {
     const codeRef = ref(null)
     const code = ref(null)
+    const formData = ref({})
 
-    let observer
     const updateCode = () => {
       if (codeRef.value) {
         const temp = codeRef.value.innerHTML
         code.value = temp.replace('<pre>\n', '').replace('\n</pre>', '')
       }
     }
-
+    const observer = new MutationObserver(updateCode)
     onMounted(() => {
       updateCode()
-      observer = new MutationObserver(updateCode);
       observer.observe(codeRef.value, {
+        attributes: true,
         childList: true,
         subtree: true
       });
     })
-
     onUnmounted(() => {
       observer.disconnect();
     })
@@ -112,17 +106,16 @@ export default {
       showFullScreen: ref(false),
       showVariations: ref(true),
       showCodeView: ref(true),
-      formData: {},
-      previewRef,
+      formData,
       codeRef,
       code,
       componentType (type) {
         return 'demo-' + type
       },
-      handleChange (e) {
-        this.formData[e.key] = e.value
-        // this.codeRender =
-      },
+      handleInput (key, e) {
+        formData.value[key] = e.target.value
+        context.emit('formDataChanged', formData.value)
+      }
     }
   }
 }
