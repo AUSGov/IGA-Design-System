@@ -35,13 +35,15 @@
   }
 
   a {
-    &:not(:hover):not(:focus) {
-      color: black;
-    }
-
+    color: black;
     font-weight: $font-weight-bold;
     overflow-wrap: normal;
     width: max-content;
+
+    &:hover,
+    &:focus {
+      color: $doi-action;
+    }
   }
 
   .icon-container {
@@ -68,26 +70,29 @@
 }
 
 .show-filters {
+  padding: 1rem;
   @include media-breakpoint-up(lg) {
-    width: 300px;
+    width: 330px;
   }
 
   li {
-    padding-left: 0.4375rem;
     padding-bottom: 0.5rem;
+
+    a {
+      color: black;
+      font-size: $font-size-sm;
+      line-height: 20px;
+      white-space: break-spaces;
+
+      &:hover,
+      &:focus {
+        color: $doi-action;
+      }
+    }
   }
 
-  a {
-    &:not(:hover):not(:focus) {
-      color: black;
-    }
-
-    &:hover, :focus {
-      text-decoration: none;
-    }
-
-    overflow-wrap: normal;
-    width: max-content;
+  .btn {
+    padding: 0.375rem 0.75rem;
   }
 }
 
@@ -103,6 +108,7 @@
 .buttons-container {
   display: flex;
   align-items: center;
+  margin-bottom: 1.5rem;
 }
 
 .button-plain {
@@ -145,7 +151,7 @@
 
   .topic-container {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     width: 100%;
 
     .chevron-down {
@@ -187,17 +193,43 @@
 
     .dropdown {
       border: 2px solid $gray-300;
-      $dropdown-border-radius: 2px;
-      padding: 0.5rem;
+      border-radius: 2px;
+      width: 100% !important;
 
       .dropdown-menu {
         width: 100%;
-        transform: translateY(40%) !important;
+
+        .dropdown-item {
+          &.active {
+            color: $doi-action;
+            background-color: white;
+          }
+        }
       }
     }
 
     .dropdown-title {
       padding-left: 0.5rem;
+    }
+  }
+
+  .slider {
+    &.slider-horizontal {
+      .slider-track {
+        height: 5px;
+        margin-top: 0;
+        transform: translateY(-50%);
+      }
+    }
+
+    .slider-handle,
+    .slider-selection {
+      background-image: none;
+      background-color: $doi-primary;
+    }
+
+    .tooltip-inner {
+      bottom: 1.25rem;
     }
   }
 }

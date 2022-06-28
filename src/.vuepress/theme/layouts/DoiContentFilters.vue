@@ -87,15 +87,13 @@
               </button>
             </div>
             <div id="collapseTopic" class="accordion-collapse collapse accordion-content">
-              <select class="form-select mb-3">
-                <option selected>Choose a topic</option>
+              <select title="Choose a Topic">
                 <option value="1">Australian Industry Participation Authority</option>
                 <option value="2">Anti-Dumping Commission</option>
                 <option value="3">AusIndustry</option>
                 <option value="3">Australian Industry Participation Authority...</option>
                 <option value="3">Australian Radioactive Waste Authority</option>
               </select>
-
             </div>
           </div>
         </div>
@@ -182,17 +180,13 @@
               </button>
             </div>
             <div id="collapseCategory" class="accordion-collapse collapse accordion-content">
-              <div class="dropdown">
-                <button type="button" class="topic-container button-plain" id="categoriesMenu" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="dropdown-title caption-large">All Categories</span>
-                  <span class="icon chevron-down" v-html="chevronDown"></span>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="topicMenu">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </div>
+              <select title="All Categories">
+                <option value="1">Australian Industry Participation Authority</option>
+                <option value="2">Anti-Dumping Commission</option>
+                <option value="3">AusIndustry</option>
+                <option value="3">Australian Industry Participation Authority...</option>
+                <option value="3">Australian Radioactive Waste Authority</option>
+              </select>
             </div>
           </div>
         </div>
@@ -206,7 +200,7 @@
             </div>
             <div id="collapseYear" class="accordion-collapse collapse accordion-content">
               <div>
-                <input type="range" class="form-range" min="0" max="5" id="customRange2">
+                <input id="ex2" type="text" class="span2" value="" data-slider-min="2016" data-slider-max="2022" data-slider-step="1" data-slider-value="[2016,2022]" />
               </div>
             </div>
           </div>
@@ -215,19 +209,17 @@
     </div>
   </div>
 </template>
-<script>
+<script setup>
   import chevronRight from '../../public/icons/chevron-right.svg?raw'
   import chevronDown from '../../public/icons/chevron-down.svg?raw'
   import filters from '../../public/icons/filters.svg?raw'
   import circleAdd from '../../public/icons/circle-add.svg?raw'
-  export default {
-    data() {
-      return {
-        chevronRight,
-        chevronDown,
-        filters,
-        circleAdd
-      }
-    }
-  }
+
+  $(document).ready($(function () {
+    $('select').selectpicker();
+    $('button').removeClass('btn-light');
+    $('#ex2').slider({
+      tooltip_split: 'always'
+    });
+  }))
 </script>
