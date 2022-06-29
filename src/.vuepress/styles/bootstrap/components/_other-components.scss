@@ -27,6 +27,7 @@
     .splide__slide {
       .img-outer {
         transform: scale(0.9);
+        transition: transform 150ms ease-in-out;
       }
 
       &.is-active {
@@ -58,7 +59,7 @@
       border: 2px solid $doi-action;
       border-radius: 4px;
       padding: 2px;
-      transition: all 300ms ease-in-out;
+      transition: all 150ms ease-in-out;
 
       @include media-breakpoint-up(md) {
         padding: 4px;

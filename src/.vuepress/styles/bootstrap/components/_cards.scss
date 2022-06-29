@@ -1,0 +1,177 @@
+.card {
+  box-shadow: none;
+
+  .card-img-top {
+    position: relative;
+    height: 0;
+    margin-bottom: 1.5rem;
+    padding-bottom: 84.64%;
+
+    @include media-breakpoint-up(sm) {
+      padding-bottom: 79.32%;
+    }
+
+    @include media-breakpoint-up(md) {
+      padding-bottom: 51.88%;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &.card-sm {
+      .card-img-top {
+        padding-bottom: 79.32%;
+      }
+    }
+
+    &.card-xs {
+      .card-img-top {
+        padding-bottom: 84.64%;
+      }
+    }
+  }
+
+  .img-wrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  > .list-group {
+    padding: 0;
+    margin: 0;
+    border-color: $gray-500;
+
+    .list-group-item {
+      display: flex;
+      font-size: 15px;
+      padding: 1rem 0;
+    }
+
+    .icon {
+      margin-right: 1rem;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card-subtitle {
+  margin-top: 0;
+  margin-bottom: $card-title-spacer-y * .5;
+}
+
+.card-text {
+  margin-bottom: $card-title-spacer-y * .5;
+}
+
+.card-link {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-bold;
+
+  svg {
+    width: 13px;
+    height: auto;
+  }
+}
+
+.featured-editorials {
+  padding: 3rem 0;
+}
+
+.biography-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .biography-content {
+    padding: 1rem 0 0 0;
+  }
+
+  .biography-name {
+    @include heading-small;
+
+    color: $primary;
+    margin-bottom: 10px;
+  }
+
+  .biography-position {
+    @include body-large;
+
+    color: $secondary;
+  }
+
+  &--full {
+    text-align: left;
+
+    .biography-content {
+      margin: 2rem 0 0 0;
+      padding: 2rem 0 0 0;
+      border-top: 1px solid #57575A;
+    }
+  }
+
+  &--secondary {
+    flex-direction: row;
+    text-align: left;
+
+    .biography-content {
+      margin: 0 0 0 2rem;
+      padding: 0 0 0 2rem;
+      border-left: 3px solid $primary;
+    }
+
+    &.biography-card--full {
+      align-items: flex-start;
+
+      .biography-content {
+        margin: 0 0 0 2rem;
+        padding: 0 0 0 2rem;
+        border-top: none;
+        border-left: 1px solid #57575A;
+      }
+    }
+  }
+
+  &--card {
+    text-align: left;
+    flex-direction: row;
+    border: 1px solid $gray-300;
+    background: $doi-snow;
+    border-radius: 4px;
+    padding: 1rem;
+
+    .biography-content {
+      padding: 0 0 0 0.5rem;
+    }
+
+    .biography-position {
+      @include body-small;
+
+      color: $body-color;
+    }
+  }
+}

@@ -246,3 +246,19 @@ cite {
 .fw-semi-bold {
   font-weight: $font-weight-semi-bold;
 }
+
+.heading-underline {
+  position: relative;
+  margin-bottom: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 6px;
+    width: 45px;
+    border-radius: 4px;
+    background: $primary;
+  }
+}
