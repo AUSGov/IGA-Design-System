@@ -175,3 +175,59 @@
     }
   }
 }
+
+.navigation-card {
+  border-radius: 4px;
+  box-shadow: 0 12px 16px rgba(40, 41, 61, 0.0364);
+  background-color: $doi-snow;
+
+  .navigation-card-title {
+    @include heading-small;
+
+    flex-grow: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .navigation-card-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-wrap {
+    width: 100%;
+  }
+
+  img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px 4px 0 0;
+  }
+
+  .navigation-card-body {
+    padding: 1rem;
+  }
+
+  a {
+    color: currentColor;
+  }
+
+  &--inline {
+    .navigation-card-content {
+      flex-direction: row;
+    }
+
+    .img-wrap {
+      width: 25%;
+    }
+
+    img {
+      border-radius: 4px 0 0 4px;
+    }
+
+    .navigation-card-body {
+      width: 75%;
+    }
+  }
+}
