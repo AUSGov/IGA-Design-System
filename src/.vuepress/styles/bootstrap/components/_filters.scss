@@ -70,7 +70,6 @@
 }
 
 .show-filters {
-  padding: 1rem;
   @include media-breakpoint-up(lg) {
     width: 330px;
   }
@@ -97,6 +96,8 @@
 }
 
 .main-accordion {
+  margin-top: 1rem;
+  margin-left: 0.375rem;
   border-left: 4px solid black;
 }
 
@@ -125,12 +126,24 @@
     margin-left: 0.6rem;
   }
 
+  .circle-add {
+    display: none;
+  }
+
   &.collapsed {
     .chevron-right {
       display: inline-block;
     }
 
     .chevron-down {
+      display: none;
+    }
+
+    .circle-add {
+      display: inline-block;
+    }
+
+    .circle-cross {
       display: none;
     }
   }
@@ -143,10 +156,8 @@
 }
 
 .filters-accordion {
-  .filters-accordion-container {
-    margin-top: 1rem;
-    margin-left: 0.8125rem;
-  }
+  padding-top: 1rem;
+  padding-left: 0.8125rem;
 
   .topic-container {
     display: flex;
@@ -191,30 +202,188 @@
       .content-container {
         padding-top: 1rem;
         padding-left: 0.875rem;
-        border-bottom: 2px solid $gray-300;
+        border-bottom: 1px solid $gray-400;
       }
     }
+  }
+}
 
-    .dropdown {
-      border: 2px solid $gray-300;
-      margin-bottom: 1.5rem;
-      border-radius: 2px;
-      width: 100% !important;
+.dropdown {
+  border: 1px solid $gray-400;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  width: 100% !important;
 
-      .dropdown-menu {
-        width: 100%;
+  .dropdown-toggle {
+    padding-left: 1rem;
 
-        .dropdown-item {
-          &.active {
-            color: $doi-action;
-            background-color: white;
+    &:focus {
+      outline: none !important;
+      outline-offset: 0;
+    }
+  }
+
+  .dropdown-menu {
+    width: 100%;
+
+    .dropdown-item {
+      &.active {
+        color: $doi-action;
+        background-color: white;
+      }
+
+      span {
+        white-space: break-spaces;
+      }
+    }
+  }
+}
+
+.category-filters {
+  .button-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1rem 1.75rem;
+
+    .filters-icon {
+      position: absolute;
+      left: 1.75rem;
+    }
+  }
+
+  #category-filter-button {
+    &.hide {
+      display: none;
+    }
+  }
+
+  .modal {
+    .modal-dialog {
+      padding: 1rem 1.75rem;
+    }
+
+    .modal-content {
+      border: none;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .category-filters-content {
+    .container {
+      padding: 1.5rem;
+      @include media-breakpoint-up(xs) {
+        .filter-container {
+          display: flex;
+          position: relative;
+          justify-content: start;
+          margin-bottom: 1.375rem;
+
+          .title-label {
+            padding-left: 1.25rem;
+          }
+
+          .close-icon {
+            cursor: pointer;
+            position: absolute;
+            right: 0;
           }
         }
+
+        .row {
+          @include row-cols(1);
+        }
+      }
+
+      @include media-breakpoint-up(md) {
+        box-shadow: none;
+
+        .filter-container {
+          display: none;
+        }
+        .row {
+          @include row-cols(3);
+        }
+      }
+
+      @include media-breakpoint-up(lg) {
+        margin: 0;
+      }
+
+      .title-container {
+        @include heading-small;
+        line-height: 26px;
+        margin-bottom: 0.625rem;
+      }
+
+      .content-container {
+        padding-top: 0;
       }
     }
 
-    .dropdown-title {
-      padding-left: 0.5rem;
+    .link-container {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      font-weight: $font-weight-bold;
+
+      .apply-container {
+        margin-right: 28px;
+      }
+
+      svg {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+}
+
+.search-filters {
+  .search-filters-container {
+    padding: 0.625rem 1.25rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+    .form-search {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      .search-icon {
+        padding-left: 1.25rem;
+        padding-right: 3.75rem;
+        border-right: 1px solid $gray-400;
+        margin-right: 1.5rem;
+
+        &.hide {
+          display: none;
+        }
+      }
+
+      .search-input {
+        border: 1px solid $gray-400;
+        border-radius: 4px;
+        width: 100%;
+        padding: 0.5rem 0 0.5rem 1rem;
+        margin-right: 1rem;
+      }
+
+      .submit-button {
+        position: absolute;
+        right: 3rem;
+
+        svg {
+          path {
+            fill: $doi-action;
+          }
+        }
+
+        &.hide {
+          display: none;
+        }
+      }
     }
   }
 }

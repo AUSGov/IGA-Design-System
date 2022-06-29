@@ -34,6 +34,10 @@ a {
 
     svg {
       opacity: 0;
+
+      path {
+        fill: currentColor;
+      }
     }
 
     &:hover {
@@ -41,10 +45,6 @@ a {
 
       svg {
         opacity: 100%;
-
-        path {
-          fill: black;
-        }
       }
     }
 
@@ -63,6 +63,7 @@ a {
   .hover {
     text-decoration: underline;
     text-underline-offset: $link-underline-offset;
+    color: darken($doi-action, 15%)
   }
 
   &:focus,
