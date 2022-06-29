@@ -3,10 +3,7 @@
 <template v-slot="slotProps">
 <pre>
 
-<a href="#" :class="linkClass" @click.prevent>
-  <span>Link Text</span>
-  <svg v-if="linkType !== null" v-html="linkType" v-inline-svg></svg>
-</a>
+<button class="btn" :class="btnClass">Button</button>
 
 </pre>
 
@@ -22,57 +19,53 @@ import LinkExternal from '../public/icons/link-external.svg?raw'
 const formConfig = ref([
   {
     label: 'Variation',
-    id: 'variation',
+    key: 'variation',
     type: 'select',
     options: [
       {
-        key: 'linkPrimary',
+        key: 'btnPrimary',
         label: 'Primary',
-        value: 'link-icon'
+        value: 'btn-primary'
       },
       {
-        key: 'linkSecondary',
-        label: 'Secondary',
-        value: 'link-icon link-secondary'
+        key: 'btnOutlinePrimary',
+        label: 'Ghost',
+        value: 'btn-outline-primary'
       }
     ]
   },
   {
-    label: 'Type Radio',
-    id: 'type',
+    label: 'Size',
+    key: 'size',
     type: 'radio',
     options: [
+      // {
+      //   label: 'Large',
+      //   value: 'btn-lg'
+      // },
       {
-        label: 'Internal',
-        value: 'internal',
+        label: 'Default',
+        value: '',
         checked: true
       },
       {
-        label: 'External',
-        value: 'external'
+        label: 'Small',
+        value: 'btn-sm'
       }
     ]
   }
 ])
 const formData = ref({})
 
-const linkClass = computed(() => {
+const btnClass = computed(() => {
   const classes = []
-  if(typeof formData.value.variation !== 'undefined') {
+  if (typeof formData.value.variation !== 'undefined') {
     classes.push(formData.value.variation)
   }
-  return classes.join(' ')
-})
-
-const linkType = computed(() => {
-  switch (formData.value.type) {
-    case 'internal':
-      return LinkArrowRight
-    case 'external':
-      return LinkExternal
-    default:
-      return null
+  if (typeof formData.value.size !== 'undefined') {
+    classes.push(formData.value.size)
   }
+  return classes.join(' ')
 })
 
 const formDataChanged = (formDataExternal) => {

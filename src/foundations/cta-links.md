@@ -17,8 +17,8 @@ This button style gives prominence to featured content and important user action
 
 Labels for the primary button should be short and specific, communicating the prominent action a user could or should take.
 
-<div class="doi-content cta-buttons-container">
-    <table class="table table-borderless table-row-space-lg">
+<div class="cta-buttons-container">
+    <table class="table table-borderless table-row-space-lg mb-5">
         <thead>
           <tr>
             <th scope="col"><span></span></th>
@@ -31,35 +31,37 @@ Labels for the primary button should be short and specific, communicating the pr
         <tbody>
             <tr>
                 <td class="row-heading">Default</td>
-                <td><button class="btn btn-primary">Button</button></td>
-                <td><button class="btn btn-outline-primary">Button</button></td>
-                <td><button class="btn btn-sm btn-primary">Button</button></td>
-                <td><button class="btn btn-sm btn-outline-primary">Button</button></td>
+                <td class="doi-content"><button class="btn btn-primary">Button</button></td>
+                <td class="doi-content"><button class="btn btn-outline-primary">Button</button></td>
+                <td class="doi-content"><button class="btn btn-sm btn-primary">Button</button></td>
+                <td class="doi-content"><button class="btn btn-sm btn-outline-primary">Button</button></td>
             </tr>
             <tr>
                 <td class="row-heading">Hover</td>
-                <td><button class="btn btn-primary hover">Button</button></td>
-                <td><button class="btn btn-outline-primary hover">Button</button></td>
-                <td><button class="btn btn-sm btn-primary hover">Button</button></td>
-                <td><button class="btn btn-sm btn-outline-primary hover">Button</button></td>
+                <td class="doi-content"><button class="btn btn-primary hover">Button</button></td>
+                <td class="doi-content"><button class="btn btn-outline-primary hover">Button</button></td>
+                <td class="doi-content"><button class="btn btn-sm btn-primary hover">Button</button></td>
+                <td class="doi-content"><button class="btn btn-sm btn-outline-primary hover">Button</button></td>
             </tr>
             <tr>
                 <td class="row-heading">Focus</td>
-                <td><button class="btn btn-primary focus">Button</button></td>
-                <td><button class="btn btn-outline-primary focus">Button</button></td>
-                <td><button class="btn btn-sm btn-primary focus">Button</button></td>
-                <td><button class="btn btn-sm btn-outline-primary focus">Button</button></td>
+                <td class="doi-content"><button class="btn btn-primary focus">Button</button></td>
+                <td class="doi-content"><button class="btn btn-outline-primary focus">Button</button></td>
+                <td class="doi-content"><button class="btn btn-sm btn-primary focus">Button</button></td>
+                <td class="doi-content"><button class="btn btn-sm btn-outline-primary focus">Button</button></td>
             </tr>
             <tr>
                 <td class="row-heading">Disabled</td>
-                <td><button class="btn btn-primary disabled">Button</button></td>
-                <td><button class="btn btn-outline-primary disabled">Button</button></td>
-                <td><button class="btn btn-sm btn-primary disabled">Button</button></td>
-                <td><button class="btn btn-sm btn-outline-primary disabled">Button</button></td>
+                <td class="doi-content"><button class="btn btn-primary disabled">Button</button></td>
+                <td class="doi-content"><button class="btn btn-outline-primary disabled">Button</button></td>
+                <td class="doi-content"><button class="btn btn-sm btn-primary disabled">Button</button></td>
+                <td class="doi-content"><button class="btn btn-sm btn-outline-primary disabled">Button</button></td>
             </tr>
         </tbody>
     </table>
 </div>
+
+<PreviewButtons/>
 
 ## Text button
 
@@ -76,8 +78,8 @@ Text buttons are white when used on shaded background entity cards.
 
 Text buttons are typically left aligned within cards and “read more” containers. They are typically right aligned within sections of content, such as the “Find all” text button under the featured card container.
 
-<div class="doi-content cta-links-container">
-    <table class="table table-borderless table-row-space-lg">
+<div class="cta-links-container">
+    <table class="table table-borderless table-row-space-lg mb-5">
         <thead>
           <tr>
             <th scope="col"></th>
@@ -89,7 +91,7 @@ Text buttons are typically left aligned within cards and “read more” contain
         <tbody>
             <tr>
                 <td class="row-heading">Default</td>
-                <td class="body-large">
+                <td class="doi-content">
                     <a href="#" class="link-icon">
                         <span>Link</span>
                         <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -99,7 +101,7 @@ Text buttons are typically left aligned within cards and “read more” contain
                         </svg>
                     </a>
                 </td>
-                <td class="body-large">
+                <td class="doi-content">
                     <a href="#" class="link-icon link-external">
                         <span>Link</span>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -107,7 +109,7 @@ Text buttons are typically left aligned within cards and “read more” contain
                         </svg>
                     </a>
                 </td>
-                <td class="body-large">
+                <td class="doi-content">
                     <a href="#" class="link-icon link-secondary">
                         <span>Link</span>
                         <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -120,7 +122,7 @@ Text buttons are typically left aligned within cards and “read more” contain
             </tr>
             <tr>
                 <td class="row-heading">Hover</td>
-                <td class="body-large">
+                <td class="doi-content">
                     <a href="#" class="link-icon hover">
                         <span>Link</span>
                         <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -130,7 +132,7 @@ Text buttons are typically left aligned within cards and “read more” contain
                         </svg>
                     </a>
                 </td>
-                <td class="body-large">
+                <td class="doi-content">
                     <a href="#" class="link-icon link-external hover">
                         <span>Link</span>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -138,7 +140,7 @@ Text buttons are typically left aligned within cards and “read more” contain
                         </svg>
                     </a>
                 </td>
-                <td class="body-large">
+                <td class="doi-content">
                     <a href="#" class="link-icon link-secondary hover">
                         <span>Link</span>
                         <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -151,7 +153,7 @@ Text buttons are typically left aligned within cards and “read more” contain
             </tr>
             <tr>
                 <td class="row-heading">Pressed</td>
-                <td class="body-large">
+                <td class="doi-content">
                     <a href="#" class="link-icon focus">
                         <span>Link</span>
                         <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -161,7 +163,7 @@ Text buttons are typically left aligned within cards and “read more” contain
                         </svg>
                     </a>
                 </td>
-                <td class="body-large">
+                <td class="doi-content">
                     <a href="#" class="link-icon link-external focus">
                         <span>Link</span>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -169,7 +171,7 @@ Text buttons are typically left aligned within cards and “read more” contain
                         </svg>
                     </a>
                 </td>
-                <td class="body-large">
+                <td class="doi-content">
                     <a href="#" class="link-icon link-secondary focus">
                         <span>Link</span>
                         <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -182,7 +184,7 @@ Text buttons are typically left aligned within cards and “read more” contain
             </tr>
             <tr>
                 <td class="row-heading">Disabled</td>
-                <td class="body-large">
+                <td class="doi-content">
                     <a href="#" class="link-icon disabled">
                         <span>Link</span>
                         <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -192,7 +194,7 @@ Text buttons are typically left aligned within cards and “read more” contain
                         </svg>
                     </a>
                 </td>
-                <td class="body-large">
+                <td class="doi-content">
                     <a href="#" class="link-icon link-external disabled">
                         <span>Link</span>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -200,7 +202,7 @@ Text buttons are typically left aligned within cards and “read more” contain
                         </svg>
                     </a>
                 </td>
-                <td class="body-large">
+                <td class="doi-content">
                     <a href="#" class="link-icon link-secondary disabled">
                         <span>Link</span>
                     </a>

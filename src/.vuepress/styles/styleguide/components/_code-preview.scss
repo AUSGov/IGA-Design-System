@@ -49,7 +49,7 @@ $variations-menu-width: 12rem;
   .preview-container {
     padding: 1.5rem;
     position: relative;
-    min-height: 320px;
+    min-height: 256px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,6 +63,8 @@ $variations-menu-width: 12rem;
       font-size: initial;
       font-family: inherit;
       line-height: inherit;
+      border-radius: 0;
+      overflow: visible;
     }
 
     .spacer {

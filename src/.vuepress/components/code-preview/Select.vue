@@ -9,16 +9,15 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 
-const input = ref(null)
 const props = defineProps({
   label: {},
-  key: {},
-  slug: {},
+  id: {},
   type: {},
-  options: {},
-  index: {},
+  options: {}
 })
 defineEmits(['input'])
+
+const input = ref(null)
 onMounted(() => {
   input.value.dispatchEvent(new Event('change'))
 })

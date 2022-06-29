@@ -15,8 +15,8 @@
       <div v-if="allowVariations" class="variations-container" :class="{ show: showVariations }">
         <div class="close-container"><button @click="showVariations = false" class="btn-icon btn" v-html="Close"></button></div>
         <div class="scroll-container">
-          <div v-for="(element, index) in formConfig" :key="element.slug">
-            <component :is="element.type" @input="handleInput(element.key, $event)" v-bind.prop="element" :key="element.key" :slug="element.slug" :index="index" />
+          <div v-for="element in formConfig" :key="element.id">
+            <component :is="element.type" @input="handleInput(element.key, $event)" v-bind.prop="element" />
           </div>
         </div>
       </div>

@@ -1,8 +1,36 @@
 a {
   text-decoration: none;
 
+  &.link-icon {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: $doi-action;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: $font-weight-bold;
+
+    svg {
+      margin-left: 4px;
+      width: 13px;
+      height: auto;
+    }
+
+    &.link-external {
+      svg {
+        margin-left: 0.48rem;
+        width: 16px;
+        height: 16px;
+        opacity: 0.25;
+      }
+    }
+  }
+
   &.link-secondary {
     color: black;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: $font-weight-normal;
 
     svg {
       opacity: 0;
@@ -22,7 +50,7 @@ a {
 
     &:focus {
       svg {
-        opacity: 100%;
+        opacity: 1;
 
         path {
           fill: black;
@@ -48,25 +76,5 @@ a {
     pointer-events: none;
     opacity: 0.5;
     text-decoration: none;
-  }
-}
-
-.link-icon {
-  width: auto;
-  height: auto;
-
-  &.link-external {
-    svg {
-      margin-left: 0.48rem;
-      width: 14px;
-      height: 14px;
-      margin-bottom: 0.1rem;
-    }
-  }
-
-  svg {
-    margin-left: 0.734rem;
-    width: 13px;
-    height: 9px;
   }
 }
