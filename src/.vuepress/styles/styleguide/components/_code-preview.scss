@@ -49,7 +49,7 @@ $variations-menu-width: 12rem;
   .preview-container {
     padding: 1.5rem;
     position: relative;
-    min-height: 240px;
+    min-height: 320px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,10 +57,12 @@ $variations-menu-width: 12rem;
     overflow: hidden;
 
     pre {
-      white-space: normal;
       margin: 0;
       padding: 0;
+      white-space: normal;
       font-size: initial;
+      font-family: inherit;
+      line-height: inherit;
     }
 
     .spacer {
@@ -79,16 +81,21 @@ $variations-menu-width: 12rem;
     background-color: #fff;
     border-radius: 0 $card-border-radius 0 0;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 
     .close-container {
       background-color: $gray-200;
       display: flex;
       justify-content: flex-end;
       padding: 1rem 1.25rem;
+      flex-grow: 0;
     }
 
     .scroll-container {
+      flex-grow: 1;
       overflow: scroll;
+      padding: 0.5rem;
     }
 
     &.show {

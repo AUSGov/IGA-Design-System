@@ -19,5 +19,24 @@ export default defineClientConfig({
     app.component('DoiContentBanners', DoiContentBanners)
     app.component('DoiContentFilters', DoiContentFilters)
     app.component('DoiContentNavigation', DoiContentNavigation)
+
+    app.directive('inline-svg', {
+      updated: (element) => {
+        console.log('inline updated', element, element.children)
+        if (element.children.length === 0) {
+          return
+        }
+        const svg = element.children[0]
+        if(svg.tagName.toLowerCase() !== 'svg') {
+          return
+        }
+        console.log(svg)
+        for (let i = 0; i < svg.attributes.length; i++) {
+          const attr = svg.attributes.item(i)
+          element.setAttribute(attr.nodeName, attr.nodeValue)
+        }
+        svg.replaceWith(...svg.children)
+      }
+    })
   },
 })

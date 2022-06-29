@@ -1,7 +1,7 @@
 <template>
   <div class="form-group p-2">
     <label>{{ props.label }}</label>
-    <select ref="input" class="form-select" @change="$emit('input', $event)">
+    <select ref="input" class="form-select form-select-sm" @change="$emit('input', { value: $event.target.value })">
       <option v-for="option in props.options" :key="option.key" :value="option.value">{{ option.label }}</option>
     </select>
   </div>

@@ -3,21 +3,21 @@
 <template v-slot="slotProps">
 <pre>
 
-
-<ul>
-  <li>
-    <a href="#" :class="linkClass" @click.prevent="clickChild">This is a link {{ counter }}<br>{{ linkClass }}</a>
-  </li>
-</ul>
-
+<a href="#" :class="linkClass" @click.prevent="clickChild">
+  <span>Link Text</span>
+  <svg v-if="linkType !== null" v-html="linkType" v-inline-svg></svg>
+</a>
 
 </pre>
+
 </template>
 </CodePreview>
 </template>
 <script setup>
 import { ref, computed } from 'vue'
 import CodePreview from './code-preview/Index.vue'
+import LinkArrowRight from '../public/icons/link-arrow-right.svg?raw'
+import LinkExternal from '../public/icons/link-external.svg?raw'
 
 const formConfig = ref([
   {
@@ -28,20 +28,25 @@ const formConfig = ref([
       {
         key: 'linkPrimary',
         label: 'Primary',
-        value: 'link-primary'
+        value: 'link-icon'
       },
       {
         key: 'linkSecondary',
         label: 'Secondary',
-        value: 'link-secondary'
+        value: 'link-icon link-secondary'
       }
     ]
   },
   {
     label: 'Type Radio',
-    key: 'internal',
+    key: 'type',
     type: 'radio',
     options: [
+      {
+        key: 'none',
+        label: 'None',
+        value: 'none'
+      },
       {
         key: 'internal',
         label: 'Internal',
@@ -72,12 +77,10 @@ const formConfig = ref([
     ]
   }
 ])
-const changePreview = ref(0)
 const counter = ref(0)
 const formData = ref({})
 
 const linkClass = computed(() => {
-  console.log(formData.value)
   const classes = ['link-' + counter.value]
   if(typeof formData.value.variation !== 'undefined') {
     classes.push('btn-' + formData.value.variation)
@@ -88,16 +91,27 @@ const linkClass = computed(() => {
   if(typeof formData.value.external !== 'undefined') {
     classes.push('btn-' + formData.value.external)
   }
-  changePreview.value++
   return classes.join(' ')
 })
 
+const linkType = computed(() => {
+  console.log('linkType', formData.value.type)
+  switch (formData.value.type) {
+    case 'internal':
+      return LinkArrowRight
+    case 'external':
+      return LinkExternal
+    default:
+      return null
+  }
+})
+
 const clickChild = (e) => {
-  console.log('click child', e)
+  // console.log('click child', e)
   counter.value++
 }
 const formDataChanged = (formDataExternal) => {
-  console.log('formDataChanged', formDataExternal)
+  // console.log('formDataChanged', formDataExternal)
   formData.value = formDataExternal
 }
 </script>

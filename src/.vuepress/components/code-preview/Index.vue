@@ -82,7 +82,7 @@ export default {
     const updateCode = () => {
       if (codeRef.value) {
         const temp = codeRef.value.innerHTML
-        code.value = temp.replace('<pre>\n', '').replace('\n</pre>', '')
+        code.value = temp.replace('<pre>\n', '').replace('\n</pre>', '').replace(/<!--[\s\S]*?-->/g, '')
       }
     }
     const observer = new MutationObserver(updateCode)
@@ -91,8 +91,9 @@ export default {
       observer.observe(codeRef.value, {
         attributes: true,
         childList: true,
-        subtree: true
-      });
+        subtree: true,
+        characterData: true
+      })
     })
     onUnmounted(() => {
       observer.disconnect();
@@ -113,7 +114,11 @@ export default {
         return 'demo-' + type
       },
       handleInput (key, e) {
-        formData.value[key] = e.target.value
+        if (e.index) {
+          formData.value[key][e.index] = e.value
+        } else {
+          formData.value[key] = e.value
+        }
         context.emit('formDataChanged', formData.value)
       }
     }
