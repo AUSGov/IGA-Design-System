@@ -1,0 +1,38 @@
+.slider-container {
+  padding: 2.875rem 1.25rem 0 1.25rem;
+  margin-bottom: 1.5rem;
+
+  .slider {
+    padding-left: 0.25rem;
+
+    &.slider-horizontal {
+      width: 100%;
+
+      .slider-track {
+        height: 5px;
+        margin-top: 0;
+        transform: translateY(-50%);
+      }
+    }
+
+    .slider-handle,
+    .slider-selection {
+      background-image: none;
+      background-color: $doi-primary;
+    }
+
+    .tooltip-inner {
+      bottom: 1.25rem;
+      padding: 0.25rem 0.3rem;
+      background-color: $doi-primary;
+    }
+
+    .tooltip-min,
+    .tooltip-max {
+      &.bs-tooltip-top {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
