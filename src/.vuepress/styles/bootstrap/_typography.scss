@@ -113,12 +113,16 @@ h5,
   @include heading-extra-small;
 }
 
-.heading-extra-small-caps {
+@mixin heading-extra-small-caps {
   font-size: 14px;
   font-weight: $font-weight-semi-bold;
   line-height: 24px;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.heading-extra-small-caps {
+  @include heading-extra-small-caps;
 }
 
 .lead {

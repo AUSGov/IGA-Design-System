@@ -1,3 +1,7 @@
+.btn {
+  text-decoration: none;
+}
+
 .btn-primary {
   @include button-variant($primary, $primary, white, $doi-primary-hover, $doi-primary-hover, $disabled-color: white, $disabled-background: $doi-primary-disabled, $disabled-border: $doi-primary-disabled);
 
