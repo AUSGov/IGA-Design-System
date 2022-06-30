@@ -1,18 +1,19 @@
-import { defineConfig } from 'rollup'
 import scss from 'rollup-plugin-scss'
 import postcss from 'postcss'
 import autoprefixer from 'autoprefixer'
+import { uglify } from 'rollup-plugin-uglify'
 
-export default defineConfig({
+export default {
   input: 'bundle/index.js',
   output: {
     file: 'dist/app.js',
     format: 'iife'
   },
   plugins: [
+    uglify(),
     scss({
       processor: () => postcss([autoprefixer()]),
-      includePaths: ['../node_modules/']
+      outputStyle: 'compressed'
     })
   ]
-})
+}
