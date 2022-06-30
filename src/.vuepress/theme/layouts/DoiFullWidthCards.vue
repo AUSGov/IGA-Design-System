@@ -459,7 +459,7 @@
         <div class="card featured-card" style="background-image: url('/images/cards-sample.png');">
           <div class="card-body">
             <h5 class="card-subtitle">Who We Are</h5>
-            <h4 class="card-title">Who We Are</h4>
+            <h4 class="card-title">We drive economic growth and job creation for all Australians.</h4>
             <a href="#" class="btn btn-primary fw-semi-bold">Find out About us</a>
           </div>
         </div>
@@ -468,7 +468,7 @@
         <div class="card featured-card featured-card--right" style="background-image: url('/images/cards-sample.png');">
           <div class="card-body">
             <h5 class="card-subtitle">Who We Are</h5>
-            <h4 class="card-title">Who We Are</h4>
+            <h4 class="card-title">We drive economic growth and job creation for all Australians.</h4>
             <a href="#" class="btn btn-primary">Find out About us</a>
           </div>
         </div>

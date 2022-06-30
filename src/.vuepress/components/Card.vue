@@ -28,7 +28,8 @@
         type: String
       },
       linkText: {
-        type: String
+        type: String,
+        default: 'Link'
       },
       compact: {
         type: Boolean,
