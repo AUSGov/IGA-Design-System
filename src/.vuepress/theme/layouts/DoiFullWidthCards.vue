@@ -308,6 +308,99 @@
     <div class="container">
       <div class="row g-5">
         <div class="col-md-6">
+          <div class="navigation-card navigation-card--inline">
+            <div class="navigation-card-content">
+              <div class="img-wrap">
+                <img :src="$withBase('images/cards-sample.png')" alt="">
+              </div>
+              <div class="navigation-card-body">
+                <div class="navigation-card-title">Dark Energy Survey Evolves or a longer title with three of more lines more line</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="link-icon">Link<span v-html="linkArrowRight"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="navigation-card navigation-card--inline">
+            <div class="navigation-card-content">
+              <div class="img-wrap">
+                <img :src="$withBase('images/cards-sample.png')" alt="">
+              </div>
+              <div class="navigation-card-body">
+                <div class="navigation-card-title">Dark Energy Survey Evolves or a longer title with three of more lines more line</div>
+                <a href="#" class="link-icon">Link<span v-html="linkArrowRight"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="navigation-card navigation-card--inline">
+            <div class="navigation-card-content">
+              <div class="navigation-card-body">
+                <div class="navigation-card-title">Dark Energy Survey Evolves or a longer title with three of more lines more line</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="link-icon">Link<span v-html="linkArrowRight"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="navigation-card navigation-card--inline">
+            <div class="navigation-card-content">
+              <div class="navigation-card-body">
+                <div class="navigation-card-title">Dark Energy Survey Evolves or a longer title with three of more lines more line</div>
+                <a href="#" class="link-icon">Link<span v-html="linkArrowRight"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="navigation-card">
+            <div class="navigation-card-content">
+              <div class="img-wrap">
+                <img :src="$withBase('images/cards-sample.png')" alt="">
+              </div>
+              <div class="navigation-card-body">
+                <div class="navigation-card-title">Dark Energy Survey Evolves or a longer title with three of more lines more line</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="link-icon">Link<span v-html="linkArrowRight"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="navigation-card navigation-card--inline bg-primary text-white">
+            <div class="navigation-card-content">
+              <div class="img-wrap">
+                <img :src="$withBase('images/cards-sample.png')" alt="">
+              </div>
+              <div class="navigation-card-body">
+                <div class="navigation-card-title">Dark Energy Survey Evolves or a longer title with three of more lines more line</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="link-icon">Link<span v-html="linkArrowRight"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="navigation-card navigation-card--inline bg-industry-innovation-science text-white">
+            <div class="navigation-card-content">
+              <div class="img-wrap">
+                <img :src="$withBase('images/cards-sample.png')" alt="">
+              </div>
+              <div class="navigation-card-body">
+                <div class="navigation-card-title">Dark Energy Survey Evolves or a longer title with three of more lines more line</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="link-icon">Link<span v-html="linkArrowRight"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-md-6">
           <div class="biography-card">
             <img :src="$withBase('images/profile-sample.png')" alt="">
             <div class="biography-content">

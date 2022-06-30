@@ -16,6 +16,6 @@
 
 @each $slug, $color in $brand-colors {
   .bg-#{$slug} {
-    background-color: $color;
+    background-color: $color !important;
   }
 }
