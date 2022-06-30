@@ -85,20 +85,22 @@ export default {
         code.value = temp.replace('<pre>\n', '').replace('\n</pre>', '').replace(/<!--[\s\S]*?-->/g, '')
       }
     }
-    const observer = new MutationObserver(updateCode)
-    onMounted(() => {
-      updateCode()
-      observer.observe(codeRef.value, {
-        attributes: true,
-        childList: true,
-        subtree: true,
-        characterData: true
-      })
-    })
-    onUnmounted(() => {
-      observer.disconnect();
-    })
+    if (typeof MutationObserver !== "undefined") {
+      const observer = new MutationObserver(updateCode)
 
+      onMounted(() => {
+        updateCode()
+        observer.observe(codeRef.value, {
+          attributes: true,
+          childList: true,
+          subtree: true,
+          characterData: true
+        })
+      })
+      onUnmounted(() => {
+        observer.disconnect();
+      })
+    }
     return {
       ChevronDown,
       Expand,
