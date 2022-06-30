@@ -6,7 +6,6 @@
 <button class="btn" :class="btnClass">Button</button>
 
 </pre>
-
 </template>
 </CodePreview>
 </template>
