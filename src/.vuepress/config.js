@@ -4,6 +4,14 @@ const { registerComponentsPlugin } = require('@vuepress/plugin-register-componen
 const { viteBundler } = require('@vuepress/bundler-vite')
 
 module.exports = {
+  // head: [
+  //   ['script', { src: 'https://code.jquery.com/jquery-3.6.0.min.js'}],
+  //   ['script', { src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'}],
+  //   ['script', { src: 'https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js'}],
+  //   ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js'}],
+  // ],
+  templateDev: path.resolve(__dirname, 'theme/templates/dev.html'),
+  templateBuild: path.resolve(__dirname, 'theme/templates/build.html'),
   // site config
   lang: 'en-US',
   title: 'Department of Industry',
@@ -263,21 +271,6 @@ module.exports = {
     })
   ],
   bundler: viteBundler({
-    viteOptions: {
-      // build: {
-      //   rollupOptions: {
-      //     external: ['https://code.jquery.com/jquery-3.6.0.min.js']
-      //   }
-      // },
-      // output: {
-      //   globals: {
-      //     jquery: 'jQuery'
-      //   }
-      // },
-      ssr: {
-        noExternal: ['https://code.jquery.com/jquery-3.6.0.min.js'],
-      },
-    },
     vuePluginOptions: {
       template: {
         compilerOptions: {

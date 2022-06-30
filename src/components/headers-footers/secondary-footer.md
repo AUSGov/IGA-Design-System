@@ -13,7 +13,7 @@ The secondary footer sits directly above the global footer.
 
 #### Example
 
-<CodeDemo :image="$withBase('/images/secondary-footer-sample.png')">
+<PreviewImage :image="$withBase('/images/secondary-footer-sample.png')">
 <template #code>
 <CodeGroup>
   <CodeGroupItem title="HTML">
@@ -37,11 +37,11 @@ console.log('Hello, Styleguide!')
   </CodeGroupItem>
 </CodeGroup>
 </template>
-</CodeDemo>
+</PreviewImage>
 
 ### Elements
 
-<CodeDemo :image="$withBase('/images/secondary-footer-sample.png')" :contents="[{ x: 1, y: 7.5, title: 'Contact Details', text: 'The entity’s phone number, email, and address.' }, { x: 48, y: 7.5, title: 'Community Engagement', text: 'Social media account links.' },{ x: 72, y: 7.5, title: 'Subscribe', text: ' A link directing users to details on how to stay up to date with the entity.'}]">
+<PreviewImage :image="$withBase('/images/secondary-footer-sample.png')" :contents="[{ x: 1, y: 7.5, title: 'Contact Details', text: 'The entity’s phone number, email, and address.' }, { x: 48, y: 7.5, title: 'Community Engagement', text: 'Social media account links.' },{ x: 72, y: 7.5, title: 'Subscribe', text: ' A link directing users to details on how to stay up to date with the entity.'}]">
 <template #code>
 <CodeGroup>
   <CodeGroupItem title="HTML">
@@ -65,7 +65,7 @@ console.log('Hello, Styleguide!')
   </CodeGroupItem>
 </CodeGroup>
 </template>
-</CodeDemo>
+</PreviewImage>
 
 ### Variants
 
