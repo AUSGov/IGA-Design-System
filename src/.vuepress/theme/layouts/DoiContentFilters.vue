@@ -281,74 +281,73 @@
   import circleCross from '../../public/icons/circle-cross.svg?raw'
   import arrowRight from '../../public/icons/arrow-long-right.svg?raw'
   import hamburger from '../../public/icons/hamburger.svg?raw'
+  import { onMounted } from 'vue'
 
-  $(document).ready(
-    $(function () {
-      const $input = $('#search-input')
-      $('select').selectpicker()
-      $('button').removeClass('btn-light')
-      $('#ex2').slider({
-        tooltip_split: 'always'
-      })
-      category_wrap()
-      search_modify()
-      $input.keyup(function() {
-        console.log('in here')
-        const $input = $('#search-input')
-        const $buttonSubmit = $('#button-submit')
-        if($input.val() !== '') {
-          $buttonSubmit.removeClass('hide')
-          return
-        }
-        $buttonSubmit.addClass('hide')
-      })
+  onMounted(() => {
+    const $input = $('#search-input')
+    $('select').selectpicker()
+    $('button').removeClass('btn-light')
+    $('#ex2').slider({
+      tooltip_split: 'always'
     })
-  )
-
-  $(window).resize(function() {
     category_wrap()
     search_modify()
+    $input.keyup(function() {
+      console.log('in here')
+      const $input = $('#search-input')
+      const $buttonSubmit = $('#button-submit')
+      if($input.val() !== '') {
+        $buttonSubmit.removeClass('hide')
+        return
+      }
+      $buttonSubmit.addClass('hide')
+    })
+
+    $(window).resize(function() {
+      category_wrap()
+      search_modify()
+    })
+
+    function search_modify() {
+      const width = $(window).width()
+      const $searchIcon = $('.search-icon')
+      if(width < 768) {
+        if(!$searchIcon.hasClass('hide')) {
+          $searchIcon.addClass('hide')
+        }
+        return
+      }
+      if($searchIcon.hasClass('hide')) {
+        $searchIcon.removeClass('hide')
+      }
+    }
+
+    function category_wrap() {
+      const width = $(window).width()
+      const $filterButton = $('#category-filter-button')
+      const $filterModal = $('#filter-modal')
+      const $categoryFiltersContent = $('.category-filters-content')
+      if (width < 768) {
+        if ($filterModal.length === 0) {
+          $categoryFiltersContent.wrapAll(
+              '<div class="modal fade" id="filter-modal" tabIndex="-1" aria-labelledby="filterModalLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"></div></div></div>'
+          )
+        }
+        if ($filterButton.hasClass('hide')) {
+          $filterButton.removeClass('hide')
+        }
+        return
+      }
+      //unwrap modal
+      //hide button
+      if ($filterModal.length !== 0) {
+        $categoryFiltersContent.unwrap()
+        $categoryFiltersContent.unwrap()
+        $categoryFiltersContent.unwrap()
+      }
+      if (!$filterButton.hasClass('hide')) {
+        $filterButton.addClass('hide')
+      }
+    }
   })
-
-  function search_modify() {
-    const width = $(window).width()
-    const $searchIcon = $('.search-icon')
-    if(width < 768) {
-      if(!$searchIcon.hasClass('hide')) {
-        $searchIcon.addClass('hide')
-      }
-      return
-    }
-    if($searchIcon.hasClass('hide')) {
-      $searchIcon.removeClass('hide')
-    }
-  }
-
-  function category_wrap() {
-    const width = $(window).width()
-    const $filterButton = $('#category-filter-button')
-    const $filterModal = $('#filter-modal')
-    const $categoryFiltersContent = $('.category-filters-content')
-    if(width < 768) {
-      if($filterModal.length === 0) {
-        $categoryFiltersContent.wrapAll(
-            '<div class="modal fade" id="filter-modal" tabIndex="-1" aria-labelledby="filterModalLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"></div></div></div>'
-        )
-      }
-      if($filterButton.hasClass('hide')) {
-        $filterButton.removeClass('hide')
-      }
-      return
-    }
-    //unwrap modal
-    //hide button
-    if($filterModal.length !== 0) {
-      $categoryFiltersContent.unwrap()
-      $categoryFiltersContent.unwrap()
-      $categoryFiltersContent.unwrap()
-    }
-    if(!$filterButton.hasClass('hide')) {
-      $filterButton.addClass('hide')
-    }
-  }
 </script>

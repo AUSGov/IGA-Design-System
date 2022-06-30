@@ -4,6 +4,9 @@ const { registerComponentsPlugin } = require('@vuepress/plugin-register-componen
 const { viteBundler } = require('@vuepress/bundler-vite')
 
 module.exports = {
+  templateDev: path.resolve(__dirname, 'theme/templates/dev.html'),
+  templateBuild: path.resolve(__dirname, 'theme/templates/build.html'),
+
   // site config
   lang: 'en-US',
   title: 'Department of Industry',
@@ -263,21 +266,6 @@ module.exports = {
     })
   ],
   bundler: viteBundler({
-    viteOptions: {
-      // build: {
-      //   rollupOptions: {
-      //     external: ['https://code.jquery.com/jquery-3.6.0.min.js']
-      //   }
-      // },
-      // output: {
-      //   globals: {
-      //     jquery: 'jQuery'
-      //   }
-      // },
-      // ssr: {
-      //   external: ['https://code.jquery.com/jquery-3.6.0.min.js'],
-      // },
-    },
     vuePluginOptions: {
       template: {
         compilerOptions: {

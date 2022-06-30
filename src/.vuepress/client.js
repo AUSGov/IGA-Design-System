@@ -8,11 +8,6 @@ import DoiContentNavigation from './theme/layouts/DoiContentNavigation.vue'
 import DoiOtherComponents from './theme/layouts/DoiOtherComponents.vue'
 import DoiFullWidthCards from './theme/layouts/DoiFullWidthCards.vue'
 
-import 'https://code.jquery.com/jquery-3.6.0.min.js'
-import 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'
-import 'https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js'
-import 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js'
-
 export default defineClientConfig({
   enhance({ app }) {
     app.component('ParentPage', ParentPage)
