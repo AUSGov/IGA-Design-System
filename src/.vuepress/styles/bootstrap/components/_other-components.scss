@@ -1,3 +1,143 @@
+.paginate {
+
+  @include body-small();
+  font-weight: $font-weight-bold;
+  color: $gray-500;
+
+  @include media-breakpoint-up(xs) {
+    .result-container {
+      margin-bottom: 14px;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+    .result-container {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .pagination {
+    @include body-small();
+    font-weight: $font-weight-bold;
+    color: $gray-500;
+    margin: 0;
+
+    &.first-page {
+      .page-previous {
+        display: none;
+      }
+    }
+
+    &.last-page {
+      .page-next {
+        display: none;
+      }
+    }
+
+    .page-item {
+      margin-right: 11px;
+
+      &.hide {
+        display: none;
+      }
+
+      .page-icon {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border: none;
+
+        svg {
+          height: 16px;
+        }
+      }
+
+      .page-link {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: $gray-500;
+        margin: 0;
+        border: none;
+        border-radius: 4px;
+
+        &:focus,
+        &.active {
+          color: white;
+          background-color: $doi-primary;
+          text-decoration: none;
+          box-shadow: none;
+        }
+
+        &:hover {
+          color: white;
+          background-color: $doi-primary-hover;
+          text-decoration: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+.doi-table {
+  .table {
+    thead {
+      border: none;
+      font-weight: $font-weight-bold;
+
+      .header-title {
+        padding: 1.375rem 1.5rem;
+      }
+    }
+
+    .table-header {
+      white-space: nowrap;
+
+      &.hide {
+        display: none;
+      }
+    }
+
+    tbody {
+      border-top: none;
+
+      @include media-breakpoint-down(lg) {
+        tr {
+          display: flex;
+          flex-direction: column;
+        }
+        td:last-child {
+          border-bottom: 1px solid $gray-400;
+        }
+        td:not(:last-child) {
+          border-bottom: none;
+        }
+      }
+
+      .table-content {
+        padding: 0.75rem 0 0.75rem 1.5rem;
+      }
+
+      .content-title {
+        &.hide {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
 .gallery {
 
   .img-outer {

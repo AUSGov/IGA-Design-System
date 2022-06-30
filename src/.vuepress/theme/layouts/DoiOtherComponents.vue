@@ -1,23 +1,53 @@
 <template>
   <div class="doi-content">
-    <div class="paginate">
-      <nav aria-label="Pagination">
-        <ul class="pagination">
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <div class="container">
+      <div class="paginate mt-5 mb-5">
+        <div class="result-container">Showing 1 - 6 of 24 results</div>
+        <nav aria-label="Pagination">
+          <ul class="pagination first-page">
+            <li class="page-item page-previous">
+              <a class="page-icon" href="#" aria-label="Previous">
+                <span aria-hidden="true" v-html="chevronBack"></span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" data-page="1" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" data-page="2" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" data-page="3" href="#">3</a></li>
+            <li class="page-item page-next">
+              <a class="page-icon" href="#" aria-label="Next">
+                <span aria-hidden="true" v-html="chevronForward"></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <div class="doi-table">
+        <table class="table">
+          <thead class="table-primary body-small">
+            <tr class="table-header first">
+              <td class="header-title">Part</td>
+              <td class="header-title">Title</td>
+              <td class="header-title">Provisions of Access Code</td>
+              <td class="header-title">Current referenced version</td>
+              <td class="header-title">Proposed referenced version</td>
+            </tr>
+            <tr class="table-header last hide">
+              <td>Table Title</td>
+            </tr>
+          </thead>
+          <tbody>
+          <tr v-for="index in 6" :key="index" class="body-small" :class="index % 2 === 0 ? 'bg-snow' : null">
+            <td class="table-content"><span class="content-title">Part:</span>Part 1</td>
+            <td class="table-content"><span class="content-title">Title:</span>General requirements for access – New building work (incorporating amendments 1 and 2)</td>
+            <td class="table-content"><span class="content-title">Provisions of Access Code:</span>A1.1, D3.1, D3.2, D3.3, D3.6, D3.8, D3.9, D3.10, D3.12, D5.2, D5.3, F2.4</td>
+            <td class="table-content"><span class="content-title">Current referenced version:</span>2009</td>
+            <td class="table-content"><span class="content-title">Proposed referenced version:</span>2021</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
     <div class="gallery">
       <div class="container">
@@ -131,11 +161,38 @@
   import Splide from '@splidejs/splide'
   import '@splidejs/splide/dist/css/splide.min.css'
   import chevronForward from '../../public/icons/chevron-forward.svg?raw'
+  import chevronBack from '../../public/icons/chevron-back.svg?raw'
   import circleChevronDown from '../../public/icons/circle-chevron-down.svg?raw'
   import circleChevronDownFilled from '../../public/icons/circle-chevron-down-filled.svg?raw'
 
   export default {
     mounted () {
+      //pagination
+      const $pageLink = $('.page-link')
+      $pageLink.first().addClass('active')
+      //table
+      modifyTable()
+      $(window).resize(function() {
+        modifyTable()
+      })
+
+      function modifyTable() {
+        const width = $(window).width()
+        const $tableHeaderFirst = $('.table-header.first')
+        const $tableHeaderLast = $('.table-header.last')
+        const $contentTitle = $('.content-title')
+        if (width < 992) {
+          $tableHeaderFirst.addClass('hide')
+          $tableHeaderLast.removeClass('hide')
+          $contentTitle.removeClass('hide')
+        } else {
+          $tableHeaderFirst.removeClass('hide')
+          $tableHeaderLast.addClass('hide')
+          $contentTitle.addClass('hide')
+        }
+      }
+
+      //gallery
       const main = new Splide('.splide-gallery-main', {
         type: 'loop',
         gap: 0,
@@ -179,6 +236,7 @@
     data () {
       return {
         chevronForward,
+        chevronBack,
         circleChevronDown,
         circleChevronDownFilled
       }

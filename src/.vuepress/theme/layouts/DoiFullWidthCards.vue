@@ -459,7 +459,7 @@
         <div class="card featured-card" style="background-image: url('/images/cards-sample.png');">
           <div class="card-body">
             <h5 class="card-subtitle">Who We Are</h5>
-            <h4 class="card-title">Who We Are</h4>
+            <h4 class="card-title">We drive economic growth and job creation for all Australians.</h4>
             <a href="#" class="btn btn-primary fw-semi-bold">Find out About us</a>
           </div>
         </div>
@@ -468,7 +468,7 @@
         <div class="card featured-card featured-card--right" style="background-image: url('/images/cards-sample.png');">
           <div class="card-body">
             <h5 class="card-subtitle">Who We Are</h5>
-            <h4 class="card-title">Who We Are</h4>
+            <h4 class="card-title">We drive economic growth and job creation for all Australians.</h4>
             <a href="#" class="btn btn-primary">Find out About us</a>
           </div>
         </div>
@@ -484,8 +484,62 @@
                 <h4 class="card-subtitle">Feb 2022 /<span class="text-gray-500">Industry Growth Centres</span></h4>
                 <h5 class="card-title">Keeping Australia’s space sector soaring</h5>
                 <p class="card-text">The Australian Government is cementing Australia as a leading space nation in the region, with a range of new investments and reforms.</p>
-                <a href="#" class="link-icon">Link<span v-html="linkArrowRight"></span></a>
+                <div class="link-wrap">
+                  <a href="#" class="link-icon">Link<span v-html="linkArrowRight"></span></a>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="card featured-card-inline">
+          <div class="row g-0">
+            <div class="col-4 col-lg-8">
+              <img :src="$withBase('images/cards-sample.png')" alt="">
+            </div>
+            <div class="col-8 col-lg-4">
+              <div class="card-body">
+                <h4 class="card-subtitle">Feb 2022 /<span class="text-gray-500">Industry Growth Centres</span></h4>
+                <h5 class="card-title">Keeping Australia’s space sector soaring</h5>
+                <p class="card-text">The Australian Government is cementing Australia as a leading space nation in the region, with a range of new investments and reforms.</p>
+                <div class="link-wrap">
+                  <a href="#" class="btn btn-primary">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card featured-card-inline featured-card-inline--right">
+          <div class="row g-0">
+            <div class="col-4 col-lg-8">
+              <img :src="$withBase('images/cards-sample.png')" alt="">
+            </div>
+            <div class="col-8 col-lg-4">
+              <div class="card-body">
+                <h4 class="card-subtitle">Feb 2022 /<span class="text-gray-500">Industry Growth Centres</span></h4>
+                <h5 class="card-title">Keeping Australia’s space sector soaring</h5>
+                <p class="card-text">The Australian Government is cementing Australia as a leading space nation in the region, with a range of new investments and reforms.</p>
+                <div class="link-wrap">
+                  <a href="#" class="btn btn-primary">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card featured-card featured-card--no-bg" style="background-image: url('/images/cards-sample.png');">
+          <div class="card-body">
+            <h4 class="card-title">We drive economic growth and job creation for all Australians.</h4>
+            <h5 class="card-subtitle">2 June 2022</h5>
+            <div class="line-wrap">
+              <a href="#" class="link-icon">Already been achieved in the transition, already been achieved in the transition is achieved <span v-html="linkArrowRight"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="card featured-card featured-card--no-bg featured-card--right" style="background-image: url('/images/cards-sample.png');">
+          <div class="card-body">
+            <h4 class="card-title">We drive economic growth and job creation for all Australians.</h4>
+            <h5 class="card-subtitle">2 June 2022</h5>
+            <div class="line-wrap">
+              <a href="#" class="link-icon">Already been achieved in the transition, already been achieved in the transition is achieved <span v-html="linkArrowRight"></span></a>
             </div>
           </div>
         </div>

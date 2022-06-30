@@ -25432,26 +25432,26 @@ a > .doi-content code {
   padding-left: 0.875rem;
   border-bottom: 1px solid #c4c4c4;
 }
-.doi-content .dropdown {
+.doi-content .bootstrap-select {
   border: 1px solid #c4c4c4;
   margin-bottom: 1.5rem;
   border-radius: 4px;
   width: 100% !important;
 }
-.doi-content .dropdown .dropdown-toggle {
+.doi-content .bootstrap-select .dropdown-toggle {
   padding-left: 1rem;
 }
-.doi-content .dropdown .dropdown-toggle:focus {
+.doi-content .bootstrap-select .dropdown-toggle:focus {
   outline: none !important;
 }
-.doi-content .dropdown .dropdown-menu {
+.doi-content .bootstrap-select .dropdown-menu {
   width: 100%;
 }
-.doi-content .dropdown .dropdown-menu .dropdown-item.active {
+.doi-content .bootstrap-select .dropdown-menu .dropdown-item.active {
   color: #a44d8e;
   background-color: white;
 }
-.doi-content .dropdown .dropdown-menu .dropdown-item span {
+.doi-content .bootstrap-select .dropdown-menu .dropdown-item span {
   white-space: break-spaces;
 }
 .doi-content .category-filters .button-container {
