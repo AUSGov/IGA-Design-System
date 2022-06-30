@@ -12,22 +12,18 @@
 <script setup>
 import { ref, computed } from 'vue'
 import CodePreview from './code-preview/Index.vue'
-import LinkArrowRight from '../public/icons/link-arrow-right.svg?raw'
-import LinkExternal from '../public/icons/link-external.svg?raw'
 
 const formConfig = ref([
   {
     label: 'Variation',
-    key: 'variation',
+    id: 'variation',
     type: 'select',
     options: [
       {
-        key: 'btnPrimary',
         label: 'Primary',
         value: 'btn-primary'
       },
       {
-        key: 'btnOutlinePrimary',
         label: 'Ghost',
         value: 'btn-outline-primary'
       }
@@ -35,7 +31,7 @@ const formConfig = ref([
   },
   {
     label: 'Size',
-    key: 'size',
+    id: 'size',
     type: 'radio',
     options: [
       // {

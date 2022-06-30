@@ -16,7 +16,7 @@
         <div class="close-container"><button @click="showVariations = false" class="btn-icon btn" v-html="Close"></button></div>
         <div class="scroll-container">
           <div v-for="element in formConfig" :key="element.id">
-            <component :is="element.type" @input="handleInput(element.key, $event)" v-bind.prop="element" />
+            <component :is="element.type" @input="handleInput(element.id, $event)" v-bind.prop="element" />
           </div>
         </div>
       </div>
@@ -115,11 +115,12 @@ export default {
       componentType (type) {
         return 'demo-' + type
       },
-      handleInput (key, e) {
+      handleInput (id, e) {
+        console.log('handleInput', id, e)
         if (e.index) {
-          formData.value[key][e.index] = e.value
+          formData.value[id][e.index] = e.value
         } else {
-          formData.value[key] = e.value
+          formData.value[id] = e.value
         }
         context.emit('formDataChanged', formData.value)
       }

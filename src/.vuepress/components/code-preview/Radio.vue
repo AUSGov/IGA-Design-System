@@ -2,8 +2,8 @@
   <div ref="radios" class="form-group p-2">
     <label>{{ props.label }}</label>
     <div v-for="(option, i) in props.options" :key="'radio-' + i" class="form-check">
-      <input class="form-check-input" type="radio" :value="option.value" :id="'radio-' + props.key + '-' + i" name="radio" @input="$emit('input', { value: $event.target.value })" :checked="option.checked">
-      <label class="form-check-label" :for="'radio-' + props.key + '-' + i">{{ option.label }}</label>
+      <input class="form-check-input" type="radio" :value="option.value" :id="'radio-' + props.id + '-' + i" name="radio" @input="$emit('input', { value: $event.target.value })" :checked="option.checked">
+      <label class="form-check-label" :for="'radio-' + props.id + '-' + i">{{ option.label }}</label>
     </div>
   </div>
 </template>

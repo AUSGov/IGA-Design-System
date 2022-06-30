@@ -26,30 +26,28 @@ const formConfig = ref([
     type: 'select',
     options: [
       {
-        key: 'linkPrimary',
         label: 'Primary',
         value: 'link-icon'
       },
       {
-        key: 'linkSecondary',
         label: 'Secondary',
         value: 'link-icon link-secondary'
       }
     ]
   },
   {
-    label: 'Type Radio',
+    label: 'Link Type',
     id: 'type',
     type: 'radio',
     options: [
       {
         label: 'Internal',
-        value: 'internal',
+        value: '',
         checked: true
       },
       {
         label: 'External',
-        value: 'external'
+        value: 'link-external'
       }
     ]
   }
@@ -60,6 +58,9 @@ const linkClass = computed(() => {
   const classes = []
   if(typeof formData.value.variation !== 'undefined') {
     classes.push(formData.value.variation)
+  }
+  if(typeof formData.value.type !== 'undefined') {
+    classes.push(formData.value.type)
   }
   return classes.join(' ')
 })

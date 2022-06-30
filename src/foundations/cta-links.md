@@ -61,7 +61,7 @@ Labels for the primary button should be short and specific, communicating the pr
     </table>
 </div>
 
-<PreviewButtons/>
+<DemoButtons/>
 
 ## Text button
 
@@ -212,7 +212,7 @@ Text buttons are typically left aligned within cards and “read more” contain
     </table>
 </div>
 
-<PreviewLinks/>
+<DemoLinks/>
 
 ## Link
 
