@@ -38,7 +38,7 @@ export default defineClientConfig({
           element.setAttribute(attr.nodeName, attr.nodeValue)
         }
         svg.replaceWith(...svg.children)
-        console.log(element.innerText)
+        // console.log(element.innerText)
       }
     })
   },

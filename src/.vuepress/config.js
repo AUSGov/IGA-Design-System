@@ -263,6 +263,21 @@ module.exports = {
     })
   ],
   bundler: viteBundler({
+    viteOptions: {
+      // build: {
+      //   rollupOptions: {
+      //     external: ['https://code.jquery.com/jquery-3.6.0.min.js']
+      //   }
+      // },
+      // output: {
+      //   globals: {
+      //     jquery: 'jQuery'
+      //   }
+      // },
+      ssr: {
+        noExternal: ['https://code.jquery.com/jquery-3.6.0.min.js'],
+      },
+    },
     vuePluginOptions: {
       template: {
         compilerOptions: {
