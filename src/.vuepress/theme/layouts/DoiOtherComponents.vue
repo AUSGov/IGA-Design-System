@@ -105,6 +105,44 @@
         </div>
       </div>
     </div>
+    <div class="container mb-5">
+      <form class="form">
+        <div class="form-inputs">
+          <div class="inputs-container">
+            <div class="input-container">
+              <input type="text" id="component-input" class="form-control form-input" placeholder="Placeholder">
+              <div class="error-container">
+                <span v-html="warning"></span><span>How dare you!</span>
+              </div>
+            </div>
+            <div class="input-container">
+              <select id="component-select" title="Placeholder">
+                <option value="1">Australian Industry Participation Authority</option>
+                <option value="2">Anti-Dumping Commission</option>
+                <option value="3">AusIndustry</option>
+                <option value="3">Australian Industry Participation Authority...</option>
+                <option value="3">Australian Radioactive Waste Authority</option>
+              </select>
+              <div class="error-container">
+                <span v-html="warning"></span><span>How dare you!</span>
+              </div>
+            </div>
+            <div class="check-container">
+              <input class="form-check-input" type="radio" value="" aria-label="Radio button for following text input">
+              <label class="form-check-label" for="flexCheckFirst">
+                Label
+              </label>
+            </div>
+            <div class="check-container">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckFirst">
+              <label class="form-check-label" for="flexCheckFirst">
+                Label
+              </label>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
     <div class="gallery">
       <div class="container">
         <div class="splide splide-gallery-main">
@@ -222,6 +260,7 @@
   import circleChevronDownFilled from '../../public/icons/circle-chevron-down-filled.svg?raw'
   import download from '../../public/icons/download.svg?raw'
   import share from '../../public/icons/share.svg?raw'
+  import warning from '../../public/icons/warning.svg?raw'
 
   export default {
     mounted () {
@@ -233,7 +272,6 @@
       $(window).resize(function() {
         modifyTable()
       })
-
       function modifyTable() {
         const width = $(window).width()
         const $tableHeaderFirst = $('.table-header.first')
@@ -249,7 +287,8 @@
           $contentTitle.addClass('hide')
         }
       }
-
+      //form inputs
+      $('select').selectpicker()
       //gallery
       const main = new Splide('.splide-gallery-main', {
         type: 'loop',
@@ -298,7 +337,8 @@
         circleChevronDown,
         circleChevronDownFilled,
         download,
-        share
+        share,
+        warning
       }
     }
   }

@@ -2,73 +2,73 @@
   <div class="doi-content py-5">
     <div class="container">
       <h2 id="tabs-filter">Tag and Tabs Filter</h2>
+      <nav class="filters">
+        <div class="title-wrapper-container">
+          <span class="title-container border-end border-2 lead">Entities</span>
+        </div>
+        <div class="nav-group">
+          <ul class="nav nav-tabs heading-extra-small">
+            <li class="nav-item">
+              <a aria-current="page" href="#">Anti-Dumping Commission</a>
+            </li>
+            <li class="nav-item">
+              <a aria-current="page" href="#">Anti-Dumping Review Panel</a>
+            </li>
+            <li class="nav-item">
+              <a aria-current="page" href="#">Ausindustry</a>
+            </li>
+            <li class="nav-item">
+              <a aria-current="page" href="#">Australian Industry Participation Authority</a>
+            </li>
+            <li class="nav-item">
+              <a aria-current="page" href="#">Australian SKA Office</a>
+            </li>
+            <li class="nav-item">
+              <a aria-current="page" href="#">Australian SKA Office</a>
+            </li>
+          </ul>
+        </div>
+        <div class="icon-container">
+          <span class="icon" v-html="chevronForward"></span>
+        </div>
+      </nav>
+      <nav class="filters mb-5">
+        <div class="title-wrapper-container">
+          <span class="title-container border-end border-2 lead">Topics</span>
+        </div>
+        <div class="nav-group">
+          <ul class="nav nav-tabs heading-extra-small">
+            <li class="nav-item">
+              <a aria-current="page" href="#">Business</a>
+            </li>
+            <li class="nav-item">
+              <a aria-current="page" href="#">Building and construction</a>
+            </li>
+            <li class="nav-item">
+              <a aria-current="page" href="#">Corporate</a>
+            </li>
+            <li class="nav-item">
+              <a aria-current="page" href="#">Emissions reductions</a>
+            </li>
+            <li class="nav-item">
+              <a aria-current="page" href="#">Energy</a>
+            </li>
+            <li class="nav-item">
+              <a aria-current="page" href="#">Government to Government</a>
+            </li>
+            <li class="nav-item">
+              <a aria-current="page" href="#">Manufacturing</a>
+            </li>
+            <li class="nav-item">
+              <a aria-current="page" href="#">Manufacturing</a>
+            </li>
+          </ul>
+        </div>
+        <div class="icon-container">
+          <span class="icon" v-html="chevronForward"></span>
+        </div>
+      </nav>
     </div>
-    <nav class="filters">
-      <div class="title-wrapper-container">
-        <span class="title-container border-end border-2 lead">Entities</span>
-      </div>
-      <div class="nav-group">
-        <ul class="nav nav-tabs heading-extra-small">
-          <li class="nav-item">
-            <a aria-current="page" href="#">Anti-Dumping Commission</a>
-          </li>
-          <li class="nav-item">
-            <a aria-current="page" href="#">Anti-Dumping Review Panel</a>
-          </li>
-          <li class="nav-item">
-            <a aria-current="page" href="#">Ausindustry</a>
-          </li>
-          <li class="nav-item">
-            <a aria-current="page" href="#">Australian Industry Participation Authority</a>
-          </li>
-          <li class="nav-item">
-            <a aria-current="page" href="#">Australian SKA Office</a>
-          </li>
-          <li class="nav-item">
-            <a aria-current="page" href="#">Australian SKA Office</a>
-          </li>
-        </ul>
-      </div>
-      <div class="icon-container">
-        <span class="icon" v-html="chevronRight"></span>
-      </div>
-    </nav>
-    <nav class="filters mb-5">
-      <div class="title-wrapper-container">
-        <span class="title-container border-end border-2 lead">Topics</span>
-      </div>
-      <div class="nav-group">
-        <ul class="nav nav-tabs heading-extra-small">
-          <li class="nav-item">
-            <a aria-current="page" href="#">Business</a>
-          </li>
-          <li class="nav-item">
-            <a aria-current="page" href="#">Building and construction</a>
-          </li>
-          <li class="nav-item">
-            <a aria-current="page" href="#">Corporate</a>
-          </li>
-          <li class="nav-item">
-            <a aria-current="page" href="#">Emissions reductions</a>
-          </li>
-          <li class="nav-item">
-            <a aria-current="page" href="#">Energy</a>
-          </li>
-          <li class="nav-item">
-            <a aria-current="page" href="#">Government to Government</a>
-          </li>
-          <li class="nav-item">
-            <a aria-current="page" href="#">Manufacturing</a>
-          </li>
-          <li class="nav-item">
-            <a aria-current="page" href="#">Manufacturing</a>
-          </li>
-        </ul>
-      </div>
-      <div class="icon-container">
-        <span class="icon" v-html="chevronRight"></span>
-      </div>
-    </nav>
     <div class="container">
       <h2 id="checkbox-filter">Checkbox Filter</h2>
       <div class="show-filters mb-5">
@@ -76,7 +76,7 @@
           <span class="icon" v-html="filters"></span>
           <button type="button" class="button-plain" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             <span class="main-button-text">Show Filters</span>
-            <span class="icon chevron-right" v-html="chevronRight"></span>
+            <span class="icon chevron-right" v-html="chevronForward"></span>
             <span class="icon chevron-down" v-html="chevronDown"></span>
           </button>
         </div>
@@ -277,7 +277,7 @@
   </div>
 </template>
 <script setup>
-  import chevronRight from '../../public/icons/chevron-right.svg?raw'
+  import chevronForward from '../../public/icons/chevron-forward.svg?raw'
   import chevronDown from '../../public/icons/chevron-down.svg?raw'
   import filters from '../../public/icons/filters.svg?raw'
   import close from '../../public/icons/close.svg?raw'

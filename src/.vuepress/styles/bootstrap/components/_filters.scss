@@ -155,6 +155,29 @@
   }
 }
 
+.form-check {
+  margin-bottom: 1.5rem;
+
+  .form-check-input {
+    [type=checkbox] {
+      padding-bottom: 1rem;
+      border-radius: 2px;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &:checked[type=radio] {
+      background-color: white;
+    }
+  }
+}
+
 .filters-accordion {
   padding-top: 1rem;
   padding-left: 0.8125rem;
@@ -175,19 +198,6 @@
         path {
           fill: $gray-500;
         }
-      }
-    }
-  }
-
-  .form-check {
-    margin-bottom: 1.5rem;
-
-    .form-check-input {
-      padding-bottom: 1rem;
-      border-radius: 2px;
-
-      &:last-child {
-        padding-bottom: 0;
       }
     }
   }
@@ -214,16 +224,35 @@
   border-radius: 4px;
   width: 100% !important;
 
+  button {
+    background: transparent;
+  }
+
   .dropdown-toggle {
-    padding-left: 1rem;
+    padding: 11px 2.5rem 11px 1rem;
+    margin: 0;
 
     &:focus {
       outline: none !important;
+    }
+
+    &:after {
+      content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.26035 9.62854C3.91322 9.28141 3.91322 8.71859 4.26035 8.37146C4.57592 8.05589 5.06975 8.0272 5.41773 8.28539L5.51743 8.37146L12 14.8536L18.4826 8.37146C18.7981 8.05589 19.292 8.0272 19.64 8.28539L19.7397 8.37146C20.0552 8.68704 20.0839 9.18086 19.8257 9.52884L19.7397 9.62854L12.6285 16.7397C12.313 17.0552 11.8191 17.0839 11.4712 16.8257L11.3715 16.7397L4.26035 9.62854Z' fill='%23807E7E'/%3E%3C/svg%3E%0A");
+      border: 0;
+      vertical-align: middle;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 24px;
     }
   }
 
   .dropdown-menu {
     width: 100%;
+    z-index: 1500;
 
     .dropdown-item {
       &.active {
