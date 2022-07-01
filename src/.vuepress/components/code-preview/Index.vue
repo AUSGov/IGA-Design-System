@@ -12,7 +12,7 @@
         <div class="spacer" :class="{ show: showVariations }"></div>
       </div>
       <div class="preview-container">
-        <div class="doi-content" ref="codeRef">
+        <div class="doi-content" :class="'size-' + responsiveSize" ref="codeRef">
           <slot></slot>
         </div>
         <div class="spacer" :class="{ show: showVariations }"></div>
