@@ -42,8 +42,9 @@
       }
       let processedChildren = child.children.map(item => ({
         title: item.text,
+        componentsLink: item.componentsLink,
         linkUrl: item.link,
-        linkText: 'Link',
+        linkText: 'Documentation',
       }))
       result.push({
         title: child.text,

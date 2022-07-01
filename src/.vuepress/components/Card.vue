@@ -5,9 +5,10 @@
     </div>
     <div class="card-body">
       <p class="h4">{{ title }}</p>
+      <a v-if="componentsLink && componentsLink.length > 0" :href="componentsLink" target="_blank">Components<span class="icon ms-2" v-html="linkExternal"></span></a>
       <RouterLink v-if="linkUrl" :to="linkUrl">
-        <span class="me-2">{{ linkText }}</span>
-        <span class="icon" v-html="arrowRight">
+        <span>{{ linkText }}</span>
+        <span class="icon ms-2" v-html="arrowRight">
         </span>
       </RouterLink>
     </div>
@@ -15,6 +16,7 @@
 </template>
 <script>
   import arrowRight from '../public/icons/arrow-long-right.svg?raw'
+  import linkExternal from '../public/icons/link-external.svg?raw'
 
   export default {
     props: {
@@ -23,6 +25,10 @@
       },
       title: {
         type: String
+      },
+      componentsLink: {
+        type: String,
+        default: null
       },
       linkUrl: {
         type: String
@@ -38,7 +44,8 @@
     },
     data () {
       return {
-        arrowRight
+        arrowRight,
+        linkExternal
       }
     }
   }

@@ -1,82 +1,90 @@
 <template>
-  <div class="doi-content">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#" v-html="home"></a></li>
-        <li class="breadcrumb-item"><a href="#">Breadcrumbs</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Breadcrumbs</li>
-      </ol>
-    </nav>
+  <div class="doi-content py-5">
+    <div class="container pb-5">
+      <h2 id="breadcrumbs">Breadcrumbs</h2>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#" v-html="home"></a></li>
+          <li class="breadcrumb-item"><a href="#">Breadcrumbs</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Breadcrumbs</li>
+        </ol>
+      </nav>
+    </div>
 
-    <div class="in-this-section-menu">
+    <div class="pb-5">
       <div class="container">
-        <a href="#" class="menu-header body-large-bold" data-bs-toggle="collapse" data-bs-target="#inThisSectionMenu" aria-expanded="true" aria-controls="inThisSectionMenu">
-          <span class="flex-grow-1">Navigate in this section menu</span>
-          <span v-html="chevronDown"></span>
-        </a>
+        <h2 id="in-section-navigation">In Section Navigation</h2>
       </div>
-      <div class="menu-body">
+      <div class="in-this-section-menu">
         <div class="container">
-          <div id="inThisSectionMenu" class="collapse show">
-            <ul class="parent-menu" id="inThisSectionContent">
-              <li>
-                <div class="menu-title collapsed" data-bs-toggle="collapse" data-bs-target="#inThisSectionMenuOne" aria-expanded="false" aria-controls="inThisSectionMenuOne">
-                  <span class="expand" v-html="add"></span>
-                  <span class="close" v-html="subtract"></span>
-                  Navigate National Measurement Institute
-                </div>
-                <div class="collapse" id="inThisSectionMenuOne" data-bs-parent="#inThisSectionContent">
-                  <ul class="child-menu">
-                    <li>
-                      <div class="menu-title collapsed" data-bs-toggle="collapse" data-bs-target="#tradeMeasurement" aria-expanded="false" aria-controls="tradeMeasurement">
-                        <span class="expand" v-html="add"></span>
-                        <span class="close" v-html="subtract"></span>
-                        Trade Measurement
-                      </div>
-                      <div class="collapse" id="tradeMeasurement">
-                        <ul class="grandchild-menu">
-                          <li>
-                            <a href="#">Buying and selling goods</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li>In this section level two title</li>
-                  </ul>
-                </div>
-              </li>
-              <li>
-                <div class="menu-title collapsed" data-bs-toggle="collapse" data-bs-target="#inThisSectionMenuTwo" aria-expanded="false" aria-controls="inThisSectionMenuTwo">
-                  <span class="expand" v-html="add"></span>
-                  <span class="close" v-html="subtract"></span>
-                  Find a public weighbridge
-                </div>
-                <div class="collapse" id="inThisSectionMenuTwo" data-bs-parent="#inThisSectionContent">
-                  <ul class="child-menu">
-                    <li>
-                      <a href="#">Trade Measurement</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li>
-                <div class="menu-title collapsed" data-bs-toggle="collapse" data-bs-target="#inThisSectionMenuThree" aria-expanded="false" aria-controls="inThisSectionMenuThree">
-                  <span class="expand"></span>
-                  In this section title
-                </div>
-                <div class="menu-title collapse" id="inThisSectionMenuThree" data-bs-parent="#inThisSectionContent">
-                  <ul class="child-menu">
-                    <li></li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
+          <a href="#" class="menu-header body-large-bold" data-bs-toggle="collapse" data-bs-target="#inThisSectionMenu" aria-expanded="true" aria-controls="inThisSectionMenu">
+            <span class="flex-grow-1">Navigate in this section menu</span>
+            <span v-html="chevronDown"></span>
+          </a>
+        </div>
+        <div class="menu-body">
+          <div class="container">
+            <div id="inThisSectionMenu" class="collapse show">
+              <ul class="parent-menu" id="inThisSectionContent">
+                <li>
+                  <div class="menu-title collapsed" data-bs-toggle="collapse" data-bs-target="#inThisSectionMenuOne" aria-expanded="false" aria-controls="inThisSectionMenuOne">
+                    <span class="expand" v-html="add"></span>
+                    <span class="close" v-html="subtract"></span>
+                    Navigate National Measurement Institute
+                  </div>
+                  <div class="collapse" id="inThisSectionMenuOne" data-bs-parent="#inThisSectionContent">
+                    <ul class="child-menu">
+                      <li>
+                        <div class="menu-title collapsed" data-bs-toggle="collapse" data-bs-target="#tradeMeasurement" aria-expanded="false" aria-controls="tradeMeasurement">
+                          <span class="expand" v-html="add"></span>
+                          <span class="close" v-html="subtract"></span>
+                          Trade Measurement
+                        </div>
+                        <div class="collapse" id="tradeMeasurement">
+                          <ul class="grandchild-menu">
+                            <li>
+                              <a href="#">Buying and selling goods</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>In this section level two title</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="menu-title collapsed" data-bs-toggle="collapse" data-bs-target="#inThisSectionMenuTwo" aria-expanded="false" aria-controls="inThisSectionMenuTwo">
+                    <span class="expand" v-html="add"></span>
+                    <span class="close" v-html="subtract"></span>
+                    Find a public weighbridge
+                  </div>
+                  <div class="collapse" id="inThisSectionMenuTwo" data-bs-parent="#inThisSectionContent">
+                    <ul class="child-menu">
+                      <li>
+                        <a href="#">Trade Measurement</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="menu-title collapsed" data-bs-toggle="collapse" data-bs-target="#inThisSectionMenuThree" aria-expanded="false" aria-controls="inThisSectionMenuThree">
+                    <span class="expand"></span>
+                    In this section title
+                  </div>
+                  <div class="menu-title collapse" id="inThisSectionMenuThree" data-bs-parent="#inThisSectionContent">
+                    <ul class="child-menu">
+                      <li></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="on-this-page-menu">
+    <div class="on-this-page-menu" id="on-this-page-menu">
       <div class="nav-button">
         <button class="btn btn-promo btn-nav-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#onThisPageMenu" aria-controls="onThisPageMenu">
           <span class="expand" v-html="add"></span>
@@ -118,83 +126,102 @@
       </div>
     </div>
 
-    <div class="content-stepper">
-      <div class="stepper-content">
-        <button class="btn btn-promo btn-nav-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#onThisPageMenu" aria-controls="onThisPageMenu">
-          <span class="expand" v-html="add"></span>
-          <span class="close" v-html="closeThick"></span>
-          <span class="ms-3">Navigate</span>
-        </button>
+    <div class="pb-5">
+      <div class="container">
+        <h2 id="content-stepper">Content Stepper</h2>
       </div>
-      <a href="#" class="stepper-pages">
-        <div class="step-name">Previous</div>
-        <div class="step-label">Premises Standards Review 2021</div>
-      </a>
-      <a href="#" class="stepper-pages">
-        <div class="step-name">Next</div>
-        <div class="step-label">About the 2021 review</div>
-      </a>
+      <div class="content-stepper">
+        <div class="stepper-content">
+          <button class="btn btn-promo btn-nav-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#onThisPageMenu" aria-controls="onThisPageMenu">
+            <span class="expand" v-html="add"></span>
+            <span class="close" v-html="closeThick"></span>
+            <span class="ms-3">Navigate</span>
+          </button>
+        </div>
+        <a href="#" class="stepper-pages">
+          <div class="step-name">Previous</div>
+          <div class="step-label">Premises Standards Review 2021</div>
+        </a>
+        <a href="#" class="stepper-pages">
+          <div class="step-name">Next</div>
+          <div class="step-label">About the 2021 review</div>
+        </a>
+      </div>
     </div>
 
-    <div class="directory-links bg-light-teal">
+    <div class="pb-5">
       <div class="container">
-        <div class="heading-medium">Directory Links</div>
-        <div class="row">
-          <div class="col-md-6">
-            <ul>
-              <li><a href="#" class="link-icon link-secondary">Link<span v-html="linkArrowRight"></span></a></li>
-              <li><a href="#" class="link-icon link-secondary">Link<span v-html="linkArrowRight"></span></a></li>
-              <li><a href="#" class="link-icon link-secondary">Link<span v-html="linkArrowRight"></span></a></li>
-            </ul>
+        <h2 id="directory-links">Directory Links</h2>
+      </div>
+      <div class="directory-links bg-light-teal">
+        <div class="container">
+          <div class="heading-medium">Directory Links</div>
+          <div class="row">
+            <div class="col-md-6">
+              <ul>
+                <li><a href="#" class="link-icon link-secondary">Link<span v-html="linkArrowRight"></span></a></li>
+                <li><a href="#" class="link-icon link-secondary">Link<span v-html="linkArrowRight"></span></a></li>
+                <li><a href="#" class="link-icon link-secondary">Link<span v-html="linkArrowRight"></span></a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul>
+                <li><a href="#" class="link-icon link-secondary">Link<span v-html="linkArrowRight"></span></a></li>
+                <li><a href="#" class="link-icon link-secondary">Link<span v-html="linkArrowRight"></span></a></li>
+                <li><a href="#" class="link-icon link-secondary">Link<span v-html="linkArrowRight"></span></a></li>
+              </ul>
+            </div>
           </div>
-          <div class="col-md-6">
-            <ul>
-              <li><a href="#" class="link-icon link-secondary">Link<span v-html="linkArrowRight"></span></a></li>
-              <li><a href="#" class="link-icon link-secondary">Link<span v-html="linkArrowRight"></span></a></li>
-              <li><a href="#" class="link-icon link-secondary">Link<span v-html="linkArrowRight"></span></a></li>
-            </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="pb-5">
+      <div class="container">
+        <h2 id="chapter-banners">Chapter Banners</h2>
+      </div>
+      <div class="chapter-banners text-dark">
+        <div class="banner-overlay"></div>
+        <div class="container">
+          <div class="icons">
+            <span class="share" v-html="share"></span>
+            <span class="download" v-html="download"></span>
+            <div class="vr bg-black"></div>
+            <span class="up text-gray-500" v-html="chevronUp"></span>
+            <span class="down text-gray-500" v-html="chevronDown"></span>
           </div>
+          <div class="display-medium">Glossary</div>
+        </div>
+      </div>
+      <div class="chapter-banners text-white" style="background-image: url('/images/banner-sample-2.jpeg');">
+        <div class="banner-overlay"></div>
+        <div class="container">
+          <div class="icons">
+            <span class="share" v-html="share"></span>
+            <span class="download" v-html="download"></span>
+            <div class="vr bg-black"></div>
+            <span class="up" v-html="chevronUp"></span>
+            <span class="down" v-html="chevronDown"></span>
+          </div>
+          <div class="display-medium">Glossary</div>
         </div>
       </div>
     </div>
 
-    <div class="chapter-banners text-dark">
-      <div class="banner-overlay"></div>
+    <div class="pb-5">
       <div class="container">
-        <div class="icons">
-          <span class="share" v-html="share"></span>
-          <span class="download" v-html="download"></span>
-          <div class="vr bg-black"></div>
-          <span class="up text-gray-500" v-html="chevronUp"></span>
-          <span class="down text-gray-500" v-html="chevronDown"></span>
-        </div>
-        <div class="display-medium">Glossary</div>
+        <h2 id="read-more">Read More</h2>
       </div>
-    </div>
-
-    <div class="chapter-banners text-white" style="background-image: url('/images/banner-sample-2.jpeg');">
-      <div class="banner-overlay"></div>
-      <div class="container">
-        <div class="icons">
-          <span class="share" v-html="share"></span>
-          <span class="download" v-html="download"></span>
-          <div class="vr bg-black"></div>
-          <span class="up" v-html="chevronUp"></span>
-          <span class="down" v-html="chevronDown"></span>
+      <div class="read-more">
+        <div class="container">
+  <!--      <div class="container" style="max-width: 500px">-->
+          <div class="heading-medium mt-3 mb-3">Read more</div>
+          <ul>
+            <li><a href="#" class="link-icon link-secondary">Link<span v-html="linkArrowRight"></span></a></li>
+            <li><a href="#" class="link-icon link-secondary">Link<span v-html="linkArrowRight"></span></a></li>
+            <li><a href="#" class="link-icon link-secondary">Link<span v-html="linkArrowRight"></span></a></li>
+          </ul>
         </div>
-        <div class="display-medium">Glossary</div>
-      </div>
-    </div>
-
-    <div class="read-more">
-      <div class="container">
-<!--      <div class="container" style="max-width: 500px">-->
-        <div class="heading-medium mt-3 mb-3">Read more</div>
-        <ul>
-          <li><a href="#" class="link-icon link-secondary">Link<span v-html="linkArrowRight"></span></a></li>
-          <li><a href="#" class="link-icon link-secondary">Link<span v-html="linkArrowRight"></span></a></li>
-          <li><a href="#" class="link-icon link-secondary">Link<span v-html="linkArrowRight"></span></a></li>
-        </ul>
       </div>
     </div>
   </div>
