@@ -2,7 +2,12 @@
   <div class="c-code-demo" :class="{ fullscreen: showFullScreen }">
     <div class="menu-container">
       <div class="top-container">
-        <button v-if="allowFullScreen" @click="showFullScreen = true" class="btn-icon me-2 btn" v-html="Expand"></button>
+        <div class="responsive-controls">
+          <button class="btn-icon me-2 btn" :class="{ active: responsiveSize === 'sm' }" v-html="ResponsiveMobile" @click="showSize('sm')"></button>
+          <button class="btn-icon me-2 btn" :class="{ active: responsiveSize === 'md' }" v-html="ResponsiveTablet" @click="showSize('md')"></button>
+          <button class="btn-icon me-2 btn" :class="{ active: responsiveSize === 'lg' }" v-html="ResponsiveDesktop" @click="showSize('lg')"></button>
+        </div>
+        <button v-if="allowFullScreen" @click="showFullScreen = !showFullScreen" class="btn-icon me-2 btn" v-html="fullScreenIcon"></button>
         <button @click="showVariations = !showVariations" class="btn-icon btn" v-html="Hamburger"></button>
         <div class="spacer" :class="{ show: showVariations }"></div>
       </div>
@@ -38,9 +43,13 @@
   </Teleport>
 </template>
 <script>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, computed } from 'vue'
+import ResponsiveDesktop from '../../public/icons/responsive-desktop.svg?raw'
+import ResponsiveTablet from '../../public/icons/responsive-tablet.svg?raw'
+import ResponsiveMobile from '../../public/icons/responsive-mobile.svg?raw'
 import ChevronDown from '../../public/icons/chevron-down.svg?raw'
 import Expand from '../../public/icons/expand.svg?raw'
+import Collapse from '../../public/icons/collapse.svg?raw'
 import Hamburger from '../../public/icons/hamburger-2.svg?raw'
 import Close from '../../public/icons/close.svg?raw'
 import Radio from './Radio.vue'
@@ -78,6 +87,13 @@ export default {
     const codeRef = ref(null)
     const code = ref(null)
     const formData = ref({})
+    const showFullScreen = ref(false)
+    const showVariations = ref(true)
+    const showCodeView = ref(false)
+    const fullScreenIcon = computed(() => {
+      return showFullScreen.value ? Collapse : Expand
+    })
+    const responsiveSize = ref('lg')
 
     const updateCode = () => {
       if (codeRef.value) {
@@ -102,27 +118,46 @@ export default {
       })
     }
     return {
+      ResponsiveDesktop,
+      ResponsiveTablet,
+      ResponsiveMobile,
       ChevronDown,
       Expand,
+      Collapse,
       Hamburger,
       Close,
-      showFullScreen: ref(false),
-      showVariations: ref(true),
-      showCodeView: ref(true),
       formData,
       codeRef,
       code,
-      componentType (type) {
-        return 'demo-' + type
-      },
+      showFullScreen,
+      showVariations,
+      showCodeView,
+      fullScreenIcon,
       handleInput (id, e) {
-        console.log('handleInput', id, e)
         if (e.index) {
-          formData.value[id][e.index] = e.value
+          if (e.checked) {
+            formData.value[id] = { [e.index]: e.value }
+          } else {
+            delete formData.value[id][e.index]
+          }
         } else {
           formData.value[id] = e.value
         }
         context.emit('formDataChanged', formData.value)
+      },
+      responsiveSize,
+      showSize (size) {
+        switch (size) {
+          case 'sm': // 540px
+
+            break
+          case 'md': //	720px
+            break
+          case 'lg': // 960px
+          default:
+
+        }
+        responsiveSize.value = size
       }
     }
   }

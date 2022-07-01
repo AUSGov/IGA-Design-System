@@ -4,6 +4,27 @@ $secondary: $doi-secondary;
 
 $body-color: $gray-700;
 
+/*  Breakpoints, Containers, Columns and Gutters */
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px
+);
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1320px
+);
+
+// Container padding
+$container-padding-x: 4.5rem; //$grid-gutter-width * 3;
+
 /* Borders */
 $border-radius: 0.1875rem;
 

@@ -19,7 +19,7 @@ import CodePreview from './code-preview/Index.vue'
 import LinkArrowRight from '../public/icons/link-arrow-right.svg?raw'
 import LinkExternal from '../public/icons/link-external.svg?raw'
 
-const formConfig = ref([
+const formConfig = [
   {
     label: 'Variation',
     id: 'variation',
@@ -50,8 +50,19 @@ const formConfig = ref([
         value: 'link-external'
       }
     ]
+  },
+  {
+    label: 'Disabled',
+    id: 'disabledLink',
+    type: 'checkbox',
+    options: [
+      {
+        label: 'Disabled',
+        value: 'disabled'
+      }
+    ]
   }
-])
+]
 const formData = ref({})
 
 const linkClass = computed(() => {
@@ -62,14 +73,19 @@ const linkClass = computed(() => {
   if(typeof formData.value.type !== 'undefined') {
     classes.push(formData.value.type)
   }
+  if (typeof formData.value.disabledLink !== 'undefined') {
+    Object.keys(formData.value.disabledLink).forEach(el => {
+      classes.push(formData.value.disabledLink[el])
+    })
+  }
   return classes.join(' ')
 })
 
 const linkType = computed(() => {
   switch (formData.value.type) {
-    case 'internal':
+    case '':
       return LinkArrowRight
-    case 'external':
+    case 'link-external':
       return LinkExternal
     default:
       return null

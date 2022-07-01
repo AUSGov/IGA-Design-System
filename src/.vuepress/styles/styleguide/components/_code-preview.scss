@@ -12,8 +12,28 @@ $variations-menu-width: 12rem;
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     border-radius: 0;
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
+
+    .menu-container {
+      flex-grow: 1;
+    }
+
+    .responsive-controls {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    .preview-container {
+      pre {
+        width: 100%;
+        border-left: 1px solid $doi-secondary;
+        border-right: 1px solid $doi-secondary;
+      }
+    }
   }
 
   .menu-container {
@@ -26,6 +46,27 @@ $variations-menu-width: 12rem;
     display: flex;
     justify-content: flex-end;
     padding: 1rem 1.25rem;
+  }
+
+  .responsive-controls {
+    display: none;
+
+    .btn-icon {
+      transition: background-color 0.3s ease;
+
+      svg path {
+        transition: fill 0.3s ease;
+      }
+
+      &:hover,
+      &.active {
+        background-color: $doi-secondary;
+
+        svg path {
+          fill: #fff;
+        }
+      }
+    }
   }
 
   .spacer {
@@ -50,9 +91,9 @@ $variations-menu-width: 12rem;
     padding: 1.5rem;
     position: relative;
     min-height: 256px;
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
 
@@ -69,6 +110,13 @@ $variations-menu-width: 12rem;
 
     .spacer {
       height: 100%;
+    }
+
+    .doi-content {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 

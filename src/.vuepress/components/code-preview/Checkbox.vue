@@ -2,7 +2,7 @@
   <div ref="checks" class="form-group p-2">
     <label>{{ props.label }}</label>
     <div v-for="(option, i) in props.options" :key="props.id + '-' + i" class="form-check">
-      <input class="form-check-input" type="checkbox" :value="option.value" :id="props.id + '-' + i" @input="$emit('input', { value: $event.target.value, index: 'check-' + i })" :checked="option.checked">
+      <input class="form-check-input" type="checkbox" :value="option.value" :id="props.id + '-' + i" @input="$emit('input', { value: $event.target.value, checked: $event.target.checked, index: 'check-' + i })" :checked="option.checked">
       <label class="form-check-label" :for="props.id + '-' + i">{{ option.label }}</label>
     </div>
   </div>

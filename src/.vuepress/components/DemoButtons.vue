@@ -13,7 +13,7 @@
 import { ref, computed } from 'vue'
 import CodePreview from './code-preview/Index.vue'
 
-const formConfig = ref([
+const formConfig = [
   {
     label: 'Variation',
     id: 'variation',
@@ -48,8 +48,19 @@ const formConfig = ref([
         value: 'btn-sm'
       }
     ]
+  },
+  {
+    label: 'Disabled',
+    id: 'disabledBtn',
+    type: 'checkbox',
+    options: [
+      {
+        label: 'Disabled',
+        value: 'disabled'
+      }
+    ]
   }
-])
+]
 const formData = ref({})
 
 const btnClass = computed(() => {
@@ -59,6 +70,11 @@ const btnClass = computed(() => {
   }
   if (typeof formData.value.size !== 'undefined') {
     classes.push(formData.value.size)
+  }
+  if (typeof formData.value.disabledBtn !== 'undefined') {
+    Object.keys(formData.value.disabledBtn).forEach(el => {
+      classes.push(formData.value.disabledBtn[el])
+    })
   }
   return classes.join(' ')
 })
