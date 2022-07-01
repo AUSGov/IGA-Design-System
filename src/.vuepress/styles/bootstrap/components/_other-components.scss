@@ -202,7 +202,6 @@
     .description-container {
       color: $gray-400;
       text-transform: uppercase;
-      font-weight: $font-weight-base;
     }
   }
 
@@ -224,8 +223,82 @@
     }
 
     .pdf-title {
-      @include heading-extra-small();
+      @include body-small();
+      color: black;
       text-transform: initial;
+    }
+  }
+}
+
+.form-inputs {
+  //TODO: THIS IS TEMPORARY
+  .form-input {
+    padding: 11px 0.75rem 11px 1rem;
+  }
+
+  .form-control {
+    padding-left: 1rem;
+  }
+
+  .inputs-container {
+    display: flex;
+  }
+
+  .input-container {
+    width: 327px;
+    height: 48px;
+    margin-right: 2.5rem;
+
+    .bootstrap-select {
+      margin-bottom: 0;
+    }
+
+    &.show {
+
+      .form-input {
+        border: 1px solid $red-500;
+      }
+
+      .error-container {
+        display: flex;
+        align-items: center;
+
+        span {
+          display: flex;
+          align-items: flex-end;
+          color: $red-500;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .error-container {
+    display: none;
+  }
+
+  input {
+    &:focus {
+      box-shadow: none;
+      border: 1px solid $doi-primary;
+    }
+  }
+
+  .check-container {
+    margin-right: 1rem;
+  }
+
+  .form-check-input {
+    [type=checkbox] {
+      border-radius: 2px;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &:checked[type=radio] {
+      background-color: white;
     }
   }
 }

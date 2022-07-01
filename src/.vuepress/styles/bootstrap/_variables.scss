@@ -94,3 +94,7 @@ $table-striped-bg: $doi-snow;
 $table-striped-bg-factor: 1;
 $table-striped-order: even;
 
+/* Form Inputs */
+$form-check-input-checked-bg-color: $doi-primary;
+$form-check-input-checked-color: white;
+$form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-check-input-checked-bg-color}'/></svg>");
