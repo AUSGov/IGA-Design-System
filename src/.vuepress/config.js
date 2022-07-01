@@ -63,14 +63,17 @@ module.exports = {
               {
                 text: 'Header',
                 link: '/components/headers-footers/header',
+                componentsLink: '/components-html/headers-footers#header',
               },
               {
                 text: 'Global Footer',
                 link: '/components/headers-footers/global-footer',
+                componentsLink: '/components-html/headers-footers#global-footer',
               },
               {
                 text: 'Secondary Footer',
                 link: '/components/headers-footers/secondary-footer',
+                componentsLink: '/components-html/headers-footers#secondary-footer',
               },
             ],
           },
@@ -81,18 +84,22 @@ module.exports = {
               {
                 text: 'Mega Menu',
                 link: '/components/navigation/mega-menu',
+                componentsLink: '/components-html/headers-footers#header',
               },
               {
                 text: 'Breadcrumbs',
                 link: '/components/navigation/breadcrumbs',
+                componentsLink: '/components-html/navigation#breadcrumbs',
               },
               {
                 text: 'In-section navigation',
                 link: '/components/navigation/in-section-navigation',
+                componentsLink: '/components-html/navigation#in-section-navigation',
               },
               {
                 text: 'On this page menu',
                 link: '/components/navigation/on-this-page-menu',
+                componentsLink: '/components-html/navigation#on-this-page-menu',
               },
               {
                 text: 'Tile navigation',
@@ -101,6 +108,7 @@ module.exports = {
               {
                 text: 'Publication section divider',
                 link: '/components/navigation/publication-section-divider',
+                componentsLink: '/components-html/navigation#chapter-banners',
               },
             ],
           },
@@ -114,7 +122,8 @@ module.exports = {
               },
               {
                 text: 'News card and containers',
-                link: '/components/cards/news'
+                link: '/components/cards/news',
+                componentsLink: '/components-html/cards#featured-news',
               },
               {
                 text: 'Event card and containers',
@@ -126,7 +135,8 @@ module.exports = {
               },
               {
                 text: 'Bio card',
-                link: '/components/cards/bio'
+                link: '/components/cards/bio',
+                componentsLink: '/components-html/cards#biography-card',
               },
               {
                 text: 'Request for quote (NMI)',
@@ -141,18 +151,22 @@ module.exports = {
               {
                 text: 'Checkbox filter',
                 link: '/components/filters/checkbox',
+                componentsLink: '/components-html/filters#checkbox-filter',
               },
               {
                 text: 'Tabs filter',
                 link: '/components/filters/tabs',
+                componentsLink: '/components-html/filters#tabs-filter',
               },
               {
                 text: 'Dropdown filter',
                 link: '/components/filters/dropdown',
+                componentsLink: '/components-html/filters#dropdown-filter',
               },
               {
                 text: 'Tags filter',
                 link: '/components/filters/tags',
+                componentsLink: '/components-html/filters#tabs-filter',
               },
             ]
           },
@@ -163,10 +177,12 @@ module.exports = {
               {
                 text: 'Homepage banner',
                 link: '/components/banners/homepage',
+                componentsLink: '/components-html/banners#carousel',
               },
               {
                 text: 'Standard content banner',
                 link: '/components/banners/standard-content',
+                componentsLink: '/components-html/banners#standard-banner',
               },
               {
                 text: 'Standard content ADC banner',
@@ -175,10 +191,12 @@ module.exports = {
               {
                 text: 'Publication banners',
                 link: '/components/banners/publication',
+                componentsLink: '/components-html/banners#publication-banner',
               },
               {
                 text: 'News article, case study, event banner',
                 link: '/components/banners/news-case-event',
+                componentsLink: '/components-html/banners#news-article',
               },
               {
                 text: 'Biography banner',

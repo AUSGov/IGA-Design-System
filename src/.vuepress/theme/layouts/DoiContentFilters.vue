@@ -1,5 +1,8 @@
 <template>
-  <div class="doi-content">
+  <div class="doi-content py-5">
+    <div class="container">
+      <h2 id="tabs-filter">Tag and Tabs Filter</h2>
+    </div>
     <nav class="filters">
       <div class="title-wrapper-container">
         <span class="title-container border-end border-2 lead">Entities</span>
@@ -67,6 +70,7 @@
       </div>
     </nav>
     <div class="container">
+      <h2 id="checkbox-filter">Checkbox Filter</h2>
       <div class="show-filters mb-5">
         <div class="buttons-container heading-small">
           <span class="icon" v-html="filters"></span>
@@ -218,45 +222,45 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="category-filters mb-5">
-      <button class="button-container button-plain  heading-extra-small-caps" id="category-filter-button" type="button" data-bs-toggle="modal" data-bs-target="#filter-modal">
-        <span class="filters-icon" v-html="filters"></span>
-        <span >Filter</span>
-      </button>
-      <div class="category-filters-content">
-        <div class="container">
-          <div class="filter-container heading-extra-small-caps">
-            <span class="filters-icon" v-html="filters"></span>
-            <span class="title-label">Filters</span>
-            <button class="button-plain close-icon" v-html="close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="row">
-            <div v-for="index in 5" :key="index" class="col">
-              <div class="title-container">
-                Category
-              </div>
-              <div class="content-container">
-                <select title="All Categories">
-                  <option value="1">Australian Industry Participation Authority</option>
-                  <option value="2">Anti-Dumping Commission</option>
-                  <option value="3">AusIndustry</option>
-                  <option value="3">Australian Industry Participation Authority...</option>
-                  <option value="3">Australian Radioactive Waste Authority</option>
-                </select>
-              </div>
+      <h2 id="dropdown-filter">Dropdown Filter</h2>
+      <div class="category-filters mb-5">
+        <button class="button-container button-plain  heading-extra-small-caps" id="category-filter-button" type="button" data-bs-toggle="modal" data-bs-target="#filter-modal">
+          <span class="filters-icon" v-html="filters"></span>
+          <span >Filter</span>
+        </button>
+        <div class="category-filters-content">
+          <div class="container">
+            <div class="filter-container heading-extra-small-caps">
+              <span class="filters-icon" v-html="filters"></span>
+              <span class="title-label">Filters</span>
+              <button class="button-plain close-icon" v-html="close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="col">
-              <div class="link-container link-large">
-                <span class="apply-container"><a href="#" class="link-icon">Apply<span v-html="arrowRight" /></a></span>
-                <span><a href="#" class="link-icon"><span v-html="circleCross" />Reset</a></span>
+            <div class="row">
+              <div v-for="index in 5" :key="index" class="col">
+                <div class="title-container">
+                  Category
+                </div>
+                <div class="content-container">
+                  <select title="All Categories">
+                    <option value="1">Australian Industry Participation Authority</option>
+                    <option value="2">Anti-Dumping Commission</option>
+                    <option value="3">AusIndustry</option>
+                    <option value="3">Australian Industry Participation Authority...</option>
+                    <option value="3">Australian Radioactive Waste Authority</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col">
+                <div class="link-container link-large">
+                  <span class="apply-container"><a href="#" class="link-icon">Apply<span v-html="arrowRight" /></a></span>
+                  <span><a href="#" class="link-icon"><span v-html="circleCross" />Reset</a></span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container">
+      <h2 id="search-filters">Site Search</h2>
       <div class="search-filters">
         <div class="search-filters-container">
           <form class="form-search button-plain" role="search">

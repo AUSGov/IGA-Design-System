@@ -1,6 +1,6 @@
 <template>
-  <div class="doi-content">
-    <div class="featured-news py-5">
+  <div class="doi-content py-5">
+    <div id="featured-news" class="featured-news pb-5">
       <div class="container">
         <div class="d-flex align-items-center justify-content-between mb-4">
           <div class="display-medium heading-underline">Featured News</div>
@@ -51,11 +51,11 @@
       </div>
     </div>
 
-    <div class="py-5">
+    <div id="editorials" class="pb-5">
       <div class="editorials">
         <div class="container">
           <div class="d-flex align-items-center justify-content-between mb-4">
-            <div class="display-medium heading-underline">Editorial</div>
+            <div class="display-medium heading-underline">Editorials</div>
             <a href="#" class="fw-bold link-icon">Find all <span v-html="linkArrowRight"></span></a>
           </div>
 
@@ -232,7 +232,10 @@
       </div>
     </div>
 
-    <div class="py-5">
+    <div class="pb-5">
+      <div class="container">
+        <h2 id="featured-editorials">Featured Editorials</h2>
+      </div>
       <div class="featured-editorials bg-light-teal-30">
         <div class="container">
           <div class="d-flex align-items-center justify-content-between mb-4">
@@ -309,7 +312,8 @@
       </div>
     </div>
 
-    <div class="container py-5">
+    <div class="container pb-5">
+      <h2 id="navigation-card">Navigation Card</h2>
       <div class="row g-5">
         <div class="col-md-6">
           <div class="navigation-card navigation-card--inline">
@@ -374,15 +378,17 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="navigation-card navigation-card--inline bg-primary text-white">
-            <div class="navigation-card-content">
-              <div class="img-wrap">
-                <img :src="$withBase('images/cards-sample.png')" alt="">
-              </div>
-              <div class="navigation-card-body">
-                <div class="navigation-card-title">Dark Energy Survey Evolves or a longer title with three of more lines more line</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="link-icon">Link<span v-html="linkArrowRight"></span></a>
+          <div class="pb-3">
+            <div class="navigation-card navigation-card--inline bg-primary text-white">
+              <div class="navigation-card-content">
+                <div class="img-wrap">
+                  <img :src="$withBase('images/cards-sample.png')" alt="">
+                </div>
+                <div class="navigation-card-body">
+                  <div class="navigation-card-title">Dark Energy Survey Evolves or a longer title with three of more lines more line</div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <a href="#" class="link-icon">Link<span v-html="linkArrowRight"></span></a>
+                </div>
               </div>
             </div>
           </div>
@@ -403,7 +409,8 @@
     </div>
 
     <div class="container">
-      <div class="row g-5 py-5">
+      <h2 id="biography-card">Biography Card</h2>
+      <div class="row g-5 pb-5">
         <div class="col-md-6">
           <div class="biography-card">
             <img :src="$withBase('images/profile-sample.png')" alt="">
@@ -455,7 +462,8 @@
         </div>
       </div>
 
-      <div class="py-5">
+      <h2 id="featured-card">Featured Card</h2>
+      <div class="pb-5">
         <div class="card featured-card" style="background-image: url('/images/cards-sample.png');">
           <div class="card-body">
             <h5 class="card-subtitle">Who We Are</h5>
@@ -464,7 +472,7 @@
           </div>
         </div>
       </div>
-      <div class="py-5">
+      <div class="pb-5">
         <div class="card featured-card featured-card--right" style="background-image: url('/images/cards-sample.png');">
           <div class="card-body">
             <h5 class="card-subtitle">Who We Are</h5>
@@ -473,7 +481,7 @@
           </div>
         </div>
       </div>
-      <div class="py-5">
+      <div class="pb-5">
         <div class="card featured-card-inline">
           <div class="row g-0">
             <div class="col-4 col-lg-8">
@@ -491,6 +499,8 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="pb-5">
         <div class="card featured-card-inline">
           <div class="row g-0">
             <div class="col-4 col-lg-8">
@@ -508,6 +518,8 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="pb-5">
         <div class="card featured-card-inline featured-card-inline--right">
           <div class="row g-0">
             <div class="col-4 col-lg-8">
@@ -525,7 +537,9 @@
             </div>
           </div>
         </div>
-        <div class="card featured-card featured-card--no-bg" style="background-image: url('/images/cards-sample.png');">
+      </div>
+      <div class="pb-5">
+        <div class="card featured-card featured-card--no-bg" style="background-image: url('/images/cards-sample-2.png');">
           <div class="card-body">
             <h4 class="card-title">We drive economic growth and job creation for all Australians.</h4>
             <h5 class="card-subtitle">2 June 2022</h5>
@@ -534,13 +548,13 @@
             </div>
           </div>
         </div>
-        <div class="card featured-card featured-card--no-bg featured-card--right" style="background-image: url('/images/cards-sample.png');">
-          <div class="card-body">
-            <h4 class="card-title">We drive economic growth and job creation for all Australians.</h4>
-            <h5 class="card-subtitle">2 June 2022</h5>
-            <div class="line-wrap">
-              <a href="#" class="link-icon">Already been achieved in the transition, already been achieved in the transition is achieved <span v-html="linkArrowRight"></span></a>
-            </div>
+      </div>
+      <div class="card featured-card featured-card--no-bg featured-card--right" style="background-image: url('/images/cards-sample-2.png');">
+        <div class="card-body">
+          <h4 class="card-title">We drive economic growth and job creation for all Australians.</h4>
+          <h5 class="card-subtitle">2 June 2022</h5>
+          <div class="line-wrap">
+            <a href="#" class="link-icon">Already been achieved in the transition, already been achieved in the transition is achieved <span v-html="linkArrowRight"></span></a>
           </div>
         </div>
       </div>

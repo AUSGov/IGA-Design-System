@@ -24,8 +24,8 @@
     </div>
     <div class="container">
       <div class="doi-table">
-        <table class="table">
-          <thead class="table-primary body-small">
+        <table class="table table-striped">
+          <thead class="table-critical-minerals-office body-small">
             <tr class="table-header first">
               <td class="header-title">Part</td>
               <td class="header-title">Title</td>
@@ -38,7 +38,7 @@
             </tr>
           </thead>
           <tbody>
-          <tr v-for="index in 6" :key="index" class="body-small" :class="index % 2 === 0 ? 'bg-snow' : null">
+          <tr v-for="index in 6" :key="index" class="body-small">
             <td class="table-content"><span class="content-title">Part:</span>Part 1</td>
             <td class="table-content"><span class="content-title">Title:</span>General requirements for access – New building work (incorporating amendments 1 and 2)</td>
             <td class="table-content"><span class="content-title">Provisions of Access Code:</span>A1.1, D3.1, D3.2, D3.3, D3.6, D3.8, D3.9, D3.10, D3.12, D5.2, D5.3, F2.4</td>
@@ -47,6 +47,62 @@
           </tr>
           </tbody>
         </table>
+      </div>
+    </div>
+    <div class="container mb-5">
+      <div class="doi-table">
+        <table class="table table-striped">
+          <thead class="table-primary body-small">
+          <tr class="table-header first">
+            <td class="header-title">Title</td>
+            <td class="header-title"></td>
+            <td class="header-title">Date</td>
+            <td class="header-title">Publisher</td>
+          </tr>
+          <tr class="table-header last hide">
+            <td>Table Title</td>
+          </tr>
+          </thead>
+          <tbody>
+          <tr v-for="index in 18" :key="index" class="body-small">
+            <td colspan="2" class="table-content"><span class="content-title">Title:</span>Lachlan water resource plan</td>
+            <td class="table-content"><span class="content-title">Date:</span>13 Apr 2022	</td>
+            <td class="table-content"><span class="content-title">Publisher:</span>AusIndustry</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="container mb-5">
+      <div class="publication">
+        <div class="publication-container ">
+          <span class="publication-title">Topics</span>
+          <div class="button-container heading-extra-small">
+            <button class="topic-button"><span>Mining oil and gas</span></button>
+            <button class="topic-button"><span>Critical Minerals</span></button>
+          </div>
+        </div>
+        <div class="publication-container">
+          <span class="publisher-title">Publisher</span>
+          <span class="publisher-subtitle">Department of Industry, Science, Energy and Resources</span>
+        </div>
+        <div class="publication-container">
+          <span class="publication-title">Subscribe for updates</span>
+          <span class="publisher-subtitle">Modern Manufacturing Strategy Updates</span>
+          <span class="publisher-content">Subscribing to updates ensures you'll receive the latest on funding and programs, and news and announcements. We recommend you subscribe to keep up to date on all Modern Manufacturing Strategy matters. </span>
+          <button class="btn btn-primary caption-large"><span>Subscribe</span></button>
+        </div>
+        <div class="publication-container icon-container">
+          <span class="icon-container" v-html="share"></span>
+          <span class="icon-container" v-html="download"></span>
+        </div>
+        <div class="publication-container heading-extra-small">
+          <div v-for="index in 4" :key="index" class="pdf-container">
+            <div class="pdf-title">Australia’s Long-Term Emission Reduction plan <span class="description-container">PDF 17.5MB</span>
+            </div>
+            <span class="icon-container" v-html="download"></span>
+          </div>
+        </div>
       </div>
     </div>
     <div class="gallery">
@@ -164,6 +220,8 @@
   import chevronBack from '../../public/icons/chevron-back.svg?raw'
   import circleChevronDown from '../../public/icons/circle-chevron-down.svg?raw'
   import circleChevronDownFilled from '../../public/icons/circle-chevron-down-filled.svg?raw'
+  import download from '../../public/icons/download.svg?raw'
+  import share from '../../public/icons/share.svg?raw'
 
   export default {
     mounted () {
@@ -238,7 +296,9 @@
         chevronForward,
         chevronBack,
         circleChevronDown,
-        circleChevronDownFilled
+        circleChevronDownFilled,
+        download,
+        share
       }
     }
   }

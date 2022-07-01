@@ -6,7 +6,7 @@ import DoiContentBanners from './theme/layouts/DoiContentBanners.vue'
 import DoiContentFilters from './theme/layouts/DoiContentFilters.vue'
 import DoiContentNavigation from './theme/layouts/DoiContentNavigation.vue'
 import DoiOtherComponents from './theme/layouts/DoiOtherComponents.vue'
-import DoiFullWidthCards from './theme/layouts/DoiFullWidthCards.vue'
+import DoiContentCards from './theme/layouts/DoiContentCards.vue'
 
 export default defineClientConfig({
   enhance({ app }) {
@@ -17,7 +17,7 @@ export default defineClientConfig({
     app.component('DoiContentFilters', DoiContentFilters)
     app.component('DoiContentNavigation', DoiContentNavigation)
     app.component('DoiOtherComponents', DoiOtherComponents)
-    app.component('DoiFullWidthCards', DoiFullWidthCards)
+    app.component('DoiContentCards', DoiContentCards)
 
     app.directive('inline-svg', {
       updated: (element) => {
