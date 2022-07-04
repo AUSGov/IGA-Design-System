@@ -153,7 +153,7 @@
               <div class="timeline-container">
                 <div class="title-container heading-medium lead">Title</div>
                 <div class="timeline-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mattis blandit turpis eget elit massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mattis blandit turpis eget elit massa.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mattis blandit turpis eget elit massa.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mattis blandit turpis eget elit massa.</p>
                 </div>
               </div>
             </li>
@@ -162,7 +162,7 @@
               <div class="timeline-container">
                 <div class="title-container heading-medium lead">Title</div>
                 <div class="timeline-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mattis blandit turpis eget elit massa.</p>
                 </div>
               </div>
             </li>
@@ -171,7 +171,7 @@
               <div class="timeline-container">
                 <div class="title-container heading-medium lead">Title</div>
                 <div class="timeline-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mattis blandit turpis eget elit massa.</p>
                 </div>
               </div>
             </li>
@@ -180,7 +180,7 @@
               <div class="timeline-container">
                 <div class="title-container heading-medium lead">Title</div>
                 <div class="timeline-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mattis blandit turpis eget elit massa.</p>
                 </div>
               </div>
             </li>
@@ -189,7 +189,7 @@
               <div class="timeline-container">
                 <div class="title-container heading-medium lead">Title</div>
                 <div class="timeline-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mattis blandit turpis eget elit massa.</p>
                 </div>
               </div>
             </li>
@@ -233,7 +233,7 @@
     </div>
     <div class="container mb-5">
       <div class="callout-textbox">
-        <div class="callout-container link-large">
+        <div class="callout-container">
           <div class="callout-title">
             Action 1:
           </div>
@@ -249,6 +249,39 @@
             </ul>
             This work will provide evidence for any future changes to the Premises Standards and the National Construction Code (NCC).
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-5">
+      <div class="media">
+        <div class="media-container">
+          <img :src="$withBase('images/media-sample.png')" alt="">
+          <div class="media-description" data-bs-toggle="collapse" data-bs-target="#mediaDescription" aria-expanded="false" aria-controls="mediaDescription">
+            <a href="#" class="fw-bold me-2">Show Transcript</a>
+            <span class="open" v-html="circleChevronDown"></span>
+            <span class="close" v-html="circleChevronDownFilled"></span>
+          </div>
+          <div id="mediaDescription" class="accordion-collapse collapse">
+            <div class="description-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suscipit malesuada viverra est magna sapien iaculis. Vitae arcu id dignissim enim eget viverra. Integer cras pharetra egestas tempus et volutpat, blandit. Arcu tristique dolor at donec tempor in et dictum vitae. Consectetur ipsum aliquet maecenas elit rhoncus. Cursus vitae duis volutpat condimentum at dignissim rhoncus ut ac. Mauris lobortis lacus tellus risus amet. Vel aliquet bibendum a leo lobortis vulputate. Sit quis quis egestas est amet urna, enim enim.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-5">
+      <div class="blockquote">
+        <div class="blockquote-content left-align">
+          <blockquote>
+            “It’s good to see lots of improvements with technology, but the community are not educated about new types of accessible toilets.  I have never been in one before, and I think that other deafblind people might be in the same situation. There’s no education about the new accessibility.”
+          </blockquote>
+          <cite>- Attribution</cite>
+        </div>
+        <div class="blockquote-content">
+          <blockquote class="left-align">
+            “It’s good to see lots of improvements with technology, but the community are not educated about new types of accessible toilets.  I have never been in one before, and I think that other deafblind people might be in the same situation. There’s no education about the new accessibility.”
+          </blockquote>
+          <cite>- Attribution</cite>
         </div>
       </div>
     </div>
