@@ -303,6 +303,229 @@
   }
 }
 
+.horizontal-timeline {
+  --max_height: 120px;
+  --max_width: 144px;
+  --border_height: 89px;
+  height: 500px;
+  overflow: scroll;
+
+
+  .timeline-title {
+    margin-right: 1rem;
+    padding-bottom: calc(var(--max_height) + 20px);
+  }
+
+  .horizontal-timeline-container {
+    transform: translateY(20%);
+  }
+
+  p {
+    line-height: 24px;
+    max-height: var(--max_height);
+    margin-left: 12.5px;
+    margin-top: var(--border_height);
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    position: relative;
+    display: flex;
+  }
+
+  .timelines-container {
+    display: flex;
+    position: relative;
+    margin-top: 45px;
+
+    .timeline-container {
+      width: var(--max_width);
+      height: var(--max_height);
+      position: relative;
+      border-top: 5px solid $doi-promo;
+    }
+
+    .timeline-container:before {
+      content: "";
+      background: white;
+      display: inline-block;
+      position: absolute;
+      border-radius: 50%;
+      border: 3px solid #3e837c;
+      width: 25px;
+      height: 25px;
+      top: 0;
+      z-index: 10;
+      left: 0;
+      transform: translateY(calc(-50% - 2.5px));
+    }
+
+    .border-container {
+      border-left: 1px solid black;
+      height: var(--border_height);
+      width: 100%;
+      position: absolute;
+      margin-left: 12px;
+    }
+
+    .title-container {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: calc(var(--max_height) + 10px);
+      margin-left: 12.5px;
+    }
+
+    .timeline-content {
+      width: var(--max_width);
+    }
+  }
+
+  li:nth-child(odd) {
+    .border-container {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: var(--max_height);
+    }
+
+    .title-container {
+      width: 200px;
+      position: relative;
+      margin: 1.25rem 0 0 12.5px;
+    }
+
+    .timeline-content {
+      p {
+        overflow: scroll;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: calc(var(--max_height) + var(--border_height));
+        margin-left: 12.5px;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    --max_width: 200px;
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+
+    .timeline-title {
+      padding-bottom: 0;
+    }
+  }
+
+
+}
+
+.vertical-timeline {
+
+  p {
+    margin: 0;
+    padding-top: 10px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    position: relative;
+    display: flex;
+  }
+
+  .timelines-container {
+    position: relative;
+
+    .timeline-container {
+      position: relative;
+      border-left: 5px solid $doi-promo;
+      margin-left: 2rem;
+      padding: 1.5rem 0 1rem 30px;
+    }
+
+    .timeline-container:before {
+      content: '';
+      background: white;
+      display: inline-block;
+      position: absolute;
+      border-radius: 50%;
+      border: 3px solid $doi-secondary;
+      width: 25px;
+      height: 25px;
+      top: 0;
+      z-index: 10;
+      left: 0;
+      transform: translateX(calc(-50% - 2.5px));
+    }
+
+    .border-container {
+      border-bottom: 1px solid black;
+      width: 40px;
+      position: absolute;
+      margin-left: 5rem;
+      margin-top: 0.8rem;
+    }
+
+    .title-container {
+      width: 52px;
+      transform: translateY(-2.5px)
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .timelines-container {
+      margin-top: 6.5rem;
+
+      .timeline-container {
+        padding: 1.5rem 0 1rem 44px;
+      }
+
+      .border-container {
+        width: 89px;
+      }
+    }
+  }
+}
+
+.callout-textbox {
+  .callout-container {
+    background-color: $doi-light-blue;
+    border-radius: 32px;
+    padding: 3rem;
+  }
+  .callout-title {
+    @include heading-extra-small-caps();
+    color: $doi-primary;
+    margin-bottom: 1rem;
+  }
+
+  .callout-subtitle {
+    @include heading-medium();
+    color: $doi-secondary;
+    line-height: 32px;
+    margin-bottom: 1rem;
+  }
+
+  .callout-content {
+    @include heading-extra-small();
+    font-weight: $font-weight-base;
+    color: $gray-600;
+    ul {
+      li::marker {
+        color: currentColor;
+      }
+    }
+  }
+}
+
 .gallery {
 
   .img-outer {

@@ -143,6 +143,115 @@
         </div>
       </form>
     </div>
+    <div class="container mb-5">
+      <div class="horizontal-timeline">
+        <h4 class="timeline-title">How to apply</h4>
+        <div class="horizontal-timeline-container">
+          <ul class="timelines-container heading-extra-small">
+            <li>
+              <div class="border-container"></div>
+              <div class="timeline-container">
+                <div class="title-container heading-medium lead">Title</div>
+                <div class="timeline-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mattis blandit turpis eget elit massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mattis blandit turpis eget elit massa.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mattis blandit turpis eget elit massa.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="border-container"></div>
+              <div class="timeline-container">
+                <div class="title-container heading-medium lead">Title</div>
+                <div class="timeline-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="border-container"></div>
+              <div class="timeline-container">
+                <div class="title-container heading-medium lead">Title</div>
+                <div class="timeline-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="border-container"></div>
+              <div class="timeline-container">
+                <div class="title-container heading-medium lead">Title</div>
+                <div class="timeline-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="border-container"></div>
+              <div class="timeline-container">
+                <div class="title-container heading-medium lead">Title</div>
+                <div class="timeline-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-5">
+      <div class="vertical-timeline">
+        <h4>How to apply</h4>
+        <ul class="timelines-container heading-extra-small">
+          <li>
+            <div class="border-container"></div>
+            <div class="title-container heading-medium lead">Title</div>
+            <div class="timeline-container">
+              <div class="timeline-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mattis blandit turpis eget elit massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mattis blandit turpis eget elit massa.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mattis blandit turpis eget elit massa.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="border-container"></div>
+            <div class="title-container heading-medium lead">Title</div>
+            <div class="timeline-container">
+              <div class="timeline-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mattis blandit turpis eget elit massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mattis blandit turpis eget elit massa.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mattis blandit turpis eget elit massa.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="border-container"></div>
+            <div class="title-container heading-medium lead">Title</div>
+            <div class="timeline-container">
+              <div class="timeline-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mattis blandit turpis eget elit massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mattis blandit turpis eget elit massa.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mattis blandit turpis eget elit massa.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container mb-5">
+      <div class="callout-textbox">
+        <div class="callout-container link-large">
+          <div class="callout-title">
+            Action 1:
+          </div>
+          <div class="callout-subtitle">
+            Investigate the costs and benefits, and whether there is a case for reform, in the key areas impacting the lives of people living with disability
+          </div>
+          <div class="callout-content">
+            The Australian Government, in consultation with the Australian Building Codes Office and the states and territories, undertake regulatory impact analysis on:
+            <ul>
+              <li>whether accessible car-parking ratios are adequate</li>
+              <li>where automatic doors are used, including their use in accessible toilet facilities.</li>
+              <li>the adequacy of dimensions of openings and thoroughfares in the Premises Standards and the opportunity to align with the Disability Standards for Accessible Public Transport 2002 (Transport Standards).</li>
+            </ul>
+            This work will provide evidence for any future changes to the Premises Standards and the National Construction Code (NCC).
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="gallery">
       <div class="container">
         <div class="splide splide-gallery-main">
