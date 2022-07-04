@@ -8,6 +8,7 @@ $doi-secondary: #3e837c;
 $doi-promo: #7ac4c3;
 $doi-action: #a44d8e;
 $doi-dark-blue: #0B253B;
+$doi-light-blue: #E8F4FA;
 $doi-snow: #F8FBFB;
 $doi-light-teal: #ABD7DF;
 $doi-light-teal-30: #E6F3F5;
@@ -16,6 +17,7 @@ $doi-colors: (
   "promo": $doi-promo,
   "action": $doi-action,
   "dark-blue": $doi-dark-blue,
+  "light-blue": $doi-light-blue,
   "snow": $doi-snow,
   "light-teal": $doi-light-teal,
   "light-teal-30": $doi-light-teal-30,
@@ -34,6 +36,8 @@ $gray-800: #212121;
 $gray-900: #121212;
 
 /* Brand Colours */
+$national-measurement-institute: #A6192E;
+
 $brand-colors: (
   "anti-dumping-commission": #202A4C,
   "anti-dumping-review-panel": #202A4C,
@@ -46,7 +50,7 @@ $brand-colors: (
   "industry-growth-centres": #005677,
   "industry-innovation-science": #6334D8,
   "inspiring-aus": #95CDE8,
-  "national-measurement-institute": #A6192E,
+  "national-measurement-institute": $national-measurement-institute,
   "office-chief-economist": #005DAF,
   "office-special-adviser": #005677,
   "pm-prize": #7E2923,

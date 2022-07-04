@@ -157,10 +157,14 @@ h5,
   @include body-medium;
 }
 
-.body-medium-bold {
+@mixin body-medium-bold {
   @include body-medium;
 
   font-weight: $font-weight-bold;
+}
+
+.body-medium-bold {
+  @include body-medium-bold;
 }
 
 @mixin body-small {
@@ -186,10 +190,14 @@ h5,
   line-height: 24px;
 }
 
-.caption-bold {
+@mixin caption-bold {
   font-size: 15px;
   font-weight: $font-weight-bold;
   line-height: 24px;
+}
+
+.caption-bold {
+  @include caption-bold;
 }
 
 .link-large {

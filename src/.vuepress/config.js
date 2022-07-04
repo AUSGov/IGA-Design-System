@@ -127,11 +127,13 @@ module.exports = {
               },
               {
                 text: 'Event card and containers',
-                link: '/components/cards/event'
+                link: '/components/cards/event',
+                componentsLink: '/components-html/cards#event-card',
               },
               {
                 text: 'Filtered landing page card',
-                link: '/components/cards/filtered-landing-page'
+                link: '/components/cards/filtered-landing-page',
+                componentsLink: '/components-html/cards#filtered-landing-page-card',
               },
               {
                 text: 'Bio card',
@@ -140,7 +142,8 @@ module.exports = {
               },
               {
                 text: 'Request for quote (NMI)',
-                link: '/components/cards/request-for-quote'
+                link: '/components/cards/request-for-quote',
+                componentsLink: '/components-html/cards#rfq-card',
               },
             ]
           },

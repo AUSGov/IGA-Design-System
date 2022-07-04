@@ -62,7 +62,7 @@
           <!-- Medium (base) and extra small card -->
           <div class="row g-4">
             <div class="col-lg-6">
-              <div class="card card">
+              <div class="card">
                 <div class="card-img-top">
                   <div class="img-wrap">
                     <img :src="$withBase('images/cards-sample.png')" alt="">
@@ -225,6 +225,35 @@
                   <li class="list-group-item"><span v-html="location" class="icon"></span>Location, Online</li>
                   <li class="list-group-item"><span v-html="home" class="icon"></span>Entity Name</li>
                 </ul>
+              </div>
+            </div>
+          </div>
+          <h2 id="filtered-landing-page-card">Filtered Landing Page Card</h2>
+          <div class="card card--inline">
+            <div class="row">
+              <div class="col-8">
+                <div class="card-body">
+                  <h3 class="card-title">Dark Energy Survey Evolves or a longer title with three of more lines more lines more lines more lines </h3>
+                  <p class="card-text">Ship of the imagination star stuff harvesting star light descended from astronomers finite but unbounded realm of the galaxies.</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <img :src="$withBase('images/cards-sample.png')" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="card card--inline">
+            <div class="row">
+              <div class="col-8">
+                <div class="card-body">
+                  <h4 class="card-subtitle">Feb 2022 / <span class="text-gray-500">Industry Growth Centres</span></h4>
+                  <h3 class="card-title">Dark Energy Survey Evolves or a longer title with three of more lines more lines more lines more lines </h3>
+                  <p class="card-text">Ship of the imagination star stuff harvesting star light descended from astronomers finite but unbounded realm of the galaxies.</p>
+                  <a href="#" class="card-link link-icon">Link <span v-html="linkArrowRight"></span></a>
+                </div>
+              </div>
+              <div class="col-4">
+                <img :src="$withBase('images/cards-sample.png')" alt="">
               </div>
             </div>
           </div>
@@ -549,13 +578,198 @@
           </div>
         </div>
       </div>
-      <div class="card featured-card featured-card--no-bg featured-card--right" style="background-image: url('/images/cards-sample-2.png');">
-        <div class="card-body">
-          <h4 class="card-title">We drive economic growth and job creation for all Australians.</h4>
-          <h5 class="card-subtitle">2 June 2022</h5>
-          <div class="line-wrap">
-            <a href="#" class="link-icon">Already been achieved in the transition, already been achieved in the transition is achieved <span v-html="linkArrowRight"></span></a>
+      <div class="pb-5">
+        <div class="card featured-card featured-card--no-bg featured-card--right" style="background-image: url('/images/cards-sample-2.png');">
+          <div class="card-body">
+            <h4 class="card-title">We drive economic growth and job creation for all Australians.</h4>
+            <h5 class="card-subtitle">2 June 2022</h5>
+            <div class="line-wrap">
+              <a href="#" class="link-icon">Already been achieved in the transition, already been achieved in the transition is achieved <span v-html="linkArrowRight"></span></a>
+            </div>
           </div>
+        </div>
+      </div>
+      <h2 id="event-card">Event Card</h2>
+      <div class="row pb-5">
+        <div class="col-6 col-lg-3">
+          <a href="#" class="card event-card">
+            <div class="img-outer">
+              <div class="img-wrap">
+                <img src="/images/cards-sample-2.png" alt="">
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-subtitle">14 Feb 2022</h5>
+              <div class="card-title">
+                <span>Dark Energy Survey Evolves or a longer title with three lines</span>
+                <span v-html="linkArrowRight"></span>
+              </div>
+            </div>
+            <div class="card-summary">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus amet, duis nisl facilisi. Cursus massa diam volutpat vitae vulputate tellus nibh. Faucibus amet, duis nisl facilisi. Cursus massa diam volutpat vitae vulputate tellus nibh.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-lg-3">
+          <a href="#" class="card event-card">
+            <div class="img-outer">
+              <div class="img-wrap">
+                <img src="/images/cards-sample-2.png" alt="">
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-subtitle">14 Feb 2022</h5>
+              <div class="card-title">
+                <span>Dark Energy Survey Evolves or a longer title with three lines</span>
+                <span v-html="linkArrowRight"></span>
+              </div>
+            </div>
+            <div class="card-summary">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus amet, duis nisl facilisi. Cursus massa diam volutpat vitae vulputate tellus nibh. Faucibus amet, duis nisl facilisi. Cursus massa diam volutpat vitae vulputate tellus nibh.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <h2 id="promotional-cards">Promotional Card</h2>
+    </div>
+    <div class="promotional-cards bg-promo pb-5">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <div class="col-6 col-lg-3">
+            <div class="card promotional-card">
+              <div class="card-img-top">
+                <div class="img-wrap">
+                  <img :src="$withBase('images/cards-sample-2.png')" alt="">
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-subtitle">2 June 2022</div>
+                <a href="#" class="card-title">Already been achieved in the transition, already been achieved today<span class="ms-2" v-html="linkArrowRight"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="card promotional-card">
+              <div class="card-img-top">
+                <div class="img-wrap">
+                  <img :src="$withBase('images/cards-sample-2.png')" alt="">
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-subtitle">2 June 2022</div>
+                <a href="#" class="card-title">Already been achieved in the transition, already been achieved today<span class="ms-2" v-html="linkArrowRight"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="card promotional-card">
+              <div class="card-img-top">
+                <div class="img-wrap">
+                  <img :src="$withBase('images/cards-sample-2.png')" alt="">
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-subtitle">2 June 2022</div>
+                <a href="#" class="card-title">Already been achieved in the transition, already been achieved today<span class="ms-2" v-html="linkArrowRight"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2 id="snippet-card">Snippet Card</h2>
+      <div class="pb-5">
+        <div class="card snippet-card">
+          <div class="card-header">
+            Featured
+          </div>
+          <div class="card-body">
+            <div class="card-title">Modern Manufacturing Initiative: Manufacturing Translation Stream</div>
+            <div class="card-text">This stream helps Australian manufacturers turn good ideas into commercial outcomes. This stream helps Australian manufacturers turn good ideas into commercial outcomes.
+              <a href="#">Read more</a>
+            </div>
+          </div>
+          <a href="#" class="card-featured-link">Find manufacturing translation stream guidelines on business.gov.au<span class="icon" v-html="linkArrowRight"></span></a>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#" class="link-icon link-secondary">Find out more about manufacturing<span v-html="linkArrowRight"></span></a></li>
+            <li class="list-group-item"><a href="#" class="link-icon link-secondary">Find Manufacturing news<span v-html="linkArrowRight"></span></a></li>
+            <li class="list-group-item"><a href="#" class="link-icon link-secondary">Find Manufacturing publications<span v-html="linkArrowRight"></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <h2 id="rfq-card">RFQ Card</h2>
+      <div class="pb-5">
+        <div class="card rfq-card">
+          <div class="card-img-top">
+            <div class="img-wrap">
+              <img :src="$withBase('images/cards-sample-2.png')" alt="">
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Want to know more?<br>Contact us.</div>
+            <div class="card-subtitle">Request a customised acoustic and vibration measurement quote.</div>
+            <a href="#" class="btn btn-primary">Quotation request</a>
+          </div>
+        </div>
+      </div>
+      <div class="pb-5">
+        <div class="card rfq-card rfq-card--no-img">
+          <div class="card-body">
+            <div class="card-content">
+              <div class="card-title">Want to know more? Contact us.</div>
+              <div class="card-subtitle">Request a customised acoustic and vibration measurement quote.</div>
+            </div>
+            <a href="#" class="btn btn-quote">Quotation request</a>
+          </div>
+        </div>
+      </div>
+      <h2 id="adc-card">ADC Card</h2>
+      <div class="pb-5">
+        <div class="card adc-card">
+          <div class="card-header-wrap">
+            <div class="card-header">Updated</div>
+            <span class="timestamp">Last updated: 18 March 2022</span>
+          </div>
+          <div class="card-body">
+            <table>
+              <thead>
+              <tr>
+                <th>Commodities</th>
+                <th>Case Type</th>
+                <th>Country</th>
+                <th>Public Record</th>
+                <th>Next Milestone</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td><span class="label">Commodities:</span>Aluminium extrusions</td>
+                <td><span class="label">Case Type:</span>591</td>
+                <td><span class="label">Country:</span>Continuation</td>
+                <td><span class="label">Public Record:</span>Malaysia, Vietnam</td>
+                <td><span class="label">Next Milestone:</span>Final report</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="cta-wrap">
+            <a href="#" class="btn btn-primary">Open case</a>
+          </div>
+        </div>
+      </div>
+      <div class="pb-5">
+        <h2 id="search-landing-card">Search landing card</h2>
+        <div class="card search-landing-card">
+          <h2 class="heading-medium">Dark Energy Survey Evolves or a longer title with three of more lines</h2>
+          <h2 class="body-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis ut habitant sed egestas. Sagittis, phasellus dui integer at. Pretium leo enim purus nunc vitae, at tellus. Justo mi amet tellus massa dui lectus. Odio elementum justo, commodo ullamcorper facilisis nec. Sit ut non diam et.</h2>
+          <div class="body-small text-gray-500">This is a part of publication page</div>
+          <div class="body-small text-gray-500">Date published: 21 December 2021 | Date updated: 13 March 2022</div>
+          <ul class="tags">
+            <li>Entity Tag</li>
+            <li>Topic Tag</li>
+            <li>Other Tags</li>
+          </ul>
         </div>
       </div>
     </div>
