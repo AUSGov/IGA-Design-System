@@ -104,8 +104,16 @@
     .table-header {
       white-space: nowrap;
 
-      &.hide {
-        display: none;
+      &.main {
+        @include media-breakpoint-down(lg) {
+          display: none;
+        }
+      }
+
+      &.mobile {
+        @include media-breakpoint-up(lg) {
+          display: none;
+        }
       }
     }
 
@@ -130,7 +138,7 @@
       }
 
       .content-title {
-        &.hide {
+        @include media-breakpoint-up(lg) {
           display: none;
         }
       }
@@ -165,6 +173,7 @@
       background: transparent;
       margin-right: 0.25rem;
       margin-bottom: 0.5rem;
+
       span {
         color: $gray-600;
         display: block;
