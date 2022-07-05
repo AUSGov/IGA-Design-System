@@ -6,20 +6,20 @@ $body-color: $gray-700;
 
 /*  Breakpoints, Containers, Columns and Gutters */
 $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1440px
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px
 );
 
 $container-max-widths: (
-  sm: 544px,
-  md: 720px,
-  lg: 944px,
-  xl: 1104px,
-  xxl: 1296px
+        sm: 544px,
+        md: 720px,
+        lg: 944px,
+        xl: 1104px,
+        xxl: 1296px
 );
 
 // Container padding
