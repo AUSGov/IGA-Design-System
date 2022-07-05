@@ -222,10 +222,6 @@
 
 <script>
   import linkArrowRight from '../../public/icons/link-arrow-right.svg?raw'
-  import calendar from '../../public/icons/calendar.svg?raw'
-  import gauge from '../../public/icons/gauge.svg?raw'
-  import location from '../../public/icons/location.svg?raw'
-  import home from '../../public/icons/home-outline.svg?raw'
   import NewsCard from './components/NewsCard.vue'
   import EditorialCard from './components/EditorialCard.vue'
   import EditorialCardInline from './components/EditorialCardInline.vue'
@@ -261,10 +257,6 @@
     data () {
       return {
         linkArrowRight,
-        calendar,
-        gauge,
-        location,
-        home
       }
     }
   }
