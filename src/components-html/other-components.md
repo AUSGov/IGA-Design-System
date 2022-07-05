@@ -1,6 +1,6 @@
 ---
 lang: en-US
-title: Filters
+title: Other Components
 description:
 pageHeader: true
 layout: DoiOtherComponents

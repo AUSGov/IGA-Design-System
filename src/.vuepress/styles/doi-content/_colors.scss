@@ -2,6 +2,10 @@
   .bg-#{$slug} {
     background-color: $color;
   }
+
+  $table-variants: map-merge($table-variants, (
+    $slug: $color
+  ))
 }
 
 @each $slug, $color in $grays {

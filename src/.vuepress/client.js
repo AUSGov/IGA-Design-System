@@ -10,6 +10,8 @@ import DoiContentCards from './theme/layouts/DoiContentCards.vue'
 
 // page patterns
 import DoiNewsHomepage from './theme/layouts/page-patterns/DoiNewsHomepage.vue'
+import DoiPublicationsHomepage from './theme/layouts/page-patterns/DoiPublicationsHomepage.vue'
+import DoiPublicationsSinglePage from './theme/layouts/page-patterns/DoiPublicationsSinglePage.vue'
 
 export default defineClientConfig({
   enhance({ app }) {
@@ -24,6 +26,8 @@ export default defineClientConfig({
 
     // page patterns
     app.component('DoiNewsHomepage', DoiNewsHomepage)
+    app.component('DoiPublicationsHomepage', DoiPublicationsHomepage)
+    app.component('DoiPublicationsSinglePage', DoiPublicationsSinglePage)
 
     app.directive('inline-svg', {
       updated: (element) => {
