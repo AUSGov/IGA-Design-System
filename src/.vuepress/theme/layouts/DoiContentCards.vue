@@ -590,14 +590,9 @@
         </div>
       </div>
       <h2 id="event-card">Event Card</h2>
-      <div class="row pb-5">
-        <div class="col-6 col-lg-3">
-          <a href="#" class="card event-card">
-            <div class="img-outer">
-              <div class="img-wrap">
-                <img src="/images/cards-sample-2.png" alt="">
-              </div>
-            </div>
+      <div class="row pb-5 g-4">
+        <div class="col-md-6 col-lg-3">
+          <a href="#" class="card event-card" style="background-image: url('/images/cards-sample-2.png');">
             <div class="card-body">
               <h5 class="card-subtitle">14 Feb 2022</h5>
               <div class="card-title">
@@ -610,13 +605,8 @@
             </div>
           </a>
         </div>
-        <div class="col-6 col-lg-3">
-          <a href="#" class="card event-card">
-            <div class="img-outer">
-              <div class="img-wrap">
-                <img src="/images/cards-sample-2.png" alt="">
-              </div>
-            </div>
+        <div class="col-md-6 col-lg-3">
+          <a href="#" class="card event-card" style="background-image: url('/images/cards-sample-2.png');">
             <div class="card-body">
               <h5 class="card-subtitle">14 Feb 2022</h5>
               <div class="card-title">

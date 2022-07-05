@@ -8,6 +8,9 @@ import DoiContentNavigation from './theme/layouts/DoiContentNavigation.vue'
 import DoiOtherComponents from './theme/layouts/DoiOtherComponents.vue'
 import DoiContentCards from './theme/layouts/DoiContentCards.vue'
 
+// page patterns
+import DoiNewsHomepage from './theme/layouts/page-patterns/DoiNewsHomepage.vue'
+
 export default defineClientConfig({
   enhance({ app }) {
     app.component('ParentPage', ParentPage)
@@ -18,6 +21,9 @@ export default defineClientConfig({
     app.component('DoiContentNavigation', DoiContentNavigation)
     app.component('DoiOtherComponents', DoiOtherComponents)
     app.component('DoiContentCards', DoiContentCards)
+
+    // page patterns
+    app.component('DoiNewsHomepage', DoiNewsHomepage)
 
     app.directive('inline-svg', {
       updated: (element) => {
