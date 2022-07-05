@@ -30,10 +30,9 @@
       $buttonSubmit.addClass('hide')
     })
     search_modify()
-  })
-
-  $(window).resize(function() {
-    search_modify()
+    $(window).resize(function() {
+      search_modify()
+    })
   })
 
   function search_modify() {

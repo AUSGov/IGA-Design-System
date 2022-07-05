@@ -50,6 +50,8 @@
     $('select').selectpicker()
     $('button').removeClass('btn-light')
     category_wrap()
+
+    $(window).resize(category_wrap)
   })
 
   const category_wrap = () => {
@@ -86,6 +88,4 @@
       $row.removeClass('row-cols-1')
     }
   }
-
-  $(window).resize(category_wrap)
 </script>
