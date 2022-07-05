@@ -306,6 +306,9 @@ module.exports = {
         compilerOptions: {
           whitespace: 'preserve'
         }
+      },
+      build: {
+        emptyOutDir: false
       }
     }
   })
