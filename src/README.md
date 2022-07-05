@@ -25,13 +25,13 @@ Our design system is consistent, but flexible; integrated, but modular. Integrat
 
 We incorporate the six principles in our design system:
 
-<BigList :lists="[
-'Information integrity',
-'Content management',
-'User focus',
-'Digital first',
-'Accessibility',
-'Readability',
+<BigList :list="[
+    'Information integrity',
+    'Content management',
+    'User focus',
+    'Digital first',
+    'Accessibility',
+    'Readability'
 ]"/>
 
 ### How this translates to our design system
@@ -46,9 +46,11 @@ To visually capture these six principles, we’ve defined key design system prin
 
 ## Related Links
 
-<div class="d-flex flex-nowrap justify-content-between border-top border-bottom py-1 mt-1">
-     <div class="me-2">Australian Government style manual</div>
-     <div>
-          <a href="#" class="d-flex align-items-center"><span class="me-1">How people find information</span><ArrowRight/></a>
-     </div>
-</div>
+<RowLinkList :list="[
+    {
+        text: 'Australian Government style manual',
+        linkUrl: 'https://www.stylemanual.gov.au/writing-and-designing-content/findable-content/how-people-find-information',
+        linkText: 'How people find information',
+        linkExternal: true
+    }
+]" />

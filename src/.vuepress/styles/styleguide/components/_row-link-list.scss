@@ -1,0 +1,31 @@
+.c-row-link-list {
+  margin-bottom: 2rem;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+
+      .text {
+        margin-right: 1rem;
+      }
+
+      a {
+        display: flex;
+
+        .text {
+          margin-right: 0.5rem;
+        }
+
+        &.link-internal .icon svg {
+          width: 16px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
