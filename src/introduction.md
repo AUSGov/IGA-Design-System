@@ -9,12 +9,12 @@ pageHeader: true
 
 <p class="h4 fw-normal">Our digital front door guides users through an integrated and accessible experience, providing context to the breadth of news, stories, achievements, and engagement opportunities.</p>
 
-<p class="h4 fw-normal">This modular approach brings to life our information architecture that prioritises critical and timely information, while also presenting information according to user needs and interests.</p>
+<p class="h4 fw-normal mb-5">This modular approach brings to life our information architecture that prioritises critical and timely information, while also presenting information according to user needs and interests.</p>
 
 <Cards :contents="[
-     { image: '', title: 'Foundations', linkUrl: '#', linkText: 'Link' },
-     { image: '', title: 'Foundations', linkUrl: '#', linkText: 'Link' },
-     { image: '', title: 'Foundations', linkUrl: '#', linkText: 'Link' }
+     { title: 'Foundations', linkUrl: '/foundations', linkText: 'Link', bgColor: '#000' },
+     { title: 'Components', linkUrl: '/components', linkText: 'Link' },
+     { title: 'Page Patterns', linkUrl: '/page-patterns', linkText: 'Link' }
 ]"/>
 
 ## Principles

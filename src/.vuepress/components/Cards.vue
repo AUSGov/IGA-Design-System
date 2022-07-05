@@ -2,7 +2,7 @@
   <div class="c-cards">
     <div class="row g-4">
       <div v-for="card in contents" class="col-md-6 col-lg-4">
-        <Card :image="card.image" :title="card.title" :components-link="card.componentsLink" :link-url="card.linkUrl" :link-text="card.linkText" :compact="compact"/>
+        <Card v-bind.props="card" :compact="compact"/>
       </div>
     </div>
   </div>

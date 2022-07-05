@@ -20,14 +20,19 @@ Please use Node >= 16
 * [Styleguide Website Design](https://www.figma.com/file/QJl1NyuLPtW2HIMgWyjWTv/Dept.-of-Industry---Design-System?node-id=1332%3A6545)
 
 ## HTML Templates
+Can be found on the Page Patterns link in the main header
 
 ## Styles and Scripts
 
 ### Within the context of the Styleguide Site
+1. All styles that relate to the **design system** are placed under the /src/.vuepress/styles/bootstrap directory.  
+2. All styles that are only for the **styleguide website** are placed under the /src/.vuepress/styles/styleguide directory 
 
 ### Bundling and integration
 
-## Deploy to github pages
-Currently you can do a production build and simply push this to github and then create a new deployment.
+`npm run bundle` will create new app.js and app.css bundles in the /dist directory.  These can be integrated directly into a website and should provide all that is needed to integrate the design system.
 
-If you want to setup a push to deploy scenario you can find examples [here](https://v2.vuepress.vuejs.org/guide/deployment.html#github-pages).
+## Deploy to github pages
+Currently, you can do a production and bundle build and simply push this to github to create a new deployment of the pages.
+
+If you want to setup a push to deploy scenario where the builds happen remotely you can find examples [here](https://v2.vuepress.vuejs.org/guide/deployment.html#github-pages).

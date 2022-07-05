@@ -36,7 +36,7 @@ module.exports = {
       },
       {
         text: 'Foundations',
-        link: '/foundations/colour-palette',
+        link: '/foundations',
         children: [
           {
             text: 'Colour Palette',
@@ -50,11 +50,15 @@ module.exports = {
             text: 'CTAs and links',
             link: '/foundations/cta-links',
           },
+          {
+            text: 'Forms',
+            link: '/foundations/forms',
+          },
         ],
       },
       {
         text: 'Components',
-        link: '/components/',
+        link: '/components',
         children: [
           {
             text: 'Headers and footers',
