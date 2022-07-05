@@ -1,9 +1,6 @@
 <template>
   <div class="card c-card" :class="{ 'c-card--compact': compact }">
-    <template v-if="!compact">
-      <div v-if="image" class="card-img-top img-wrap"><img :src="image" :alt="title"></div>
-      <div v-else class="card-img-top" :style="{ backgroundColor }"></div>
-    </template>
+    <div v-if="!compact && image" class="card-img-top img-wrap"><img :src="image" :alt="title"></div>
     <div class="card-body">
       <p class="h4">{{ title }}</p>
       <div v-if="text" class="text">{{ text }}</div>
@@ -42,10 +39,6 @@
       compact: {
         type: Boolean,
         default: false
-      },
-      bgColor: {
-        type: String,
-        default: '#ECF1F8'
       },
       text: {
         type: String,

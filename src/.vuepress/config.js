@@ -32,7 +32,17 @@ module.exports = {
       // nested group - max depth is 2
       {
         text: 'Introduction',
-        link: '/introduction',
+        link: '/',
+        children: [
+          {
+            text: 'Introduction',
+            link: '/'
+          },
+          {
+            text: 'Getting Started',
+            link: '/introduction/getting-started'
+          }
+        ]
       },
       {
         text: 'Foundations',

@@ -1,6 +1,6 @@
 <template>
   <div class="c-cards">
-    <div class="row g-4">
+    <div class="row">
       <div v-for="card in contents" class="col-md-6 col-lg-4">
         <Card v-bind.props="card" :compact="compact"/>
       </div>

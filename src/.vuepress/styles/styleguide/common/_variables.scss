@@ -30,6 +30,14 @@ $card-border-radius: 12px;
 /* Spacings */
 $component-spacing: 4rem;
 
+$spacer: 1rem;
+$spacers: (
+    1: $spacer,
+    2: $spacer * 1.5,
+    3: $spacer * 3,
+    4: $spacer * 4,
+);
+
 /* Font sizes */
 $font-size-base: 1.125rem;
 $h1-font-size: $font-size-base * 3.333;
