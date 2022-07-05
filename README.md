@@ -1,4 +1,4 @@
-# DOI Style Guide Site
+# IGA Deisgn System Style Guide
 
 ## Installation and build tools
 

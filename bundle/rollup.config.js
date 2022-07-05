@@ -6,7 +6,7 @@ import { uglify } from 'rollup-plugin-uglify'
 export default {
   input: 'bundle/index.js',
   output: {
-    file: 'dist/app.js',
+    file: 'docs/dist/app.js',
     format: 'iife'
   },
   plugins: [

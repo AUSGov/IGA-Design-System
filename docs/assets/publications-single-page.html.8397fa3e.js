@@ -1,0 +1,2 @@
+const data = JSON.parse('{"key":"v-45d81be4","path":"/page-patterns/publications-single-page.html","title":"Publications Single page","lang":"en-US","frontmatter":{"lang":"en-US","title":"Publications Single page","description":null,"pageHeader":true,"layout":"DoiPublicationsSinglePage"},"excerpt":"","headers":[],"git":{"updatedTime":1656999576000},"filePathRelative":"page-patterns/publications-single-page.md"}');
+export { data };

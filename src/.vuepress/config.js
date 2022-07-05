@@ -11,7 +11,7 @@ module.exports = {
   lang: 'en-US',
   title: 'Department of Industry',
   description: 'Department of Industry style guide.',
-  base: process.env.NODE_ENV === 'production' ? '/DOI-Styleguide/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/iga-design-system/' : '/',
 
   // theme and its config
   theme: localTheme({
