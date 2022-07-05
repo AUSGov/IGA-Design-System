@@ -14,8 +14,7 @@ $container-small-max-widths: (
   }
 }
 
-.container,
-.container-small {
+.container {
   @include media-breakpoint-up(md) {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -29,5 +28,12 @@ $container-small-max-widths: (
   @include media-breakpoint-up(xxl) {
     padding-left: 4.5rem;
     padding-right: 4.5rem;
+  }
+}
+
+.container-small {
+  @include media-breakpoint-up(md) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
