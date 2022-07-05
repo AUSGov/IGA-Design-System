@@ -23,6 +23,7 @@
   </div>
 </template>
 <script setup>
+//TODO refactor this to only use css where possible
 import { onMounted } from 'vue';
 onMounted(() => {
     //table
