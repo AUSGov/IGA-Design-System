@@ -39,9 +39,9 @@ We incorporate the six principles in our design system:
 To visually capture these six principles, we’ve defined key design system principles:
 
 <Columns :contents="[
-{ title: 'People First', text: 'Our UI has no needless parts. Each element contributes to an accessible, scalable experience.<br/><br/>We place critical information in the use\'s focus and guide them with hierarchy and curation, using intuitive text styles, interactions, component designs, and page patterns.' },
-{ title: 'Interconnected', text: 'Our design system connects relevant, topic-based content with contextual navigation patterns and integrated hierarchy.<br/><br/>Hub, topic and sub-topic pages relate content and allow users to self-select, drill further into information, and discover interests along the way.' },
-{ title: 'Transparent', text: 'Our page patterns emphasise critical information, then contextually weave in news, publications, and events.<br/><br/>We curate related content through modular cards and offer users intuitive navigation patterns to search for and explore topics of interest.' },
+    { title: 'People First', text: 'Our UI has no needless parts. Each element contributes to an accessible, scalable experience.<br/><br/>We place critical information in the use\'s focus and guide them with hierarchy and curation, using intuitive text styles, interactions, component designs, and page patterns.' },
+    { title: 'Interconnected', text: 'Our design system connects relevant, topic-based content with contextual navigation patterns and integrated hierarchy.<br/><br/>Hub, topic and sub-topic pages relate content and allow users to self-select, drill further into information, and discover interests along the way.' },
+    { title: 'Transparent', text: 'Our page patterns emphasise critical information, then contextually weave in news, publications, and events.<br/><br/>We curate related content through modular cards and offer users intuitive navigation patterns to search for and explore topics of interest.' },
 ]"/>
 
 ## Related Links

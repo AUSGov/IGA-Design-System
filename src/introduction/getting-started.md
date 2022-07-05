@@ -9,9 +9,24 @@ pageHeader: true
 
 ## How to use the site
 
-## How to include the styles and js dependencies
-
 ## Conventions
-Within the styleguide site all content that should be styled like industry.gov.au should have a parent with the `.doi-content` class.  All the styles for 
+Within the styleguide site all content that should be styled as on industry.gov.au should have a parent with the `.doi-content` class.  All the styles for this are in `/src/.vuepress/doi-content`.
 
-## Packaged Files
+Styles exclusive to the styleguide site itself are in `/src/.vuepress/styleguide`
+
+## Bundled files
+Are in the `/dist` directory
+
+## How to include the styles and js dependencies
+When integrating the styleguide include the `app.css` and `app.js` files from the /dist directory and then include the following js dependencies before `app.js`.
+
+```html
+<link rel="stylesheet" href="/dist/app.css">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js"></script>
+
+<script src="/dist/app.js"></script>
+```

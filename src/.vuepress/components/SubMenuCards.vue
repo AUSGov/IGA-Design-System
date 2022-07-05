@@ -6,8 +6,6 @@
   const themeLocale = useThemeLocaleData()
   const route = useRoute()
 
-  console.log(themeLocale)
-
   const shouldBeActiveInSubpath = (item) => {
     const localeKeys = Object.keys(item.value.locales)
     if (localeKeys.length) {
@@ -28,10 +26,8 @@
     return isActiveInSubpath(child)
   }
 
-  // console.log('$front', frontmatter)
-  console.log('children', themeLocale)
   const subMenu = computed(() => {
-    const parentMenu = themeLocale.value.navbar.find(item => item.children && isActive(item))
+    const parentMenu = [...themeLocale.value.navbar].reverse().find(item => item.children && isActive(item)) // Flip it so that it doesn't accidentally match introduction -> /
     if (!parentMenu) {
       return null
     }

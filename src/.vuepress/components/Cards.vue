@@ -1,7 +1,7 @@
 <template>
   <div class="c-cards">
     <div class="row">
-      <div v-for="card in contents" class="col-md-6 col-lg-4">
+      <div v-for="card in contents" class="col-md-6 col-lg-4 mb-2">
         <Card v-bind.props="card" :compact="compact"/>
       </div>
     </div>

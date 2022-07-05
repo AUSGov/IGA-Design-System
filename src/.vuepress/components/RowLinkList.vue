@@ -15,5 +15,5 @@
 import LinkArrowRight from '../public/icons/link-arrow-right.svg?raw'
 import LinkExternal from '../public/icons/link-external.svg?raw'
 
-const { list } = defineProps({ list: Object })
+const { list } = defineProps({ list: Array })
 </script>
