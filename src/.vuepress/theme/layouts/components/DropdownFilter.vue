@@ -44,8 +44,7 @@
   import close from '../../../public/icons/close.svg?raw'
   import circleCross from '../../../public/icons/circle-cross.svg?raw'
   import arrowRight from '../../../public/icons/arrow-long-right.svg?raw'
-  import { onMounted } from 'vue';
-
+  import { onMounted } from 'vue'
 
   onMounted(() => {
     $('select').selectpicker()
@@ -53,11 +52,7 @@
     category_wrap()
   })
 
-  $(window).resize(function() {
-    category_wrap()
-  })
-
-  function category_wrap() {
+  const category_wrap = () => {
     const width = $(window).width()
     const $filterButton = $('#category-filter-button')
     const $filterModal = $('#filter-modal')
@@ -92,4 +87,5 @@
     }
   }
 
+  $(window).resize(category_wrap)
 </script>

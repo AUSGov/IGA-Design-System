@@ -29,12 +29,8 @@
   }
 
   const navbarConfig = useNavbarConfig()
-  const navbarLinks = computed(() => {
-    console.log('computed navbarLinks', navbarConfig.value)
-    return [
-      ...navbarConfig.value
-    ].reverse() // Flip it so that it doesn't accidentally match introduction -> /
-  })
+  const navbarLinks = computed(() => [...navbarConfig.value].reverse())
+  // Flip it so that it doesn't accidentally match introduction ->
 
   const route = useRoute()
   const site = useSiteData()
@@ -81,7 +77,6 @@
       }
       // active child page
       for (const child of item.children) {
-        console.log('item', item)
         if (isActive(child)) {
           return item
         }

@@ -58,7 +58,7 @@ export default {
        * @returns {Element|undefined}
        */
       getLine: function (element, number) {
-        console.log('getLine', element, number)
+        // console.log('getLine', element, number)
         if (element.tagName !== 'PRE' || !element.classList.contains(PLUGIN_NAME)) {
           return
         }

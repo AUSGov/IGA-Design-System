@@ -21,7 +21,6 @@
   onMounted(() => {
     const $input = $('#search-input')
     $input.keyup(function() {
-      console.log('in here')
       const $input = $('#search-input')
       const $buttonSubmit = $('#button-submit')
       if($input.val() !== '') {
