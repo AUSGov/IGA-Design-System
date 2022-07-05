@@ -15,9 +15,9 @@ module.exports = {
 
   // theme and its config
   theme: localTheme({
-    logo: '/images/diser-logo.svg',
-    logoDark: '/images/diser-logo.svg',
-    // darkMode: false,
+    logo: '/images/DISR-logo.pnh',
+    logoDark: '/images/DISR-logo-white.png',
+    darkMode: false,
     contributors: false,
     themePlugins: {
       activeHeaderLinks: true,
