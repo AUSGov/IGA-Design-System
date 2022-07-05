@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "dev": "vuepress dev src --debug --open",
-    "build": "vuepress build src --dest docs --debug",
+    "build": "vuepress build src --dest docs",
     "bundle": "rollup --config bundle/rollup.config.js",
     "prod": "npm run build && npm run bundle"
   },
