@@ -18,7 +18,7 @@ Styles exclusive to the styleguide site itself are in `/src/.vuepress/styleguide
 Are in the `/dist` directory
 
 ## How to include the styles and js dependencies
-When integrating the styleguide include the `app.css` and `app.js` files from the /dist directory and then include the following js dependencies before `app.js`.
+When integrating the styleguide include the `app.css` and `app.js` files from the /dist directory ensuring that you include the other js dependencies before `app.js`.
 
 ```html
 <link rel="stylesheet" href="/dist/app.css">
