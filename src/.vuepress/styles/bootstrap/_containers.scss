@@ -1,0 +1,33 @@
+$container-small-max-widths: (
+  sm: 544px,
+  md: 720px,
+  lg: 856px,
+);
+
+.container-small {
+  @include make-container();
+
+  @each $breakpoint, $container-max-width in $container-small-max-widths {
+    @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+      max-width: $container-max-width;
+    }
+  }
+}
+
+.container,
+.container-small {
+  @include media-breakpoint-up(md) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+  }
+}
