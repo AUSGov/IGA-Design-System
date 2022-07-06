@@ -20,8 +20,10 @@
   padding: var(--navbar-padding-v) var(--navbar-padding-h);
 
   .logo {
-    height: var(--navbar-line-height);
+    height: 72px;
     vertical-align: top;
+    position: relative;
+    top: -12px;
   }
 
   .site-name {

@@ -9,9 +9,7 @@
         <div class="mobile-close d-lg-none" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"><span class="icon" v-html="close"></span></div>
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="whoWeAre" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Who we are
-            </a>
+            <a class="nav-link dropdown-toggle" href="#" id="whoWeAre" role="button" data-bs-toggle="dropdown" aria-expanded="false">Who we are</a>
             <div class="dropdown-menu" aria-labelledby="whoWeAre">
               <div class="row main-row">
                 <div class="col-md-6 col-lg-3">
@@ -97,22 +95,10 @@
   </nav>
 </template>
 
-<script>
-  import close from '../../../public/icons/close.svg?raw'
-  import logo from '../../../public/images/diser-logo-black.svg?raw'
-  import search from '../../../public/icons/search.svg?raw'
-  import hamburger from '../../../public/icons/hamburger.svg?raw'
-  import linkArrowRight from '../../../public/icons/link-arrow-right.svg?raw'
-
-  export default {
-    data () {
-      return {
-        close,
-        logo,
-        search,
-        hamburger,
-        linkArrowRight
-      }
-    }
-  }
+<script setup>
+import close from '../../../public/icons/close.svg?raw'
+import logo from '../../../public/images/DISR-logo-inverted.png'
+import search from '../../../public/icons/search.svg?raw'
+import hamburger from '../../../public/icons/hamburger.svg?raw'
+import linkArrowRight from '../../../public/icons/link-arrow-right.svg?raw'
 </script>
