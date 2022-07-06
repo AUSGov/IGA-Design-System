@@ -3,16 +3,16 @@
     <table class="table table-striped">
       <thead :class="classes" class="body-small">
       <tr class="table-header main">
-        <td v-for="header in tableHeaders" :key="header" class="header-title">{{ header }}</td>
+        <td v-for="header in headers" :key="header" class="header-title">{{ header }}</td>
       </tr>
       <tr class="table-header mobile">
         <td>Table Title</td>
       </tr>
       </thead>
       <tbody>
-      <tr v-for="content in tableContents" :key="content" class="body-small">
-        <td v-for="key in Object.keys(content)" :key="key" class="table-content">
-          <span class="content-title">{{ key }}: </span>{{ content[key] }}
+      <tr v-for="(content, rowIndex) in contents" :key="rowIndex" class="body-small">
+        <td v-for="(value, index) in content" :key="index" class="table-content">
+          <span class="content-title">{{ headers[index] }}: </span>{{ value }}
         </td>
       </tr>
       </tbody>
@@ -22,17 +22,17 @@
 
 <script setup>
   const props = defineProps({
-    tableHeaders: {
+    headers: {
       required: true,
       type: Array
     },
-    tableContents: {
+    contents: {
       required: true,
       type: Array
     },
     classes: {
-      required: true,
-      type: String
+      type: String,
+      default: 'table-primary'
     }
   })
 </script>
