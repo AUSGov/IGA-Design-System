@@ -1,6 +1,6 @@
 ---
 lang: en-US
-title: Banners
+title: Navigation
 description:
 pageHeader: true
 layout: DoiContentNavigation

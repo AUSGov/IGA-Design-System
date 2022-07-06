@@ -2,13 +2,13 @@
   <div class="doi-table">
     <table class="table table-striped">
       <thead class="table-primary body-small">
-      <tr class="table-header first">
+      <tr class="table-header main">
         <td class="header-title">Title</td>
         <td class="header-title"></td>
         <td class="header-title">Date</td>
         <td class="header-title">Publisher</td>
       </tr>
-      <tr class="table-header last hide">
+      <tr class="table-header mobile">
         <td>Table Title</td>
       </tr>
       </thead>
@@ -23,28 +23,4 @@
   </div>
 </template>
 <script setup>
-//TODO refactor this to only use css where possible
-import { onMounted } from 'vue';
-onMounted(() => {
-    //table
-    modifyTable()
-    $(window).resize(function() {
-      modifyTable()
-    })
-    function modifyTable() {
-      const width = $(window).width()
-      const $tableHeaderFirst = $('.table-header.first')
-      const $tableHeaderLast = $('.table-header.last')
-      const $contentTitle = $('.content-title')
-      if (width < 992) {
-        $tableHeaderFirst.addClass('hide')
-        $tableHeaderLast.removeClass('hide')
-        $contentTitle.removeClass('hide')
-      } else {
-        $tableHeaderFirst.removeClass('hide')
-        $tableHeaderLast.addClass('hide')
-        $contentTitle.addClass('hide')
-      }
-    }
-  })
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="on-this-page-menu" id="on-this-page-menu">
+  <div class="on-this-page-menu" id="on-this-page-menu" :class="classes">
     <div class="nav-button">
       <button class="btn btn-promo btn-nav-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#onThisPageMenu" aria-controls="onThisPageMenu">
         <span class="expand" v-html="add"></span>
@@ -48,6 +48,12 @@
   import closeThick from '../../../public/icons/close-thick.svg?raw'
 
   export default {
+    props: {
+      classes: {
+        type: String,
+        default: null
+      }
+    },
     data () {
       return {
         linkArrowRight,

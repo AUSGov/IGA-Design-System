@@ -97,7 +97,7 @@
       font-weight: $font-weight-bold;
 
       .header-title {
-        padding: 1.375rem 0.75rem;
+        padding: 1.375rem 1.5rem;
       }
     }
 
@@ -125,36 +125,19 @@
           display: flex;
           flex-direction: column;
         }
-
-        td {
-          &:first-child {
-            padding-top: 1rem;
-          }
-
-          &:last-child {
-            border-bottom: 1px solid $gray-400;
-            padding-bottom: 1rem;
-          }
-
-          &:not(:last-child) {
-            border-bottom: none;
-          }
+        td:last-child {
+          border-bottom: 1px solid $gray-400;
+        }
+        td:not(:last-child) {
+          border-bottom: none;
         }
       }
 
       .table-content {
-        padding: 0.25rem 0;
-        color: #57575A;
-
-        @include media-breakpoint-up(lg) {
-          padding: 0.75rem;
-          color: $body-color;
-        }
+        padding: 0.75rem 0 0.75rem 1.5rem;
       }
 
       .content-title {
-        color: #323232;
-
         @include media-breakpoint-up(lg) {
           display: none;
         }
@@ -543,12 +526,6 @@
     padding: 3rem;
   }
 
-  .callout-title {
-    @include heading-extra-small-caps();
-    color: $doi-primary;
-    margin-bottom: 1rem;
-  }
-
   .callout-subtitle {
     @include heading-small();
     line-height: 26px;
@@ -557,19 +534,17 @@
     margin-bottom: 1rem;
   }
 
-  .callout-content {
-    @include heading-extra-small();
-    font-weight: $font-weight-base;
+  .callout-list {
     color: $gray-600;
 
     ul {
-      @include heading-extra-small();
-      font-weight: $font-weight-base;
       margin-left: 0;
+      padding-left: 20px;
+    }
 
-      li::marker {
-        color: currentColor;
-      }
+    li::marker {
+      font-size: 10px;
+      color: currentColor;
     }
   }
 
@@ -621,7 +596,7 @@
       justify-content: flex-end;
 
       p {
-        max-width: 838px;
+        max-width: 650px;
         text-align: justify;
       }
     }
@@ -645,8 +620,15 @@
     }
   }
 
+  .citation {
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
   blockquote {
     font-size: 24px;
+    font-weight: $font-weight-semi-bold;
   }
 
 }

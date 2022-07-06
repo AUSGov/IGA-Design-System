@@ -84,7 +84,7 @@
 
 <script>
   import MediaTranscript from "./components/MediaTranscript.vue"
-  import Blockquote from "./components/Blockquote.vue"
+  import Blockquote from "./components/DoiBlockquote.vue"
   import CalloutModal from "./components/CalloutModal.vue"
   import Pagination from './components/Pagination.vue'
   import PublicationTable from './components/PublicationTable.vue'

@@ -106,12 +106,17 @@
 }
 
 .on-this-page-menu {
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
   .nav-button {
     display: block;
     position: fixed;
+    top: 6rem;
     left: 0;
     transform: translateX(calc(-50% + 25px));
-    top: 10rem;
     z-index: 100;
   }
 
@@ -186,6 +191,18 @@
       &:hover {
         color: $doi-action;
       }
+    }
+  }
+
+  &.lower-start {
+    top: 6.5rem;
+
+    .nav-button {
+      position: absolute;
+    }
+
+    .offcanvas-start {
+      top: 6.5rem;
     }
   }
 }

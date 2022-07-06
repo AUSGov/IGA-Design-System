@@ -18,4 +18,11 @@
 <script setup>
   import circleChevronDown from '../../../public/icons/circle-chevron-down.svg?raw'
   import circleChevronDownFilled from '../../../public/icons/circle-chevron-down-filled.svg?raw'
+
+  const props = defineProps({
+    descriptionClasses: {
+      type: String,
+      default: null
+    }
+  })
 </script>

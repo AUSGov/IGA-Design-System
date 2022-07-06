@@ -190,6 +190,11 @@
       color: $body-color;
     }
   }
+
+  &.offset {
+    margin-left: -2rem;
+    margin-top: -4rem;
+  }
 }
 
 .navigation-card {

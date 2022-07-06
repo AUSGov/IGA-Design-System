@@ -1,5 +1,5 @@
 <template>
-  <div class="chapter-banners" :class="[{'text-dark': dark}, classes]" :style="image ? 'background-image: url(/images/banner-sample-2.jpeg);' : ''">
+  <div class="chapter-banners" :class="[{'text-dark': dark}, classes]" :style="image ? 'background-image:' + image : ''">
     <div class="banner-overlay"></div>
     <div class="container">
       <div class="icons">
@@ -9,7 +9,7 @@
         <span class="up" :class="{'text-gray-500': dark}" v-html="chevronUp"></span>
         <span class="down" :class="{'text-gray-500': dark}" v-html="chevronDown"></span>
       </div>
-      <div class="display-medium">Glossary</div>
+      <div class="display-medium">{{ title }}</div>
     </div>
   </div>
 </template>
@@ -33,6 +33,10 @@
       classes: {
         type: String,
         default: null
+      },
+      title: {
+        type: String,
+        default: 'Glossary'
       }
     },
     data () {

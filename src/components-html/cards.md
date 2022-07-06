@@ -1,6 +1,6 @@
 ---
 lang: en-US
-title: Filters
+title: Cards
 description:
 pageHeader: true
 layout: DoiContentCards
