@@ -3,14 +3,18 @@
   text-align: center;
   justify-content: center;
 
-  @include media-breakpoint-up(lg) {
-    flex-grow: 0;
-  }
-
   img {
     height: auto;
     width: 180px;
     object-fit: contain;
+  }
+
+  @include media-breakpoint-up(lg) {
+    flex-grow: 0;
+
+    img {
+      width: 220px;
+    }
   }
 }
 
