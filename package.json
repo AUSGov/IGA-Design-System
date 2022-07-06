@@ -11,7 +11,8 @@
     "dev": "vuepress dev src --debug --open",
     "build": "vuepress build src --dest docs",
     "bundle": "rollup --config bundle/rollup.config.js",
-    "prod": "npm run build && npm run bundle"
+    "clean:docs": "node bundle/clean.mjs",
+    "prod": "npm run clean:docs && npm run build && npm run bundle"
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-beta.48",
@@ -28,6 +29,7 @@
     "bootstrap": "^5.1.3",
     "bootstrap-select": "^1.14.0-beta3",
     "bootstrap-slider": "^11.0.2",
+    "del": "^6.1.1",
     "jquery": "^3.6.0",
     "markdown-it": "^13.0.1",
     "prismjs": "^1.28.0"
