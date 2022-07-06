@@ -15,8 +15,11 @@
 .in-this-section-menu {
   background-color: #fff;
   box-shadow: 0 8px 16px rgba(40, 41, 61, 0.0364);
-  padding: 18px 0;
   color: $gray-700;
+
+  .header-wrap {
+    padding: 18px 0;
+  }
 
   .menu-header {
     display: flex;
@@ -36,6 +39,7 @@
 
   .menu-body {
     background-color: $doi-snow;
+    margin-bottom: 2rem;
   }
 
   .menu-title {
@@ -71,11 +75,15 @@
     font-size: $font-size-base;
     list-style: none;
 
-    &.parent-menu > li {
-      display: flex;
-      flex-direction: column;
-      padding: 18px 0;
-      border-bottom: 1px solid $gray-400;
+    &.parent-menu {
+      padding-bottom: 2rem;
+
+      > li {
+        display: flex;
+        flex-direction: column;
+        padding: 18px 0;
+        border-bottom: 1px solid $gray-400;
+      }
     }
 
     &.child-menu {
@@ -106,7 +114,6 @@
 }
 
 .on-this-page-menu {
-
   position: sticky;
   top: 0;
   z-index: 100;
