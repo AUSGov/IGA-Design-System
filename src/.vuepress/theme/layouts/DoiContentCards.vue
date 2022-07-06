@@ -121,9 +121,9 @@
         </div>
         <div class="col-md-6">
           <div class="pb-3">
-            <NavigationCard variant="inline" classes="bg-primary text-white"/>
+            <NavigationCard variant="inline" classes="bg-primary text-white" link-class="text-white"/>
           </div>
-          <NavigationCard variant="inline" classes="bg-industry-innovation-science text-white"/>
+          <NavigationCard variant="inline" classes="bg-industry-innovation-science text-white" link-class="text-white"/>
         </div>
       </div>
     </div>

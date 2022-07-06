@@ -7,7 +7,7 @@
       <div class="navigation-card-body">
         <div class="navigation-card-title">Dark Energy Survey Evolves or a longer title with three of more lines more line</div>
         <p v-if="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <a href="#" class="link-icon">Link<span v-html="linkArrowRight"></span></a>
+        <a href="#" class="link-icon" :class="linkClass">Link<span v-html="linkArrowRight"></span></a>
       </div>
     </div>
   </div>
@@ -23,6 +23,10 @@
         default: null
       },
       classes: {
+        type: String,
+        default: null
+      },
+      linkClass: {
         type: String,
         default: null
       },

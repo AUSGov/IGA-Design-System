@@ -77,6 +77,10 @@
 }
 
 .news-article {
+  .news-title {
+    max-width: 700px;
+  }
+
   h1 {
     @include display-small;
     margin-bottom: 1.5rem;
@@ -87,8 +91,8 @@
     }
   }
 
-  .categories .border {
-    border-color: $gray-500;
+  .categories a {
+    border: 1px solid $gray-500;
     color: $gray-600;
   }
 }

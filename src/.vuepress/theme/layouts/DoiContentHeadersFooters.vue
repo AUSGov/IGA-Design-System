@@ -5,7 +5,9 @@
       <div class="container">
         <h2 id="entity-bar">Entity Bar</h2>
       </div>
-      <EntityBar/>
+      <EntityBar title="Emissions reduction Assurance Committee" classes="bg-aus-industry-participation-authority"/>
+      <EntityBar title="Industry Innovation and Science Australia Corporate" classes="bg-industry-innovation-science"/>
+      <EntityBar title="National Measurement Institute" classes="bg-inspiring-aus text-black"/>
     </div>
 
     <div class="pb-5">
