@@ -14,7 +14,10 @@ import DoiNewsSubsection from './theme/layouts/page-patterns/DoiNewsSubsection.v
 import DoiNewsArticle from './theme/layouts/page-patterns/DoiNewsArticle.vue'
 import DoiPublicationsHomepage from './theme/layouts/page-patterns/DoiPublicationsHomepage.vue'
 import DoiPublicationsSinglePage from './theme/layouts/page-patterns/DoiPublicationsSinglePage.vue'
+import DoiPublicationsSingleBasic from './theme/layouts/page-patterns/DoiPublicationsSingleBasic.vue'
 import DoiStandardContent from './theme/layouts/page-patterns/DoiStandardContent.vue'
+import DoiPublicationsChaptered from './theme/layouts/page-patterns/DoiPublicationsChaptered.vue'
+
 
 export default defineClientConfig({
   enhance({ app }) {
@@ -33,6 +36,8 @@ export default defineClientConfig({
     app.component('DoiNewsArticle', DoiNewsArticle)
     app.component('DoiPublicationsHomepage', DoiPublicationsHomepage)
     app.component('DoiPublicationsSinglePage', DoiPublicationsSinglePage)
+    app.component('DoiPublicationsSingleBasic', DoiPublicationsSingleBasic)
+    app.component('DoiPublicationsChaptered', DoiPublicationsChaptered)
     app.component('DoiStandardContent', DoiStandardContent)
 
     app.directive('inline-svg', {

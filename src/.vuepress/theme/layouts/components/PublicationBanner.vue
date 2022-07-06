@@ -1,5 +1,5 @@
 <template>
-  <div class="publication-banner full-height" style="background-image: url('/images/publication-banner-sample.png');">
+  <div class="publication-banner" :class="classes" style="background-image: url('/images/publication-banner-sample.png');" :style="image ? null : 'background-image: none'">
     <div class="banner-overlay"></div>
     <div class="container">
       <div class="banner-wrap">
@@ -13,3 +13,15 @@
     </div>
   </div>
 </template>
+<script setup>
+  const props = defineProps({
+    image: {
+      type: Boolean,
+      default: true
+    },
+    classes: {
+      type: String,
+      default: null
+    }
+  })
+</script>

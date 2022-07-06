@@ -1,13 +1,13 @@
 <template>
   <div class="doi-content">
     <Header />
-    <div>
+    <div class="pb-6">
       <SectionBanner />
       <DropdownFilter />
-      <div class="container">
-        <PublicationTable />
-        <Pagination />
-      </div>
+    </div>
+    <div class="container pb-6">
+      <PublicationTable />
+      <Pagination />
     </div>
     <Footer />
   </div>

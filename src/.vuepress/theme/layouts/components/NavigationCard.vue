@@ -5,8 +5,8 @@
         <img :src="$withBase('images/cards-sample.png')" alt="">
       </div>
       <div class="navigation-card-body">
-        <div class="navigation-card-title">Dark Energy Survey Evolves or a longer title with three of more lines more line</div>
-        <p v-if="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="navigation-card-title">{{ title }}</div>
+        <p v-if="text">{{ content }}</p>
         <a v-if="link" href="#" class="link-icon" :class="linkClass">Link<span v-html="linkArrowRight"></span></a>
       </div>
     </div>
@@ -42,6 +42,14 @@
         type: Boolean,
         default: true,
       },
+      title: {
+        type: String,
+        default: 'Dark Energy Survey Evolves or a longer title with three of more lines more line'
+      },
+      content: {
+        type: String,
+        default: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+      }
     },
     data () {
       return {
