@@ -1,9 +1,6 @@
 <template>
   <nav id="header" class="navbar sticky-top navbar-expand-lg bg-light">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon" v-html="hamburger"></span>
-      </button>
       <a class="navbar-brand" href="/" v-html="logo"></a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="mobile-close d-lg-none" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"><span class="icon" v-html="close"></span></div>
@@ -91,6 +88,9 @@
       <div class="search-wrap">
         <a href="#"><span class="icon" v-html="search"></span></a>
       </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" v-html="hamburger"></span>
+      </button>
     </div>
   </nav>
 </template>
