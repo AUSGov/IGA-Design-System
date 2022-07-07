@@ -1,12 +1,5 @@
 <template>
   <div class="on-this-page-menu" id="on-this-page-menu" :class="classes">
-    <div class="nav-button">
-      <button class="btn btn-promo btn-nav-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#onThisPageMenu" aria-controls="onThisPageMenu">
-        <span class="expand" v-html="add"></span>
-        <span class="close" v-html="closeThick"></span>
-        <span class="navigate-label">Navigate</span>
-      </button>
-    </div>
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="onThisPageMenu">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title">Premises Standards Review 2021</h5>
@@ -38,6 +31,13 @@
           <div class="menu-title title-default">Bibliography</div>
         </nav>
       </div>
+    </div>
+    <div class="nav-button">
+      <button class="btn btn-promo btn-nav-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#onThisPageMenu" aria-controls="onThisPageMenu">
+        <span class="expand" v-html="add"></span>
+        <span class="close" v-html="closeThick"></span>
+        <span class="navigate-label">Navigate</span>
+      </button>
     </div>
   </div>
 </template>
