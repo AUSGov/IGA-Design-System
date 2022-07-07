@@ -132,7 +132,7 @@
           <p>To properly assess whether the Premises Standards are achieving their objectives, we need data to help us measure buildings’ compliance with the standards. This is addressed by Action 3.</p>
         </div>
         <div class="pb-5">
-          <MediaTranscript class="right-align" />
+          <MediaTranscript class="content-right" />
         </div>
         <div class="pb-5">
           <CalloutModal>

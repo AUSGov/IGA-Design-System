@@ -17,6 +17,7 @@ import DoiPublicationsSinglePage from './theme/layouts/page-patterns/DoiPublicat
 import DoiPublicationsSingleBasic from './theme/layouts/page-patterns/DoiPublicationsSingleBasic.vue'
 import DoiStandardContent from './theme/layouts/page-patterns/DoiStandardContent.vue'
 import DoiPublicationsChaptered from './theme/layouts/page-patterns/DoiPublicationsChaptered.vue'
+import DoiPublicationsChapteredChild from './theme/layouts/page-patterns/DoiPublicationsChapteredChild.vue'
 
 
 export default defineClientConfig({
@@ -38,6 +39,7 @@ export default defineClientConfig({
     app.component('DoiPublicationsSinglePage', DoiPublicationsSinglePage)
     app.component('DoiPublicationsSingleBasic', DoiPublicationsSingleBasic)
     app.component('DoiPublicationsChaptered', DoiPublicationsChaptered)
+    app.component('DoiPublicationsChapteredChild', DoiPublicationsChapteredChild)
     app.component('DoiStandardContent', DoiStandardContent)
 
     app.directive('inline-svg', {

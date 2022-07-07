@@ -596,7 +596,6 @@
   }
 
   #mediaDescription {
-    padding-right: 1.25rem;
 
     .description-content {
       width: 100%;
@@ -604,8 +603,17 @@
       justify-content: flex-end;
 
       p {
-        max-width: 650px;
         text-align: justify;
+      }
+    }
+  }
+
+  &.content-right {
+    #mediaDescription {
+      padding-right: 1.25rem;
+
+      p {
+        max-width: 650px;
       }
     }
   }

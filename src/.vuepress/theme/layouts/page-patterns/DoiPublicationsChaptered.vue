@@ -2,7 +2,6 @@
   <div class="doi-content">
     <Header />
     <PublicationBanner />
-    <OnThisPageMenu/>
     <div class="row py-6">
       <div class="col-md-3"></div>
       <div class="col-md-6">
@@ -85,7 +84,7 @@
       </div>
     </div>
     <div class="pb-6">
-      <ContentStepper :button="false" classes="chaptered" />
+      <ContentStepper :button="false" classes="bg-snow shadow-none" />
     </div>
     <div class="pb-6">
       <ReadMore classes="hover-action" />
