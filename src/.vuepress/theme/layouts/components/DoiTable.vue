@@ -12,7 +12,7 @@
       <tbody>
       <tr v-for="(content, rowIndex) in contents" :key="rowIndex" class="body-small">
         <td v-for="(value, index) in content" :key="index" class="table-content">
-          <span class="content-title">{{ headers[index] }}: </span>{{ value }}
+          <span class="content-title">{{ headers[index] }}: </span><span class="content-value">{{ value }}</span>
         </td>
       </tr>
       </tbody>
