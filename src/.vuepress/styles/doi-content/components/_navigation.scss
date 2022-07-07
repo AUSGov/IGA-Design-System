@@ -115,25 +115,91 @@
 
 .on-this-page-menu {
   position: sticky;
-  top: 0;
+  top: $navbar-height;
   z-index: 100;
+
+  @include media-breakpoint-up(md) {
+    top: 0;
+  }
 
   .nav-button {
     display: block;
-    position: fixed;
-    top: 6rem;
-    left: 0;
-    transform: translateX(calc(-50% + 25px));
     z-index: 100;
+    transition: left 300ms ease-in-out;
+
+    .expand {
+      display: block;
+    }
+
+    .close {
+      display: none;
+    }
+
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      top: calc(#{$navbar-height} + 110px + 32px);
+      left: 0;
+      transform: translateX(calc(-50% + 25px));
+    }
   }
 
   .btn-nav-menu {
     display: flex;
-    transform: rotate(90deg);
-    border-radius: 6px 6px 0 0;
     padding: 12px 24px;
-    min-width: 220px;
+    border-radius: 0;
+    min-width: 100vw;
     height: 50px;
+
+    @include media-breakpoint-up(md) {
+      transform: rotate(90deg);
+      border-radius: 6px 6px 0 0;
+      min-width: 220px;
+    }
+  }
+
+  .offcanvas {
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+
+    &.show {
+      top: $navbar-height;
+
+      @include media-breakpoint-down(md) {
+        top: calc(#{$navbar-height} + 50px);
+      }
+
+      & + .nav-button {
+        position: fixed;
+        z-index: 1100;
+        left: calc(#{$offcanvas-horizontal-width} - 1px);
+
+        button {
+          color: #fff;
+          border-color: $doi-secondary;
+          background-color: $doi-secondary;
+        }
+
+        svg {
+          path {
+            fill: #fff;
+          }
+        }
+
+        .expand {
+          display: none;
+        }
+
+        .close {
+          display: block;
+        }
+
+        @include media-breakpoint-down(md) {
+          top: $navbar-height;
+          left: 0;
+        }
+      }
+    }
   }
 
   .offcanvas-header {
@@ -198,18 +264,6 @@
       &:hover {
         color: $doi-action;
       }
-    }
-  }
-
-  &.lower-start {
-    top: 6.5rem;
-
-    .nav-button {
-      position: absolute;
-    }
-
-    .offcanvas-start {
-      top: 6.5rem;
     }
   }
 }

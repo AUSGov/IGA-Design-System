@@ -4,7 +4,7 @@
     <EntityBar title="Emissions reduction Assurance Committee" classes="bg-aus-industry-participation-authority"/>
     <SectionBanner/>
     <InSectionNavigation/>
-    <OnThisPageMenu classes="lower-start"/>
+    <OnThisPageMenu/>
     <div class="container">
       <Breadcrumb/>
     </div>

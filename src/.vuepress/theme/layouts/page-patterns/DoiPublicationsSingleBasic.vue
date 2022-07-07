@@ -5,7 +5,7 @@
       <PublicationBanner classes="small" />
     </div>
     <PublicationBanner classes="small bg-primary" :image="false" />
-    <OnThisPageMenu classes="lower-start"/>
+    <OnThisPageMenu/>
     <ChapterBanner classes="bg-gray-100" title="Preamble"/>
     <div class="container-small text-gray-600 py-6">
       <div class="pb-5">
