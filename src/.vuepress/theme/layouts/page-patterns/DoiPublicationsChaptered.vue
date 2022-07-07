@@ -34,15 +34,15 @@
         <Publication :show-download="false" />
       </div>
     </div>
-    <div class="container">
+    <div class="container pb-6">
       <h4 class="text-primary display-medium mb-3">Explore the digital publication</h4>
-      <div class="row g-4 pb-6">
+      <div class="row g-4 pb-5">
         <div class="col-md-6 col-lg-4">
           <NavigationCard variant="inline" :image="false" title="Message from the Minister" content=""/>
         </div>
       </div>
       <h4 class="text-primary display-medium mb-3">About the industry</h4>
-      <div class="row g-4 pb-6">
+      <div class="row g-4 pb-5">
         <div class="col-md-6 col-lg-4">
           <NavigationCard variant="inline" title="LNG industry outlook" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "/>
         </div>
@@ -53,12 +53,14 @@
           <NavigationCard variant="inline" title="LNG industry outlook" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "/>
         </div>
       </div>
-      <h4 class="text-primary display-medium mb-3">Emerging LNG Markets</h4>
-      <p>We review the Premises Standards every 5 years to:</p>
-      <ul>
-        <li>check they are achieving their objectives</li>
-        <li>identify ways to improve them.</li>
-      </ul>
+      <div class="pb-5">
+        <h4 class="text-primary display-medium mb-3">Emerging LNG Markets</h4>
+        <p>We review the Premises Standards every 5 years to:</p>
+        <ul>
+          <li>check they are achieving their objectives</li>
+          <li>identify ways to improve them.</li>
+        </ul>
+      </div>
       <div class="row g-4 pb-6">
         <div class="col-md-6 col-lg-4">
           <NavigationCard variant="inline" title="China" content=""/>
@@ -70,15 +72,34 @@
           <NavigationCard variant="inline" title="India" content=""/>
         </div>
       </div>
+      <div class="row g-4 pb-6">
+        <div class="col-md-6 col-lg-4">
+          <NavigationCard variant="" title="Dark Energy Survey Evolves or a longer title with three of more lines more line... " content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "/>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <NavigationCard variant="" title="Dark Energy Survey Evolves or a longer title with three of more lines more line... " content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "/>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <NavigationCard variant="" title="Dark Energy Survey Evolves or a longer title with three of more lines more line... " content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "/>
+        </div>
+      </div>
+    </div>
+    <div class="pb-6">
+      <ContentStepper :button="false" classes="chaptered" />
+    </div>
+    <div class="pb-6">
+      <ReadMore classes="hover-action" />
     </div>
     <Footer />
   </div>
 </template>
 <script setup>
+  import ContentStepper from "../components/ContentStepper.vue"
   import Footer from '../components/Footer.vue'
   import Header from '../components/Header.vue'
   import NavigationCard from '../components/NavigationCard.vue'
   import OnThisPageMenu from '../components/OnThisPageMenu.vue'
   import PublicationBanner from '../components/PublicationBanner.vue'
   import Publication from '../components/Publication.vue'
+  import ReadMore from "../components/ReadMore.vue"
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="read-more">
+  <div class="read-more" :class="classes">
     <div class="container">
       <div class="heading-medium mt-3 mb-3">Read more</div>
       <ul>
@@ -15,6 +15,12 @@
   import linkArrowRight from '../../../public/icons/link-arrow-right.svg?raw'
 
   export default {
+    props: {
+      classes: {
+        type: String,
+        default: null
+      }
+    },
     data () {
       return {
         linkArrowRight

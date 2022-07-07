@@ -250,6 +250,11 @@
     border-radius: 0;
     height: 100%;
   }
+
+  &.chaptered {
+    background-color: $doi-snow;
+    box-shadow: none;
+  }
 }
 
 .directory-links {
@@ -357,6 +362,15 @@
 
     &:first-child {
       border-top: 1px solid $gray-500;
+    }
+  }
+
+  &.hover-action {
+    a {
+      &:hover,
+      &:focus {
+        color: $doi-action
+      }
     }
   }
 }

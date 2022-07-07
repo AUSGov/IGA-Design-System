@@ -6,7 +6,7 @@
     <div class="row py-6">
       <div class="col-md-3"></div>
       <div class="col-md-6">
-        <div class="link-large" style="padding-left: 4.75rem;">
+        <div class="link-large text-gray-600" style="padding-left: 4.75rem;">
           <h4 class="text-primary display-small">The Premises Standards help ensure people with disability have equal access to public buildings.</h4>
           <p>We review the Premises Standards every 5 years to:</p>
           <ul>
@@ -41,10 +41,10 @@
     <ChapterBanner classes="bg-gray-100" title="Message from the Minister" />
     <div class="container-small link-large text-gray-600 py-6">
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-md-3 col-lg-3">
           <BiographyCard classes="offset" />
         </div>
-        <div class="col-lg-9">
+        <div class="col-md-9 col-lg-9">
           <p class="text-primary link-large lead">Public buildings are central to the lives of Australians. They are where we work, shop, build community relationships and engage in Australian society. As an integral part of our society, it is important that people with disability have equal access to public buildings.</p>
           <p>I am pleased to present the outcomes of the 2021 Premises Standards Review. The Premises Standards support dignified access to public buildings for the 1 in 6 Australians living with disability.</p>
         </div>
