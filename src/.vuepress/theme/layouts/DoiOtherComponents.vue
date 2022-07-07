@@ -77,8 +77,8 @@
 
     <div class="container">
       <h2 id="gallery">Gallery</h2>
+      <Gallery />
     </div>
-    <Gallery />
   </div>
 </template>
 

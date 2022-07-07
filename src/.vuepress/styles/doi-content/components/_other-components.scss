@@ -871,6 +871,12 @@
       }
     }
   }
+
+  &.body-width {
+    .gallery-footer {
+      width: 100%;
+    }
+  }
 }
 
 .doi-switch {

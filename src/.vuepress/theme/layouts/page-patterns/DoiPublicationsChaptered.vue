@@ -88,7 +88,7 @@
     <div class="pb-6">
       <ContentStepper :button="false" classes="bg-snow shadow-none" />
     </div>
-    <div class="pb-6">
+    <div class="container pb-6">
       <ReadMore classes="hover-action" />
     </div>
     <Footer />

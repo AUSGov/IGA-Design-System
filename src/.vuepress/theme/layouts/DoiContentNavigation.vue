@@ -39,8 +39,8 @@
     <div class="pb-5">
       <div class="container">
         <h2 id="read-more">Read More</h2>
+        <ReadMore/>
       </div>
-      <ReadMore/>
     </div>
   </div>
 </template>
