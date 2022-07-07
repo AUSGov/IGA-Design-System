@@ -4,18 +4,24 @@
       <div class="splide splide-gallery-main">
         <div class="splide__track">
           <div class="splide__list">
-            <div class="splide__slide">
+            <div class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=8chx9Enq2po">
               <div class="img-outer">
                 <div class="img-wrap">
                   <img src="https://swiperjs.com/demos/images/nature-1.jpg"/>
                 </div>
               </div>
+              <div class="play-button">
+                <span v-html="videoPlay"></span>
+              </div>
             </div>
-            <div class="splide__slide">
+            <div class="splide__slide" data-splide-vimeo="https://vimeo.com/250219970">
               <div class="img-outer">
                 <div class="img-wrap">
                   <img src="https://swiperjs.com/demos/images/nature-2.jpg"/>
                 </div>
+              </div>
+              <div class="play-button">
+                <span v-html="videoPlay"></span>
               </div>
             </div>
             <div class="splide__slide">
@@ -56,12 +62,18 @@
                     <img src="https://swiperjs.com/demos/images/nature-1.jpg"/>
                   </div>
                 </div>
+                <div class="play-button">
+                  <span v-html="videoPlay"></span>
+                </div>
               </div>
               <div class="splide__slide">
                 <div class="img-outer">
                   <div class="img-wrap">
                     <img src="https://swiperjs.com/demos/images/nature-2.jpg"/>
                   </div>
+                </div>
+                <div class="play-button">
+                  <span v-html="videoPlay"></span>
                 </div>
               </div>
               <div class="splide__slide">
@@ -106,24 +118,27 @@
   </div>
 </template>
 <script setup>
-  import { onMounted}  from 'vue';
+  import { onMounted } from 'vue'
   import Splide from '@splidejs/splide'
+  import { Video } from '@splidejs/splide-extension-video'
   import '@splidejs/splide/dist/css/splide.min.css'
+  import '@splidejs/splide-extension-video/dist/css/splide-extension-video.min.css'
   import circleChevronDown from '../../../public/icons/circle-chevron-down.svg?raw'
   import circleChevronDownFilled from '../../../public/icons/circle-chevron-down-filled.svg?raw'
+  import chevronForward from '../../../public/icons/chevron-forward.svg?raw'
+  import videoPlay from '../../../public/icons/video-play.svg?raw'
 
   onMounted(() => {
-    //gallery
     const main = new Splide('.splide-gallery-main', {
       type: 'loop',
       gap: 0,
-      rewind: true,
       pagination: false,
       arrows: true,
       padding: 150,
+      updateOnMove: true,
       breakpoints: {
         576: {
-          padding: 50,
+          padding: 25,
         },
         768: {
           padding: 80,
@@ -131,27 +146,37 @@
         992: {
           padding: 100,
         }
-      }
+      },
+      video: {
+        loop: true,
+        hideControls: true,
+        disableOverlayUI: true,
+        playerOptions: {
+          // youtube: {},
+          // vimeo: {},
+        },
+      },
     })
     const thumbnail = new Splide('.splide-gallery-thumbnail', {
       type: 'loop',
-      gap: 18,
+      gap: 16,
       perPage: 6,
       rewind: true,
       pagination: false,
       isNavigation: true,
       focus: true,
+      updateOnMove: true,
       breakpoints: {
         576: {
-          gap: 3,
+          gap: 4,
         },
         992: {
-          gap: 10,
+          gap: 8,
         }
       }
     })
     main.sync(thumbnail)
-    main.mount()
+    main.mount({ Video })
     thumbnail.mount()
   })
 </script>
