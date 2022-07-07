@@ -21,6 +21,13 @@
       margin-bottom: 1.25rem;
     }
   }
+
+  &.title-large {
+    .banner-title {
+      @include display-large();
+      color: $doi-primary;
+    }
+  }
 }
 
 .section-banner {

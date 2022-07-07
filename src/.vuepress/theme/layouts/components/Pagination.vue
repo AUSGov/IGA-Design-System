@@ -1,5 +1,5 @@
 <template>
-  <div class="paginate mt-4 mb-4">
+  <div class="paginate">
     <div class="result-container">Showing 1100 - 1200 of 2034 results</div>
     <nav aria-label="Pagination">
       <ul class="pagination">

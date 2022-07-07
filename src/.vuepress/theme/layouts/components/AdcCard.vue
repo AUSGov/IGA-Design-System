@@ -14,6 +14,7 @@
           <th>Public Record</th>
           <th>Next Milestone</th>
         </tr>
+        <tr />
         </thead>
         <tbody>
         <tr>

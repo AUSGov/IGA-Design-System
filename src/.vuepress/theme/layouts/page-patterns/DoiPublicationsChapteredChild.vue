@@ -1,6 +1,7 @@
 <template>
   <div class="doi-content">
     <Header />
+    <EntityBar title="Premises Standards Review 2021" classes="bg-primary title-left" />
     <ChapterBanner image="url(/images/banner-sample.png)" classes="text-white" title="Review at a glance" />
     <div class="container-small link-large text-gray-600 py-6">
       <h4 class="text-primary lead mb-0">The Disability (Access to Premises - Building) Standards 2010 (the Premises Standards) help people with disability have dignified access to buildings. Improved access to buildings can also benefit older people, people with injuries or illness, and parents and carers with young children.</h4>
@@ -122,6 +123,7 @@
 import CalloutModal from "../components/CalloutModal.vue"
 import ChapterBanner from "../components/ChapterBanner.vue"
 import ContentStepper from "../components/ContentStepper.vue"
+import EntityBar from "../components/EntityBar.vue"
 import Footer from "../components/Footer.vue"
 import Header from "../components/Header.vue"
 import MediaTranscript from "../components/MediaTranscript.vue"

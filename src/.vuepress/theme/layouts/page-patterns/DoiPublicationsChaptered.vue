@@ -2,35 +2,37 @@
   <div class="doi-content">
     <Header />
     <PublicationBanner />
-    <div class="row py-6">
-      <div class="col-md-3"></div>
-      <div class="col-md-6">
-        <div class="link-large" style="padding-left: 4.75rem;">
-          <h4 class="text-primary display-small">The Premises Standards help ensure people with disability have equal access to public buildings.</h4>
-          <p>We review the Premises Standards every 5 years to:</p>
-          <ul>
-            <li class="link-large">check they are achieving their objectives</li>
-            <li class="link-large">identify ways to improve them.</li>
-          </ul>
-          <p>As part of the 2021 review, we consulted over 500 people, including:</p>
-          <ul>
-            <li class="link-large">people with disability</li>
-            <li class="link-large">other stakeholders in the disability sector</li>
-            <li class="link-large">building professionals</li>
-            <li class="link-large">employers</li>
-            <li class="link-large">people in all levels of government.</li>
-          </ul>
-          <p>The review identified 4 actions the Australian Government can take to ensure the Premises Standards keep meeting their objectives. These actions will:</p>
-          <ul>
-            <li class="link-large">improve regulations for accessible carparks, automatic doors and the dimensions of openings</li>
-            <li class="link-large">help people understand their rights and responsibilities under the standards</li>
-            <li class="link-large">improve the data available for future reviews</li>
-            <li class="link-large">increase consistency between the Premises Standards and other disability standards.</li>
-          </ul>
+    <div class="container py-6">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-7">
+          <div class="link-large" style="padding-left: 4.75rem;">
+            <h4 class="text-primary display-small">The Premises Standards help ensure people with disability have equal access to public buildings.</h4>
+            <p>We review the Premises Standards every 5 years to:</p>
+            <ul>
+              <li class="link-large">check they are achieving their objectives</li>
+              <li class="link-large">identify ways to improve them.</li>
+            </ul>
+            <p>As part of the 2021 review, we consulted over 500 people, including:</p>
+            <ul>
+              <li class="link-large">people with disability</li>
+              <li class="link-large">other stakeholders in the disability sector</li>
+              <li class="link-large">building professionals</li>
+              <li class="link-large">employers</li>
+              <li class="link-large">people in all levels of government.</li>
+            </ul>
+            <p>The review identified 4 actions the Australian Government can take to ensure the Premises Standards keep meeting their objectives. These actions will:</p>
+            <ul>
+              <li class="link-large">improve regulations for accessible carparks, automatic doors and the dimensions of openings</li>
+              <li class="link-large">help people understand their rights and responsibilities under the standards</li>
+              <li class="link-large">improve the data available for future reviews</li>
+              <li class="link-large">increase consistency between the Premises Standards and other disability standards.</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="col-md-3">
-        <Publication :show-download="false" />
+        <div class="col-md-3">
+          <Publication :show-download="false" />
+        </div>
       </div>
     </div>
     <div class="container pb-6">

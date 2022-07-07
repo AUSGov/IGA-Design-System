@@ -18,6 +18,9 @@ import DoiPublicationsSingleBasic from './theme/layouts/page-patterns/DoiPublica
 import DoiStandardContent from './theme/layouts/page-patterns/DoiStandardContent.vue'
 import DoiPublicationsChaptered from './theme/layouts/page-patterns/DoiPublicationsChaptered.vue'
 import DoiPublicationsChapteredChild from './theme/layouts/page-patterns/DoiPublicationsChapteredChild.vue'
+import DoiFilteredHomepage from './theme/layouts/page-patterns/DoiFilteredHomepage.vue'
+import DoiFilteredHomepageAdc from './theme/layouts/page-patterns/DoiFilteredHomepageAdc.vue'
+import DoiHomepage from './theme/layouts/page-patterns/DoiHomepage.vue'
 
 
 export default defineClientConfig({
@@ -41,6 +44,9 @@ export default defineClientConfig({
     app.component('DoiPublicationsChaptered', DoiPublicationsChaptered)
     app.component('DoiPublicationsChapteredChild', DoiPublicationsChapteredChild)
     app.component('DoiStandardContent', DoiStandardContent)
+    app.component('DoiFilteredHomepage', DoiFilteredHomepage)
+    app.component('DoiFilteredHomepageAdc', DoiFilteredHomepageAdc)
+    app.component('DoiHomepage', DoiHomepage)
 
     app.directive('inline-svg', {
       updated: (element) => {

@@ -90,27 +90,27 @@
   }
 }
 
-.doi-table {
-  .table {
-    thead {
-      border: none;
-      font-weight: $font-weight-bold;
+.table {
+  @include body-small();
 
-      .header-title {
-        padding: 1.375rem 1.5rem;
-      }
-    }
+  thead {
+    border: none;
+    font-weight: $font-weight-bold;
 
-    .table-header {
+    tr {
       white-space: nowrap;
 
-      &.main {
+      th {
+        padding: 1.375rem 1.5rem;
+      }
+
+      &:first-of-type {
         @include media-breakpoint-down(lg) {
           display: none;
         }
       }
 
-      &.mobile {
+      &:last-of-type {
         td {
           padding: 22px 0 22px 1.5rem;
         }
@@ -120,44 +120,44 @@
         }
       }
     }
+  }
 
-    tbody {
-      border-top: none;
+  tbody {
+    border-top: none;
 
-      @include media-breakpoint-down(lg) {
-        tr {
-          display: flex;
-          flex-direction: column;
+    @include media-breakpoint-down(lg) {
+      tr {
+        display: flex;
+        flex-direction: column;
+      }
+      td {
+        &:first-child {
+          padding-top: 21px;
         }
-        td {
-          &:first-child {
-            padding-top: 21px;
-          }
 
-          &:last-child {
-            border-bottom: 1px solid $gray-400;
-            padding-bottom: 21px;
-          }
+        &:last-child {
+          border-bottom: 1px solid $gray-400;
+          padding-bottom: 21px;
+        }
 
-          &:not(:last-child) {
-            border-bottom: none;
-          }
+        &:not(:last-child) {
+          border-bottom: none;
         }
       }
+    }
 
-      .table-content {
-        padding: 0.25rem 0 0.25rem 0.25rem;
+    td {
+      padding: 0.25rem 0 0.25rem 0.25rem;
 
-        @include media-breakpoint-up(lg) {
-          padding: 12px 1rem 12px 1.5rem;
-        }
+      @include media-breakpoint-up(lg) {
+        padding: 12px 1rem 12px 1.5rem;
       }
+    }
 
-      .content-title {
-        padding-right: 0.5rem;
-        @include media-breakpoint-up(lg) {
-          display: none;
-        }
+    .content-title {
+      padding-right: 0.5rem;
+      @include media-breakpoint-up(lg) {
+        display: none;
       }
     }
   }
@@ -870,5 +870,27 @@
         display: none;
       }
     }
+  }
+}
+
+.doi-switch {
+  @include heading-small();
+  display: flex;
+  align-items: flex-end;
+  padding: 3rem 0;
+  margin-bottom: 0;
+  gap: 0.5rem;
+
+  .form-check-input {
+    margin-left: 0;
+
+    &:checked {
+      border: none;
+      background-color: $doi-secondary;
+    }
+  }
+
+  span {
+    display: block;
   }
 }
