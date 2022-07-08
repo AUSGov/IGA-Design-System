@@ -618,8 +618,7 @@
     }
   }
 
-  #mediaDescription {
-
+  .accordion-collapse {
     .description-content {
       width: 100%;
       display: flex;
@@ -632,13 +631,44 @@
   }
 
   &.content-right {
-    #mediaDescription {
+    .accordion-collapse {
       padding-right: 1.25rem;
 
       p {
         max-width: 650px;
       }
     }
+  }
+
+  .video-player {
+    position: relative;
+  }
+
+  .play-button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    svg {
+      width: 23px;
+      height: auto;
+
+      @include media-breakpoint-up(md) {
+        width: 38px;
+        height: auto;
+      }
+
+      @include media-breakpoint-up(lg) {
+        width: 76px;
+        height: auto;
+      }
+    }
+  }
+
+  .plyr--playing + .play-button span {
+    display: none;
   }
 }
 
