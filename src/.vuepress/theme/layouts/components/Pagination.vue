@@ -1,6 +1,6 @@
 <template>
   <div class="paginate">
-    <div class="result-container">Showing 1100 - 1200 of 2034 results</div>
+    <div v-if="text" class="result-container">Showing 1100 - 1200 of 2034 results</div>
     <nav aria-label="Pagination">
       <ul class="pagination">
         <li class="page-item page-previous">
@@ -22,6 +22,13 @@
   import chevronForward from '../../../public/icons/chevron-forward.svg?raw'
   import chevronBack from '../../../public/icons/chevron-back.svg?raw'
   import { onMounted } from 'vue';
+
+  const props = defineProps({
+    text: {
+      type: Boolean,
+      default: null
+    }
+  })
 
   onMounted(() => {
     //pagination

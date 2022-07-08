@@ -1,5 +1,5 @@
 <template>
-  <div class="news-article">
+  <div class="news-article" :class="classes">
     <div class="container">
       <div class="news-title">
         <h1 class="text-primary">Dark Energy Survey Evolves or a longer title with three</h1>
@@ -20,4 +20,11 @@
 </template>
 <script setup>
   import linkArrowRight from '../../../public/icons/link-arrow-right.svg?raw'
+
+  const props = defineProps({
+    classes: {
+      type: String,
+      default: null
+    }
+  })
 </script>

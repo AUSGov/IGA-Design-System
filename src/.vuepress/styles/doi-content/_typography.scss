@@ -280,4 +280,12 @@ cite {
     border-radius: 4px;
     background: $primary;
   }
+
+  &.center-promo {
+    &::after {
+      left: 50%;
+      transform: translateX(-50%);
+      background: $doi-action;
+    }
+  }
 }

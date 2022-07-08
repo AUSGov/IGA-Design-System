@@ -7,7 +7,6 @@ import DoiContentFilters from './theme/layouts/DoiContentFilters.vue'
 import DoiContentNavigation from './theme/layouts/DoiContentNavigation.vue'
 import DoiOtherComponents from './theme/layouts/DoiOtherComponents.vue'
 import DoiContentCards from './theme/layouts/DoiContentCards.vue'
-
 // page patterns
 import DoiNewsHomepage from './theme/layouts/page-patterns/DoiNewsHomepage.vue'
 import DoiNewsSubsection from './theme/layouts/page-patterns/DoiNewsSubsection.vue'
@@ -22,6 +21,11 @@ import DoiFilteredHomepage from './theme/layouts/page-patterns/DoiFilteredHomepa
 import DoiFilteredHomepageAdc from './theme/layouts/page-patterns/DoiFilteredHomepageAdc.vue'
 import DoiHomepage from './theme/layouts/page-patterns/DoiHomepage.vue'
 import DoiCaseStudy from './theme/layouts/page-patterns/DoiCaseStudy.vue'
+import DoiBiography from './theme/layouts/page-patterns/DoiBiography.vue'
+import DoiBiographyImageless from './theme/layouts/page-patterns/DoiBiographyImageless.vue'
+import DoiEvent from './theme/layouts/page-patterns/DoiEvent.vue'
+import DoiOrgChat from './theme/layouts/page-patterns/DoiOrgChat.vue'
+import DoiSearchLanding from './theme/layouts/page-patterns/DoiSearchLanding.vue'
 
 
 export default defineClientConfig({
@@ -49,6 +53,11 @@ export default defineClientConfig({
     app.component('DoiFilteredHomepageAdc', DoiFilteredHomepageAdc)
     app.component('DoiHomepage', DoiHomepage)
     app.component('DoiCaseStudy', DoiCaseStudy)
+    app.component('DoiBiography', DoiBiography)
+    app.component('DoiBiographyImageless', DoiBiographyImageless)
+    app.component('DoiEvent', DoiEvent)
+    app.component('DoiOrgChat', DoiOrgChat)
+    app.component('DoiSearchLanding', DoiSearchLanding)
 
     app.directive('inline-svg', {
       updated: (element) => {

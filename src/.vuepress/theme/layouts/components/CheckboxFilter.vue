@@ -24,8 +24,8 @@
                 <option value="1">Australian Industry Participation Authority</option>
                 <option value="2">Anti-Dumping Commission</option>
                 <option value="3">AusIndustry</option>
-                <option value="3">Australian Industry Participation Authority...</option>
-                <option value="3">Australian Radioactive Waste Authority</option>
+                <option value="4">Australian Industry Participation Authority...</option>
+                <option value="5">Australian Radioactive Waste Authority</option>
               </select>
             </div>
           </div>
