@@ -23,6 +23,7 @@
           <td><span class="label">Country:</span>Continuation</td>
           <td><span class="label">Public Record:</span>Malaysia, Vietnam</td>
           <td><span class="label">Next Milestone:</span>Final report</td>
+          <td class="d-none"><span class="label">Last updated:</span>18 March 2022</td>
         </tr>
         </tbody>
       </table>

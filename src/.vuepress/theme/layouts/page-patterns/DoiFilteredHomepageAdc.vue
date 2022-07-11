@@ -12,20 +12,28 @@
       <DoiSwitch start-label="Table" end-label="Card"/>
     </div>
     <div class="container-small pb-6">
-      <div class="pb-5">
-        <AdcCard />
+      <div class="card-container">
+        <div class="pb-5">
+          <AdcCard />
+        </div>
+        <div class="pb-5">
+          <AdcCard />
+        </div>
+        <div class="pb-5">
+          <AdcCard />
+        </div>
+        <div class="pb-5">
+          <AdcCard />
+        </div>
+        <div class="pb-5">
+          <AdcCard />
+        </div>
       </div>
-      <div class="pb-5">
-        <AdcCard />
-      </div>
-      <div class="pb-5">
-        <AdcCard />
-      </div>
-      <div class="pb-5">
-        <AdcCard />
-      </div>
-      <div class="pb-5">
-        <AdcCard />
+      <div class="table-container">
+        <table class="table table-striped">
+          <thead class="table-primary" />
+          <tbody />
+        </table>
       </div>
       <div class="pb-6">
         <Pagination />
@@ -48,4 +56,29 @@
   import ReadMore from "../components/ReadMore.vue"
   import SecondaryFooter from "../components/SecondaryFooter.vue"
   import StandardBanner from "../components/StandardBanner.vue"
+  import { onMounted } from 'vue'
+
+  onMounted(() => {
+    const $switch = $('.doi-switch').find('.form-check-input')
+    $switch.on('change', () => {
+      if($switch.is(':checked')) {
+        //card layout
+        $('.card-container').removeClass('d-none')
+        const $tableContainer = $('.table-container')
+        $tableContainer.find('thead').empty()
+        $tableContainer.find('tbody').empty()
+      } else {
+        //table layout
+        $('.card-container').addClass('d-none')
+        const $tables = $('.card-container').find('table')
+        //get all tbody content from tables and clone into table-container's tbody
+        const $tableContainer = $('.table-container')
+        $('.card-container').find('thead').first().find('tr').clone().prependTo($tableContainer.find('thead'))
+        $tableContainer.find('thead').addClass('table-primary')
+        $tables.each((index, table) => {
+          $(table).find('tbody').find('tr').clone().appendTo($tableContainer.find('tbody'))
+        })
+      }
+    })
+  })
 </script>
