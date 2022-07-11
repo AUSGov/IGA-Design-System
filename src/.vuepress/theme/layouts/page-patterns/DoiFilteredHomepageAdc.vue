@@ -2,7 +2,10 @@
   <div class="doi-content">
     <Header />
     <EntityBar title="ANTI - DUMPING COMMISSION" />
-    <StandardBanner classes="title-large text-black" />
+    <div style="margin-bottom: 3px;">
+      <StandardBanner classes="title-large text-black shadow-sm"/>
+
+    </div>
     <InSectionNavigation />
     <div class="container-small py-6">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suscipit malesuada viverra est magna sapien iaculis. Vitae arcu id dignissim enim eget viverra. Integer cras pharetra egestas tempus et volutpat, blandit. Arcu tristique dolor at donec tempor in et dictum vitae. Consectetur ipsum aliquet maecenas elit rhoncus. Cursus vitae duis volutpat condimentum at dignissim rhoncus ut ac. Mauris lobortis lacus tellus risus amet. Vel aliquet bibendum a leo lobortis vulputate. Sit quis quis egestas est amet urna, enim enim.</p>
