@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2f1cbf27","path":"/page-patterns/","title":"Page Patterns","lang":"en-US","frontmatter":{"lang":"en-US","title":"Page Patterns","description":"Description of the foundations page","pageHeader":true,"layout":"ParentPage"},"excerpt":"","headers":[],"git":{"updatedTime":1657525201000},"filePathRelative":"page-patterns/README.md"}');export{e as data};

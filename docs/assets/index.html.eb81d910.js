@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-7319b1b0","path":"/html-components/","title":"HTML Components","lang":"en-US","frontmatter":{"lang":"en-US","title":"HTML Components","description":"Raw HTML Components","pageHeader":true,"layout":"ParentPage"},"excerpt":"","headers":[],"git":{"updatedTime":1657511353000},"filePathRelative":"html-components/README.md"}');export{e as data};

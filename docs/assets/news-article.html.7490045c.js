@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6cad66f4","path":"/html-page-patterns/news-article.html","title":"Filters","lang":"en-US","frontmatter":{"lang":"en-US","title":"Filters","description":null,"pageHeader":true,"layout":"DoiNewsArticle"},"excerpt":"","headers":[],"git":{"updatedTime":1657525201000},"filePathRelative":"html-page-patterns/news-article.md"}');export{e as data};

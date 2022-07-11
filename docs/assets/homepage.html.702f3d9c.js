@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6414d854","path":"/html-page-patterns/homepage.html","title":"Homepage","lang":"en-US","frontmatter":{"lang":"en-US","title":"Homepage","description":null,"pageHeader":true,"layout":"DoiHomepage"},"excerpt":"","headers":[],"git":{"updatedTime":1657525201000},"filePathRelative":"html-page-patterns/homepage.md"}');export{e as data};

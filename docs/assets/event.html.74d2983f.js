@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-3177e476","path":"/html-page-patterns/event.html","title":"Event","lang":"en-US","frontmatter":{"lang":"en-US","title":"Event","description":null,"pageHeader":true,"layout":"DoiEvent"},"excerpt":"","headers":[],"git":{"updatedTime":1657525201000},"filePathRelative":"html-page-patterns/event.md"}');export{e as data};

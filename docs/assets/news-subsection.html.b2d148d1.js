@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-b8182cde","path":"/html-page-patterns/news-subsection.html","title":"Filters","lang":"en-US","frontmatter":{"lang":"en-US","title":"Filters","description":null,"pageHeader":true,"layout":"DoiNewsSubsection"},"excerpt":"","headers":[],"git":{"updatedTime":1657525201000},"filePathRelative":"html-page-patterns/news-subsection.md"}');export{e as data};

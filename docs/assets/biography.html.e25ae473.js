@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2062f33d","path":"/html-page-patterns/biography.html","title":"Biography","lang":"en-US","frontmatter":{"lang":"en-US","title":"Biography","description":null,"pageHeader":true,"layout":"DoiBiography"},"excerpt":"","headers":[],"git":{"updatedTime":1657525201000},"filePathRelative":"html-page-patterns/biography.md"}');export{e as data};
