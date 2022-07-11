@@ -41,7 +41,7 @@
       <div class="pb-6">
         <Pagination />
       </div>
-      <ReadMore classes="hover-action" />
+      <ReadMore/>
     </div>
     <SecondaryFooter :subscribe="false" />
     <Footer />

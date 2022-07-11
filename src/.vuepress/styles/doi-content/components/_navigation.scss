@@ -482,6 +482,7 @@
 
 .chapter-banners {
   padding: 2.5rem 0;
+  background-color: $gray-100;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -544,12 +545,10 @@
     }
   }
 
-  &.hover-action {
-    a {
-      &:hover,
-      &:focus {
-        color: $doi-action
-      }
+  a {
+    &:hover,
+    &:focus {
+      color: $doi-action;
     }
   }
 }

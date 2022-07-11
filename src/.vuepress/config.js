@@ -77,17 +77,17 @@ module.exports = {
               {
                 text: 'Header',
                 link: '/components/headers-footers/header',
-                componentsLink: '/components-html/headers-footers#header',
+                componentsLink: '/html-components/headers-footers#header',
               },
               {
                 text: 'Global Footer',
                 link: '/components/headers-footers/global-footer',
-                componentsLink: '/components-html/headers-footers#global-footer',
+                componentsLink: '/html-components/headers-footers#global-footer',
               },
               {
                 text: 'Secondary Footer',
                 link: '/components/headers-footers/secondary-footer',
-                componentsLink: '/components-html/headers-footers#secondary-footer',
+                componentsLink: '/html-components/headers-footers#secondary-footer',
               },
             ],
           },
@@ -98,22 +98,22 @@ module.exports = {
               {
                 text: 'Mega Menu',
                 link: '/components/navigation/mega-menu',
-                componentsLink: '/components-html/headers-footers#header',
+                componentsLink: '/html-components/headers-footers#header',
               },
               {
                 text: 'Breadcrumbs',
                 link: '/components/navigation/breadcrumbs',
-                componentsLink: '/components-html/navigation#breadcrumbs',
+                componentsLink: '/html-components/navigation#breadcrumbs',
               },
               {
                 text: 'In-section navigation',
                 link: '/components/navigation/in-section-navigation',
-                componentsLink: '/components-html/navigation#in-section-navigation',
+                componentsLink: '/html-components/navigation#in-section-navigation',
               },
               {
                 text: 'On this page menu',
                 link: '/components/navigation/on-this-page-menu',
-                componentsLink: '/components-html/navigation#on-this-page-menu',
+                componentsLink: '/html-components/navigation#on-this-page-menu',
               },
               {
                 text: 'Tile navigation',
@@ -122,7 +122,7 @@ module.exports = {
               {
                 text: 'Publication section divider',
                 link: '/components/navigation/publication-section-divider',
-                componentsLink: '/components-html/navigation#chapter-banners',
+                componentsLink: '/html-components/navigation#chapter-banners',
               },
             ],
           },
@@ -137,27 +137,27 @@ module.exports = {
               {
                 text: 'News card and containers',
                 link: '/components/cards/news',
-                componentsLink: '/components-html/cards#featured-news',
+                componentsLink: '/html-components/cards#featured-news',
               },
               {
                 text: 'Event card and containers',
                 link: '/components/cards/event',
-                componentsLink: '/components-html/cards#event-card',
+                componentsLink: '/html-components/cards#event-card',
               },
               {
                 text: 'Filtered landing page card',
                 link: '/components/cards/filtered-landing-page',
-                componentsLink: '/components-html/cards#filtered-landing-page-card',
+                componentsLink: '/html-components/cards#filtered-landing-page-card',
               },
               {
                 text: 'Bio card',
                 link: '/components/cards/bio',
-                componentsLink: '/components-html/cards#biography-card',
+                componentsLink: '/html-components/cards#biography-card',
               },
               {
                 text: 'Request for quote (NMI)',
                 link: '/components/cards/request-for-quote',
-                componentsLink: '/components-html/cards#rfq-card',
+                componentsLink: '/html-components/cards#rfq-card',
               },
             ]
           },
@@ -168,22 +168,22 @@ module.exports = {
               {
                 text: 'Checkbox filter',
                 link: '/components/filters/checkbox',
-                componentsLink: '/components-html/filters#checkbox-filter',
+                componentsLink: '/html-components/filters#checkbox-filter',
               },
               {
                 text: 'Tabs filter',
                 link: '/components/filters/tabs',
-                componentsLink: '/components-html/filters#tabs-filter',
+                componentsLink: '/html-components/filters#tabs-filter',
               },
               {
                 text: 'Dropdown filter',
                 link: '/components/filters/dropdown',
-                componentsLink: '/components-html/filters#dropdown-filter',
+                componentsLink: '/html-components/filters#dropdown-filter',
               },
               {
                 text: 'Tags filter',
                 link: '/components/filters/tags',
-                componentsLink: '/components-html/filters#tabs-filter',
+                componentsLink: '/html-components/filters#tabs-filter',
               },
             ]
           },
@@ -194,12 +194,12 @@ module.exports = {
               {
                 text: 'Homepage banner',
                 link: '/components/banners/homepage',
-                componentsLink: '/components-html/banners#carousel',
+                componentsLink: '/html-components/banners#carousel',
               },
               {
                 text: 'Standard content banner',
                 link: '/components/banners/standard-content',
-                componentsLink: '/components-html/banners#standard-banner',
+                componentsLink: '/html-components/banners#standard-banner',
               },
               {
                 text: 'Standard content ADC banner',
@@ -208,12 +208,12 @@ module.exports = {
               {
                 text: 'Publication banners',
                 link: '/components/banners/publication',
-                componentsLink: '/components-html/banners#publication-banner',
+                componentsLink: '/html-components/banners#publication-banner',
               },
               {
                 text: 'News article, case study, event banner',
                 link: '/components/banners/news-case-event',
-                componentsLink: '/components-html/banners#news-article',
+                componentsLink: '/html-components/banners#news-article',
               },
               {
                 text: 'Biography banner',

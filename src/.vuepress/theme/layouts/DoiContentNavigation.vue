@@ -33,7 +33,7 @@
         <h2 id="chapter-banners">Chapter Banners</h2>
       </div>
       <ChapterBanner/>
-      <ChapterBanner :dark="false" classes="text-white" :image="true"/>
+      <ChapterBanner :dark="false" classes="text-white" image="/images/banner-sample-2.jpeg"/>
     </div>
 
     <div class="pb-5">

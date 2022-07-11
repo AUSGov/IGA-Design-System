@@ -35,7 +35,7 @@ a {
   }
 
   &.link-secondary {
-    color: black;
+    color: $body-color;
     font-size: 15px;
     line-height: 20px;
     font-weight: $font-weight-normal;
@@ -45,7 +45,7 @@ a {
     }
 
     &:hover {
-      color: black;
+      color: $body-color;
 
       svg {
         opacity: 1;

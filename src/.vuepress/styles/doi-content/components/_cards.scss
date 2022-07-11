@@ -700,6 +700,7 @@
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid $gray-400;
+  color: $gray-700;
 
   .tags {
     @include caption-bold;

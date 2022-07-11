@@ -41,22 +41,22 @@
             </div>
           </div>
           <div class="pb-5">
-            <SearchLandingCard classes="text-gray-700" />
+            <SearchLandingCard/>
           </div>
           <div class="pb-5">
-            <SearchLandingCard classes="text-gray-700" />
+            <SearchLandingCard/>
           </div>
           <div class="pb-5">
-            <SearchLandingCard classes="text-gray-700" />
+            <SearchLandingCard/>
           </div>
           <div class="pb-5">
-            <SearchLandingCard classes="text-gray-700" />
+            <SearchLandingCard/>
           </div>
           <div class="pb-5">
-            <SearchLandingCard classes="text-gray-700" />
+            <SearchLandingCard/>
           </div>
           <div class="pb-4">
-            <SearchLandingCard classes="text-gray-700" />
+            <SearchLandingCard/>
           </div>
           <Pagination />
         </div>

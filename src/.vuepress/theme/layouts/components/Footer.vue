@@ -31,7 +31,13 @@
                   </ul>
                 </div>
                 <div class="d-none d-lg-block col-lg-6">
-                  Test
+                  <ul>
+                    <li><a href="#" class="link-icon link-secondary">People<span v-html="linkArrowRight"></span></a>
+                    </li>
+                    <li>
+                      <a href="#" class="link-icon link-secondary">Corporate governance<span v-html="linkArrowRight"></span></a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
