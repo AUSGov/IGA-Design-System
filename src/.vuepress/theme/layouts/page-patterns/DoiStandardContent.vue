@@ -124,51 +124,23 @@
     <Footer/>
   </div>
 </template>
-
-<script>
-  import linkArrowRight from '../../../public/icons/link-arrow-right.svg?raw'
-  import Header from '../components/Header.vue'
-  import EntityBar from '../components/EntityBar.vue'
-  import SectionBanner from '../components/SectionBanner.vue'
-  import FeaturedCardInline from '../components/FeaturedCardInline.vue'
-  import EditorialCard from '../components/EditorialCard.vue'
-  import Footer from '../components/Footer.vue'
-  import InSectionNavigation from '../components/InSectionNavigation.vue'
-  import Breadcrumb from '../components/Breadcrumb.vue'
-  import NavigationCard from '../components/NavigationCard.vue'
-  import DirectoryLinks from '../components/DirectoryLinks.vue'
-  import FeaturedCardNoBg from '../components/FeaturedCardNoBg.vue'
-  import HorizontalTimeline from '../components/HorizontalTimeline.vue'
-  import PromotionalCards from '../components/PromotionalCards.vue'
-  import RfqCard from '../components/RfqCard.vue'
-  import ReadMore from '../components/ReadMore.vue'
-  import BiographyCard from '../components/BiographyCard.vue'
-  import OnThisPageMenu from '../components/OnThisPageMenu.vue'
-
-  export default {
-    components: {
-      OnThisPageMenu,
-      BiographyCard,
-      ReadMore,
-      RfqCard,
-      PromotionalCards,
-      HorizontalTimeline,
-      FeaturedCardNoBg,
-      DirectoryLinks,
-      NavigationCard,
-      Breadcrumb,
-      InSectionNavigation,
-      Footer,
-      EditorialCard,
-      FeaturedCardInline,
-      SectionBanner,
-      EntityBar,
-      Header
-    },
-    data () {
-      return {
-        linkArrowRight,
-      }
-    }
-  }
+<script setup>
+import linkArrowRight from '../../../public/icons/link-arrow-right.svg?raw'
+import Header from '../components/Header.vue'
+import EntityBar from '../components/EntityBar.vue'
+import SectionBanner from '../components/SectionBanner.vue'
+import FeaturedCardInline from '../components/FeaturedCardInline.vue'
+import EditorialCard from '../components/EditorialCard.vue'
+import Footer from '../components/Footer.vue'
+import InSectionNavigation from '../components/InSectionNavigation.vue'
+import Breadcrumb from '../components/Breadcrumb.vue'
+import NavigationCard from '../components/NavigationCard.vue'
+import DirectoryLinks from '../components/DirectoryLinks.vue'
+import FeaturedCardNoBg from '../components/FeaturedCardNoBg.vue'
+import HorizontalTimeline from '../components/HorizontalTimeline.vue'
+import PromotionalCards from '../components/PromotionalCards.vue'
+import RfqCard from '../components/RfqCard.vue'
+import ReadMore from '../components/ReadMore.vue'
+import BiographyCard from '../components/BiographyCard.vue'
+import OnThisPageMenu from '../components/OnThisPageMenu.vue'
 </script>

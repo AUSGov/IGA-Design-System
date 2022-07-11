@@ -45,7 +45,7 @@
   </div>
 </template>
 
-<script>
+<script setup>
   import Breadcrumb from './components/Breadcrumb.vue'
   import InSectionNavigation from './components/InSectionNavigation.vue'
   import OnThisPageMenu from './components/OnThisPageMenu.vue'
@@ -53,19 +53,4 @@
   import DirectoryLinks from './components/DirectoryLinks.vue'
   import ChapterBanner from './components/ChapterBanner.vue'
   import ReadMore from './components/ReadMore.vue'
-
-  export default {
-    components: {
-      ReadMore,
-      ChapterBanner,
-      DirectoryLinks,
-      ContentStepper,
-      OnThisPageMenu,
-      InSectionNavigation,
-      Breadcrumb
-    },
-    data () {
-      return {}
-    }
-  }
 </script>

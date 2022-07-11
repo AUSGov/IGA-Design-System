@@ -77,17 +77,17 @@ module.exports = {
               {
                 text: 'Header',
                 link: '/components/headers-footers/header',
-                componentsLink: '/components-html/headers-footers#header',
+                htmlLink: '/components-html/headers-footers#header',
               },
               {
                 text: 'Global Footer',
                 link: '/components/headers-footers/global-footer',
-                componentsLink: '/components-html/headers-footers#global-footer',
+                htmlLink: '/components-html/headers-footers#global-footer',
               },
               {
                 text: 'Secondary Footer',
                 link: '/components/headers-footers/secondary-footer',
-                componentsLink: '/components-html/headers-footers#secondary-footer',
+                htmlLink: '/components-html/headers-footers#secondary-footer',
               },
             ],
           },
@@ -98,22 +98,22 @@ module.exports = {
               {
                 text: 'Mega Menu',
                 link: '/components/navigation/mega-menu',
-                componentsLink: '/components-html/headers-footers#header',
+                htmlLink: '/components-html/headers-footers#header',
               },
               {
                 text: 'Breadcrumbs',
                 link: '/components/navigation/breadcrumbs',
-                componentsLink: '/components-html/navigation#breadcrumbs',
+                htmlLink: '/components-html/navigation#breadcrumbs',
               },
               {
                 text: 'In-section navigation',
                 link: '/components/navigation/in-section-navigation',
-                componentsLink: '/components-html/navigation#in-section-navigation',
+                htmlLink: '/components-html/navigation#in-section-navigation',
               },
               {
                 text: 'On this page menu',
                 link: '/components/navigation/on-this-page-menu',
-                componentsLink: '/components-html/navigation#on-this-page-menu',
+                htmlLink: '/components-html/navigation#on-this-page-menu',
               },
               {
                 text: 'Tile navigation',
@@ -122,7 +122,7 @@ module.exports = {
               {
                 text: 'Publication section divider',
                 link: '/components/navigation/publication-section-divider',
-                componentsLink: '/components-html/navigation#chapter-banners',
+                htmlLink: '/components-html/navigation#chapter-banners',
               },
             ],
           },
@@ -137,27 +137,27 @@ module.exports = {
               {
                 text: 'News card and containers',
                 link: '/components/cards/news',
-                componentsLink: '/components-html/cards#featured-news',
+                htmlLink: '/components-html/cards#featured-news',
               },
               {
                 text: 'Event card and containers',
                 link: '/components/cards/event',
-                componentsLink: '/components-html/cards#event-card',
+                htmlLink: '/components-html/cards#event-card',
               },
               {
                 text: 'Filtered landing page card',
                 link: '/components/cards/filtered-landing-page',
-                componentsLink: '/components-html/cards#filtered-landing-page-card',
+                htmlLink: '/components-html/cards#filtered-landing-page-card',
               },
               {
                 text: 'Bio card',
                 link: '/components/cards/bio',
-                componentsLink: '/components-html/cards#biography-card',
+                htmlLink: '/components-html/cards#biography-card',
               },
               {
                 text: 'Request for quote (NMI)',
                 link: '/components/cards/request-for-quote',
-                componentsLink: '/components-html/cards#rfq-card',
+                htmlLink: '/components-html/cards#rfq-card',
               },
             ]
           },
@@ -168,22 +168,22 @@ module.exports = {
               {
                 text: 'Checkbox filter',
                 link: '/components/filters/checkbox',
-                componentsLink: '/components-html/filters#checkbox-filter',
+                htmlLink: '/components-html/filters#checkbox-filter',
               },
               {
                 text: 'Tabs filter',
                 link: '/components/filters/tabs',
-                componentsLink: '/components-html/filters#tabs-filter',
+                htmlLink: '/components-html/filters#tabs-filter',
               },
               {
                 text: 'Dropdown filter',
                 link: '/components/filters/dropdown',
-                componentsLink: '/components-html/filters#dropdown-filter',
+                htmlLink: '/components-html/filters#dropdown-filter',
               },
               {
                 text: 'Tags filter',
                 link: '/components/filters/tags',
-                componentsLink: '/components-html/filters#tabs-filter',
+                htmlLink: '/components-html/filters#tabs-filter',
               },
             ]
           },
@@ -194,12 +194,12 @@ module.exports = {
               {
                 text: 'Homepage banner',
                 link: '/components/banners/homepage',
-                componentsLink: '/components-html/banners#carousel',
+                htmlLink: '/components-html/banners#carousel',
               },
               {
                 text: 'Standard content banner',
                 link: '/components/banners/standard-content',
-                componentsLink: '/components-html/banners#standard-banner',
+                htmlLink: '/components-html/banners#standard-banner',
               },
               {
                 text: 'Standard content ADC banner',
@@ -208,12 +208,12 @@ module.exports = {
               {
                 text: 'Publication banners',
                 link: '/components/banners/publication',
-                componentsLink: '/components-html/banners#publication-banner',
+                htmlLink: '/components-html/banners#publication-banner',
               },
               {
                 text: 'News article, case study, event banner',
                 link: '/components/banners/news-case-event',
-                componentsLink: '/components-html/banners#news-article',
+                htmlLink: '/components-html/banners#news-article',
               },
               {
                 text: 'Biography banner',
@@ -266,10 +266,6 @@ module.exports = {
         ],
       },
       {
-        text: 'Page Patterns',
-        link: '/page-patterns',
-      },
-      {
         text: 'Components HTML',
         link: '/html-components',
         hidden: true,
@@ -298,6 +294,181 @@ module.exports = {
             text: 'Other Components',
             link: '/html-components/other-components.html',
           },
+        ]
+      },
+      {
+        text: 'Page Patterns',
+        link: '/page-patterns',
+        children: [
+          {
+            text: 'Biography',
+            link: '/page-patterns/biography.html',
+            htmlLink: '/html-page-patterns/biography.html',
+          },
+          {
+            text: 'Biography without Image',
+            link: '/page-patterns/biography-imageless.html',
+            htmlLink: '/html-page-patterns/biography-imageless.html',
+          },
+          {
+            text: 'Case Study',
+            link: '/page-patterns/case-study.html',
+            htmlLink: '/html-page-patterns/case-study.html',
+          },
+          {
+            text: 'Event',
+            link: '/page-patterns/event.html',
+            htmlLink: '/html-page-patterns/event.html',
+          },
+          {
+            text: 'Filtered Homepage',
+            link: '/page-patterns/filtered-homepage.html',
+            htmlLink: '/html-page-patterns/filtered-homepage.html',
+          },
+          {
+            text: 'Filtered Homepage ADC',
+            link: '/page-patterns/filtered-homepage-adc.html',
+            htmlLink: '/html-page-patterns/filtered-homepage-adc.html',
+          },
+          {
+            text: 'Homepage',
+            link: '/page-patterns/homepage.html',
+            htmlLink: '/html-page-patterns/homepage.html',
+          },
+          {
+            text: 'News Article',
+            link: '/page-patterns/news-article.html',
+            htmlLink: '/html-page-patterns/news-article.html',
+          },
+          {
+            text: 'News Homepage',
+            link: '/page-patterns/news-homepage.html',
+            htmlLink: '/html-page-patterns/news-homepage.html',
+          },
+          {
+            text: 'News Subsection',
+            link: '/page-patterns/news-subsection.html',
+            htmlLink: '/html-page-patterns/news-subsection.html',
+          },
+          {
+            text: 'Organisational Chart',
+            link: '/page-patterns/org-chart.html',
+            htmlLink: '/html-page-patterns/org-chart.html',
+          },
+          {
+            text: 'Publications Chaptered',
+            link: '/page-patterns/publications-chaptered.html',
+            htmlLink: '/html-page-patterns/publications-chaptered.html',
+          },
+          {
+            text: 'Publications Chaptered Child',
+            link: '/page-patterns/publications-chaptered-child.html',
+            htmlLink: '/html-page-patterns/publications-chaptered-child.html',
+          },
+          {
+            text: 'Publications Homepage',
+            link: '/page-patterns/publications-homepage.html',
+            htmlLink: '/html-page-patterns/publications-homepage.html',
+          },
+          {
+            text: 'Publications Single Basic',
+            link: '/page-patterns/publications-single-basic.html',
+            htmlLink: '/html-page-patterns/publications-single-basic.html',
+          },
+          {
+            text: 'Publications Single Page',
+            link: '/page-patterns/publications-single-page.html',
+            htmlLink: '/html-page-patterns/publications-single-page.html',
+          },
+          {
+            text: 'Search Landing',
+            link: '/page-patterns/search-landing.html',
+            htmlLink: '/html-page-patterns/search-landing.html',
+          },
+          {
+            text: 'Standard Content',
+            link: '/page-patterns/standard-content.html',
+            htmlLink: '/html-page-patterns/standard-content.html',
+          }
+        ]
+      },
+      {
+        text: 'Page Patterns HTML',
+        link: '/html-page-patterns',
+        hidden: true,
+        children: [
+          {
+            text: 'Biography',
+            link: '/html-page-patterns/biography.html',
+          },
+          {
+            text: 'Biography without Image',
+            link: '/html-page-patterns/biography-imageless.html',
+          },
+          {
+            text: 'Case Study',
+            link: '/html-page-patterns/case-study.html',
+          },
+          {
+            text: 'Event',
+            link: '/html-page-patterns/event.html',
+          },
+          {
+            text: 'Filtered Homepage',
+            link: '/html-page-patterns/filtered-homepage.html',
+          },
+          {
+            text: 'Filtered Homepage ADC',
+            link: '/html-page-patterns/filtered-homepage-adc.html',
+          },
+          {
+            text: 'Homepage',
+            link: '/html-page-patterns/homepage.html',
+          },
+          {
+            text: 'News Article',
+            link: '/html-page-patterns/news-article.html',
+          },
+          {
+            text: 'News Homepage',
+            link: '/html-page-patterns/news-homepage.html',
+          },
+          {
+            text: 'News Subsection',
+            link: '/html-page-patterns/news-subsection.html',
+          },
+          {
+            text: 'Organisational Chart',
+            link: '/html-page-patterns/org-chart.html',
+          },
+          {
+            text: 'Publications Chaptered',
+            link: '/html-page-patterns/publications-chaptered.html',
+          },
+          {
+            text: 'Publications Chaptered Child',
+            link: '/html-page-patterns/publications-chaptered-child.html',
+          },
+          {
+            text: 'Publications Homepage',
+            link: '/html-page-patterns/publications-homepage.html',
+          },
+          {
+            text: 'Publications Single Basic',
+            link: '/html-page-patterns/publications-single-basic.html',
+          },
+          {
+            text: 'Publications Single Page',
+            link: '/html-page-patterns/publications-single-page.html',
+          },
+          {
+            text: 'Search Landing',
+            link: '/html-page-patterns/search-landing.html',
+          },
+          {
+            text: 'Standard Content',
+            link: '/html-page-patterns/standard-content.html',
+          }
         ]
       },
       {

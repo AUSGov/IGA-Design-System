@@ -4,14 +4,21 @@
     <div class="card-body">
       <p class="h4">{{ title }}</p>
       <div v-if="text" class="text">{{ text }}</div>
-      <RouterLink v-if="linkUrl" :to="linkUrl" class="link-icon link-internal">
-        <span>{{ linkText }}</span>
-        <span class="icon" v-html="arrowRight">
-        </span>
-      </RouterLink>
-      <a v-if="componentsLink && componentsLink.length > 0" :href="componentsLink" target="_blank" class="link-icon link-external">
+      <template v-if="linkUrl">
+        <a v-if="external" :href="linkUrl" target="_blank" class="link-icon link-external">
+          <span>Raw HTML</span>
+          <span class="icon" v-html="linkExternal"></span>
+        </a>
+        <RouterLink v-else :to="linkUrl" class="link-icon link-internal">
+          <span>{{ linkText }}</span>
+          <span class="icon" v-html="arrowRight">
+          </span>
+        </RouterLink>
+      </template>
+      <a v-if="htmlLink" :href="htmlLink" target="_blank" class="link-icon link-external">
         <span>Raw HTML</span>
-        <span class="icon" v-html="linkExternal"></span></a>
+        <span class="icon" v-html="linkExternal"></span>
+      </a>
     </div>
   </div>
 </template>
@@ -27,7 +34,7 @@
       title: {
         type: String
       },
-      componentsLink: {
+      htmlLink: {
         type: String,
         default: null
       },
@@ -44,6 +51,10 @@
       },
       text: {
         type: String,
+      },
+      external: {
+        type: Boolean,
+        default: false
       }
     },
     data () {
