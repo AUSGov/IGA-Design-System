@@ -5,6 +5,7 @@
       <div v-else class="video-player">
         <div class="video">
           <iframe src="https://www.youtube.com/embed/8chx9Enq2po" frameborder="0" allow="autoplay"></iframe>
+<!--          <iframe src="https://player.vimeo.com/video/250219970?h=6fce725266" frameborder="0" allow="autoplay;"></iframe>-->
         </div>
         <div class="play-button">
           <span v-html="videoPlay"></span>
