@@ -270,6 +270,36 @@ module.exports = {
         link: '/page-patterns',
       },
       {
+        text: 'Components HTML',
+        link: '/html-components',
+        children: [
+          {
+            text: 'Biography',
+            link: '/html-components/biography.html',
+          },
+          {
+            text: 'Cards',
+            link: '/html-components/cards.html',
+          },
+          {
+            text: 'Filters',
+            link: '/html-components/filters.html',
+          },
+          {
+            text: 'Headers & Footers',
+            link: '/html-components/headers-footers.html',
+          },
+          {
+            text: 'Navigation',
+            link: '/html-components/navigation.html',
+          },
+          {
+            text: 'Other Components',
+            link: '/html-components/other-components.html',
+          },
+        ]
+      },
+      {
         text: 'Accessibility',
         link: '/accessibility',
       },
