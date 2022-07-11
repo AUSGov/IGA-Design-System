@@ -31,10 +31,13 @@
     if (!parentMenu) {
       return null
     }
-    let result = []
+    let result = {
+      flat: [],
+      children: []
+    }
     for (const child of parentMenu.children) {
       if (!child.children || !child.children.length) {
-        result.push({
+        result.flat.push({
           title: child.text,
           componentsLink: child.componentsLink,
           linkUrl: child.link,
@@ -48,7 +51,7 @@
         linkUrl: item.link,
         linkText: 'Documentation',
       }))
-      result.push({
+      result.children.push({
         title: child.text,
         children: processedChildren
       })
@@ -58,23 +61,15 @@
 </script>
 
 <template>
-  <div v-if="subMenu" class="c-sub-menu-cards">
-    <div v-for="menu in subMenu" class="mb-12">
-      <template v-if="menu.children">
+  <div class="c-sub-menu-cards">
+    <template v-if="subMenu.flat">
+      <Cards :contents="subMenu.flat" :compact="true"/>
+    </template>
+    <template v-if="subMenu.flat">
+    <div v-for="menu in subMenu.children" class="mb-12">
       <h2>{{ menu.title }}</h2>
       <Cards :contents="menu.children" :compact="true"/>
-      </template>
     </div>
-    <div class="c-cards">
-      <div class="row">
-      <template v-for="menu in subMenu">
-        <template v-if="!menu.children">
-        <div class="col-md-6 col-lg-4 mb-2">
-          <Card v-bind.props="menu" :compact="true"/>
-        </div>
-        </template>
-      </template>
-      </div>
-    </div>
+    </template>
   </div>
 </template>
