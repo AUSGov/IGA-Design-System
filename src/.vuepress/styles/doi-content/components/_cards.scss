@@ -192,8 +192,16 @@
   }
 
   &.offset {
-    margin-left: -2rem;
-    margin-top: -4rem;
+    @include media-breakpoint-up(lg) {
+      margin-left: -2rem;
+      margin-top: -4rem;
+    }
+  }
+
+  &.border-promo {
+    img {
+      border: 4px solid $doi-promo;
+    }
   }
 }
 
@@ -235,7 +243,7 @@
     }
 
     .img-wrap {
-      width: 25%;
+      width: 33%;
     }
 
     img {
@@ -305,6 +313,16 @@
 
     .line-wrap {
       width: 100%;
+
+      .link-icon {
+        span {
+          svg {
+            width: 33px;
+            height: 18px;
+            color: $doi-action;
+          }
+        }
+      }
     }
 
     a {

@@ -21,7 +21,7 @@
       <span class="icon-container" v-html="share"></span>
       <span class="icon-container" v-html="download"></span>
     </div>
-    <div class="publication-container heading-extra-small">
+    <div v-if="showDownload" class="publication-container heading-extra-small">
       <div v-for="index in 4" :key="index" class="pdf-container">
         <div class="pdf-title">Australia’s Long-Term Emission Reduction plan <span class="description-container">PDF 17.5MB</span>
         </div>
@@ -33,4 +33,10 @@
 <script setup>
   import download from '../../../public/icons/download.svg?raw'
   import share from '../../../public/icons/share.svg?raw'
+  const props = defineProps({
+    showDownload: {
+      type: Boolean,
+      default: true
+    }
+  })
 </script>

@@ -10,7 +10,7 @@
     </div>
     <div class="container pb-5">
       <h2 id="publication-table">Publication Table</h2>
-      <PublicationTable />
+      <DoiTable :headers="publicationTableHeaders" :contents="publicationTableContents"/>
     </div>
     <div class="container pb-5">
       <h2 id="publication">Publication</h2>
@@ -77,8 +77,8 @@
 
     <div class="container">
       <h2 id="gallery">Gallery</h2>
+      <Gallery />
     </div>
-    <Gallery />
   </div>
 </template>
 
@@ -87,7 +87,6 @@
   import Blockquote from "./components/DoiBlockquote.vue"
   import CalloutModal from "./components/CalloutModal.vue"
   import Pagination from './components/Pagination.vue'
-  import PublicationTable from './components/PublicationTable.vue'
   import Publication from './components/Publication.vue'
   import HorizontalTimeline from './components/HorizontalTimeline.vue'
   import DoiTable from './components/DoiTable.vue'
@@ -102,7 +101,6 @@
       HorizontalTimeline,
       Pagination,
       Publication,
-      PublicationTable,
       MediaTranscript,
       DoiTable,
       VerticalTimeline,
@@ -113,7 +111,7 @@
     },
     data () {
       return {
-        tableHeaders: ['Access and egress', 'Means of entry and exit to a building.'],
+        tableHeaders: ['Access and egress', 'Means of entry and exit to a building'],
         tableContents: [
           ['Access and egress', 'Means of entry and exit to a building.'],
           ['Accessible', 'When a public building or place is accessible it means people can easily move in, out and around the building or space. Accessibility may be limited by physical, sensory and informational barriers.'],
@@ -123,6 +121,31 @@
           ['Blue Badge Map', 'Worldwide map and database of accessible (Blue Badge) carparking spaces'],
           ['Building certifier', 'A person with responsibility for, or control over, the building approval process for a building. For example, a private certifier, building surveyor or local council.'],
           ['Building developer', 'A person with responsibility for, or control over, a building’s design or construction. For example, a property developer, property owner, building designer, builder, project manager or project lessee.'],
+        ],
+        publicationTableHeaders: ['Title', 'Date', 'Publisher'],
+        publicationTableContents: [
+          ['Lachlan water resource plan', '13 Apr 2022', 'AusIndustry'],
+          ['Lachlan water resource plan', '13 Apr 2022', 'AusIndustry'],
+          ['Lachlan water resource plan', '13 Apr 2022', 'AusIndustry'],
+          ['Lachlan water resource plan', '13 Apr 2022', 'AusIndustry'],
+          ['Lachlan water resource plan', '13 Apr 2022', 'AusIndustry'],
+          ['Lachlan water resource plan', '13 Apr 2022', 'AusIndustry'],
+          ['Lachlan water resource plan', '13 Apr 2022', 'AusIndustry'],
+          ['Lachlan water resource plan', '13 Apr 2022', 'AusIndustry'],
+          ['Lachlan water resource plan', '13 Apr 2022', 'AusIndustry'],
+          ['Lachlan water resource plan', '13 Apr 2022', 'AusIndustry'],
+          ['Lachlan water resource plan', '13 Apr 2022', 'AusIndustry'],
+          ['Lachlan water resource plan', '13 Apr 2022', 'AusIndustry'],
+          ['Lachlan water resource plan', '13 Apr 2022', 'AusIndustry'],
+          ['Lachlan water resource plan', '13 Apr 2022', 'AusIndustry'],
+          ['Lachlan water resource plan', '13 Apr 2022', 'AusIndustry'],
+          ['Lachlan water resource plan', '13 Apr 2022', 'AusIndustry'],
+          ['Lachlan water resource plan', '13 Apr 2022', 'AusIndustry'],
+          ['Lachlan water resource plan', '13 Apr 2022', 'AusIndustry'],
+          ['Lachlan water resource plan', '13 Apr 2022', 'AusIndustry'],
+          ['Lachlan water resource plan', '13 Apr 2022', 'AusIndustry'],
+          ['Lachlan water resource plan', '13 Apr 2022', 'AusIndustry'],
+          ['Lachlan water resource plan', '13 Apr 2022', 'AusIndustry'],
         ],
       }
     }

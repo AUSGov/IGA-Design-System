@@ -1,0 +1,51 @@
+<template>
+  <div class="doi-content">
+    <Header />
+    <EntityBar title="ANTI - DUMPING COMMISSION" />
+    <StandardBanner classes="title-large text-black" />
+    <InSectionNavigation />
+    <div class="container-small py-6">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suscipit malesuada viverra est magna sapien iaculis. Vitae arcu id dignissim enim eget viverra. Integer cras pharetra egestas tempus et volutpat, blandit. Arcu tristique dolor at donec tempor in et dictum vitae. Consectetur ipsum aliquet maecenas elit rhoncus. Cursus vitae duis volutpat condimentum at dignissim rhoncus ut ac. Mauris lobortis lacus tellus risus amet. Vel aliquet bibendum a leo lobortis vulputate. Sit quis quis egestas est amet urna, enim enim.</p>
+    </div>
+    <DropdownFilter />
+    <div class="container">
+      <DoiSwitch start-label="Table" end-label="Card"/>
+    </div>
+    <div class="container-small pb-6">
+      <div class="pb-5">
+        <AdcCard />
+      </div>
+      <div class="pb-5">
+        <AdcCard />
+      </div>
+      <div class="pb-5">
+        <AdcCard />
+      </div>
+      <div class="pb-5">
+        <AdcCard />
+      </div>
+      <div class="pb-5">
+        <AdcCard />
+      </div>
+      <div class="pb-6">
+        <Pagination />
+      </div>
+      <ReadMore classes="hover-action" />
+    </div>
+    <SecondaryFooter :subscribe="false" />
+    <Footer />
+  </div>
+</template>
+<script setup>
+  import AdcCard from "../components/AdcCard.vue"
+  import DoiSwitch from "../components/DoiSwitch.vue"
+  import DropdownFilter from "../components/DropdownFilter.vue"
+  import EntityBar from "../components/EntityBar.vue"
+  import Footer from "../components/Footer.vue"
+  import Header from "../components/Header.vue"
+  import InSectionNavigation from "../components/InSectionNavigation.vue"
+  import Pagination from "../components/Pagination.vue"
+  import ReadMore from "../components/ReadMore.vue"
+  import SecondaryFooter from "../components/SecondaryFooter.vue"
+  import StandardBanner from "../components/StandardBanner.vue"
+</script>

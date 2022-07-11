@@ -1,6 +1,6 @@
 <template>
   <div class="in-this-section-menu">
-    <div class="container">
+    <div class="container header-wrap">
       <a href="#" class="menu-header body-large-bold" data-bs-toggle="collapse" data-bs-target="#inThisSectionMenu" aria-expanded="true" aria-controls="inThisSectionMenu">
         <span class="flex-grow-1">Navigate in this section menu</span>
         <span v-html="chevronDown"></span>

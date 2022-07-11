@@ -1,6 +1,6 @@
 <template>
   <div class="biography-card" :class="classes">
-    <img :src="$withBase('images/profile-sample.png')" alt="">
+    <img v-if="image" :src="$withBase('images/profile-sample.png')" alt="">
     <div class="biography-content">
       <div class="biography-name">Full Name</div>
       <div class="biography-position">Role or Title Executive General Manager</div>
@@ -27,6 +27,10 @@
         type: Boolean,
         default: false,
       },
+      image: {
+        type: Boolean,
+        default: true
+      }
     },
     data () {
       return {

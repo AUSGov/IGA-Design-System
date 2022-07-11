@@ -5,13 +5,13 @@
       <span >Filter</span>
     </button>
     <div class="category-filters-content">
-      <div class="container">
-        <div class="category-container">
-          <div class="filter-container heading-extra-small-caps">
-            <span class="filters-icon" v-html="filters"></span>
-            <span class="title-label">Filters</span>
-            <button class="button-plain close-icon" v-html="close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
+      <div class="category-container">
+        <div class="filter-container heading-extra-small-caps">
+          <span class="filters-icon" v-html="filters"></span>
+          <span class="title-label">Filters</span>
+          <button class="button-plain close-icon" v-html="close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="container">
           <div class="row">
             <div v-for="index in 4" :key="index" class="col">
               <div class="title-container">
@@ -22,8 +22,8 @@
                   <option value="1">Australian Industry Participation Authority</option>
                   <option value="2">Anti-Dumping Commission</option>
                   <option value="3">AusIndustry</option>
-                  <option value="3">Australian Industry Participation Authority...</option>
-                  <option value="3">Australian Radioactive Waste Authority</option>
+                  <option value="4">Australian Industry Participation Authority...</option>
+                  <option value="5">Australian Radioactive Waste Authority</option>
                 </select>
               </div>
             </div>

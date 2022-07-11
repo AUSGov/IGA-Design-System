@@ -15,4 +15,11 @@
   @include media-breakpoint-up(md) {
     font-size: 16px;
   }
+
+  @include media-breakpoint-up(lg) {
+    &.title-left {
+      justify-content: left;
+      padding-left: 22%;
+    }
+  }
 }

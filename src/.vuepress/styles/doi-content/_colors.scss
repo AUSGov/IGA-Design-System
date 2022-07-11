@@ -1,6 +1,6 @@
 @each $slug, $color in $doi-colors {
   .bg-#{$slug} {
-    background-color: $color;
+    background-color: $color !important;
   }
 
   $table-variants: map-merge($table-variants, (

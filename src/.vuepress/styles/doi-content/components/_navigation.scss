@@ -15,8 +15,11 @@
 .in-this-section-menu {
   background-color: #fff;
   box-shadow: 0 8px 16px rgba(40, 41, 61, 0.0364);
-  padding: 18px 0;
   color: $gray-700;
+
+  .header-wrap {
+    padding: 18px 0;
+  }
 
   .menu-header {
     display: flex;
@@ -36,6 +39,7 @@
 
   .menu-body {
     background-color: $doi-snow;
+    //margin-bottom: 2rem;
   }
 
   .menu-title {
@@ -71,11 +75,15 @@
     font-size: $font-size-base;
     list-style: none;
 
-    &.parent-menu > li {
-      display: flex;
-      flex-direction: column;
-      padding: 18px 0;
-      border-bottom: 1px solid $gray-400;
+    &.parent-menu {
+      padding-bottom: 2rem;
+
+      > li {
+        display: flex;
+        flex-direction: column;
+        padding: 18px 0;
+        border-bottom: 1px solid $gray-400;
+      }
     }
 
     &.child-menu {
@@ -106,27 +114,92 @@
 }
 
 .on-this-page-menu {
-
   position: sticky;
-  top: 0;
+  top: $navbar-height;
   z-index: 100;
+
+  @include media-breakpoint-up(md) {
+    top: 0;
+  }
 
   .nav-button {
     display: block;
-    position: fixed;
-    top: 6rem;
-    left: 0;
-    transform: translateX(calc(-50% + 25px));
     z-index: 100;
+    transition: left 300ms ease-in-out;
+
+    .expand {
+      display: block;
+    }
+
+    .close {
+      display: none;
+    }
+
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      top: calc(#{$navbar-height} + 110px + 32px);
+      left: 0;
+      transform: translateX(calc(-50% + 25px));
+    }
   }
 
   .btn-nav-menu {
     display: flex;
-    transform: rotate(90deg);
-    border-radius: 6px 6px 0 0;
     padding: 12px 24px;
-    min-width: 220px;
+    border-radius: 0;
+    min-width: 100vw;
     height: 50px;
+
+    @include media-breakpoint-up(md) {
+      transform: rotate(90deg);
+      border-radius: 6px 6px 0 0;
+      min-width: 220px;
+    }
+  }
+
+  .offcanvas {
+    top: $navbar-height;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+
+    &.show {
+      @include media-breakpoint-down(md) {
+        top: calc(#{$navbar-height} + 50px);
+      }
+
+      & + .nav-button {
+        position: fixed;
+        z-index: 1100;
+        left: calc(#{$offcanvas-horizontal-width} - 1px);
+
+        button {
+          color: #fff;
+          border-color: $doi-secondary;
+          background-color: $doi-secondary;
+        }
+
+        svg {
+          path {
+            fill: #fff;
+          }
+        }
+
+        .expand {
+          display: none;
+        }
+
+        .close {
+          display: block;
+        }
+
+        @include media-breakpoint-down(md) {
+          top: $navbar-height;
+          left: 0;
+        }
+      }
+    }
   }
 
   .offcanvas-header {
@@ -158,51 +231,28 @@
     }
   }
 
-  .menu-title {
+  li a {
     @include heading-extra-small;
 
+    text-decoration: none;
+
+    &.sub-section,
     &.title-default {
       color: $gray-500;
-      padding: 1.5rem;
-      border-bottom: 1px solid $gray-400;
+
+      &:focus,
+      &:hover {
+        color: $doi-action;
+      }
     }
 
     &.title-feature {
       color: $primary;
-      text-decoration: none;
-
-      &:focus,
-      &:hover {
-        color: $doi-action;
-
-        svg {
-          path {
-            fill: $doi-action;
-          }
-        }
-      }
-    }
-
-    &.sub-section {
-      color: $gray-500;
-      text-decoration: none;
 
       &:focus,
       &:hover {
         color: $doi-action;
       }
-    }
-  }
-
-  &.lower-start {
-    top: 6.5rem;
-
-    .nav-button {
-      position: absolute;
-    }
-
-    .offcanvas-start {
-      top: 6.5rem;
     }
   }
 }
@@ -214,34 +264,175 @@
   box-shadow: 0px -12px 16px rgba(40, 41, 61, 0.0364);
 
   .stepper-content {
-    flex-grow: 1;
+    flex-grow: 0;
+
+    @include media-breakpoint-up(md) {
+      flex-grow: 1;
+    }
   }
 
   .stepper-pages {
-    border-right: 1px solid $gray-500;
+    color: $gray-400;
+    border-right: 1px solid;
     display: block;
     text-decoration: none;
     padding: 1rem;
+    flex-grow: 1;
 
     &:first-of-type {
-      border-left: 1px solid $gray-500;
+      border-left: 1px solid;
+    }
+
+    @include media-breakpoint-up(md) {
+      flex-grow: 0;
+    }
+
+    @include media-breakpoint-up(lg) {
+      color: $gray-500;
     }
   }
 
   .step-name {
-    color: $gray-400;
+    color: $gray-500;
     font-size: 12px;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
   }
 
   .step-label {
     font-size: 12px;
     color: $body-color;
     font-weight: $font-weight-bold;
+    display: none;
+
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+  }
+
+  .btn-group {
+    height: 100%;
   }
 
   .btn-nav-menu {
-    border-radius: 0;
+    display: flex;
+    padding: 12px 24px;
+    align-items: center;
     height: 100%;
+    border-radius: 0;
+    min-width: 220px;
+
+    .expand {
+      display: block;
+    }
+
+    .close {
+      display: none;
+    }
+
+    &.show {
+      color: #fff;
+      border-color: $doi-secondary;
+      background-color: $doi-secondary;
+
+      .expand {
+        display: none;
+      }
+
+      .close {
+        display: block;
+      }
+
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .dropdown-menu {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    overflow-y: auto;
+    max-height: 50vh;
+    border: none;
+    box-shadow: none;
+
+    @include media-breakpoint-up(md) {
+      width: $offcanvas-horizontal-width;
+    }
+  }
+
+  .menu-title {
+    @include heading-small;
+
+    background-color: $gray-100;
+    padding: 1.5rem 3rem 0 3rem;
+    color: $primary;
+
+    @include media-breakpoint-up(lg) {
+      padding: 3rem 4.5rem 0 4.5rem;
+    }
+  }
+
+  .parent-menu {
+    background-color: $doi-snow;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+
+    @include media-breakpoint-up(lg) {
+      padding: 0 3rem 3rem 3rem;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &.parent-menu > li {
+      border-bottom: 1px solid $gray-400;
+      margin: 0;
+      padding: 1.5rem;
+    }
+
+    &.children-menu > li {
+      margin: 0;
+      padding: 4px 0;
+    }
+  }
+
+  li a {
+    @include heading-extra-small;
+
+    text-decoration: none;
+
+    &.sub-section,
+    &.title-default {
+      color: $gray-500;
+
+      &:focus,
+      &:hover {
+        color: $doi-action;
+      }
+    }
+
+    &.title-feature {
+      color: $primary;
+
+      &:focus,
+      &:hover {
+        color: $doi-action;
+      }
+    }
   }
 }
 
@@ -350,6 +541,15 @@
 
     &:first-child {
       border-top: 1px solid $gray-500;
+    }
+  }
+
+  &.hover-action {
+    a {
+      &:hover,
+      &:focus {
+        color: $doi-action
+      }
     }
   }
 }

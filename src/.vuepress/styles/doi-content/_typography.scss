@@ -34,6 +34,10 @@ h5,
   font-weight: $font-weight-semi-bold;
 }
 
+p {
+  line-height: 28px;
+}
+
 .subheading {
   text-transform: uppercase;
   color: #888888;
@@ -221,10 +225,11 @@ ul {
   font-size: 18px;
   font-weight: $font-weight-base;
   line-height: 28px;
-  margin-left: 1rem;
+  padding-left: 1.25rem;
 
   li::marker {
-    color: $primary;
+    font-size: 10px;
+    color: currentColor;
   }
 }
 
@@ -236,7 +241,8 @@ ol {
   margin-left: 1rem;
 
   li::marker {
-    color: $primary;
+    font-size: 10px;
+    color: currentColor;
   }
 }
 
@@ -273,5 +279,13 @@ cite {
     width: 45px;
     border-radius: 4px;
     background: $primary;
+  }
+
+  &.center-promo {
+    &::after {
+      left: 50%;
+      transform: translateX(-50%);
+      background: $doi-action;
+    }
   }
 }

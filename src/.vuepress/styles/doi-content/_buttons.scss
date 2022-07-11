@@ -35,6 +35,12 @@
   @include button-variant($doi-promo, $doi-promo, $doi-dark-blue, $doi-secondary, $doi-secondary, white);
 
   box-shadow: none;
+
+  &:focus,
+  &:hover,
+  &:active {
+    box-shadow: none;
+  }
 }
 
 .btn-nav-menu {

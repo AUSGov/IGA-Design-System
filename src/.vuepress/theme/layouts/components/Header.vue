@@ -1,7 +1,12 @@
 <template>
   <nav id="header" class="navbar sticky-top navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/" v-html="logo"></a>
+    <div class="header-wrap">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" v-html="hamburger"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <img :src="$withBase('images/DISR-logo.png')" alt="">
+      </a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="mobile-close d-lg-none" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"><span class="icon" v-html="close"></span></div>
         <ul class="navbar-nav">
@@ -88,16 +93,12 @@
       <div class="search-wrap">
         <a href="#"><span class="icon" v-html="search"></span></a>
       </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon" v-html="hamburger"></span>
-      </button>
     </div>
   </nav>
 </template>
 
 <script setup>
 import close from '../../../public/icons/close.svg?raw'
-import logo from '../../../public/images/DISR-logo-inverted.png'
 import search from '../../../public/icons/search.svg?raw'
 import hamburger from '../../../public/icons/hamburger.svg?raw'
 import linkArrowRight from '../../../public/icons/link-arrow-right.svg?raw'

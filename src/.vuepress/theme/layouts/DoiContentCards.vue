@@ -181,21 +181,7 @@
       </div>
       <h2 id="promotional-cards">Promotional Card</h2>
     </div>
-    <div class="promotional-cards bg-promo pb-5">
-      <div class="container">
-        <div class="row g-4 justify-content-center">
-          <div class="col-6 col-lg-3">
-            <PromotionalCard/>
-          </div>
-          <div class="col-6 col-lg-3">
-            <PromotionalCard/>
-          </div>
-          <div class="col-6 col-lg-3">
-            <PromotionalCard/>
-          </div>
-        </div>
-      </div>
-    </div>
+    <PromotionalCards/>
     <div class="container">
       <h2 id="snippet-card">Snippet Card</h2>
       <div class="pb-5">
@@ -236,9 +222,11 @@
   import RfqCard from './components/RfqCard.vue'
   import AdcCard from './components/AdcCard.vue'
   import SearchLandingCard from './components/SearchLandingCard.vue'
+  import PromotionalCards from './components/PromotionalCards.vue'
 
   export default {
     components: {
+      PromotionalCards,
       SearchLandingCard,
       AdcCard,
       RfqCard,

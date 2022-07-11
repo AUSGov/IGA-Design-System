@@ -1,5 +1,5 @@
 <template>
-  <div class="standard-banner">
+  <div class="standard-banner" :class="classes">
     <div class="container">
       <div class="banner-content">
         <div class="banner-title">Emissions Reduction Assurance Committee</div>
@@ -8,3 +8,13 @@
     </div>
   </div>
 </template>
+<script>
+  export default {
+    props: {
+      classes: {
+        type: String,
+        default: null
+      }
+    }
+  }
+</script>

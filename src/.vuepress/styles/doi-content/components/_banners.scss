@@ -21,6 +21,13 @@
       margin-bottom: 1.25rem;
     }
   }
+
+  &.title-large {
+    .banner-title {
+      @include display-large();
+      color: $doi-primary;
+    }
+  }
 }
 
 .section-banner {
@@ -102,6 +109,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  min-height: 550px;
 
   .banner-overlay {
     background: #323232;
@@ -125,6 +133,7 @@
     align-items: flex-start;
     color: #fff;
     position: relative;
+    min-height: 100vh;
   }
 
   .banner-title {
@@ -163,9 +172,9 @@
     }
   }
 
-  &.full-height {
+  &.small {
     .banner-wrap {
-      min-height: 100vh;
+      min-height: 550px;
     }
   }
 }

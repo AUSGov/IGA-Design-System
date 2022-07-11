@@ -1,5 +1,5 @@
 <template>
-  <div class="card search-landing-card">
+  <div class="card search-landing-card" :class="classes">
     <h2 class="heading-medium">Dark Energy Survey Evolves or a longer title with three of more lines</h2>
     <h2 class="body-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis ut habitant sed egestas. Sagittis, phasellus dui integer at. Pretium leo enim purus nunc vitae, at tellus. Justo mi amet tellus massa dui lectus. Odio elementum justo, commodo ullamcorper facilisis nec. Sit ut non diam et.</h2>
     <div class="body-small text-gray-500">This is a part of publication page</div>
@@ -14,6 +14,12 @@
 
 <script>
   export default {
+    props: {
+      classes: {
+        type: String,
+        default: null
+      }
+    },
     data () {
       return {}
     }

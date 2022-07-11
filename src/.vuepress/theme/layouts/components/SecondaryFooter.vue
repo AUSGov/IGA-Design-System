@@ -57,7 +57,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-md subscribe-updates">
+        <div v-if="subscribe" class="col-md subscribe-updates">
           <div class="footer-title">Subscribe for updates</div>
           <span class="icon" v-html="notification"></span>
           <span>Subscribe for the latest news</span>
@@ -82,6 +82,12 @@
   import notification from '../../../public/icons/notification.svg?raw'
 
   export default {
+    props: {
+      subscribe: {
+        type: Boolean,
+        default: true
+      }
+    },
     data () {
       return {
         email,
