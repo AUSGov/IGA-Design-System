@@ -10,7 +10,7 @@
     <OnThisPageMenu />
     <div class="container-small pb-6">
       <div class="pb-6">
-        <ReadMore classes="hover-action text-gray-700" />
+        <ReadMore/>
       </div>
     </div>
     <SecondaryFooter :subscribe="false" />

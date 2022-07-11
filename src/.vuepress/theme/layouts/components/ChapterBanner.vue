@@ -1,5 +1,5 @@
 <template>
-  <div class="chapter-banners" :class="[{'text-dark': dark}, classes]" :style="image ? 'background-image:' + image : ''">
+  <div class="chapter-banners" :class="[{'text-dark': dark}, classes]" :style="image ? 'background-image: url(\'' + image : '\');'">
     <div class="banner-overlay"></div>
     <div class="container">
       <div class="icons">

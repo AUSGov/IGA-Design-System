@@ -782,6 +782,8 @@
     }
 
     .splide__arrow {
+      outline: none;
+
       svg {
         height: 34px;
         width: auto;
@@ -909,6 +911,27 @@
   }
 
   &.body-width {
+    .splide-gallery-main {
+      .splide__arrow {
+        svg {
+          height: 34px;
+          width: auto;
+
+          path {
+            fill: #57575A;
+          }
+        }
+      }
+
+      .splide__arrow--prev {
+        left: -34px;
+      }
+
+      .splide__arrow--next {
+        right: -34px;
+      }
+    }
+
     .gallery-footer {
       width: 100%;
     }

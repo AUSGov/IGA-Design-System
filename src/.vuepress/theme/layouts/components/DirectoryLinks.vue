@@ -1,6 +1,6 @@
 <template>
   <div class="directory-links bg-light-teal">
-    <div class="container-small">
+    <div class="container">
       <div class="heading-medium">Directory Links</div>
       <div class="row">
         <div class="col-md-6">
