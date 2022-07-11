@@ -9,6 +9,7 @@ import { useRouter } from 'vue-router'
 import type { NavbarGroup, NavbarItem, ResolvedNavbarItem } from '@vuepress/theme-default/lib/shared'
 import { useNavLink, useThemeLocaleData } from '@vuepress/theme-default/lib/client/composables'
 import { resolveRepoType } from '@vuepress/theme-default/lib/client/utils'
+import {NavGroup, NavItem} from "@vuepress/theme-default/lib/shared/nav";
 
 /**
  * Get navbar config of select language dropdown
@@ -114,6 +115,10 @@ const useNavbarRepo = (): ComputedRef<ResolvedNavbarItem[]> => {
   })
 }
 
+/**
+ * Props for `<AutoLink>`
+ */
+
 const resolveNavbarItem = (
   item: NavbarItem | NavbarGroup | string
 ): ResolvedNavbarItem => {
@@ -131,7 +136,11 @@ const resolveNavbarItem = (
 
 const useNavbarConfig = (): ComputedRef<ResolvedNavbarItem[]> => {
   const themeLocale = useThemeLocaleData()
-  return computed(() => (themeLocale.value.navbar || []).map(resolveNavbarItem))
+  let items = []
+  if (themeLocale.value.navbar) {
+    items = themeLocale.value.navbar.filter(item => !item.hidden)
+  }
+  return computed(() => items.map(resolveNavbarItem))
 }
 
 const navbarConfig = useNavbarConfig()

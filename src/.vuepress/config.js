@@ -272,10 +272,11 @@ module.exports = {
       {
         text: 'Components HTML',
         link: '/html-components',
+        hidden: true,
         children: [
           {
-            text: 'Biography',
-            link: '/html-components/biography.html',
+            text: 'Banners',
+            link: '/html-components/banners.html',
           },
           {
             text: 'Cards',
