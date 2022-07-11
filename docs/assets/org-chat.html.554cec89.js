@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-2f4ca111","path":"/page-patterns/org-chat.html","title":"Org Chat","lang":"en-US","frontmatter":{"lang":"en-US","title":"Org Chat","description":null,"pageHeader":true,"layout":"DoiOrgChat"},"excerpt":"","headers":[],"git":{"updatedTime":1657246586000},"filePathRelative":"page-patterns/org-chat.md"}');export{t as data};

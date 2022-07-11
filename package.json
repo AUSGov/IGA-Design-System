@@ -11,8 +11,7 @@
     "dev": "vuepress dev src --debug --open",
     "build": "vuepress build src --dest docs",
     "bundle": "rollup --config bundle/rollup.config.js",
-    "clean:docs": "node bundle/clean.mjs",
-    "prod": "npm run clean:docs && npm run build && npm run bundle"
+    "prod": "npm run build && npm run bundle"
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-beta.48",

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-1188ad34","path":"/page-patterns/case-study.html","title":"Filters","lang":"en-US","frontmatter":{"lang":"en-US","title":"Filters","description":null,"pageHeader":true,"layout":"DoiCaseStudy"},"excerpt":"","headers":[],"git":{"updatedTime":1657179978000},"filePathRelative":"page-patterns/case-study.md"}');export{e as data};
