@@ -116,13 +116,28 @@ module.exports = {
                 htmlLink: '/html-components/navigation#on-this-page-menu',
               },
               {
-                text: 'Tile navigation',
-                link: '/components/navigation/tile-navigation',
+                text: 'Directory links',
+                link: '/components/navigation/directory-links',
+                componentsLink: '/components-html/navigation#directory-links',
               },
               {
-                text: 'Publication section divider',
-                link: '/components/navigation/publication-section-divider',
-                htmlLink: '/html-components/navigation#chapter-banners',
+                text: 'Chapter Banner',
+                link: '/components/navigation/chapter-banner',
+                componentsLink: '/components-html/navigation#chapter-banner',
+              },
+              {
+                text: 'Content Stepper',
+                link: '/components/navigation/content-stepper',
+                componentsLink: '/components-html/navigation#content-stepper',
+              },
+              {
+                text: 'Read More',
+                link: '/components/navigation/read-more',
+                componentsLink: '/components-html/navigation#read-more',
+              },
+              {
+                text: 'Tile navigation',
+                link: '/components/navigation/tile-navigation',
               },
             ],
           },
