@@ -1,4 +1,5 @@
 $variations-menu-width: 12rem;
+$top-container-height: 74px;
 
 .c-code-demo {
   border: 1px solid #000;
@@ -28,6 +29,8 @@ $variations-menu-width: 12rem;
     }
 
     .preview-container {
+      height: calc(100% - #{$top-container-height});
+
       .doi-content {
         transition: width 0.3s ease;
         &.size-sm {
@@ -61,6 +64,7 @@ $variations-menu-width: 12rem;
     display: flex;
     justify-content: flex-end;
     padding: 1rem 1.25rem;
+    height: $top-container-height;
   }
 
   .responsive-controls {

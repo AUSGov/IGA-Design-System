@@ -9,7 +9,7 @@ pageHeader: true
 The dropdown filter expands to reveal a list of options, which the user can select to narrow their search and sort content. This filter is single-select. It’s used within the filter group on the filtered landing homepage and search landing page, as well as with multiple dropdown filters on the filtered landing page ADC.
 
 ### Elements
-#### TODO LIVE CODE PREVIEW
+<DemoDropdownFilter/>
 
 1. Dropdown label
 2. Dropdown container

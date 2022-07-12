@@ -46,6 +46,7 @@
   import arrowRight from '../../../public/icons/arrow-long-right.svg?raw'
   import { onMounted } from 'vue'
 
+  //TODO create a variation for 4/5 cols
   onMounted(() => {
     $('select').selectpicker()
     $('button').removeClass('btn-light')
