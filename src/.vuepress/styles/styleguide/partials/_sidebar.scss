@@ -3,17 +3,18 @@
   top: unset;
   bottom: unset;
   margin: 0;
-  padding: 3rem 0;
+  padding: 1.5rem 0;
   overflow-y: auto;
   width: auto;
   max-width: var(--sidebar-width);
   transition: transform var(--t-transform), background-color var(--t-color), border-color var(--t-color);
 
   .subtitle {
-    padding: 1.5rem 0;
     text-transform: uppercase;
     color: #888888;
     font-size: 15px;
+    padding: .5rem 0 0;
+    margin-bottom: 1.5rem;
   }
 
   ul {

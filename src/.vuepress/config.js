@@ -15,8 +15,8 @@ module.exports = {
 
   // theme and its config
   theme: localTheme({
-    logoDark: '/images/DISR-logo-inverted.png',
-    logo: '/images/DISR-logo-inverted.png',
+    logoDark: 'images/DISR-logo-inverted.png',
+    logo: 'images/DISR-logo-inverted.png',
     darkMode: false,
     contributors: false,
     themePlugins: {

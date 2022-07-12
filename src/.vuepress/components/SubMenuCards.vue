@@ -42,12 +42,12 @@
           componentsLink: child.componentsLink,
           linkUrl: child.link,
           linkText: 'Documentation',
+          htmlLink: child.htmlLink ?? null,
         })
         continue
       }
       let processedChildren = child.children.map(item => ({
         title: item.text,
-        htmlLink: item.htmlLink ?? null,
         linkUrl: item.link ?? null,
         linkText: 'Documentation',
       }))
@@ -65,7 +65,7 @@
     <template v-if="subMenu.flat">
       <Cards :contents="subMenu.flat" :compact="true"/>
     </template>
-    <template v-if="subMenu.flat">
+    <template v-if="subMenu.children">
     <div v-for="menu in subMenu.children" class="mb-12">
       <h2>{{ menu.title }}</h2>
       <Cards :contents="menu.children" :compact="true"/>
