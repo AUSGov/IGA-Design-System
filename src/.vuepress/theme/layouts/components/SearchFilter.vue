@@ -38,23 +38,5 @@
       }
       $buttonSubmit.addClass('hide')
     })
-    search_modify()
-    $(window).resize(function() {
-      search_modify()
-    })
   })
-
-  function search_modify() {
-    const width = $(window).width()
-    const $searchIcon = $('.search-icon')
-    if(width < 768) {
-      if(!$searchIcon.hasClass('hide')) {
-        $searchIcon.addClass('hide')
-      }
-      return
-    }
-    if($searchIcon.hasClass('hide')) {
-      $searchIcon.removeClass('hide')
-    }
-  }
 </script>

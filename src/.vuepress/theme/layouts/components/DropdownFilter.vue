@@ -1,6 +1,6 @@
 <template>
   <div class="category-filters">
-    <button class="button-container button-plain  heading-extra-small-caps" id="category-filter-button" type="button" data-bs-toggle="modal" data-bs-target="#filter-modal">
+    <button class="button-container button-plain  heading-extra-small-caps category-filter-button" id="category-filter-button" type="button" data-bs-toggle="modal" data-bs-target="#filter-modal">
       <span class="filters-icon" v-html="filters"></span>
       <span >Filter</span>
     </button>
@@ -57,7 +57,7 @@
 
   const category_wrap = () => {
     const width = $(window).width()
-    const $filterButton = $('#category-filter-button')
+    const $filterButton = $('.category-filter-button')
     const $filterModal = $('#filter-modal')
     const $categoryFiltersContent = $('.category-filters-content')
     const $row = $('.row')
@@ -66,9 +66,6 @@
         $categoryFiltersContent.wrapAll(
             '<div class="modal fade" id="filter-modal" tabIndex="-1" aria-labelledby="filterModalLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"></div></div></div>'
         )
-      }
-      if ($filterButton.hasClass('hide')) {
-        $filterButton.removeClass('hide')
       }
       if(!$row.hasClass('row-cols-1')) {
         $row.addClass('row-cols-1')
@@ -81,9 +78,6 @@
       $categoryFiltersContent.unwrap()
       $categoryFiltersContent.unwrap()
       $categoryFiltersContent.unwrap()
-    }
-    if (!$filterButton.hasClass('hide')) {
-      $filterButton.addClass('hide')
     }
     if($row.hasClass('row-cols-1')) {
       $row.removeClass('row-cols-1')

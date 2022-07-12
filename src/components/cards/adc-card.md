@@ -1,26 +1,25 @@
 ---
 lang: en-US
-title: Request for quote
+title: ADC Card
 description: Description of the page
 pageHeader: true
 ---
 
 ### Overview
+The ADC is used only on the ADC page pattern and displays data in an easily scannable way. 
 
 ### Elements
-<DemoRFQ />
+<DemoAdcCard />
 
 ### Variations
 <div>
     <ul>
-        <li>Inline</li>
+        <li>Stacked</li>
         <li>Body width</li>
-        <li>Button blue</li>
-        <li>Button NMI red</li>
     </ul>
 </div>
 
 ### Behaviours
-None
+None.
 
 ### Recommendations

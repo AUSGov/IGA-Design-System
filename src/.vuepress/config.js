@@ -146,23 +146,44 @@ module.exports = {
             link: '/components/cards/publication',
             children: [
               {
-                text: 'Publication card and containers',
-                link: '/components/cards/publication'
+                text: 'Editorial card and containers',
+                link: '/components/cards/editorial'
               },
               {
-                text: 'News card and containers',
-                link: '/components/cards/news',
-                htmlLink: '/html-components/cards#featured-news',
+                text: 'Promotional card and containers',
+                link: '/components/cards/promotional'
               },
               {
-                text: 'Event card and containers',
-                link: '/components/cards/event',
-                htmlLink: '/html-components/cards#event-card',
+                text: 'Featured full image card (Extra small)',
+                link: '/components/cards/featured-full-xs'
               },
               {
-                text: 'Filtered landing page card',
-                link: '/components/cards/filtered-landing-page',
-                htmlLink: '/html-components/cards#filtered-landing-page-card',
+                text: 'Featured full image card (Large)',
+                link: '/components/cards/featured-full-lg'
+              },
+              {
+                text: 'Featured card (Large)',
+                link: '/components/cards/featured-lg'
+              },
+              {
+                text: 'Featured card (Overlay)',
+                link: '/components/cards/featured-overlay'
+              },
+              {
+                text: 'Navigation card and containers',
+                link: '/components/cards/navigation'
+              },
+              {
+                text: 'ADC card',
+                link: '/components/cards/adc-card'
+              },
+              {
+                text: 'Snippet card',
+                link: '/components/cards/snippet'
+              },
+              {
+                text: 'Filter result card',
+                link: '/components/cards/filter-result'
               },
               {
                 text: 'Bio card',
@@ -174,6 +195,25 @@ module.exports = {
                 link: '/components/cards/request-for-quote',
                 htmlLink: '/html-components/cards#rfq-card',
               },
+              // {
+              //   text: 'Publication card and containers',
+              //   link: '/components/cards/publication'
+              // },
+              // {
+              //   text: 'News card and containers',
+              //   link: '/components/cards/news',
+              //   htmlLink: '/html-components/cards#featured-news',
+              // },
+              // {
+              //   text: 'Event card and containers',
+              //   link: '/components/cards/event',
+              //   htmlLink: '/html-components/cards#event-card',
+              // },
+              // {
+              //   text: 'Filtered landing page card',
+              //   link: '/components/cards/filtered-landing-page',
+              //   htmlLink: '/html-components/cards#filtered-landing-page-card',
+              // },
             ]
           },
           {
