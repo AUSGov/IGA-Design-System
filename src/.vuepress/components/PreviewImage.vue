@@ -11,9 +11,11 @@
             <img :src="image" alt="">
           </div>
           <div v-if="contents">
-            <div v-for="(content, index) in localContents" class="circle-point image-point" :style="{'top': content.y + '%', 'left': content.x + '%'}" @click.prevent="scrollTo(image, index)">
-              <a>{{ index + 1 }}</a>
-            </div>
+            <template v-for="(content, index) in localContents">
+              <div v-if="content.x !== undefined && content.y !== undefined" class="circle-point image-point" :style="{'top': content.y + '%', 'left': content.x + '%'}" @click.prevent="scrollTo(image, index)">
+                <a href="#">{{ index + 1 }}</a>
+              </div>
+            </template>
           </div>
         </div>
       </div>
