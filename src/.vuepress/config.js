@@ -200,6 +200,16 @@ module.exports = {
                 link: '/components/filters/tags',
                 htmlLink: '/html-components/filters#tabs-filter',
               },
+              {
+                text: 'Range slider',
+                link: '/components/filters/range-slider',
+                htmlLink: '/html-components/filters#checkbox-filter',
+              },
+              {
+                text: 'Search',
+                link: '/components/filters/search',
+                htmlLink: '/html-components/filters#search-filter',
+              },
             ]
           },
           {

@@ -1,15 +1,15 @@
 ---
 lang: en-US
-title: Checkbox filter
+title: Range Slider
 description: Description of the page
 pageHeader: true
 ---
 
 ### Overview
-This filter allows users to choose one or more options from a range of options, and to explore and discover content using key, high-level filter types. It’s used within the filter group on the filtered landing homepage and search landing page.
+The range slider allows users to filter content between a time range. It’s used within the filter group on the filtered landing homepage and search landing page.
 
 ### Elements
-<PreviewImage :image="$withBase('/images/filter-checkbox-sample.png')" :contents="[{ x: 0, y: 2, title: 'Container border', text: 'Container border' }, { x: 0, y: 14, title: 'Container centre', text: 'Container centre' }, { x: 1, y: 32, title: 'Tick icon', text: 'Tick icon' }, { x: 2.5, y: 73.5, title: 'Group label', text: 'Group label' }, { x: 4, y: 20.5, title: 'Checkbox label', text: 'Checkbox label' }]">
+<PreviewImage :image="$withBase('/images/filter-range-slider-sample.png')" :contents="[{ x: 0, y: 55, title: 'Base slider', text: 'Base slider' }, { x: 0, y: 80, title: 'Date selection', text: 'Date selection' }, { x: 2, y: 90, title: 'Circular indicator', text: 'Circular indicator' }, { x: 12, y: 70, title: 'Tooltip', text: 'Tooltip' }]">
 <template #code>
 <CodeGroup>
   <CodeGroupItem title="HTML">
@@ -66,7 +66,7 @@ This filter allows users to choose one or more options from a range of options, 
         <div class="buttons-container heading-small">
           <button type="button" class="button-plain collapsed" data-bs-toggle="collapse" data-bs-target="#collapseEntity" aria-expanded="true" aria-controls="collapseToggle">
             <span class="circle-add"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 20.625C16.3157 20.625 20.625 16.3157 20.625 11C20.625 5.68426 16.3157 1.375 11 1.375C5.68426 1.375 1.375 5.68426 1.375 11C1.375 16.3157 5.68426 20.625 11 20.625ZM11 22C17.0751 22 22 17.0751 22 11C22 4.92487 17.0751 0 11 0C4.92487 0 0 4.92487 0 11C0 17.0751 4.92487 22 11 22ZM11.0002 3.3C11.3594 3.3 11.6564 3.56698 11.7034 3.91338L11.7098 4.00968V10.2903H17.6236C18.0155 10.2903 18.3332 10.6081 18.3332 11C18.3332 11.3593 18.0663 11.6562 17.7199 11.7032L17.6236 11.7097H11.7098V17.257C11.7098 17.6489 11.3921 17.9667 11.0002 17.9667C10.6409 17.9667 10.3439 17.6997 10.297 17.3533L10.2905 17.257V11.7097H4.37625C3.98431 11.7097 3.66658 11.392 3.66658 11C3.66658 10.6407 3.93356 10.3438 4.27996 10.2968L4.37625 10.2903H10.2905V4.00968C10.2905 3.61773 10.6082 3.3 11.0002 3.3Z" fill="#3F3B3B"></path></svg></span>
-            <span class="circle-cross"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 20.625C16.3157 20.625 20.625 16.3157 20.625 11C20.625 5.68426 16.3157 1.375 11 1.375C5.68426 1.375 1.375 5.68426 1.375 11C1.375 16.3157 5.68426 20.625 11 20.625ZM11 22C17.0751 22 22 17.0751 22 11C22 4.92487 17.0751 0 11 0C4.92487 0 0 4.92487 0 11C0 17.0751 4.92487 22 11 22ZM5.81432 5.81453C6.06837 5.56048 6.46711 5.53931 6.74528 5.75101L6.81795 5.81453L10.9998 9.99636L15.1816 5.81457C15.4587 5.53743 15.9081 5.53743 16.1852 5.81457C16.4393 6.06862 16.4604 6.46737 16.2487 6.74553L16.1852 6.81821L12.0034 11L16.1852 15.1818C16.4624 15.4589 16.4624 15.9083 16.1852 16.1854C15.9312 16.4395 15.5324 16.4606 15.2543 16.2489L15.1816 16.1854L10.9998 12.0036L6.81795 16.1855C6.54081 16.4626 6.09146 16.4626 5.81432 16.1855C5.56027 15.9314 5.5391 15.5327 5.7508 15.2545L5.81432 15.1818L9.99615 11L5.81432 6.81816C5.53717 6.54102 5.53717 6.09167 5.81432 5.81453Z" fill="#3F3B3B"></path></svg></span>
+            <span class="circle-cross"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 20.625C16.3157 20.625 20.625 16.3157 20.625 11C20.625 5.68426 16.3157 1.375 11 1.375C5.68426 1.375 1.375 5.68426 1.375 11C1.375 16.3157 5.68426 20.625 11 20.625ZM11 22C17.0751 22 22 17.0751 22 11C22 4.92487 17.0751 0 11 0C4.92487 0 0 4.92487 0 11C0 17.0751 4.92487 22 11 22ZM5.81432 5.81453C6.06837 5.56048 6.46711 5.53931 6.74528 5.75101L6.81795 5.81453L10.9998 9.99636L15.1816 5.81457C15.4587 5.53743 15.9081 5.53743 16.1852 5.81457C16.4393 6.06862 16.4604 6.46737 16.2487 6.74553L16.1852 6.81821L12.0034 11L16.1852 15.1818C16.4624 15.4589 16.4624 15.9083 16.1852 16.1854C15.9312 16.4395 15.5324 16.4606 15.2543 16.2489L15.1816 16.1854L10.9998 12.0036L6.81795 16.1855C6.54081 16.4626 6.09146 16.4626 5.81432 16.1855C5.56027 15.9314 5.5391 15.5327 5.7508 15.2545L5.81432 15.1818L9.99615 11L5.81432 6.81816C5.53717 6.54102 5.53717 6.09167 5.81432 5.81453Z" fill="#3F3B3B"></path></svg></span> 
             <span class="main-button-text">Entity</span>
           </button>
         </div>
@@ -181,13 +181,10 @@ This filter allows users to choose one or more options from a range of options, 
 None.
 
 ### Behaviours
-This filter appears on the news homepage and topic pages to simplify content search with key filter types: Category, entity, and published year. Multiple options can be selected at once to filter content.
+The user can select and drag either end of the slider to shorten or widen the time range for filter results. As the user drags the ends of the slider, the time range corresponds to the point in the date range.
 
-The user may select multiple options. Selecting an empty checkbox will cause the selected state. Selecting it again will return the checkbox to the unselected state.
+The tooltip dynamically displays the low value on the left and high value on the right.
 
 ### Recommendations
 Add content strategy guidelines and editorial rules here.
 
-### States
-<strong>Unselected:</strong> An empty, unselected checkbox.
-<strong>Selected:</strong> A filled checkbox with a tick.

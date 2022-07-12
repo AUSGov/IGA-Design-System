@@ -152,12 +152,12 @@
   </div>
 </template>
 <script setup>
+  import { onMounted } from 'vue'
   import circleAdd from '../../../public/icons/circle-add.svg?raw'
   import circleCross from '../../../public/icons/circle-cross.svg?raw'
   import chevronForward from '../../../public/icons/chevron-forward.svg?raw'
   import chevronDown from '../../../public/icons/chevron-down.svg?raw'
   import filters from '../../../public/icons/filters.svg?raw'
-  import { onMounted } from 'vue';
 
   onMounted(() => {
     $('select').selectpicker()

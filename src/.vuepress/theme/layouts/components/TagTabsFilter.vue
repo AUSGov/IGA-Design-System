@@ -5,8 +5,8 @@
     </div>
     <div class="nav-group">
       <ul class="nav nav-tabs heading-extra-small">
-        <li v-for="content in contents" class="nav-item">
-          <a aria-current="page" href="#">{{ content }}</a>
+        <li v-for="(content, index) in contents" class="nav-item">
+          <a :aria-current="index === 0 ? 'page' : ''" href="#">{{ content }}</a>
         </li>
       </ul>
     </div>
