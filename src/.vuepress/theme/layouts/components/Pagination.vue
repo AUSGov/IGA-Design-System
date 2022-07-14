@@ -8,7 +8,21 @@
             <span aria-hidden="false" v-html="chevronBack"></span>
           </a>
         </li>
-        <li v-for="index in 5" :key="index" class="page-item"><a class="page-link" data-page="index" href="#">{{ index }}</a></li>
+        <li class="page-item">
+          <a class="page-link active" data-page="index" href="#">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" data-page="index" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" data-page="index" href="#">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" data-page="index" href="#">4</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" data-page="index" href="#">5</a>
+        </li>
         <li class="page-item page-next">
           <a class="page-icon" href="#" aria-label="Next">
             <span aria-hidden="false" v-html="chevronForward"></span>
@@ -21,19 +35,11 @@
 <script setup>
   import chevronForward from '../../../public/icons/chevron-forward.svg?raw'
   import chevronBack from '../../../public/icons/chevron-back.svg?raw'
-  import { onMounted } from 'vue';
 
   const props = defineProps({
     text: {
       type: Boolean,
       default: null
     }
-  })
-
-  onMounted(() => {
-    //pagination
-    const $pageLink = $('.page-link')
-    $pageLink.eq(1).addClass('active')
-    //needs jquery logic to handle checking current page
   })
 </script>

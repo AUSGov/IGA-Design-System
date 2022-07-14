@@ -64,7 +64,23 @@
     </div>
     <div class="container pb-5">
       <h2 id="callout">Callout</h2>
-      <CalloutModal />
+      <CalloutModal>
+        <div class="heading-extra-small-caps text-primary mb-4">
+          Action 1:
+        </div>
+        <div class="callout-subtitle">
+          Investigate the costs and benefits, and whether there is a case for reform, in the key areas impacting the lives of people living with disability
+        </div>
+        <div class="callout-list link-large">
+          <p>The Australian Government, in consultation with the Australian Building Codes Office and the states and territories, undertake regulatory impact analysis on:</p>
+          <ul>
+            <li class="link-large">whether accessible car-parking ratios are adequate</li>
+            <li class="link-large">where automatic doors are used, including their use in accessible toilet facilities.</li>
+            <li class="link-large">the adequacy of dimensions of openings and thoroughfares in the Premises Standards and the opportunity to align with the Disability Standards for Accessible Public Transport 2002 (Transport Standards).</li>
+          </ul>
+          <p>This work will provide evidence for any future changes to the Premises Standards and the National Construction Code (NCC).</p>
+        </div>
+      </CalloutModal>
     </div>
     <div class="container pb-5">
       <h2 id="media-transcript">Media Transcript</h2>
@@ -92,6 +108,7 @@
   import DoiTable from './components/DoiTable.vue'
   import VerticalTimeline from "./components/VerticalTimeline.vue"
   import MediaGallery from "./components/MediaGallery.vue"
+  import warning from "../../public/icons/warning.svg?raw"
 
   export default {
     components: {
@@ -111,6 +128,7 @@
     },
     data () {
       return {
+        warning,
         tableHeaders: ['Access and egress', 'Means of entry and exit to a building'],
         tableContents: [
           ['Access and egress', 'Means of entry and exit to a building.'],

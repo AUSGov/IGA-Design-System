@@ -312,8 +312,12 @@ module.exports = {
                 link: '/components/information-components/form',
               },
               {
-                text: 'Media',
-                link: '/components/information-components/media',
+                text: 'Image',
+                link: '/components/information-components/image',
+              },
+              {
+                text: 'Video',
+                link: '/components/information-components/video',
               },
               {
                 text: 'Pagination',
