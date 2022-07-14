@@ -412,7 +412,7 @@ module.exports = {
           },
           {
             text: 'News Homepage',
-            link: '/page-patterns/news-homepage.html',
+            link: '/page-patterns/news-homepage',
             htmlLink: '/html-page-patterns/news-homepage.html',
           },
           {
