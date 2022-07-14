@@ -9,7 +9,7 @@ pageHeader: true
 These cards may include a primary button to distinguish the content contained within from regular articles and news. The text button may also be used to highlight content without drawing attention to a particular call to action.
 
 ### Elements
-<PreviewImage :image="$withBase('/images/featured-lg.png')" :contents="[{ x: 35, y: 1, title: 'Image', text: 'Featured card lg image' }, { x: 30, y: 15, title: 'Title', text: 'Featured card lg title' }, { x: 30, y: 35, title: 'Summary', text: 'Featured card lg summary'}, { x: 2, y: 1, title: 'Date (optional)', text: 'Featured card lg date'}, { x: 15, y: 1, title: 'Entity', text: 'Featured card lg entity'},  { x: 18, y: 80, title: 'Primary Button', text: 'Featured card lg primary button'} ]">
+<PreviewImage :image="$withBase('/images/featured-lg.png')" :contents="[{ x: 35, y: 1, title: 'Image', text: 'Featured card lg image' }, {title: 'Video (optional)', text: 'Featured card lg video'}, { x: 30, y: 15, title: 'Title', text: 'Featured card lg title' }, { x: 30, y: 35, title: 'Summary', text: 'Featured card lg summary'}, { x: 2, y: 1, title: 'Date (optional)', text: 'Featured card lg date'}, { x: 15, y: 1, title: 'Entity', text: 'Featured card lg entity'}, { x: 18, y: 80, title: 'Primary Button', text: 'Featured card lg primary button'}, {title: 'Text Button', text: 'Featured card lg text button'} ]">
 <template #code>
 <CodeGroup>
   <CodeGroupItem title="HTML">
