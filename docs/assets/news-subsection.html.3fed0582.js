@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-e7825bfe","path":"/page-patterns/news-subsection.html","title":"Filters","lang":"en-US","frontmatter":{"lang":"en-US","title":"Filters","description":null,"pageHeader":true,"layout":"DoiNewsSubsection"},"excerpt":"","headers":[],"git":{"updatedTime":1657082933000},"filePathRelative":"page-patterns/news-subsection.md"}');export{e as data};
