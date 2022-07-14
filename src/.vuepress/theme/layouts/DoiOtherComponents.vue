@@ -76,8 +76,8 @@
     </div>
 
     <div class="container">
-      <h2 id="gallery">Gallery</h2>
-      <Gallery />
+      <h2 id="media-gallery">Media Gallery</h2>
+      <MediaGallery />
     </div>
   </div>
 </template>
@@ -91,13 +91,13 @@
   import HorizontalTimeline from './components/HorizontalTimeline.vue'
   import DoiTable from './components/DoiTable.vue'
   import VerticalTimeline from "./components/VerticalTimeline.vue"
-  import Gallery from "./components/Gallery.vue"
+  import MediaGallery from "./components/MediaGallery.vue"
 
   export default {
     components: {
       Blockquote,
       CalloutModal,
-      Gallery,
+      MediaGallery,
       HorizontalTimeline,
       Pagination,
       Publication,

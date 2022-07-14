@@ -1,5 +1,5 @@
 <template>
-  <div class="gallery" :class="classes">
+  <div class="media-gallery" :class="classes">
     <div class="splide splide-gallery-main">
       <div class="splide__track">
         <div class="splide__list">
@@ -135,7 +135,7 @@
   })
 
   onMounted(() => {
-    const $galleries = $('.gallery')
+    const $galleries = $('.media-gallery')
     $galleries.each(function () {
       const $this = $(this)
       const bodyWidth = $this.hasClass('body-width')

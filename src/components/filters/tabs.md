@@ -10,7 +10,7 @@ The tab filter organises related content and allows the user to search between g
 
 ### Elements
 
-<PreviewImage :image="$withBase('/images/tab-filter-selected-sample.png')" :contents="[{ x: 0, y: 3, title: 'Tab filter strip', text: 'Tab filter strip' }, { x: 4, y: 3, title: 'Entity label', text: 'Entity label' }, { x: 13, y: 3, title: 'Topic label', text: 'Topic label' }, { x: 85, y: 3, title: 'Left chevron', text: 'Left chevron' }, { x: 90, y: 3, title: 'Right chevron', text: 'Right chevron' }]">
+<PreviewImage :image="$withBase('/images/tab-filter-selected-sample.png')" :contents="[{ x: 0, y: 3, title: 'Tab filter strip', text: 'Tab filter strip' }, { x: 4, y: 3, title: 'Entity label', text: 'Entity label' }, { x: 13, y: 3, title: 'Topic label', text: 'Topic label' }, { title: 'Left chevron', text: 'Left chevron' }, { x: 90, y: 3, title: 'Right chevron', text: 'Right chevron' }]">
 <template #code>
 <CodeGroup>
   <CodeGroupItem title="HTML">

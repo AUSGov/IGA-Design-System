@@ -48,6 +48,7 @@ const formData = ref({})
 
 const navigationClass = computed(() => {
   const classes = []
+  //NOTE i think size does not exist? ie. formData.value.[..] , where [..] is the id of your formConfig
   if (typeof formData.value.size !== 'undefined') {
     classes.push(formData.value.size)
   }

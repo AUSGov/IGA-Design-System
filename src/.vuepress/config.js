@@ -267,22 +267,23 @@ module.exports = {
                 htmlLink: '/html-components/banners#standard-banner',
               },
               {
-                text: 'Standard content ADC banner',
-                link: '/components/banners/standard-content-adc',
+                text: 'Section banner',
+                link: '/components/banners/section',
               },
               {
-                text: 'Publication banners',
-                link: '/components/banners/publication',
+                text: 'Featured publication banner',
+                link: '/components/banners/featured-publication',
+                htmlLink: '/html-components/banners#publication-banner',
+              },
+              {
+                text: 'Basic publication banner',
+                link: '/components/banners/basic-publication',
                 htmlLink: '/html-components/banners#publication-banner',
               },
               {
                 text: 'News article, case study, event banner',
                 link: '/components/banners/news-case-event',
                 htmlLink: '/html-components/banners#news-article',
-              },
-              {
-                text: 'Biography banner',
-                link: '/components/banners/biography',
               },
             ]
           },
