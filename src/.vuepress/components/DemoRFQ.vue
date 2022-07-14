@@ -2,9 +2,7 @@
   <CodePreview :formConfig="formConfig" @form-data-changed="formDataChanged">
     <template v-slot="slotProps">
       <pre>
-
-        <RfqCard :classes="classes" />
-
+        <RfqCard :classes="classes" :button-class="buttonClass" />
       </pre>
     </template>
   </CodePreview>
@@ -28,15 +26,22 @@ const formConfig = [
       },
       {
         label: 'Body width',
-        value: '--full'
-      },
+        value: 'rfq-card--no-img'
+      }
+    ]
+  },
+  {
+    label: 'Button Variation',
+    id: 'buttonVariation',
+    type: 'select',
+    options: [
       {
         label: 'Blue button',
-        value: '--secondary'
+        value: ''
       },
       {
         label: 'NMI Red button',
-        value: '--card'
+        value: 'btn-quote'
       }
     ]
   },
@@ -46,6 +51,12 @@ const formData = ref({})
 const classes = computed(() => {
   if(typeof formData.value.variation !== 'undefined') {
     return formData.value.variation
+  }
+})
+
+const buttonClass = computed(() => {
+  if(typeof formData.value.buttonVariation !== 'undefined') {
+    return formData.value.buttonVariation
   }
 })
 

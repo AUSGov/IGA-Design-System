@@ -18,10 +18,6 @@ const formConfig = [
     type: 'select',
     options: [
       {
-        label: 'Extra Small',
-        value: 'xs'
-      },
-      {
         label: 'Small',
         value: 'sm'
       },

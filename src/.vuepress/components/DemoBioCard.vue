@@ -2,9 +2,7 @@
   <CodePreview :formConfig="formConfig" @form-data-changed="formDataChanged">
     <template v-slot="slotProps">
       <pre>
-
-        <BiographyCard :classes="classes" />
-
+        <BiographyCard :classes="classes" :text="true" :link="link" />
       </pre>
     </template>
   </CodePreview>
@@ -28,19 +26,35 @@ const formConfig = [
       },
       {
         label: 'Small',
-        value: '--full'
+        value: ''
       },
       {
         label: 'Medium',
-        value: '--secondary'
+        value: 'biography-card--full'
       },
       {
         label: 'Coloured bg',
-        value: '--card'
+        value: 'biography-card--card'
       },
       {
         label: 'Right aligned',
-        value: 'link-icon link-secondary'
+        value: 'biography-card--secondary'
+      }
+    ]
+  },
+  {
+    label: 'Link',
+    id: 'link',
+    type: 'radio',
+    options: [
+      {
+        label: 'With Link',
+        value: true,
+        checked: true
+      },
+      {
+        label: 'Without Link',
+        value: false
       }
     ]
   },
@@ -53,14 +67,9 @@ const classes = computed(() => {
   }
 })
 
-const linkType = computed(() => {
-  switch (formData.value.type) {
-    case '':
-      return LinkArrowRight
-    case 'link-external':
-      return LinkExternal
-    default:
-      return null
+const link = computed(() => {
+  if(typeof formData.value.link !== 'undefined') {
+    return formData.value.link === 'true'
   }
 })
 

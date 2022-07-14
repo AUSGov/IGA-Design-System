@@ -11,6 +11,17 @@ This card holds contextual copy and flexible metadata depending on the page patt
 ### Elements
 <DemoSnippetCard />
 
+<div>
+    <ol>
+        <li>Copy block (notice)</li>
+        <li>Title</li>
+        <li>Summary</li>
+        <li>Read more accordion</li>
+        <li>Text button background (shaded)</li>
+        <li>Text button</li>
+    </ol>
+</div>
+
 ### Variations
 None.
 

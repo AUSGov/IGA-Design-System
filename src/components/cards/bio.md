@@ -10,7 +10,17 @@ Bio cards are versatile and can be used for ministers and the executive team on 
 
 ### Elements
 <DemoBioCard />
-<SearchFilter />
+
+
+<div>
+    <ol>
+        <li>Photo</li>
+        <li>Name</li>
+        <li>Title</li>
+        <li>Biography (optional)</li>
+        <li>Text button (optional)</li>
+    </ol>
+</div>
 
 ### Variations
 

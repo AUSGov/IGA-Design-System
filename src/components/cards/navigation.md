@@ -11,6 +11,18 @@ These cards act as navigation and direct users to relevant content in the public
 ### Elements
 <DemoNavigationCard />
 
+<div>
+    <ol>
+        <li>Image (optional)</li>
+        <li>Title </li>
+        <li>Summary (optional)</li>
+        <li>Text button (optional)</li>
+        <li>Container: Title (heading levels)</li>
+        <li>Container: Introductory summary</li>
+        <li>Coloured background (shaded)</li>
+    </ol>
+</div>
+
 ### Variations
 <div>
     <ul>

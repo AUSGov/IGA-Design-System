@@ -9,16 +9,16 @@ pageHeader: true
 This card offers a simple stacked list of search results with key information in an easily scannable content hierarchy.
 
 ### Elements
-<DemoFilterResult />
+<DemoSearchLanding />
 
 <div>
     <ol>
-        <li>Image (optional)</li>
-        <li>Date (optional)</li>
-        <li>Entity (optional)</li>
-        <li>Title</li>
+        <li>Title</li> 
         <li>Summary</li>
-       <li> Text button (optional)</li>
+        <li>Publication</li>
+        <li>Date published</li>
+        <li>Date updated (optional)</li>
+        <li>Tags / keywords</li>
     </ol>
 </div>
 

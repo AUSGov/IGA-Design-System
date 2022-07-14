@@ -186,6 +186,10 @@ module.exports = {
                 link: '/components/cards/filter-result'
               },
               {
+                text: 'Search landing card',
+                link: '/components/cards/search-landing'
+              },
+              {
                 text: 'Bio card',
                 link: '/components/cards/bio',
                 htmlLink: '/html-components/cards#biography-card',

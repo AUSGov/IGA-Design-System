@@ -10,6 +10,16 @@ pageHeader: true
 ### Elements
 <DemoRFQ />
 
+<div>
+    <ol>
+        <li>Image (optional)</li>
+        <li>Title</li>
+        <li>Summary</li>
+        <li>Primary button</li>
+        <li>Coloured background (shaded)</li>
+    </ol>
+</div>
+
 ### Variations
 <div>
     <ul>
