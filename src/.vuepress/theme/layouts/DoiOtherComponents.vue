@@ -13,11 +13,11 @@
       <DoiTable :headers="publicationTableHeaders" :contents="publicationTableContents"/>
     </div>
     <div class="container pb-5">
-      <h2 id="publication">Publication</h2>
+      <h2 id="publication-overview">Publication</h2>
       <Publication />
     </div>
     <div class="container pb-5">
-      <form class="form">
+      <form id="form" class="form">
         <div class="form-inputs">
           <div class="inputs-container">
             <div class="input-container">
@@ -83,7 +83,11 @@
       </CalloutModal>
     </div>
     <div class="container pb-5">
-      <h2 id="media-transcript">Media Transcript</h2>
+      <h2 id="image">Image with Text</h2>
+      <MediaTranscript :image="true"/>
+    </div>
+    <div class="container pb-5">
+      <h2 id="video">Video with Transcript</h2>
       <MediaTranscript />
     </div>
     <div class="container pb-5">
@@ -92,7 +96,7 @@
     </div>
 
     <div class="container">
-      <h2 id="media-gallery">Media Gallery</h2>
+      <h2 id="gallery">Media Gallery</h2>
       <MediaGallery />
     </div>
   </div>

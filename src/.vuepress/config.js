@@ -199,25 +199,21 @@ module.exports = {
                 link: '/components/cards/request-for-quote',
                 htmlLink: '/html-components/cards#rfq-card',
               },
-              // {
-              //   text: 'Publication card and containers',
-              //   link: '/components/cards/publication'
-              // },
-              // {
-              //   text: 'News card and containers',
-              //   link: '/components/cards/news',
-              //   htmlLink: '/html-components/cards#featured-news',
-              // },
-              // {
-              //   text: 'Event card and containers',
-              //   link: '/components/cards/event',
-              //   htmlLink: '/html-components/cards#event-card',
-              // },
-              // {
-              //   text: 'Filtered landing page card',
-              //   link: '/components/cards/filtered-landing-page',
-              //   htmlLink: '/html-components/cards#filtered-landing-page-card',
-              // },
+              {
+                text: 'News card and containers',
+                link: '/components/cards/news',
+                htmlLink: '/html-components/cards#featured-news',
+              },
+              {
+                text: 'Event card and containers',
+                link: '/components/cards/event',
+                htmlLink: '/html-components/cards#event-card',
+              },
+              {
+                text: 'Filtered landing page card',
+                link: '/components/cards/filtered-landing-page',
+                htmlLink: '/html-components/cards#filtered-landing-page-card',
+              },
             ]
           },
           {
@@ -273,6 +269,7 @@ module.exports = {
               {
                 text: 'Section banner',
                 link: '/components/banners/section',
+                htmlLink: '/html-components/banners#section-banner',
               },
               {
                 text: 'Featured publication banner',
@@ -298,42 +295,52 @@ module.exports = {
               {
                 text: 'Callout',
                 link: '/components/information-components/callout',
+                htmlLink: '/html-components/other-components#callout',
               },
               {
                 text: 'Form',
                 link: '/components/information-components/form',
+                htmlLink: '/html-components/other-components#form',
               },
               {
                 text: 'Image',
                 link: '/components/information-components/image',
+                htmlLink: '/html-components/other-components#image',
               },
               {
                 text: 'Video',
                 link: '/components/information-components/video',
+                htmlLink: '/html-components/other-components#video',
               },
               {
                 text: 'Gallery',
                 link: '/components/information-components/gallery',
+                htmlLink: '/html-components/other-components#gallery',
               },
               {
                 text: 'Blockquote',
                 link: '/components/information-components/blockquote',
+                htmlLink: '/html-components/other-components#blockquote',
               },
               {
                 text: 'Publication Overview',
                 link: '/components/information-components/publication-overview',
+                htmlLink: '/html-components/other-components#publication-overview',
               },
               {
                 text: 'Pagination',
                 link: '/components/information-components/pagination',
+                htmlLink: '/html-components/other-components#pagination',
               },
               {
                 text: 'Table',
                 link: '/components/information-components/table',
+                htmlLink: '/html-components/other-components#table',
               },
               {
                 text: 'Timeline',
                 link: '/components/information-components/timeline',
+                htmlLink: '/html-components/other-components#horizontal-timeline',
               }
             ]
           }

@@ -25,19 +25,22 @@
   </div>
 </template>
 <script setup>
-  import { onMounted, ref } from 'vue'
+  import { onMounted } from 'vue'
   import Plyr from 'plyr'
   import 'plyr/dist/plyr.css'
   import circleChevronDown from '../../../public/icons/circle-chevron-down.svg?raw'
   import circleChevronDownFilled from '../../../public/icons/circle-chevron-down-filled.svg?raw'
   import videoPlay from '../../../public/icons/video-play.svg?raw'
 
-  const image = ref(false)
 
   const props = defineProps({
     descriptionClasses: {
       type: String,
       default: null
+    },
+    image: {
+      type: Boolean,
+      default: false
     }
   })
 

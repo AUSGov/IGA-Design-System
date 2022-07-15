@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-3360efad","path":"/page-patterns/biography.html","title":"Biography","lang":"en-US","frontmatter":{"lang":"en-US","title":"Biography","description":null,"pageHeader":true,"layout":"DoiBiography"},"excerpt":"","headers":[],"git":{"updatedTime":1657246586000},"filePathRelative":"page-patterns/biography.md"}');export{e as data};
