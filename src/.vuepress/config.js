@@ -296,16 +296,8 @@ module.exports = {
             link: '/components/information-components/alert',
             children: [
               {
-                text: 'Alert',
-                link: '/components/information-components/alert',
-              },
-              {
                 text: 'Callout',
                 link: '/components/information-components/callout',
-              },
-              {
-                text: 'Document download',
-                link: '/components/information-components/document-download',
               },
               {
                 text: 'Form',
@@ -320,16 +312,24 @@ module.exports = {
                 link: '/components/information-components/video',
               },
               {
+                text: 'Gallery',
+                link: '/components/information-components/gallery',
+              },
+              {
+                text: 'Blockquote',
+                link: '/components/information-components/blockquote',
+              },
+              {
+                text: 'Publication Overview',
+                link: '/components/information-components/publication-overview',
+              },
+              {
                 text: 'Pagination',
                 link: '/components/information-components/pagination',
               },
               {
                 text: 'Table',
                 link: '/components/information-components/table',
-              },
-              {
-                text: 'Filterable table',
-                link: '/components/information-components/filterable-table',
               },
               {
                 text: 'Timeline',

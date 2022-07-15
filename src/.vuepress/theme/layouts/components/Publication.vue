@@ -1,6 +1,6 @@
 <template>
   <div class="publication">
-    <div class="publication-container ">
+    <div class="publication-container">
       <span class="publication-title">Topics</span>
       <div class="button-container heading-extra-small">
         <button class="topic-button"><span>Mining oil and gas</span></button>
