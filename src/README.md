@@ -5,11 +5,15 @@ description: Our design system is made from interconnected patterns of repeating
 pageHeader: true
 ---
 
-## About our design system
+## About the design system
 
-<p class="h4 fw-normal">Our digital front door guides users through an integrated and accessible experience, providing context to the breadth of news, stories, achievements, and engagement opportunities.</p>
+<p class="h4 fw-normal">Our system enables us to guide website users through an integrated, accessible 
+and readable content experience.</p>
 
-<p class="h4 fw-normal mb-4">This modular approach brings to life our information architecture that prioritises critical and timely information, while also presenting information according to user needs and interests.</p>
+<p class="h4 fw-normal mb-4">A modular approach brings to life our information architecture and content 
+strategy, which prioritises linking users with policy topics and entities at all the 
+right touch points. As well as providing multiple pathways into critical, timely and
+timeless information. </p>
 
 <Cards :contents="[
 { title: 'Foundations', linkUrl: '/foundations', linkText: 'Visit Page', text: 'These are our visual styles to create the look and feel of our department’s interconnected web presence.' },
@@ -44,6 +48,21 @@ To visually capture these six principles, we’ve defined key design system prin
     { title: 'Transparent', text: 'Our page patterns emphasise critical information, then contextually weave in news, publications, and events.<br/><br/>We curate related content through modular cards and offer users intuitive navigation patterns to search for and explore topics of interest.' },
 ]"/>
 
+## System specific principles
+We complement the governance framework principles with 2 design system 
+
+### User-centred design  
+We champion critical information and tasks first. We contextually promote 
+publications, news, case studies, events and videos where there’s an established
+user need or business requirement.
+Our UI has no unnecessary parts. Each element is designed with purpose, and 
+contributes to an integrated, intuitive and seamless user experience.
+
+### Design integrity 
+We follow the system rules. We do not apply any of the elements in 
+unestablished combinations. The system works holistically and accommodates 
+many interdependencies. We do not consider design iterations or improvements
+
 ## Related Links
 
 <RowLinkList :list="[
@@ -52,5 +71,21 @@ To visually capture these six principles, we’ve defined key design system prin
         linkUrl: 'https://www.stylemanual.gov.au/writing-and-designing-content/findable-content/how-people-find-information',
         linkText: 'How people find information',
         linkExternal: true
+    },
+    {
+        text: 'Digital Service Standard',
+        linkUrl: 'https://www.dta.gov.au/help-and-advice/about-digital-service-standard',
+        linkText: 'How people find information',
+        linkExternal: true
     }
 ]" />
+
+## Design system use
+This design system is for industry.gov.au products and tools only.
+
+## Contact
+
+The Digital Experience and Engagement team maintains the industry.gov.au
+design system.
+
+Email <a href="mailto:digital@industry.gov.au">digital@industry.gov.au</a>

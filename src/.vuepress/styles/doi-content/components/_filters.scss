@@ -371,6 +371,12 @@
       }
     }
   }
+
+  &.sm {
+    .row {
+      @include row-cols(3)
+    }
+  }
 }
 
 .search-filters {
