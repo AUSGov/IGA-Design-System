@@ -6,5 +6,5 @@
   </div>
 </template>
 <script setup>
-const { list } = defineProps({ list: String })
+const { list } = defineProps({ list: Array })
 </script>
