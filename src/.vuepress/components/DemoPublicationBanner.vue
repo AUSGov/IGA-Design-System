@@ -45,7 +45,6 @@ const image = computed(() => {
   if (typeof formData.value.image !== 'undefined') {
     image = formData.value.image === 'true'
   }
-  console.log('image', image, typeof image)
   return image
 })
 

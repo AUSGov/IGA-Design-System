@@ -1,0 +1,4 @@
+import i from"./Index.d316a471.js";import{_ as l,D as n,j as d,o as c,q as m,w as p,b as u,a as f,h as _,a9 as v,d as o}from"./app.434ce2b8.js";import"./hamburger-2.8adf8044.js";import"./Radio.f85b51f7.js";import"./Checkbox.ed65650f.js";import"./Select.590d9b76.js";import"./Highlighter.4d461672.js";import"./prism-line-numbers.dc22a1e8.js";const h=o(`
+  `),y=o(`
+
+`),D={__name:"DemoMediaGallery",setup(C){const t=[{label:"Variation",id:"variation",type:"select",options:[{label:"Full Width",value:""},{label:"Body Width",value:"body-width"}]}],e=n({}),r=d(()=>typeof e.value.variation!="undefined"?e.value.variation:""),s=a=>{e.value=a};return(a,b)=>(c(),m(i,{formConfig:t,onFormDataChanged:s},{default:p(x=>[u("pre",null,[h,f(v,{classes:_(r)},null,8,["classes"]),y])]),_:1}))}};var F=l(D,[["__file","DemoMediaGallery.vue"]]);export{F as default};

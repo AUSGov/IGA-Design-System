@@ -1,0 +1,4 @@
+import i from"./Index.d316a471.js";import{_ as m,D as c,j as u,o as f,q as p,w as g,b as d,a as _,h as t,ab as b,d as r}from"./app.434ce2b8.js";import"./hamburger-2.8adf8044.js";import"./Radio.f85b51f7.js";import"./Checkbox.ed65650f.js";import"./Select.590d9b76.js";import"./Highlighter.4d461672.js";import"./prism-line-numbers.dc22a1e8.js";const h=r(`
+  `),v=r(`
+
+`),B={__name:"DemoPublicationBanner",props:{small:{default:!1}},setup(s){const l=[{label:"Image",id:"image",type:"select",options:[{label:"With Image",value:!0},{label:"No Image",value:!1}]}],a=c({}),o=u(()=>{let e=!0;return typeof a.value.image!="undefined"&&(e=a.value.image==="true"),console.log("image",e,typeof e),e}),n=e=>{a.value=e};return(e,D)=>(f(),p(i,{formConfig:l,onFormDataChanged:n},{default:g(C=>[d("pre",null,[h,_(b,{classes:(s.small?"small ":"")+(t(o)?"":"bg-primary"),image:t(o)},null,8,["classes","image"]),v])]),_:1}))}};var j=m(B,[["__file","DemoPublicationBanner.vue"]]);export{j as default};
