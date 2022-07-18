@@ -51,6 +51,14 @@
       vertical-align: top;
     }
   }
+
+  .navbar-dropdown-link {
+    display: inline-block;
+  }
+
+  .navbar-dropdown-wrapper {
+    display: none;
+  }
 }
 
 @media (max-width: $MQMobile) {
@@ -80,6 +88,14 @@
       width: 165px;
       height: auto;
       margin-right: 0;
+    }
+
+    .navbar-dropdown-link {
+      display: none;
+    }
+
+    .navbar-dropdown-wrapper {
+      display: block;
     }
   }
 

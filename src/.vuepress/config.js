@@ -69,6 +69,7 @@ module.exports = {
       {
         text: 'Components',
         link: '/components',
+        mobileNavbarDropdown: true,
         children: [
           {
             text: 'Headers and footers',
@@ -376,6 +377,7 @@ module.exports = {
       {
         text: 'Page Patterns',
         link: '/page-patterns',
+        mobileNavbarDropdown: true,
         children: [
           {
             text: 'Biography',

@@ -16,6 +16,7 @@ module.exports = options => {
       '@theme/SidebarItem.vue': path.resolve(__dirname, 'components/SidebarItem.vue'),
       '@theme/NavbarBrand.vue': path.resolve(__dirname, 'components/NavbarBrand.vue'),
       '@theme/Navbar.vue': path.resolve(__dirname, 'components/Navbar.vue'),
+      '@theme/NavbarDropdown.vue': path.resolve(__dirname, 'components/NavbarDropdown.vue'),
     }
   }
 }

@@ -9,7 +9,6 @@ import { useRouter } from 'vue-router'
 import type { NavbarGroup, NavbarItem, ResolvedNavbarItem } from '@vuepress/theme-default/lib/shared'
 import { useNavLink, useThemeLocaleData } from '@vuepress/theme-default/lib/client/composables'
 import { resolveRepoType } from '@vuepress/theme-default/lib/client/utils'
-import {NavGroup, NavItem} from "@vuepress/theme-default/lib/shared/nav";
 
 /**
  * Get navbar config of select language dropdown
@@ -156,8 +155,8 @@ const navbarLinks = computed(() => [
 <template>
   <nav v-if="navbarLinks.length" class="navbar-items">
     <div v-for="item in navbarLinks" :key="item.text" class="navbar-item">
-      <AutoLink v-if="item.link" :item="item" />
-      <NavbarDropdown v-else :item="item" />
+      <AutoLink v-if="item.link" :item="item" :class="item.mobileNavbarDropdown ? 'navbar-dropdown-link' : ''"/>
+      <NavbarDropdown v-if="item.mobileNavbarDropdown" :item="item" />
     </div>
   </nav>
 </template>
