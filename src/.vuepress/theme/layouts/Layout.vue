@@ -77,26 +77,24 @@
 </script>
 
 <template>
-  <div class="theme-container">
-    <slot name="navbar">
-      <Navbar/>
-    </slot>
+  <div class="theme-container" :class="containerClass" @touchstart="onTouchStart" @touchend="onTouchEnd">
+    <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
     <div class="content-container">
       <PageHeader v-if="$frontmatter.pageHeader"/>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12 col-sm-4 col-md-3 col-lg-2">
+          <div class="d-none d-lg-block col-lg-2">
             <div id="sidebar-left">
               <SidebarSubMenu/>
             </div>
           </div>
-          <div class="col-12 col-sm-4 col-md-6 col-lg-8">
+          <div class="col-lg-8">
             <Home v-if="frontmatter.home"/>
             <Transition v-else name="fade-slide-y" mode="out-in">
               <Page :key="page.path"/>
             </Transition>
           </div>
-          <div class="col-12 col-sm-4 col-md-3 col-lg-2">
+          <div class="d-none d-lg-block col-lg-2">
             <div id="sidebar-right">
               <SidebarPageSections/>
             </div>

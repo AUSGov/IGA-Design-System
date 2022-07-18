@@ -6,7 +6,11 @@
   width: 100%;
 
   .content {
-    padding: 15rem var(--navbar-padding-h) 2.5rem var(--navbar-padding-h);
+    padding: var(--navbar-padding-v) 0;
+
+    @media (min-width: $MQMobile) {
+      padding: 15rem var(--navbar-padding-h) 2.5rem var(--navbar-padding-h);
+    }
   }
 
   h1 {
@@ -14,13 +18,21 @@
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     font-weight: var(--font-weight-semi-bold);
-    font-size: 3.75rem;
+    font-size: 2.5rem;
+
+    @media (min-width: $MQMobile) {
+      font-size: 3.75rem;
+    }
   }
 
   .lead-text {
-    font-size: var(--font-size-lead-text);
+    font-size: 18px;
     line-height: 1.2;
     margin-bottom: 0;
     max-width: 1200px;
+
+    @media (min-width: $MQMobile) {
+      font-size: var(--font-size-lead-text);
+    }
   }
 }

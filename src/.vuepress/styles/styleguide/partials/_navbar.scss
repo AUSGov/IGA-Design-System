@@ -19,18 +19,19 @@
   position: fixed;
   padding: var(--navbar-padding-v) var(--navbar-padding-h);
 
+  .navbar-brand-wrap {
+    a {
+      display: block;
+    }
+  }
+
   .logo {
     height: 72px;
-    vertical-align: top;
-    position: relative;
-    top: -12px;
+    width: auto;
   }
 
   .site-name {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: var(--c-text-navbar);
-    position: relative;
+    display: none;
   }
 
   .navbar-items-wrapper {
@@ -54,17 +55,37 @@
 
 @media (max-width: $MQMobile) {
   .navbar {
-    padding-left: 4rem;
+    .navbar-brand-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+    }
 
-    .can-hide {
+    .navbar-items-wrapper {
+      background-color: var(--c-bg-navbar);
+      padding: 3rem;
+      position: absolute;
+      top: var(--navbar-height);
+      left: 0;
+      right: 0;
+      height: calc(100vh - var(--navbar-height));
+      overflow-y: scroll;
+      align-items: flex-start;
+      justify-content: flex-start;
       display: none;
     }
 
-    .site-name {
-      width: calc(100vw - 9.4rem);
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
+    .logo {
+      width: 165px;
+      height: auto;
+      margin-right: 0;
+    }
+  }
+
+  .theme-container.sidebar-open {
+    .navbar-items-wrapper {
+      display: flex;
     }
   }
 }
@@ -77,7 +98,7 @@
 
   a {
     display: inline-block;
-    line-height: 1.4rem;
+    line-height: 1.23;
     color: var(--c-text-navbar);
 
     &:hover,
@@ -90,7 +111,7 @@
     position: relative;
     display: inline-block;
     margin-left: 1.5rem;
-    line-height: var(--navbar-line-height);
+    line-height: 1.23;
 
     &:first-child {
       margin-left: 0;
@@ -100,8 +121,18 @@
 
 @media (max-width: $MQMobile) {
   .navbar-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: unset;
+
     .navbar-item {
       margin-left: 0;
+      padding: 1rem 0;
+      width: 100%;
+      font-size: 21px;
+      font-weight: $font-weight-semi-bold;
+      border-bottom: 1px solid rgba(196, 196, 196, 0.3);
     }
   }
 }
@@ -127,40 +158,36 @@
  * toggle sidebar button
  */
 .toggle-sidebar-button {
-  position: absolute;
-  top: 0.6rem;
-  left: 1rem;
-  display: none;
-  padding: 0.6rem;
+  position: unset;
+  padding: 0;
+  display: block;
   cursor: pointer;
-}
 
-.toggle-sidebar-button .icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 1.25rem;
-  height: 1.25rem;
-  cursor: inherit;
+  .icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: inherit;
 
-  span {
-    display: inline-block;
-    width: 100%;
-    height: 2px;
-    border-radius: 2px;
-    background-color: var(--c-text);
-    transition: transform var(--t-transform);
+    span {
+      display: inline-block;
+      width: 100%;
+      height: 2px;
+      border-radius: 2px;
+      background-color: #fff;
+      transition: transform var(--t-transform);
 
-    &:nth-child(2) {
-      margin: 6px 0;
+      &:nth-child(2) {
+        margin: 6px 0;
+      }
     }
   }
-}
 
-@media screen and (max-width: $MQMobile) {
-  .toggle-sidebar-button {
-    display: block;
+  @media (min-width: $MQMobile) {
+    display: none;
   }
 }
 
