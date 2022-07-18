@@ -8,7 +8,7 @@ pageHeader: true
 ### Overview
 In this section navigation appears on standard pages and basic chaptered publications. It allows users to quickly scan the contents of a page and jump to relevant sections.
 
-###Elements
+### Elements
 <PreviewImage :image="$withBase('/images/in-this-section-menu.png')" :contents="[{ x: 18, y: 2.5, title: 'Section label', text: 'In-Section navigation section label' }, { x: 18, y: 18, title: 'Sub Section label', text: 'In-Section navigation sub section label' }, { x: 18, y: 45, title: 'Divider', text: 'In-Section navigation divider' }]">
 <template #code>
 <CodeGroup>

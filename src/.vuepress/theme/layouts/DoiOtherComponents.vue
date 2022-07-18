@@ -17,42 +17,8 @@
       <Publication />
     </div>
     <div class="container pb-5">
-      <form id="form" class="form">
-        <div class="form-inputs">
-          <div class="inputs-container">
-            <div class="input-container">
-              <input type="text" id="component-input" class="form-control form-input" placeholder="Placeholder">
-              <div class="error-container">
-                <span v-html="warning"></span><span>How dare you!</span>
-              </div>
-            </div>
-            <div class="input-container">
-              <select id="component-select" title="Placeholder">
-                <option value="1">Australian Industry Participation Authority</option>
-                <option value="2">Anti-Dumping Commission</option>
-                <option value="3">AusIndustry</option>
-                <option value="3">Australian Industry Participation Authority...</option>
-                <option value="3">Australian Radioactive Waste Authority</option>
-              </select>
-              <div class="error-container">
-                <span v-html="warning"></span><span>How dare you!</span>
-              </div>
-            </div>
-            <div class="check-container">
-              <input class="form-check-input" type="radio" value="" aria-label="Radio button for following text input">
-              <label class="form-check-label" for="flexCheckFirst">
-                Label
-              </label>
-            </div>
-            <div class="check-container">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckFirst">
-              <label class="form-check-label" for="flexCheckFirst">
-                Label
-              </label>
-            </div>
-          </div>
-        </div>
-      </form>
+      <h2 id="form-groups">Form Groups</h2>
+      <DoiFormComponents />
     </div>
     <div class="container pb-5">
       <h2 id="horizontal-timeline">Horizontal Timeline</h2>
@@ -105,6 +71,7 @@
 <script>
   import MediaTranscript from "./components/MediaTranscript.vue"
   import Blockquote from "./components/DoiBlockquote.vue"
+  import DoiFormComponents from "../../components/DoiFormComponents.vue"
   import CalloutModal from "./components/CalloutModal.vue"
   import Pagination from './components/Pagination.vue'
   import Publication from './components/Publication.vue'
@@ -112,12 +79,11 @@
   import DoiTable from './components/DoiTable.vue'
   import VerticalTimeline from "./components/VerticalTimeline.vue"
   import MediaGallery from "./components/MediaGallery.vue"
-  import warning from "../../public/icons/warning.svg?raw"
-
   export default {
     components: {
       Blockquote,
       CalloutModal,
+      DoiFormComponents,
       MediaGallery,
       HorizontalTimeline,
       Pagination,
@@ -126,13 +92,8 @@
       DoiTable,
       VerticalTimeline,
     },
-    mounted () {
-      //form inputs
-      $('select').selectpicker()
-    },
     data () {
       return {
-        warning,
         tableHeaders: ['Access and egress', 'Means of entry and exit to a building'],
         tableContents: [
           ['Access and egress', 'Means of entry and exit to a building.'],

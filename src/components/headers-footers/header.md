@@ -9,7 +9,7 @@ pageHeader: true
 Along with site identity and search, the header anchors users in a high-level site structure. It appears on every page with a consistent set of key sections and direct links. The tab-style navigation allows for easy selection between core sections and content.
 
 ### Elements
-<PreviewImage :image="$withBase('/images/global-header-sample.png')" :contents="[{ x: 1, y: 7.5, title: 'Logo', text: 'Logo of the header' }, { x: 16, y: 7.5, title: 'Label', text: 'Label of the logo' },{ x: 20, y: 7.5, title: 'Dropdown', text: ' Dropdown example'}, { x: 93, y: 7.5, title: 'Divider', text: ' Divider of the header'}, { x: 98, y: 7.5, title: 'Search', text: ' Search of the header'}]">
+<PreviewImage :image="$withBase('/images/global-header-sample.png')" :contents="[{ x: 1, y: 7.5, title: 'Logo', text: 'Logo of the header' }, { x: 16, y: 7.5, title: 'Label', text: 'Label of the logo' },{ x: 20, y: 7.5, title: 'Dropdown', text: ' Dropdown example'}, { x: 93, y: 7.5, title: 'Divider', text: ' Divider of the header'}, { x: 98, y: 7.5, title: 'Search', text: ' Search of the header'}, { title: 'Entity bar (optional)', text: ' Header entity bar'}]">
 <template #code>
 <CodeGroup>
   <CodeGroupItem title="HTML">
@@ -117,7 +117,7 @@ Along with site identity and search, the header anchors users in a high-level si
 </template>
 </PreviewImage>
 
-### Variants
+### Variations
 None.
 
 ### Behaviours

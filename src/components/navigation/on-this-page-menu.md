@@ -8,7 +8,7 @@ pageHeader: true
 ### Overview
 On this page is a navigation component used in the publications section and on pages that include long-form content, such as case studies and long standard content pages. It allows users to scan long publication pages and skip to chapters of interest.
 
-###Elements
+### Elements
 <PreviewImage :image="$withBase('/images/on-this-page-menu.png')" :contents="[{ x: 60, y: 1, title: 'Collapsed menu', text: 'On this page menu collapsed menu'}, { x:37 , y: 5, title: 'Chapter label', text: 'On this page menu chapter label'}, { x: 15, y: 12, title: 'Sub-section label', text: 'On this page menu sub section label'}, { x: 20, y: 15, title: 'Divider', text: 'On this page menu divider'}]">
 <template #code>
 <CodeGroup>

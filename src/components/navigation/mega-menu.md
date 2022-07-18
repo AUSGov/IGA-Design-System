@@ -9,7 +9,7 @@ pageHeader: true
 The mega menu categorises the site’s parent and child landing pages, plus any important links to external sites. It works in parallel with the header to orient users and create a consistent navigation pattern, and allows them to access deeper into content based on what they’re here to achieve.
 
 ### Elements
-<PreviewImage :image="$withBase('/images/mega-menu-sample.png')" :contents="[{ x: 1, y: 15, title: 'Label', text: 'Mega menu label'}, { x: 44, y: 15, title: 'Link arrow', text: 'Mega menu link arrow'}, { x: 50, y: 65, title: 'Dropdown (expand / collapse)', text: 'Mega menu dropdown'}, ]">
+<PreviewImage :image="$withBase('/images/mega-menu-sample.png')" :contents="[{ x: 1, y: 15, title: 'Label', text: 'Mega menu label'}, { x: 44, y: 15, title: 'Link arrow', text: 'Mega menu link arrow'}, { x: 50, y: 65, title: 'Dropdown (expand / collapse)', text: 'Mega menu dropdown'}, { title: 'External link icon (optional)', text: 'Mega menu external link'}, { x: 0, y: 90, title: 'Container (primary blue)', text: 'Mega menu Container (primary blue)'}]">
 <template #code>
 <CodeGroup>
   <CodeGroupItem title="HTML">
@@ -107,6 +107,9 @@ The mega menu categorises the site’s parent and child landing pages, plus any 
 
 ### Behaviours
 When a header navigation label is selected, the mega menu opens below. On hover and click, the menu items become underlined and arrows also appear to indicate a link to an internal page. Labels that link off the site use the external link icon on hover and click.
+
 Level 2 and 3 menu items are persistent. On click, level 3 menu items reveal level 4 child pages and are closed by making a selection or by clicking outside the menu area.
+
 When selected, the items with a plus symbol will push down to show another page level. Selecting the minus will contract the menu.
+
 Only a single topic can be expanded at once. The expanded section of the menu will collapse when another plus icon is selected.

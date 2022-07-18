@@ -1,6 +1,7 @@
 .slider-container {
-  padding: 2.875rem 1.25rem 0 1.25rem;
+  padding: 2.875rem 1.25rem 1.5rem 1.25rem;
   margin-bottom: 1.5rem;
+  position: relative;
 
   .slider {
     padding-left: 0.25rem;
@@ -33,6 +34,24 @@
         opacity: 0.9;
       }
     }
+  }
+
+  .start-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(50%);
+    font-size: 10px;
+    color: $gray-700;
+  }
+
+  .end-label {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(-50%);
+    font-size: 10px;
+    color: $gray-700;
   }
 }
 

@@ -135,10 +135,6 @@ module.exports = {
                 link: '/components/navigation/read-more',
                 componentsLink: '/components-html/navigation#read-more',
               },
-              {
-                text: 'Tile navigation',
-                link: '/components/navigation/tile-navigation',
-              },
             ],
           },
           {
