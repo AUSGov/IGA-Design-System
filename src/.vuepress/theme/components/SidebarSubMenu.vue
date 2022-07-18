@@ -51,7 +51,7 @@
     if (localeKeys.length) {
       return !localeKeys.some((key) => key === item.link)
     }
-    return item.link !== '/'
+    return true //item.link !== '/'
   }
   const isActiveInSubpath = (item) => {
     if (!shouldBeActiveInSubpath(item)) {
@@ -75,7 +75,6 @@
       if (!item.children) {
         continue
       }
-
       // active child page
       for (const child of item.children) {
         if (isActive(child)) {
