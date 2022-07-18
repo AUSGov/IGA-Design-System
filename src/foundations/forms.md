@@ -33,13 +33,7 @@ Forms allow users to configure options and submit information, such as feedback 
 HTML Examples or imagery
 
 <div class="doi-content">
-    <div class="row">
-        <div class="col-lg-4 col-md-6">
-            <label for="validation1" class="form-label visually-hidden">Placeholder</label>
-            <input type="text" class="form-control is-invalid" placeholder="Placeholder" id="validation1" aria-describedby="validation1Feedback" required>
-            <div id="validation1Feedback" class="invalid-feedback">How dare you!</div>
-        </div>
-    </div>
+    <DoiFormComponents />
 </div>
 ***
 

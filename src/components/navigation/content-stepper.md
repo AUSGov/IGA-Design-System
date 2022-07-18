@@ -9,7 +9,7 @@ pageHeader: true
 Used in the publication section, this navigation component allows users to move backward and forward in linear order through publications.
 
 ### Elements
-<PreviewImage :image="$withBase('/images/content-stepper.png')" :contents="[{ x: 60.5, y: 34, title: 'Previous label', text: 'Content stepper previous label' }, { x: 79, y: 34, title: 'Next label', text: 'Content stepper next label' }, { x: 96, y: 34, title: 'Divider', text: 'Content stepper divider' }, { x: 0, y: 34, title: 'Navigation', text: 'Content stepper navigation' }]">
+<PreviewImage :image="$withBase('/images/content-stepper.png')" :contents="[{ x: 60.5, y: 34, title: 'Previous label', text: 'Content stepper previous label' }, { title: 'Content label', text: 'Content stepper content label' },  { x: 79, y: 34, title: 'Next label', text: 'Content stepper next label' }, { x: 96, y: 34, title: 'Divider', text: 'Content stepper divider' }, { x: 0, y: 34, title: 'Navigation (sticky variation only)', text: 'Content stepper navigation' }]">
 <template #code>
 <CodeGroup>
   <CodeGroupItem title="HTML">

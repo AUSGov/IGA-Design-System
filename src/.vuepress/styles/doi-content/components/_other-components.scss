@@ -271,13 +271,16 @@
 }
 
 .form-inputs {
-  //TODO: THIS IS TEMPORARY
   .form-input {
     padding: 11px 0.75rem 11px 1rem;
   }
 
   .form-control {
     padding-left: 1rem;
+
+    &.is-invalid {
+      background-image: none;
+    }
   }
 
   .input-container {
@@ -286,30 +289,18 @@
 
     .bootstrap-select {
       margin-bottom: 0;
-    }
 
-    &.show {
-
-      .form-input {
-        border: 1px solid $red-500;
-      }
-
-      .error-container {
-        display: flex;
-        align-items: center;
-
-        span {
-          display: flex;
-          align-items: flex-end;
-          color: $red-500;
-          margin-right: 0.5rem;
-        }
+      &.is-invalid {
+        border: none;
       }
     }
-  }
 
-  .error-container {
-    display: none;
+    &.focus {
+      input {
+        box-shadow: none;
+        border: 1px solid $doi-primary;
+      }
+    }
   }
 
   input {
@@ -324,7 +315,7 @@
   }
 
   .form-check-input {
-    [type=checkbox] {
+    &[type=checkbox] {
       border-radius: 2px;
     }
 

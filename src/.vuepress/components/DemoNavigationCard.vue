@@ -18,24 +18,32 @@ const formConfig = [
     type: 'select',
     options: [
       {
-        label: 'Small',
-        value: 'sm'
-      },
-      {
-        label: 'Medium',
-        value: 'md'
-      },
-      {
-        label: 'Large',
-        value: 'lg'
+        label: 'Default',
+        value: ''
       },
       {
         label: 'Inline',
         value: 'inline'
       },
+    ]
+  },
+  {
+    label: 'Background',
+    id: 'background',
+    type: 'radio',
+    options: [
       {
-        label: 'left aligned',
-        value: 'left'
+        label: 'Default',
+        value: '',
+        checked: true
+      },
+      {
+        label: 'Shaded',
+        value: 'bg-primary text-white'
+      },
+      {
+        label: 'Entity colour',
+        value: 'bg-industry-innovation-science text-white'
       },
     ]
   }
@@ -45,8 +53,8 @@ const formData = ref({})
 const navigationClass = computed(() => {
   const classes = []
   //NOTE i think size does not exist? ie. formData.value.[..] , where [..] is the id of your formConfig
-  if (typeof formData.value.size !== 'undefined') {
-    classes.push(formData.value.size)
+  if (typeof formData.value.background !== 'undefined') {
+    classes.push(formData.value.background)
   }
   if (typeof formData.value.disabledBtn !== 'undefined') {
     Object.keys(formData.value.disabledBtn).forEach(el => {

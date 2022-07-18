@@ -141,9 +141,7 @@
           </div>
           <div id="collapseYear" class="accordion-collapse collapse accordion-content">
             <div class="content-container">
-              <div class="slider-container">
-                <input id="ex2" type="text" class="span2" value="" data-slider-min="2016" data-slider-max="2022" data-slider-step="1" data-slider-value="[2016,2022]" />
-              </div>
+              <DoiSlider />
             </div>
           </div>
         </div>
@@ -158,12 +156,10 @@
   import chevronForward from '../../../public/icons/chevron-forward.svg?raw'
   import chevronDown from '../../../public/icons/chevron-down.svg?raw'
   import filters from '../../../public/icons/filters.svg?raw'
+  import DoiSlider from "./DoiSlider.vue"
 
   onMounted(() => {
     $('select').selectpicker()
     $('button').removeClass('btn-light')
-    $('#ex2').slider({
-      tooltip_split: 'always'
-    })
   })
 </script>
