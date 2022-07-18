@@ -17,8 +17,8 @@ These cards act as navigation and direct users to relevant content in the public
         <li>Title </li>
         <li>Summary (optional)</li>
         <li>Text button (optional)</li>
-        <li>Container: Title (heading levels)</li>
-        <li>Container: Introductory summary</li>
+        <li>Title (heading levels)</li>
+        <li>Introductory summary</li>
         <li>Coloured background (shaded)</li>
     </ol>
 </div>
@@ -29,20 +29,22 @@ These cards act as navigation and direct users to relevant content in the public
         <li>Small</li>
         <li>Medium</li>
         <li>Large</li>
-        <li>Inline</li>
+        <li>Inline / Stacked</li>
         <li>Left aligned</li>
         <li>Large narrow (featured / full width)</li>
         <li>Large narrow (featured / body width)</li>
         <li>Coloured background (shaded)</li>
         <li>Coloured background (entity colour)</li>
-        <li>Container: Body width</li>
-        <li>Container: Inline / stacked</li>
-        <li>Container: 2 small (non-promotional)</li>
-        <li>Container: 3 small (non-promotional)</li>
-        <li>Container: 2 medium (non-promotional)</li>
-        <li>Container: 1 large (non-promotional)</li>
     </ul>
 </div>
+
+### Layout 
+<ul>
+    <li>2 small (non-promotional)</li>
+    <li>3 small (non-promotional)</li>
+    <li>2 medium (non-promotional)</li>
+    <li>1 large (non-promotional)</li>
+</ul>
 
 ### Behaviours
 None.

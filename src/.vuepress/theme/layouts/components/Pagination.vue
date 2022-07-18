@@ -35,11 +35,23 @@
 <script setup>
   import chevronForward from '../../../public/icons/chevron-forward.svg?raw'
   import chevronBack from '../../../public/icons/chevron-back.svg?raw'
+  import { onMounted } from 'vue';
 
   const props = defineProps({
     text: {
       type: Boolean,
       default: null
     }
+  })
+
+  onMounted(() => {
+    if($('li').children('.page-link').last().hasClass('active')) {
+      $('.pagination').addClass('last-page')
+    }
+
+    if($('li').children('.page-link').first().hasClass('active')) {
+      $('.pagination').addClass('first-page')
+    }
+
   })
 </script>

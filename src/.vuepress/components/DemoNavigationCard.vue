@@ -1,7 +1,11 @@
 <template>
   <CodePreview :formConfig="formConfig" @form-data-changed="formDataChanged">
     <template v-slot="slotProps">
-      <NavigationCard :classes="navigationClass" :variant="variant" />
+      <div class="row g-4">
+        <div :class="containerClass">
+          <NavigationCard :variant="variant" :classes="classes" />
+        </div>
+      </div>
     </template>
   </CodePreview>
 </template>
@@ -18,7 +22,7 @@ const formConfig = [
     type: 'select',
     options: [
       {
-        label: 'Default',
+        label: 'Stacked',
         value: ''
       },
       {
@@ -38,35 +42,60 @@ const formConfig = [
         checked: true
       },
       {
-        label: 'Shaded',
-        value: 'bg-primary text-white'
+        label: 'Office Chief',
+        value: 'bg-office-chief-economist text-white'
       },
       {
-        label: 'Entity colour',
+        label: 'Industry Sci',
         value: 'bg-industry-innovation-science text-white'
+      },
+      {
+        label: 'National',
+        value: 'bg-national-measurement-institute text-white'
+      },
+    ]
+  },
+  {
+    label: 'Container',
+    id: 'container',
+    type: 'select',
+    options: [
+      {
+        label: '2 small',
+        value: 'col-md-4 col-lg-4'
+      },
+      {
+        label: '3 small',
+        value: 'col-md-4 col-lg-4'
+      },
+      {
+        label: '2 medium',
+        value: 'col-md-6 col-lg-6'
+      },
+      {
+        label: '1 large',
+        value: 'col-md-12 col-lg-12'
       },
     ]
   }
 ]
 const formData = ref({})
 
-const navigationClass = computed(() => {
-  const classes = []
-  //NOTE i think size does not exist? ie. formData.value.[..] , where [..] is the id of your formConfig
-  if (typeof formData.value.background !== 'undefined') {
-    classes.push(formData.value.background)
-  }
-  if (typeof formData.value.disabledBtn !== 'undefined') {
-    Object.keys(formData.value.disabledBtn).forEach(el => {
-      classes.push(formData.value.disabledBtn[el])
-    })
-  }
-  return classes.join(' ')
-})
-
 const variant = computed(() => {
   if (typeof formData.value.variation !== 'undefined') {
     return formData.value.variation
+  }
+})
+
+const classes = computed(() => {
+  if (typeof formData.value.background !== 'undefined') {
+    return formData.value.background
+  }
+})
+
+const containerClass = computed(() => {
+  if (typeof formData.value.container !== 'undefined') {
+    return formData.value.container
   }
 })
 
