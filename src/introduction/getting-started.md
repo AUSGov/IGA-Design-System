@@ -31,5 +31,6 @@ When integrating the styleguide include the `app.css` and `app.js` files from th
 <script src="https://ausgov.github.io/iga-design-system/dist/app.js"></script>
 ```
 
-[https://ausgov.github.io/iga-design-system/dist/app.css](app.css)
-[https://ausgov.github.io/iga-design-system/dist/app.js](app.js)
+Download the files here.
+* [app.css](https://ausgov.github.io/iga-design-system/dist/app.css)
+* [app.js](https://ausgov.github.io/iga-design-system/dist/app.js)
