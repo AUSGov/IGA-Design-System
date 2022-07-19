@@ -29,7 +29,7 @@
   import Plyr from 'plyr'
   import 'plyr/dist/plyr.css'
   import circleChevronDown from '../../../public/icons/circle-chevron-down.svg?raw'
-  import circleChevronDownFilled from '../../../public/icons/circle-chevron-down-filled.svg?raw'
+  import circleChevronDownFilled from '../../../public/icons/circle-chevron-up-filled.svg?raw'
   import videoPlay from '../../../public/icons/video-play.svg?raw'
 
 

@@ -105,24 +105,24 @@
 </script>
 
 <template>
-  <div class="theme-container">
-    <slot name="navbar">
-      <Navbar/>
-    </slot>
+  <div class="theme-container" :class="containerClass" @touchstart="onTouchStart" @touchend="onTouchEnd">
+    <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
     <div class="content-container">
       <PageHeader v-if="$frontmatter.pageHeader"/>
-      <div class="row">
-        <div class="col-12 col-sm-4 col-md-3 col-lg-2">
-          <div id="sidebar-left">
-            <SidebarSubMenu/>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="d-none d-lg-block col-lg-2">
+            <div id="sidebar-left">
+              <SidebarSubMenu/>
+            </div>
           </div>
+          <div class="col-lg-8">
+            <Transition name="fade-slide-y" mode="out-in">
+              <Page :key="page.path"/>
+            </Transition>
+          </div>
+          <div class="d-none d-lg-block col-lg-2"></div>
         </div>
-        <div class="col-12 col-md-6 col-lg-8">
-          <Transition name="fade-slide-y" mode="out-in">
-            <Page :key="page.path"/>
-          </Transition>
-        </div>
-        <div class="d-none d-md-block col-md-3 col-lg-2"></div>
       </div>
     </div>
     <PageFooter/>

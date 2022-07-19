@@ -1,6 +1,14 @@
 /* Table width fix */
 table.table {
   display: table;
+
+  > :not(:first-child) {
+    border-top: none;
+  }
+
+  thead {
+    --bs-table-bg: #{$gray-300};
+  }
 }
 
 table {

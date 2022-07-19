@@ -26,8 +26,8 @@
   }
 
   .logo {
-    height: 72px;
-    width: auto;
+    width: 217px;
+    height: auto;
   }
 
   .site-name {
@@ -116,6 +116,7 @@
     display: inline-block;
     line-height: 1.23;
     color: var(--c-text-navbar);
+    font-weight: $font-weight-semi-bold;
 
     &:hover,
     &.router-link-active {
@@ -147,7 +148,6 @@
       padding: 1rem 0;
       width: 100%;
       font-size: 21px;
-      font-weight: $font-weight-semi-bold;
       border-bottom: 1px solid rgba(196, 196, 196, 0.3);
     }
   }
@@ -210,7 +210,7 @@
 /**
  * toggle dark button
  */
-.toggle-dark-button {
+.toggle-color-mode-button {
   display: flex;
   margin: auto;
   margin-left: 1rem;

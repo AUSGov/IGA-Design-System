@@ -61,6 +61,10 @@ module.exports = {
             link: '/foundations/cta-links',
           },
           {
+            text: 'Icons',
+            link: '/foundations/icons',
+          },
+          {
             text: 'Forms',
             link: '/foundations/forms',
           },

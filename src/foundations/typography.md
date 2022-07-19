@@ -8,9 +8,9 @@ pageHeader: true
 # Typography
 
 ## Heading styles
-<div class="doi-content">
+<div>
   <table class="table">
-    <thead class="table-light">
+    <thead>
       <tr>
         <th scope="col">Style</th>
         <th scope="col">Properties</th>
@@ -62,9 +62,9 @@ pageHeader: true
 </div>
 
 ## Paragraph
-<div class="doi-content">
+<div>
   <table class="table">
-    <thead class="table-light">
+    <thead>
       <tr>
         <th scope="col">Style</th>
         <th scope="col">Properties</th>
@@ -112,9 +112,9 @@ pageHeader: true
 
 ## Captions
 
-<div class="doi-content">
+<div>
   <table class="table">
-    <thead class="table-light">
+    <thead>
       <tr>
         <th scope="col">Style</th>
         <th scope="col">Properties</th>
@@ -137,9 +137,9 @@ pageHeader: true
 
 ## Links
 
-<div class="doi-content">
+<div>
   <table class="table">
-    <thead class="table-light">
+    <thead>
       <tr>
         <th scope="col">Style</th>
         <th scope="col">Properties</th>
@@ -162,9 +162,9 @@ pageHeader: true
 
 ## Lists
 
-<div class="doi-content">
+<div>
   <table class="table">
-    <thead class="table-light">
+    <thead>
       <tr>
         <th scope="col">Style</th>
         <th scope="col">Properties</th>
@@ -197,9 +197,9 @@ pageHeader: true
 
 ## Blockquote
 
-<div class="doi-content">
+<div>
   <table class="table">
-    <thead class="table-light">
+    <thead>
       <tr>
         <th scope="col">Style</th>
         <th scope="col">Properties</th>

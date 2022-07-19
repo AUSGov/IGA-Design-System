@@ -2,8 +2,6 @@
   <div class="c-image-map">
     <div class="preview-container">
       <div class="top-container">
-        <div @click="fullScreen = true" class="icon me-4" v-html="Expand"></div>
-        <div @click="menu" class="icon" v-html="Hamburger"></div>
       </div>
       <div class="middle-container">
         <div class="image-container">
@@ -40,9 +38,6 @@
         </li>
       </ul>
     </div>
-    <div v-if="fullScreen" class="full-view-wrap">
-
-    </div>
   </div>
 </template>
 <script>
@@ -66,7 +61,6 @@
         Expand,
         Hamburger,
         localContents: null,
-        fullScreen: false,
         viewCode: false,
       }
     },
@@ -97,9 +91,6 @@
         window.scrollTo(0, item[0].offsetTop - 105)
         this.localContents[index].active = true
       },
-      menu () {
-
-      }
     }
   }
 </script>

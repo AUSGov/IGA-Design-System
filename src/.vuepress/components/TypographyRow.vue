@@ -1,6 +1,6 @@
 <template>
   <tr class="typography-row">
-    <td class="row-container">
+    <td class="row-container doi-content">
       <slot name="styleContent"></slot>
     </td>
     <td class="row-container">

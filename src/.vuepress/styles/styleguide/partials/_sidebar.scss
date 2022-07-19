@@ -13,8 +13,8 @@
     text-transform: uppercase;
     color: #888888;
     font-size: 15px;
-    padding: .5rem 0 0;
-    margin-bottom: 1.5rem;
+    padding: 2rem 0 0;
+    margin-bottom: 10px;
   }
 
   ul {
@@ -166,7 +166,8 @@
 
   a {
     margin: 0;
-    padding: 0.5rem 1rem 0.5rem 0;
+    padding: 6px 1rem 6px 0;
+    line-height: 1.5;
 
     &.router-link-active,
     &:hover {
@@ -189,7 +190,8 @@
 
   a {
     margin: 0;
-    padding: 0.5rem 1rem 0.5rem 0;
+    padding: 6px 1rem 6px 0;
+    line-height: 1.5;
 
     &.active {
       color: var(--c-text-accent);

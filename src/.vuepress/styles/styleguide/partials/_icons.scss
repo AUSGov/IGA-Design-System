@@ -4,3 +4,18 @@
     height: 17px;
   }
 }
+
+.icons-row {
+  display: flex;
+  flex-wrap: wrap;
+
+  .c-icon {
+    padding-right: 50px;
+    padding-bottom: 50px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

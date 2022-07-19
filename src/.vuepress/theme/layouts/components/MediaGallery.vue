@@ -123,7 +123,7 @@
   import '@splidejs/splide-extension-video/dist/css/splide-extension-video.min.css'
 
   import circleChevronDown from '../../../public/icons/circle-chevron-down.svg?raw'
-  import circleChevronDownFilled from '../../../public/icons/circle-chevron-down-filled.svg?raw'
+  import circleChevronDownFilled from '../../../public/icons/circle-chevron-up-filled.svg?raw'
   import chevronForward from '../../../public/icons/chevron-forward.svg?raw'
   import videoPlay from '../../../public/icons/video-play.svg?raw'
 
