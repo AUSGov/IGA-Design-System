@@ -1,1 +1,0 @@
-import{_ as a,o as e,c as r,b as n,F as o,l,t as c}from"./app.aae1f5f9.js";const i={props:{contents:{required:!0,type:Array}}};function d(u,_,s,p,f,m){return e(),r("div",null,[n("ol",null,[(e(!0),r(o,null,l(s.contents,t=>(e(),r("li",{key:t},c(t),1))),128))])])}var k=a(i,[["render",d],["__file","OrderedList.vue"]]);export{k as default};

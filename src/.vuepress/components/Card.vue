@@ -15,7 +15,7 @@
           </span>
         </RouterLink>
       </template>
-      <a v-if="htmlLink" :href="htmlLink" target="_blank" class="link-icon link-external">
+      <a v-if="htmlLink" :href="withBase(htmlLink)" target="_blank" class="link-icon link-external">
         <span>Raw HTML</span>
         <span class="icon" v-html="linkExternal"></span>
       </a>
@@ -25,6 +25,7 @@
 <script>
   import arrowRight from '../public/icons/arrow-long-right.svg?raw'
   import linkExternal from '../public/icons/link-external.svg?raw'
+  import { withBase } from '@vuepress/client'
 
   export default {
     props: {
@@ -60,7 +61,8 @@
     data () {
       return {
         arrowRight,
-        linkExternal
+        linkExternal,
+        withBase
       }
     }
   }
