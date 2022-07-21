@@ -8,7 +8,7 @@
       <option value="3">Australian Radioactive Waste Authority</option>
     </select>
     <div id="component-select-feedback" class="invalid-feedback">
-      <span v-html="warning"></span><span>How dare you!</span>
+      <span v-html="warning"></span><span>This field is required</span>
     </div>
   </div>
 </template>

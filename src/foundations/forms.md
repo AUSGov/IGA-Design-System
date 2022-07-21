@@ -13,7 +13,7 @@ Forms allow users to configure options and submit information, such as feedback 
 
 ## Form elements
 
-**Elements**
+### Elements
 * Title (heading levels / optional)
 * Title (optional)
 * Field label
@@ -37,11 +37,11 @@ HTML Examples or imagery
 </div>
 ***
 
-**Form behaviours**
+## Form behaviours
 
 Required and optional fields can be used in the form. When the user does not enter a value or make a selection in a required field, error text appears and instructs the user to complete the action in order to submit the form.
 
-**Text field**
+### Text field
 
 * The field widths should reflect the intended length of the content while still aligning to the responsive column or mini unit grid.
 * Make sure users can enter their information at smaller screen sizes.
@@ -49,21 +49,21 @@ Required and optional fields can be used in the form. When the user does not ent
 * Pre-populate known values when possible, such as a default IP address.
 * The first required input field in a form should receive focus on presentation to a user.
 
-**Dropdowns**
+### Dropdowns
 
 * When you have more than 5 options to present to the user, use a dropdown list, not a checkbox or a radio button.
 
-**Radio buttons**
+### Radio buttons
 
 * Pre-select a default option for the user. If the user selects a different option, the default is deselected.
 * For null options, provide a radio button with the label “None”.
 
-**Radio buttons and checkboxes**
+### Radio buttons and checkboxes
 
 * Radio buttons and checkbox item text falls to the right of their controls.
 * When possible, arrange the checkbox and radio button groups vertically for better scannability.
 
-**Buttons**
+### Buttons
 
 * Use a primary button for the main action, and a secondary button for secondary actions like Cancel or Discard.
 * Align buttons to the left on desktop and make full width on mobile.

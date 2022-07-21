@@ -23,3 +23,4 @@ The filtered landing homepage allows users to drill down into content from speci
 </PreviewImage>
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.

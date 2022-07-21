@@ -46,3 +46,4 @@ This card may be used to feature multiple related news articles, related publica
 On desktop, the summary appears on hover as a coloured overlay, moving from the bottom to the top of the card. Selecting the summary triggers the link to the content. The summary does not appear on mobile.
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.

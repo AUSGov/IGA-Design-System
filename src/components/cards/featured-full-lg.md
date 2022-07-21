@@ -47,3 +47,4 @@ These featured cards are large in order to emphasise the image and offer a balan
 None.
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.

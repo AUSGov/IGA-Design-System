@@ -23,4 +23,4 @@ The search landing page allows users to drill down into content using many varia
 </PreviewImage>
 
 ### Recommendations
-
+Add content strategy guidelines and editorial rules here.

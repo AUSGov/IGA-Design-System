@@ -50,3 +50,4 @@ These cards act as navigation and direct users to relevant content in the public
 None.
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.

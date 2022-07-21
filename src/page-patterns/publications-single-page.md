@@ -23,3 +23,4 @@ The one page publication page pattern is flexible and includes a range of compon
 </PreviewImage>
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.

@@ -45,3 +45,4 @@ This card and its turquoise container draw attention and offer a quick scan of t
 None.
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.

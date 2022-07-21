@@ -34,3 +34,4 @@ pageHeader: true
 None
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.

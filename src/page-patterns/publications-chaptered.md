@@ -23,3 +23,4 @@ The chaptered publication presents key information and a summary of information 
 </PreviewImage>
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.

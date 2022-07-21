@@ -23,4 +23,5 @@ The news article page pattern is flexible and offers many variations in informat
 </PreviewImage>
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.
 

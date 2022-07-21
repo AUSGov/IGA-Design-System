@@ -99,3 +99,4 @@ If not, the fourth column will be empty.
 None.
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.

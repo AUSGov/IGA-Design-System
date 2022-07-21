@@ -23,3 +23,4 @@ The one page publication (basic) page pattern is flexible and includes a range o
 </PreviewImage>
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.

@@ -23,3 +23,4 @@ The chaptered publication (basic) presents long-form content in a variety of con
 </PreviewImage>
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.

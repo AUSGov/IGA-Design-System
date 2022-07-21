@@ -23,3 +23,4 @@ The case study page acts like a digital factsheet, which can display a lot of in
 </PreviewImage>
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.

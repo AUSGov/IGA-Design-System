@@ -130,3 +130,4 @@ None.
 **Search:** On click, a search box expands to the right inside the header.
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.

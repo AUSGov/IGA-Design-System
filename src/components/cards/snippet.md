@@ -29,3 +29,4 @@ None.
 The “read more” section of the card can expand and collapse. This card can stack
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.

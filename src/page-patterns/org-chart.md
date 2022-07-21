@@ -23,3 +23,4 @@ The org chart page simply displays small bio cards for key roles within the depa
 </PreviewImage>
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.

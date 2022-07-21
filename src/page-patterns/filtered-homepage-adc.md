@@ -23,3 +23,4 @@ The filtered landing homepage ADC allows users to drill down into ADC content of
 </PreviewImage>
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.

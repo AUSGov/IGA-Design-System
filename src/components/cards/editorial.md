@@ -69,3 +69,4 @@ The editorial card appears on news, publications, and case studies sections of t
 This steel blue featured band allows cards to stand out and gives visual interest to landing pages or long content pages. The band is a visual indicator that the cards within this section are important or featured in some way. This can be used to separate brand content from other content, though for consistency, it is always steel blue.
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.

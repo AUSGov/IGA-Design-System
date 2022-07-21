@@ -23,3 +23,4 @@ The event page holds key details and summaries of events, plus directory links t
 </PreviewImage>
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.

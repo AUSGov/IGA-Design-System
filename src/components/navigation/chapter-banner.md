@@ -46,3 +46,4 @@ This component can be used with and without an image. The icons and chevrons wil
 **Chapter banner:** Move up and down through entire sections of the publication.
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.

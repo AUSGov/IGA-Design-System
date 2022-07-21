@@ -23,4 +23,5 @@ The news homepage is a highly dynamic and curated content experience for users. 
 </PreviewImage>
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.
 

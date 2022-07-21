@@ -23,4 +23,5 @@ This page pattern applies to the news parent topic, sub topic, and sub sub topic
 </PreviewImage>
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.
 

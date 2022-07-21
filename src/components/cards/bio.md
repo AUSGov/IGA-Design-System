@@ -28,5 +28,6 @@ Bio cards are versatile and can be used for ministers and the executive team on 
 ### Behaviours
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.
 
 ### States

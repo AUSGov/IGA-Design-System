@@ -13,7 +13,7 @@ Buttons guide users to take action on content. They begin with verbs to clearly 
 
 This button style gives prominence to featured content and important user actions.
 
-**Recommendations**
+### Recommendations
 
 Labels for the primary button should be short and specific, communicating the prominent action a user could or should take.
 
@@ -68,7 +68,7 @@ Labels for the primary button should be short and specific, communicating the pr
 Text buttons are used on their own, such as on cards, to help users navigate to content within the site or to external sites. 
 They are a less prominent way to indicate multiple and repeated calls to action so as not to clutter the user interface. 
 
-**Elements**
+### Elements
 
 The text button uses the action magenta colour from the primary colour palette. In most cases, the text button includes the arrow icon in all states. In the read more component, the arrow appears on hover and click.
 
@@ -218,6 +218,6 @@ Text buttons are typically left aligned within cards and “read more” contain
 
 Links are used in body copy and help users to move from one page to another. Buttons perform actions, whereas links help users to navigate through content on the site. 
 
-**Elements**
+## Elements
 
 In-text links use the action magenta colour from the primary colour palette.

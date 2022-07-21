@@ -34,3 +34,4 @@ The ADC is used only on the ADC page pattern and displays data in an easily scan
 None.
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.

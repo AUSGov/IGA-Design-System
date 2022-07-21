@@ -42,3 +42,4 @@ The standard content page is a flexible page pattern where almost all components
 </PreviewImage>
 
 ### Recommendations
+Add content strategy guidelines and editorial rules here.
