@@ -1,0 +1,4 @@
+import i from"./Index.eb874ac6.js";import{_ as m,D as c,j as u,o as f,q as p,w as d,b as _,a as g,h as t,ab as b,d as r}from"./app.d04399a5.js";import"./hamburger-2.8adf8044.js";import"./Radio.52b81046.js";import"./Checkbox.b5e346a4.js";import"./Select.5f9a7801.js";import"./Highlighter.4d38b4b6.js";import"./prism-line-numbers.dc22a1e8.js";const h=r(`
+  `),v=r(`
+
+`),B={__name:"DemoPublicationBanner",props:{small:{default:!1}},setup(s){const n=[{label:"Image",id:"image",type:"select",options:[{label:"With Image",value:!0},{label:"No Image",value:!1}]}],a=c({}),o=u(()=>{let e=!0;return typeof a.value.image!="undefined"&&(e=a.value.image==="true"),e}),l=e=>{a.value=e};return(e,D)=>(f(),p(i,{formConfig:n,onFormDataChanged:l},{default:d(C=>[_("pre",null,[h,g(b,{classes:(s.small?"small ":"")+(t(o)?"":"bg-primary"),image:t(o)},null,8,["classes","image"]),v])]),_:1}))}};var j=m(B,[["__file","DemoPublicationBanner.vue"]]);export{j as default};

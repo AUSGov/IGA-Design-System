@@ -7,6 +7,50 @@ pageHeader: true
 
 # Typography
 
+## Heading levels
+<div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Style</th>
+        <th scope="col">Properties</th>
+      </tr>
+    </thead>
+    <tbody>
+      <TypographyRow styleTitle="H1" fontFamily="Public Sans" fontWeight="600" size="48px" lineHeight="56px">
+        <template #styleContent>
+            <div class="h1">Heading 1</div>
+        </template>
+      </TypographyRow>
+      <TypographyRow styleClass="H2" styleTitle="Display Medium" fontFamily="Public Sans" fontWeight="600" size="36px" lineHeight="40px">
+        <template #styleContent>
+            <div class="h2">Heading 2</div>
+        </template>
+      </TypographyRow>
+      <TypographyRow fontFamily="Public Sans" fontWeight="600" size="30px" lineHeight="36px" letterSpacing="-0.35 px">
+        <template #styleContent>
+            <div class="h3">Heading 3</div>
+        </template>
+      </TypographyRow>
+      <TypographyRow fontFamily="Public Sans" fontWeight="600" size="32px" lineHeight="40px">
+        <template #styleContent>
+            <div class="h4">Heading 4</div>
+        </template>
+      </TypographyRow>
+      <TypographyRow fontFamily="Public Sans" fontWeight="600" size="24px" lineHeight="24px" letterSpacing="-0.2">
+        <template #styleContent>
+            <div class="h5">Heading 5</div>
+        </template>
+      </TypographyRow>
+      <TypographyRow fontFamily="Public Sans" fontWeight="600" size="21px" lineHeight="26px">
+        <template #styleContent>
+            <div class="h6">Heading 6</div>
+        </template>
+      </TypographyRow>
+    </tbody>
+  </table>
+</div>
+
 ## Heading styles
 <div>
   <table class="table">

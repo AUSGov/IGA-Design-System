@@ -10,14 +10,14 @@ pageHeader: true
 ## Primary
 <div class="content-group">
     <div class="row g-3 mb-3">
-      <ColorTile color-key="primary" name="Primary" hex="#285576"></ColorTile>
-      <ColorTile color-key="secondary" name="Secondary" hex="#3E837C"></ColorTile>
-      <ColorTile color-key="promo" name="Promo" hex="#7AC4C3"></ColorTile>
-      <ColorTile color-key="action" name="Action" hex="#A44D8E"></ColorTile>
+      <ColorTile color-key="primary" name="Primary" hex="#2D587D"></ColorTile>
+      <ColorTile color-key="secondary" name="Secondary" hex="#1F7D7B"></ColorTile>
+      <ColorTile color-key="promo" name="Promo" hex="#42C1C7"></ColorTile>
+      <ColorTile color-key="action" name="Action" hex="#9A3D92"></ColorTile>
     </div>
 </div>
 
-## Brand
+## Entities
 <div class="content-group">
     <div class="row g-3 mb-3">
         <ColorTile color-key="anti-dumping-commission" name="Anti Dumping Commission" hex="#202A4C"></ColorTile>
@@ -35,6 +35,7 @@ pageHeader: true
         <ColorTile color-key="office-chief-economist" name="Office of the Chief Economist" hex="#005DAF"></ColorTile>
         <ColorTile color-key="office-special-adviser" name="Office of the Special Adviser to the Australian Government on Low Emissions Technology" hex="#005677"></ColorTile>
         <ColorTile color-key="pm-prize" name="PM's Prizes for Science" hex="#7E2923"></ColorTile>
+        <ColorTile color-key="naic" name="National AI Centre" hex="#237AAB"></ColorTile>
     </div>
 </div>
 

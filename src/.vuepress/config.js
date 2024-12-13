@@ -384,95 +384,135 @@ module.exports = {
         mobileNavbarDropdown: true,
         children: [
           {
-            text: 'Biography',
-            link: '/page-patterns/biography.html',
-            htmlLink: '/html-page-patterns/biography.html',
+            text: 'Standard content',
+            link: '/page-patterns/standard-content/alert',
+            children: [
+              {
+                text: 'Biography',
+                link: '/page-patterns/standard-content/biography.html',
+                htmlLink: '/html-page-patterns/biography.html',
+              },
+              {
+                text: 'Biography without Image',
+                link: '/page-patterns/standard-content/biography-imageless.html',
+                htmlLink: '/html-page-patterns/biography-imageless.html',
+              },
+              {
+                text: 'Filtered Homepage',
+                link: '/page-patterns/standard-content/filtered-homepage.html',
+                htmlLink: '/html-page-patterns/filtered-homepage.html',
+              },
+              {
+                text: 'Filtered Homepage ADC',
+                link: '/page-patterns/standard-content/filtered-homepage-adc.html',
+                htmlLink: '/html-page-patterns/filtered-homepage-adc.html',
+              },
+              {
+                text: 'Organisational Chart',
+                link: '/page-patterns/standard-content/org-chart.html',
+                htmlLink: '/html-page-patterns/org-chart.html',
+              },
+              {
+                text: 'Standard Content',
+                link: '/page-patterns/standard-content/standard-content.html',
+                htmlLink: '/html-page-patterns/standard-content.html',
+              }
+            ]
           },
           {
-            text: 'Biography without Image',
-            link: '/page-patterns/biography-imageless.html',
-            htmlLink: '/html-page-patterns/biography-imageless.html',
+            text: 'News',
+            link: '/page-patterns/news/alert',
+            children: [
+              {
+                text: 'Case Study',
+                link: '/page-patterns/news/case-study.html',
+                htmlLink: '/html-page-patterns/case-study.html',
+              },
+              {
+                text: 'Event',
+                link: '/page-patterns/news/event.html',
+                htmlLink: '/html-page-patterns/event.html',
+              },
+              {
+                text: 'News Article',
+                link: '/page-patterns/news/news-article.html',
+                htmlLink: '/html-page-patterns/news-article.html',
+              },
+              {
+                text: 'News Homepage',
+                link: '/page-patterns/news/news-homepage',
+                htmlLink: '/html-page-patterns/news-homepage.html',
+              },
+              {
+                text: 'News Subsection',
+                link: '/page-patterns/news/news-subsection.html',
+                htmlLink: '/html-page-patterns/news-subsection.html',
+              }
+
+
+            ]
           },
           {
-            text: 'Case Study',
-            link: '/page-patterns/case-study.html',
-            htmlLink: '/html-page-patterns/case-study.html',
+            text: 'Publications',
+            link: '/page-patterns/publications/alert',
+            children: [
+              {
+                text: 'Publications Chaptered',
+                link: '/page-patterns/publications/publications-chaptered.html',
+                htmlLink: '/html-page-patterns/publications-chaptered.html',
+              },
+              {
+                text: 'Publications Chaptered Child',
+                link: '/page-patterns/publications/publications-chaptered-child.html',
+                htmlLink: '/html-page-patterns/publications-chaptered-child.html',
+              },
+              {
+                text: 'Publications Homepage',
+                link: '/page-patterns/publications/publications-homepage.html',
+                htmlLink: '/html-page-patterns/publications-homepage.html',
+              },
+              {
+                text: 'Publications Single Basic',
+                link: '/page-patterns/publications/publications-single-basic.html',
+                htmlLink: '/html-page-patterns/publications-single-basic.html',
+              },
+              {
+                text: 'Publications Single Page',
+                link: '/page-patterns/publications/publications-single-page.html',
+                htmlLink: '/html-page-patterns/publications-single-page.html',
+              }
+
+
+
+            ]
           },
           {
-            text: 'Event',
-            link: '/page-patterns/event.html',
-            htmlLink: '/html-page-patterns/event.html',
-          },
-          {
-            text: 'Filtered Homepage',
-            link: '/page-patterns/filtered-homepage.html',
-            htmlLink: '/html-page-patterns/filtered-homepage.html',
-          },
-          {
-            text: 'Filtered Homepage ADC',
-            link: '/page-patterns/filtered-homepage-adc.html',
-            htmlLink: '/html-page-patterns/filtered-homepage-adc.html',
-          },
-          {
-            text: 'Homepage',
-            link: '/page-patterns/homepage.html',
-            htmlLink: '/html-page-patterns/homepage.html',
-          },
-          {
-            text: 'News Article',
-            link: '/page-patterns/news-article.html',
-            htmlLink: '/html-page-patterns/news-article.html',
-          },
-          {
-            text: 'News Homepage',
-            link: '/page-patterns/news-homepage',
-            htmlLink: '/html-page-patterns/news-homepage.html',
-          },
-          {
-            text: 'News Subsection',
-            link: '/page-patterns/news-subsection.html',
-            htmlLink: '/html-page-patterns/news-subsection.html',
-          },
-          {
-            text: 'Organisational Chart',
-            link: '/page-patterns/org-chart.html',
-            htmlLink: '/html-page-patterns/org-chart.html',
-          },
-          {
-            text: 'Publications Chaptered',
-            link: '/page-patterns/publications-chaptered.html',
-            htmlLink: '/html-page-patterns/publications-chaptered.html',
-          },
-          {
-            text: 'Publications Chaptered Child',
-            link: '/page-patterns/publications-chaptered-child.html',
-            htmlLink: '/html-page-patterns/publications-chaptered-child.html',
-          },
-          {
-            text: 'Publications Homepage',
-            link: '/page-patterns/publications-homepage.html',
-            htmlLink: '/html-page-patterns/publications-homepage.html',
-          },
-          {
-            text: 'Publications Single Basic',
-            link: '/page-patterns/publications-single-basic.html',
-            htmlLink: '/html-page-patterns/publications-single-basic.html',
-          },
-          {
-            text: 'Publications Single Page',
-            link: '/page-patterns/publications-single-page.html',
-            htmlLink: '/html-page-patterns/publications-single-page.html',
-          },
-          {
-            text: 'Search Landing',
-            link: '/page-patterns/search-landing.html',
-            htmlLink: '/html-page-patterns/search-landing.html',
-          },
-          {
-            text: 'Standard Content',
-            link: '/page-patterns/standard-content.html',
-            htmlLink: '/html-page-patterns/standard-content.html',
+            text: 'Site pages',
+            link: '/page-patterns/site-pages/alert',
+            children: [
+              {
+                text: 'Homepage',
+                link: '/page-patterns/site-pages/homepage.html',
+                htmlLink: '/html-page-patterns/homepage.html',
+              },
+              {
+                text: 'Search Landing',
+                link: '/page-patterns/site-pages/search-landing.html',
+                htmlLink: '/html-page-patterns/search-landing.html',
+              }
+
+
+            ]
           }
+            
+            
+            
+            
+            
+            
+            
+           
+
         ]
       },
       {
