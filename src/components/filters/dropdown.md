@@ -29,7 +29,7 @@ On the filter component on the news homepage and topic pages, the user can selec
 On the search landing page, the dropdown filter is used to sort results and increase or decrease the number of results per page.
 
 ### Recommendations
-Add content strategy guidelines and editorial rules here.
+The dropdown filter style is the standard approach for display filters for table based lists.
 
 ### States
 <strong>Closed:</strong> Black 700 (Base) placeholder text  

@@ -57,5 +57,4 @@ The default number of filtered results displayed depends on the page or componen
 Up to 8 pages display at one time. With page counts of 9 and above, an ellipses appears in the middle of the sequence to indicate a hidden midpoint, and the last page is shown at the end of the sequence.
 The left and right chevron allow users to move page by page back and forward through the sequence. The left chevron appears when the user moves through the first sequence of pages.
 
-### Recommendations
-Add content strategy guidelines and editorial rules here.
+

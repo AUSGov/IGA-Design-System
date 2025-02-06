@@ -35,5 +35,4 @@ Breadcrumbs appear in the banner on standard content and bio page patterns.
 ### Behaviours
 None.
 
-### Recommendations
-Add content strategy guidelines and editorial rules here.
+

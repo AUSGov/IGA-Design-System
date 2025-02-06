@@ -48,4 +48,4 @@ On the news homepage, the tab filter includes entities and topics. On the sub-to
 By default, a chevron appears on the right for users to move through available options. As the user begins scrolling, a chevron appears to the left to allow them to move backward through the tabs.
 
 ### Recommendations
-Add content strategy guidelines and editorial rules here.
+This style of tabs is generally used for news topic tags.

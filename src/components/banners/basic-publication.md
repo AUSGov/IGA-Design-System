@@ -25,4 +25,4 @@ The basic publication banner is shorter than the featured publication banner, an
 None.
 
 ### Recommendations
-Add content strategy guidelines and editorial rules here.
+This banner type is used for routine or standard publications that are not being promoted.

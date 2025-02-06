@@ -92,5 +92,4 @@ Tables make it easier for users to consume data in a structured way. Tables can 
 ### Behaviours
 None.
 
-### Recommendations
-Add content strategy guidelines and editorial rules here.
+

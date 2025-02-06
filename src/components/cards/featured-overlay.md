@@ -57,4 +57,4 @@ These cards may include a primary button to distinguish the content contained wi
 None.
 
 ### Recommendations
-Add content strategy guidelines and editorial rules here.
+These cards are generally used to link to consultations or pages that have a strong call to action.

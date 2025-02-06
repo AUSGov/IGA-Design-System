@@ -96,5 +96,4 @@ In chaptered publications, the menu includes second-level links.
 ### Behaviours
 The in this section menu will collapse and expand. This navigation interacts in the same way as the mega menu, though uses the plus and minus symbols to indicate expand and contract actions. When the chapter title is selected, the anchor links within the chapter appear.
 
-### Recommendations
-Add content strategy guidelines and editorial rules here.
+

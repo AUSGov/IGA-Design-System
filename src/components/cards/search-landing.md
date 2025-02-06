@@ -29,4 +29,4 @@ None.
 None.
 
 ### Recommendations
-Add content strategy guidelines and editorial rules here.
+This should be used for search lists.

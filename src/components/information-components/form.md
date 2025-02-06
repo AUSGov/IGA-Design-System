@@ -61,5 +61,4 @@ None.
 ### Behaviours
 Required and optional fields can be used in the form. When the user does not enter a value or make a selection in a required field, error text appears and instructs the user to complete the action in order to submit the form.
 
-### Recommendations
-Add content strategy guidelines and editorial rules here.
+

@@ -73,7 +73,6 @@ None.
 ### Behaviours
 The share icon copies the link for the publication. The download icon opens a push down that includes the chapter file links. Each chapter is a downloadable file in the popup.
 
-### Recommendations
-Add content strategy guidelines and editorial rules here.
+
 
 

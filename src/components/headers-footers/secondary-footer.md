@@ -99,4 +99,4 @@ If not, the fourth column will be empty.
 None.
 
 ### Recommendations
-Add content strategy guidelines and editorial rules here.
+The secondary footer is used for all contact details, newsletter links and social media accounts.

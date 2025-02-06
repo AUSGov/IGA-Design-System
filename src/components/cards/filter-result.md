@@ -29,4 +29,4 @@ None.
 None.
 
 ### Recommendations
-Add content strategy guidelines and editorial rules here.
+These cards are used in news item lists that have filters.

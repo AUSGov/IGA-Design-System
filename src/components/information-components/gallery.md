@@ -28,6 +28,5 @@ The thumbnail slider appears underneath the main carousel slider when the galler
 
 The main carousel slider is static as the user moves back and forth through the thumbnail images. When a thumbnail image is selected, the main carousel slider jumps to that position in the gallery.
 
-### Recommendations
-Add content strategy guidelines and editorial rules here.
+
 

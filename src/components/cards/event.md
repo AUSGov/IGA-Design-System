@@ -12,6 +12,6 @@ pageHeader: true
 ### Behaviours
 
 ### Recommendations
-Add content strategy guidelines and editorial rules here.
+
 
 ### States

@@ -22,5 +22,4 @@ None.
 ### Behaviours
 As the user types, the autocomplete is triggered with dynamically updated dropdown results. Ten results display in the dropdown.
 
-### Recommendations
-Add content strategy guidelines and editorial rules here.
+

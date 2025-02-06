@@ -34,4 +34,4 @@ pageHeader: true
 None
 
 ### Recommendations
-Add content strategy guidelines and editorial rules here.
+This is a specific card type used for a quote.

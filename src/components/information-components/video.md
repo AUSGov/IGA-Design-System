@@ -50,8 +50,7 @@ Videos are body width, excluding the homepage video banner and gallery.
 ### Behaviours
 The video can be played and paused by the user. The accordion buttons for “Show transcript” reveals further information about the video. When selected, the video opens in a lightbox.
 
-### Recommendations
-Add content strategy guidelines and editorial rules here.
+
 
 ### States
 Selected: Opens lightbox

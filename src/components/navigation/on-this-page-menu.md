@@ -111,5 +111,3 @@ None.
 ### Behaviours
 The on this page menu will collapse and expand. This navigation interacts in the same way as the mega menu, though uses the plus and cross symbols to indicate expand and contract actions. When the section title is selected, the anchor (sub-section) links within the section appear.
 
-### Recommendations
-Add content strategy guidelines and editorial rules here.

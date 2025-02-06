@@ -1,4 +1,4 @@
-# IGA Deisgn System Style Guide
+# IGA Design System Style Guide
 
 ## Installation and build tools
 
@@ -12,21 +12,6 @@ Please use Node >= 16
 
 `npm run bundle` to bundle the styles and scripts together for deployment to the DOI website site.
 
-## General Intro and Site Structure
-
-## Vuepress, Figma and Bootstrap Links
-
-* [Finalised Designs](https://www.figma.com/file/QJl1NyuLPtW2HIMgWyjWTv/Dept.-of-Industry---Design-System?node-id=4944%3A50112)
-* [Styleguide Website Design](https://www.figma.com/file/QJl1NyuLPtW2HIMgWyjWTv/Dept.-of-Industry---Design-System?node-id=1332%3A6545)
-
-## HTML Templates
-Can be found on the Page Patterns link in the main header
-
-## Styles and Scripts
-
-### Within the context of the Styleguide Site
-1. All styles that relate to the **design system** are placed under the /src/.vuepress/styles/bootstrap directory.  
-2. All styles that are only for the **styleguide website** are placed under the /src/.vuepress/styles/styleguide directory 
 
 ### Bundling and integration
 

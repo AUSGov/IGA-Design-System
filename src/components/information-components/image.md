@@ -46,8 +46,7 @@ Images create context and additional meaning in the content. They are flexible a
 ### Behaviours
 Images can be stacked in 2 or 3 columns. The accordion buttons for “Show image text” reveals further information about the image. When selected, the image opens in a lightbox.
 
-### Recommendations
-Add content strategy guidelines and editorial rules here.
+
 
 ### States
 Selected: Opens lightbox

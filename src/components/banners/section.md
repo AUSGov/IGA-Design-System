@@ -28,4 +28,4 @@ The image in the banner can be replaced according to the editorial strategy for 
 None.
 
 ### Recommendations
-Add content strategy guidelines and editorial rules here.
+This banner type is used for website section pages like the news and publication landing pages.

@@ -25,4 +25,4 @@ The featured publication banner is a large-style banner that creates a visual la
 The featured publication banner should cover the entire viewport width and height.
 
 ### Recommendations
-Add content strategy guidelines and editorial rules here.
+This banner type should be used for high profile or important publications that showcase the work of the department.

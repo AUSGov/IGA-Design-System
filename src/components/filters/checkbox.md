@@ -35,7 +35,7 @@ This filter appears on the news homepage and topic pages to simplify content sea
 The user may select multiple options. Selecting an empty checkbox will cause the selected state. Selecting it again will return the checkbox to the unselected state.
 
 ### Recommendations
-Add content strategy guidelines and editorial rules here.
+This filter component style is the standard approach for displaying filters on lists.
 
 ### States
 <strong>Unselected:</strong> An empty, unselected checkbox.

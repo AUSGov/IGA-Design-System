@@ -82,7 +82,7 @@ Carousel and video.
 <strong>Video:</strong> The video automatically plays on a loop. A button overtop allows the video to be manually paused and played.
 
 ### Recommendations
-Add content strategy guidelines and editorial rules here.
+The banner type should only be used on the home page.
 
 ### States
 <strong>Indicator dot (default):</strong> Black 400

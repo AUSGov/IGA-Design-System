@@ -34,6 +34,5 @@ The user can select and drag either end of the slider to shorten or widen the ti
 
 The tooltip dynamically displays the low value on the left and high value on the right.
 
-### Recommendations
-Add content strategy guidelines and editorial rules here.
+
 

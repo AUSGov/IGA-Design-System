@@ -34,5 +34,4 @@ A timeline organises a series of information in ascending or descending order.
 ### Behaviours
 None.
 
-### Recommendations
-Add content strategy guidelines and editorial rules here.
+

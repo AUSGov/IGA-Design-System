@@ -48,5 +48,4 @@ Callouts are a visual anchor to draw attention to important content, repeat and 
 ### Behaviours
 These callouts act as regular body copy and may include in-text hyperlinks.
 
-### Recommendations
-Add content strategy guidelines and editorial rules here.
+

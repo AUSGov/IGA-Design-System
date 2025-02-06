@@ -47,4 +47,4 @@ These featured cards are large in order to emphasise the image and offer a balan
 None.
 
 ### Recommendations
-Add content strategy guidelines and editorial rules here.
+This card type is generally used to highlight publications.

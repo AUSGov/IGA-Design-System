@@ -26,3 +26,75 @@
     $slug: $color
   ))
 }
+
+@each $slug, $color in $greens {
+  .bg-#{$slug} {
+    background-color: $color !important;
+  }
+  $table-variants: map-merge($table-variants, (
+    $slug: $color
+  ))
+}
+
+@each $slug, $color in $limes {
+  .bg-#{$slug} {
+    background-color: $color !important;
+  }
+  $table-variants: map-merge($table-variants, (
+    $slug: $color
+  ))
+}
+
+@each $slug, $color in $reds {
+  .bg-#{$slug} {
+    background-color: $color !important;
+  }
+  $table-variants: map-merge($table-variants, (
+    $slug: $color
+  ))
+}
+
+@each $slug, $color in $purples {
+  .bg-#{$slug} {
+    background-color: $color !important;
+  }
+  $table-variants: map-merge($table-variants, (
+    $slug: $color
+  ))
+}
+
+@each $slug, $color in $blues {
+  .bg-#{$slug} {
+    background-color: $color !important;
+  }
+  $table-variants: map-merge($table-variants, (
+    $slug: $color
+  ))
+}
+
+@each $slug, $color in $oranges {
+  .bg-#{$slug} {
+    background-color: $color !important;
+  }
+  $table-variants: map-merge($table-variants, (
+    $slug: $color
+  ))
+}
+
+@each $slug, $color in $blacks {
+  .bg-#{$slug} {
+    background-color: $color !important;
+  }
+  $table-variants: map-merge($table-variants, (
+    $slug: $color
+  ))
+}
+
+@each $slug, $color in $data-colors {
+  .bg-#{$slug} {
+    background-color: $color !important;
+  }
+  $table-variants: map-merge($table-variants, (
+    $slug: $color
+  ))
+}

@@ -56,5 +56,3 @@ This navigation component connects the current content with high-level secondary
 ### Behaviours
 None.
 
-### Recommendations
-Add content strategy guidelines and editorial rules here.

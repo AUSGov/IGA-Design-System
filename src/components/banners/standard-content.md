@@ -37,4 +37,4 @@ None.
 Rather than using imagery, the standard banner emphases the page title and summary, which flow into the page content like an introductory paragraph and place the focus on the filter results.
 
 ### Recommendations
-Add content strategy guidelines and editorial rules here.
+This banner type is used for all standard content.

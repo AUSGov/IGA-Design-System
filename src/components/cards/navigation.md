@@ -50,4 +50,4 @@ These cards act as navigation and direct users to relevant content in the public
 None.
 
 ### Recommendations
-Add content strategy guidelines and editorial rules here.
+These cards are used to link to standard content pages. There are many variations that can be used to show hierachy.

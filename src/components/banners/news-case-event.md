@@ -50,4 +50,4 @@ Optional elements for this banner include image, content tags, and other metadat
 When an image is used, it may have a caption underneath. When the banner image is not in use, a drop shadow appears to delineate the bottom of the banner from the article body.
 
 ### Recommendations
-Add content strategy guidelines and editorial rules here.
+This banner type is used for all news content.

@@ -75,4 +75,4 @@ Sticky - As the name suggests it sticks to the bottom of the browser window abov
 Selecting a label in the content stepper will open the corresponding content. Forward and back page functionality indicating the previous and next publications.
 
 ### Recommendations
-Add content strategy guidelines and editorial rules here.
+This component is used in multi-page publications.

@@ -23,6 +23,6 @@ A block quote repeats and draws attention to a quote from the body copy and crea
 The block quote can be centre aligned on its own, or left and right aligned when placed inline with body copy.
 
 ### Recommendations
-Add content strategy guidelines and editorial rules here.
+This component is used to highlight a quote, usually on a new story or case study.
 
 
