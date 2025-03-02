@@ -34,7 +34,7 @@
             <div class="h5">{{ content.title }}</div>
             <div class="toggle" v-html="ChevronDown"></div>
           </div>
-          <div v-if="content.active" class="text">{{ content.text }}</div>
+          <div v-if="content.active" class="text" v-html="content.text"></div>
         </li>
       </ul>
     </div>

@@ -47,8 +47,7 @@ None.
 ### Behaviours
 None.
 
-### Recommendations
-Add content strategy guidelines and editorial rules here.
+
 
 ### States
 <strong>Unselected:</strong> Black 600 with outline.

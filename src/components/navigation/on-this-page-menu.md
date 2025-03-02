@@ -6,10 +6,10 @@ pageHeader: true
 ---
 
 ### Overview
-On this page is a navigation component used in the publications section and on pages that include long-form content, such as case studies and long standard content pages. It allows users to scan long publication pages and skip to chapters of interest.
+On this page is a navigation component used on pages that include long-form content, such as case studies and long standard content pages. Generally the page needs to have 3 or more headings to qualify. It allows users to scan long pages and skip to chapters of interest.
 
 ### Elements
-<PreviewImage :image="$withBase('/images/on-this-page-menu.png')" :contents="[{ x: 60, y: 1, title: 'Collapsed menu', text: 'On this page menu collapsed menu'}, { x:37 , y: 5, title: 'Chapter label', text: 'On this page menu chapter label'}, { x: 15, y: 12, title: 'Sub-section label', text: 'On this page menu sub section label'}, { x: 20, y: 15, title: 'Divider', text: 'On this page menu divider'}]">
+<PreviewImage :image="$withBase('/images/on-this-page-menu.png')" :contents="[{ x: 0, y: 20, title: 'Anchor links', text: 'These links navigate to headings on the page'}, { x: 0, y: 86, title: 'Show more link', text: 'This show more link appears when there are 5 or more links. It can be clicked to show the hidden links in the menu.'}]">
 <template #code>
 <CodeGroup>
   <CodeGroupItem title="HTML">
@@ -109,5 +109,5 @@ On this page is a navigation component used in the publications section and on p
 None.
 
 ### Behaviours
-The on this page menu will collapse and expand. This navigation interacts in the same way as the mega menu, though uses the plus and cross symbols to indicate expand and contract actions. When the section title is selected, the anchor (sub-section) links within the section appear.
+If the on this page has 5 or more links, it will include a 'show more' and hide the additional links. This 'show more' link can be clicked to expand the menu and show the extra links.
 

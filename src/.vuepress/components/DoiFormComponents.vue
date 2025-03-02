@@ -1,13 +1,13 @@
 <template>
   <form id="form" class="form form-inputs" novalidate>
     <div class="row mb-4 input-group has-validation">
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-12 col-xl-6">
         <DoiTextInput />
       </div>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-12 col-xl-6">
         <DoiSelectBox />
       </div>
-      <div class="d-flex col-md-6 col-lg-4">
+      <div class="d-flex col-md-6 col-lg-12 col-xl-6">
         <div class="me-4">
           <DoiRadio :checked="false" />
         </div>
@@ -17,13 +17,13 @@
       </div>
     </div>
     <div class="row mb-4 input-group has-validation">
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-12 col-xl-6">
         <DoiTextInput input-classes="is-invalid" />
       </div>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-12 col-xl-6">
         <DoiSelectBox select-classes="is-invalid" />
       </div>
-      <div class="d-flex col-md-6 col-lg-4">
+      <div class="d-flex col-md-6 col-lg-12 col-xl-6">
         <div class="me-4">
           <DoiCheckbox :checked="false" />
         </div>
@@ -33,21 +33,21 @@
       </div>
     </div>
     <div class="row mb-4 input-group has-validation">
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-12 col-xl-6">
         <DoiTextInput />
       </div>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-12 col-xl-6">
         <DoiSelectBox />
       </div>
-      <div class="col-md-6 col-lg-2">
+      <div class="col-md-6 col-lg-12 col-xl-6">
         <DoiSlider />
       </div>
     </div>
     <div class="row mb-4 input-group has-validation">
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-12 col-xl-6">
         <DoiTextInput classes="focus" />
       </div>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-12 col-xl-6">
         <DoiSelectBox />
       </div>
     </div>

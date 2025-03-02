@@ -30,7 +30,7 @@ The breadcrumb navigation allows users to quickly understand their current locat
 </PreviewImage>
 
 ### Variations
-Breadcrumbs appear in the banner on standard content and bio page patterns.
+Breadcrumbs appear on all pages.
 
 ### Behaviours
 None.

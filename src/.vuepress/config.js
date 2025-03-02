@@ -85,6 +85,11 @@ module.exports = {
                 htmlLink: '/html-components/headers-footers#header',
               },
               {
+                text: 'Section Header',
+                link: '/components/headers-footers/section-header',
+                htmlLink: '/html-components/headers-footers#section-header',
+              },
+              {
                 text: 'Global Footer',
                 link: '/components/headers-footers/global-footer',
                 htmlLink: '/html-components/headers-footers#global-footer',

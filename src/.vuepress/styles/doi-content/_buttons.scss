@@ -11,6 +11,20 @@
   &:focus {
     box-shadow: 0 0 0 $btn-focus-width $doi-primary-outline;
   }
+
+  &.hover {
+    color: $white;
+    background-color: $doi-primary-hover;
+    border-color: $doi-primary-hover;
+  }
+
+  &.focus {
+    color: #fff;
+    background-color: $doi-primary-hover;
+    border-color: $doi-primary-hover;
+    box-shadow: 0 0 0 0.25rem $doi-primary-outline;
+    text-decoration: underline;
+  }
 }
 
 .btn-outline-primary {
@@ -28,6 +42,20 @@
     color: $doi-primary-disabled;
     border-color: $doi-primary-disabled;
     background-color: transparent;
+  }
+
+  &.hover {
+    color:  $doi-primary-hover;
+    background-color: $white;
+    border-color: $doi-primary-hover;
+  }
+
+  &.focus {
+    color:  $doi-primary-hover;
+    background-color: $white;
+    border-color: $doi-primary-hover;
+    box-shadow: 0 0 0 0.25rem $doi-primary-outline;
+    text-decoration: underline;
   }
 }
 
