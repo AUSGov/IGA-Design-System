@@ -60,7 +60,7 @@ Used for giving additional important information or corrections. Examples includ
 #### Downloads
 Used for providing a file or document related to the news article. Examples include information kits and stakeholder kits.
 
-<PreviewImage :image="$withBase('/images/news-download.png')">
+<PreviewImage :image="$withBase('/images/news-downloads.png')">
 
 </PreviewImage>
 
