@@ -156,14 +156,6 @@ module.exports = {
                 link: '/components/cards/editorial'
               },
               {
-                text: 'Promotional card and containers',
-                link: '/components/cards/promotional'
-              },
-              {
-                text: 'Featured full image card (Extra small)',
-                link: '/components/cards/featured-full-xs'
-              },
-              {
                 text: 'Featured full image card (Large)',
                 link: '/components/cards/featured-full-lg'
               },
@@ -180,20 +172,8 @@ module.exports = {
                 link: '/components/cards/navigation'
               },
               {
-                text: 'ADC card',
-                link: '/components/cards/adc-card'
-              },
-              {
                 text: 'Snippet card',
                 link: '/components/cards/snippet'
-              },
-              {
-                text: 'Filter result card',
-                link: '/components/cards/filter-result'
-              },
-              {
-                text: 'Search landing card',
-                link: '/components/cards/search-landing'
               },
               {
                 text: 'Bio card',
@@ -206,19 +186,9 @@ module.exports = {
                 htmlLink: '/html-components/cards#rfq-card',
               },
               {
-                text: 'News card and containers',
+                text: 'Latest news',
                 link: '/components/cards/news',
                 htmlLink: '/html-components/cards#featured-news',
-              },
-              {
-                text: 'Event card and containers',
-                link: '/components/cards/event',
-                htmlLink: '/html-components/cards#event-card',
-              },
-              {
-                text: 'Filtered landing page card',
-                link: '/components/cards/filtered-landing-page',
-                htmlLink: '/html-components/cards#filtered-landing-page-card',
               },
             ]
           },
@@ -398,19 +368,9 @@ module.exports = {
                 htmlLink: '/html-page-patterns/biography.html',
               },
               {
-                text: 'Biography without Image',
-                link: '/page-patterns/standard-content/biography-imageless.html',
-                htmlLink: '/html-page-patterns/biography-imageless.html',
-              },
-              {
                 text: 'Filtered Homepage',
                 link: '/page-patterns/standard-content/filtered-homepage.html',
                 htmlLink: '/html-page-patterns/filtered-homepage.html',
-              },
-              {
-                text: 'Filtered Homepage ADC',
-                link: '/page-patterns/standard-content/filtered-homepage-adc.html',
-                htmlLink: '/html-page-patterns/filtered-homepage-adc.html',
               },
               {
                 text: 'Organisational Chart',
@@ -421,6 +381,16 @@ module.exports = {
                 text: 'Standard Content',
                 link: '/page-patterns/standard-content/standard-content.html',
                 htmlLink: '/html-page-patterns/standard-content.html',
+              },
+              {
+                text: 'Topic landing page (standard)',
+                link: '/page-patterns/standard-content/topic-landing-standard.html',
+                htmlLink: '/html-page-patterns/org-chart.html',
+              },
+              {
+                text: 'Entity landing page (standard)',
+                link: '/page-patterns/standard-content/entity-landing-standard.html',
+                htmlLink: '/html-page-patterns/org-chart.html',
               }
             ]
           },

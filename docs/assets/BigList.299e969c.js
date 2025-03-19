@@ -1,0 +1,1 @@
+import{_ as a,o as t,c as s,b as i,F as l,l as n,t as c}from"./app.3715fb06.js";const o={class:"c-big-list"},_={__name:"BigList",props:{list:Array},setup(e){return(u,p)=>(t(),s("div",o,[i("ul",null,[(t(!0),s(l,null,n(e.list,r=>(t(),s("li",null,c(r),1))),256))])]))}};var m=a(_,[["__file","BigList.vue"]]);export{m as default};

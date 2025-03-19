@@ -1,1 +1,0 @@
-import{_ as n,r as o,o as r,c as t,a}from"./app.d64749e4.js";const c={};function s(_,l){const e=o("SubMenuCards");return r(),t("div",null,[a(e)])}var u=n(c,[["render",s],["__file","index.html.vue"]]);export{u as default};
